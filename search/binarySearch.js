@@ -1,6 +1,5 @@
 // Implementasi Binary Search dalam JavaScript
 // Language: javascript
-// Path: search/binary-search/binarySearch.js
 
 
 function binarySearch(arr, target, low, high) {

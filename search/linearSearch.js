@@ -1,6 +1,5 @@
 // implementasi linear search dalam javascript
 // Language: javascript
-// Path: search/linear-search/linearSearch.js
 
 function linearSearch(arr, item) {
     for (var i = 1; i < arr.length; i++) {
