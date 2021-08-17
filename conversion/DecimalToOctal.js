@@ -6,7 +6,7 @@ function decimalToOctal (num) {
     oct = oct + (r * Math.pow(10, c++));
     num = Math.floor(num / 8);
   }
-  console.log('bilangan desimal ke octal adalah  ' + oct);
+  console.log(`bilangan desimal ke octal adalah  ${oct}` );
 }
 
 decimalToOctal(2);
