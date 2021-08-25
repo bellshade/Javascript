@@ -1,4 +1,6 @@
-// create jump search function
+// Implementasi Binary Search dalam JavaScript
+// Language: javascript
+
 function jumpSearch(arr, x) {
     var n = arr.length;
     var step = Math.floor(Math.sqrt(n));
