@@ -9,17 +9,17 @@ semua boleh ikut berkontribusi walaupun hal kecil dengan pengecualian sebagai be
   - jika kami menemukan kesamaan maka kami tidak `merged`.
 - hasil kerja kamu akan berlisensi [MIT](LICENSE) ketika permintaan pull kamu sudah di merged
 - hasil kerja kamu wajib mengikuti standar dan style koding dari kami
-- penggunaan nama file yang bersifat CamelCase dan berlaku juga untuk variable dan identifier
+- penggunaan nama file yang bersifat camelCase dan berlaku juga untuk variable dan identifier
 - menggunakan ouput ``console.log()``
 - menghindari penggunaan library pada koding (jika dibutuhkan silahkan diskusi di [issue](https://github.com/bellshade/JavascriptAlgorithm/issues))
 
 **apa itu algoritma?**
 
-Algoritma adalah satu atau lebih fungsi (atau kelas) yang:
+Algoritma adalah langkah-langkah untuk menyelesaikan suatu pekerjaan dimana terdiri dari 3 bagian utama, yaitu:
 
-- memiliki satu atau lebih inpu
-- melakukan beberapa internal kalkulasi atau manipulasi data
-- mengembalikan nilai hasil satu atau lebih
+- Input/masukan, sebelum menjalankan sebuah algoritma maka hal yang pertama harus dilakukan adalah menerima masukan, input dapat berasal dari pengguna ataupun dari langkah sebelumnya.
+- Proses, bagian utama dari algoritma yang melakukan pengolahan input yang akan menghasilkan output.
+- Output/keluaran, output adalah hasil dari bagian proses, output ini juga bisa digunakan untuk langkah selanjutnya (jika masih ada).
 
 Algoritma harus dikemas sedemikian rupa sehingga memudahkan pembaca untuk memasukkannya ke dalam program yang lebih besar.
 
