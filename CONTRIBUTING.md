@@ -64,11 +64,12 @@ git add .
 git commit -m "add: menambahkan algoritma baru"
 ```
 - lakukan push ke branch kamu dan kemudian open pull request
+
 **saran pesan commit**
-``add`` untuk menambah algoritma atau tambahan lainnya
-``fix`` untuk mengubah algoritma yang sudah ada atau memperbaiki
-``docs`` untuk mengubah atau membuat dokumentasi
-``style`` untuk mengubah atau memperbaiki style kode untuk contohnya bisa dilihat pada commit yang diatas
+- ``add`` untuk menambah algoritma atau tambahan lainnya
+- ``fix`` untuk mengubah algoritma yang sudah ada atau memperbaiki
+- ``docs`` untuk mengubah atau membuat dokumentasi
+- ``style`` untuk mengubah atau memperbaiki style kode untuk contohnya bisa dilihat pada commit yang diatas
 
 pull request ``merged`` jika:
 - mengikuti standar dan arahan dari ``CONTRIBUTING.md``
