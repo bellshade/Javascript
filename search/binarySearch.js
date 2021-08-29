@@ -69,6 +69,6 @@ console.log(binarySearchRecursive(arr, 3));
 console.log(binarySearchIterative(arr, 7));
 console.log(binarySearchRecursive(arr, 13));
 
-console.log(binarySearchIterative(stringArr, "Charlie"));
+console.log(binarySearchIterative(stringArr, "Whiskey"));
 console.log(binarySearchRecursive(stringArr, "Zulu"));
 console.log(binarySearchIterative(stringArr, "Sierra"));
