@@ -1,15 +1,19 @@
 ## deskripsi (description)
+
 <!-- deskripsikan tentang perubahan yang kamu berikan -->
 
 ## contributor requirements (syarat contributor)
- - [ ] saya sudah membaca (i have read) [CONTRIBUTING](https://github.com/bellshade/JavascriptAlgorithm/blob/main/CONTRIBUTING.md) dan sudah menyetujui semua
+
+- [ ] saya sudah membaca (i have read) [CONTRIBUTING](https://github.com/bellshade/JavascriptAlgorithm/blob/main/CONTRIBUTING.md) dan sudah menyetujui semua
 
 ## env
+
 saya menggunakan (im used):
 
-- ``os`` = ``linux / windows / macOS``
+- `os` = `linux / windows / macOS`
 
-## testing 
+## testing
+
 - [ ] test lokal
 - [ ] test lokal
 
