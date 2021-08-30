@@ -21,7 +21,7 @@ jobs:
       - name: npm install, build, and test
         run: |
           npm install doctest
-          npx estlint .
+          estlint .
           npx doctest **/*.js || true
         env:
           CI: true
