@@ -21,7 +21,7 @@ jobs:
       - name: npm install, build, and test
         run: |
           npm install doctest
-          npm install eslint
+          npm install eslint --save-dev
           npx estlint .
           npx doctest **/*.js || true
         env:
