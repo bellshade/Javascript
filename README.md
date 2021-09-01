@@ -6,3 +6,8 @@ Repositori ini berisi kumpulan dari berbagai macam script struktur data dan algo
 
 ## Peraturan dan Pedoman Kontribusi
 Dipersilahkan bila ingin melakukan open pull requets atau kontribusi pada **JavascriptAlgorithm**. Sebelum itu, bacalah terlebih dahulu [peraturan dan pedomannya](CONTRIBUTING.md) yang dapat ditemukan pada ``CONTRIBUTING.md``.
+
+## Quick Access
+Semua *script* yang ada pada repositori ini, dapat diakses dengan cepat lewat link berikut:
+- [Conversion](https://github.com/bellshade/JavascriptAlgorithm/tree/main/conversion)
+- [Search](https://github.com/bellshade/JavascriptAlgorithm/tree/main/search)
