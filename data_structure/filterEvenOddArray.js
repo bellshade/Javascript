@@ -9,7 +9,7 @@ console.log(ganjil); // [ 1, 3, 5, 7, 9 ]
 /**
  * Penjelasan code:
  * Variable genap: Dilakukan filterisasi tiap-tiap index pada sebuah array menggunakan operator modulus, jika index sisa bagi 2 bernilai 0 / tidak memiliki sisa value maka dia bilangan Genap.
- * Varibale ganjil: Kebalikan dari penjelasan di atas akan tetapi jika index sisa bagi 2 bernilai bukan 0 / memiliki sisa value maka dia bilangan Ganjil.
+ * Variable ganjil: Kebalikan dari penjelasan di atas akan tetapi jika index sisa bagi 2 bernilai bukan 0 / memiliki sisa value maka dia bilangan Ganjil.
  **/
 
 /**
