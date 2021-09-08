@@ -3,7 +3,7 @@ name: Bug
 about: Laporkan bug atau masalah agar kami dapat memperbaiki secepatnya
 title: ''
 labels: bug
-assignees: wanrabbae
+assignees: 
 
 ---
 
@@ -13,7 +13,7 @@ Jelaskan secara terperinci bug atau masalah yang kamnu dapatkan
 **saran kamu**
 jika kamu memliki saran untuk memperbaikinya silahkan jelaskan disini
 
-**Screenshots atau output**as
+**Screenshots atau output**
 contoh error yang saya dapatkan
 ```
 error ouputnaya disini

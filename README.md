@@ -10,5 +10,7 @@ Dipersilahkan bila ingin melakukan open pull requets atau kontribusi pada **Java
 
 ## Quick Access
 Semua *script* yang ada pada repositori ini, dapat diakses dengan cepat lewat link berikut:
+- [Backtracking](https://github.com/bellshade/JavascriptAlgorithm/tree/main/backtracking)
 - [Conversion](https://github.com/bellshade/JavascriptAlgorithm/tree/main/conversion)
+- [Data Structure](https://github.com/bellshade/JavascriptAlgorithm/tree/main/data_structure)
 - [Search](https://github.com/bellshade/JavascriptAlgorithm/tree/main/search)
