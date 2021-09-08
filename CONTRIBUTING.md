@@ -51,7 +51,7 @@ doctest MyFile.js
 jika memiliki masalah kamu bisa menggunakan perintah `npx`
 
 ```bash
-npx doctst MyFile.js
+npx doctest MyFile.js
 ```
 
 kami juga menyarankan menginstall prettier untuk mengatur format kode yang lebih baik
