@@ -1,23 +1,27 @@
 // Implementasi caesar chiper di javascript
 
 const caesarShift = (kataAwal, shifting) => {
-  if (!shifting) return false;
-  if (shifting < 0) return caesarShift(kataAwal, shifting + 26);
+  if (!shifting) {
+    return false;
+  }
+  if (shifting < 0) {
+    return caesarShift(kataAwal, shifting + 26);
+  }
 
   const shift = [...kataAwal].map((txt) => {
     // Cek apakah text yang di mapping termsuk dalam rangkaian huruf alphabet, jika sama proses hurufnya
     if (txt.match(/[a-z]/i)) {
       const code = txt.charCodeAt();
 
-      if (code >= 65 && code <= 90)
+      if (code >= 65 && code <= 90) {
         return String.fromCharCode(((code - 65 + shifting) % 26) + 65);
-
-      if (code >= 97 && code <= 122)
+      } else if (code >= 97 && code <= 122) {
         return String.fromCharCode(((code - 97 + shifting) % 26) + 97);
+      }
+    } else {
+      // jika tidak termasuk, akan dikembalikan tulisan yang bukan huruf alphabet
+      return txt;
     }
-
-    // jika tidak termasuk, akan dikembalikan tulisan yang bukan huruf alphabet
-    return txt;
   });
 
   // Join semua array yang isinya string dengan ""
