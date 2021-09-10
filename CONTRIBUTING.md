@@ -9,17 +9,17 @@ semua boleh ikut berkontribusi walaupun hal kecil dengan pengecualian sebagai be
   - jika kami menemukan kesamaan maka kami tidak `merged`.
 - hasil kerja kamu akan berlisensi [MIT](LICENSE) ketika permintaan pull kamu sudah di merged
 - hasil kerja kamu wajib mengikuti standar dan style koding dari kami
-- penggunaan nama file yang bersifat CamelCase dan berlaku juga untuk variable dan identifier
-- menggunakan ouput ``console.log()``
+- penggunaan nama file yang bersifat camelCase dan berlaku juga untuk variable dan identifier
+- menggunakan ouput `console.log()`
 - menghindari penggunaan library pada koding (jika dibutuhkan silahkan diskusi di [issue](https://github.com/bellshade/JavascriptAlgorithm/issues))
 
 **apa itu algoritma?**
 
-Algoritma adalah satu atau lebih fungsi (atau kelas) yang:
+Algoritma adalah langkah-langkah untuk menyelesaikan suatu pekerjaan dimana terdiri dari 3 bagian utama, yaitu:
 
-- memiliki satu atau lebih inpu
-- melakukan beberapa internal kalkulasi atau manipulasi data
-- mengembalikan nilai hasil satu atau lebih
+- Input/masukan, sebelum menjalankan sebuah algoritma maka hal yang pertama harus dilakukan adalah menerima masukan, input dapat berasal dari pengguna ataupun dari langkah sebelumnya.
+- Proses, bagian utama dari algoritma yang melakukan pengolahan input yang akan menghasilkan output.
+- Output/keluaran, output adalah hasil dari bagian proses, output ini juga bisa digunakan untuk langkah selanjutnya (jika masih ada).
 
 Algoritma harus dikemas sedemikian rupa sehingga memudahkan pembaca untuk memasukkannya ke dalam program yang lebih besar.
 
@@ -32,49 +32,80 @@ Algoritma harus memiliki:
 - berisi doctests yang menguji nilai input yang valid dan salah
 - kembalikan semua hasil perhitungan alih-alih mencetak atau memplotnya
 
-
 ## Testing
+
 Untuk mengikuti standar dari kode kami, kami menggunakan doctesting untuk membuat mengecek
 
 **instalasi**
+
 ```bash
 npm install doctest
 ```
 
 penggunaan
+
 ```bash
 doctest MyFile.js
 ```
-jika memiliki masalah kamu bisa menggunakan perintah ``npx``
+
+jika memiliki masalah kamu bisa menggunakan perintah `npx`
+
 ```bash
-npx doctst MyFile.js
+npx doctest MyFile.js
 ```
+
+kami juga menyarankan menginstall prettier untuk mengatur format kode yang lebih baik
+**instalasi**
+```bash
+npm install prettier
+```
+kemudian jalankan perintah ``prettier``
+```bash
+npx prettier --write perbuahanSaya.js
+```
+
+dan usahakan kamu juga mengecek lint pada kode kamu dengan menginstall eslint
+```bash
+npm install eslint
+```
+kemudian jalankan perintah ``eslint``
+```bash
+npx eslint
+```
+
 testing penting bagi kami untuk mengecek apakah koding kamu bisa digunakan, jika testing gagal maka kami akan mengecek kembali.
 
-
 ## Pull Request
+
 **Pull request yang baik**
+
 - lakukan fork pada repository kami
 - setelah melakukan fork kamu dibebaskan untuk mengubah atau menambah algoritma
   - untuk pull request merubah diusahakan kamu menerapkan algoritma yang lebih baik dan lebih mudah
 - setelah merubah,menambah, atau perbaikan dokumentasi, usahakan kamu membuat branch baru
+
 ```bash
 git checkout -b <branch_name>
 git add .
 git commit -m "add: menambahkan algoritma baru"
 ```
-- lakukan push ke branch kamu dan kemudian open pull request
-**saran pesan commit**
-``add`` untuk menambah algoritma atau tambahan lainnya
-``fix`` untuk mengubah algoritma yang sudah ada atau memperbaiki
-``docs`` untuk mengubah atau membuat dokumentasi
-``style`` untuk mengubah atau memperbaiki style kode untuk contohnya bisa dilihat pada commit yang diatas
 
-pull request ``merged`` jika:
-- mengikuti standar dan arahan dari ``CONTRIBUTING.md``
+- lakukan push ke branch kamu dan kemudian open pull request
+
+**saran pesan commit**
+
+- `add` untuk menambah algoritma atau tambahan lainnya
+- `fix` untuk mengubah algoritma yang sudah ada atau memperbaiki
+- `docs` untuk mengubah atau membuat dokumentasi
+- `style` untuk mengubah atau memperbaiki style kode untuk contohnya bisa dilihat pada commit yang diatas
+
+pull request `merged` jika:
+
+- mengikuti standar dan arahan dari `CONTRIBUTING.md`
 - lulus test dan cek dari beberapa test yang sudah kami siapkan
 
 **tambahan**
+
 - jika ada kendala atau masalah dalam pull request, kamu bisa laporkan masalah pada [issue](https://github.com/bellshade/JavascriptAlgorithm/issues)
 - jika ada test yang tidak lewat atau gagal, kami akan mengecek kembali perubahan.
 
