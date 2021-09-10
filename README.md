@@ -1,5 +1,5 @@
 # Javascript
-![codequality](https://img.shields.io/lgtm/grade/Javascript/github/bellshade/Javascript?label=code%20quality%3A%20js&style=for-the-badge)
+![codequality](https://img.shields.io/lgtm/grade/javascript/github/bellshade/Javascript?label=code%20quality%3A%20js&style=for-the-badge)
 ![codefactor](https://img.shields.io/codefactor/grade/github/bellshade/Javascript/main?label=code%20factor%20quality&style=for-the-badge)
 ![buildTesting](https://img.shields.io/github/workflow/status/bellshade/Javascript/Node%20CI?style=for-the-badge)
 
