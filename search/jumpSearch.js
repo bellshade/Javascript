@@ -2,9 +2,9 @@
 // Language: javascript
 
 function jumpSearch(arr, x) {
-    var n = arr.length;
-    var step = Math.floor(Math.sqrt(n));
-    var prev = 0;
+    const panjangArray = arr.length;
+    let langkah = Math.floor(Math.sqrt(n));
+    let langkahSebelum = 0;
     while (arr[Math.min(step, n) - 1] < x) {
         prev = step;
         step += Math.floor(Math.sqrt(n));
