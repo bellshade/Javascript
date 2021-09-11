@@ -14,7 +14,7 @@ function jumpSearch(arr, x) {
     }
     while (arr[prev] < x) {
         prev++;
-        if (prev == Math.min(step, n)) {
+        if (prev === Math.min(step, n)) {
             return -1;
         }
     }
