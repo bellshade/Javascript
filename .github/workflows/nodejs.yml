@@ -1,7 +1,7 @@
-# install doctest 
+# install doctest
 # untuk document testing pada file javascript
 # sebagai syarat contributor untuk pull
-# jika tidak melewati check dari doctesting 
+# jika tidak melewati check dari doctesting
 # maka owner atau member mengecek, memberitahukan
 # atau jika tidak ada perubahan maka pull request di close
 name: Node CI
@@ -13,14 +13,14 @@ jobs:
       matrix:
         node-version: [14.x]
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: npm install, build, and test
-      run: |
-        npm install doctest
-        npx doctest **/*.js || true
-      env:
-        CI: true
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: npm install, build, and test
+        run: |
+          npm install doctest
+          npx doctest **/*.js || true
+        env:
+          CI: true
