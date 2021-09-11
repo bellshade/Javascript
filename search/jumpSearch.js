@@ -1,4 +1,4 @@
-// Implementasi Binary Search dalam JavaScript
+// Implementasi Jump Search dalam JavaScript
 // Language: javascript
 
 function jumpSearch(arr, x) {
