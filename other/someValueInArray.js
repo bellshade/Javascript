@@ -1,8 +1,8 @@
 // Mengecek apakah salah satu valuenya termasuk di sebuah array
 
-let isiDapurSatu = ["panci", "penggorengan", "garpu"];
-let isiDapurDua = ["garpu", "gelas", "sendok"];
-let isiDapurTiga = ["sodet", "cangkir"];
+const isiDapurSatu = ["panci", "penggorengan", "garpu"];
+const isiDapurDua = ["garpu", "gelas", "sendok"];
+const isiDapurTiga = ["sodet", "cangkir"];
 
 // Mengecek array dengan some hanya dengan satu value
 console.log(isiDapurSatu.some((isi) => isi === "panci")); // true
