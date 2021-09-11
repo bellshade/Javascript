@@ -61,7 +61,7 @@ npm install prettier
 ```
 kemudian jalankan perintah ``prettier``
 ```bash
-npx prettier --write perbuahanSaya.js
+npx prettier --write perubahanSaya.js
 ```
 
 dan usahakan kamu juga mengecek lint pada kode kamu dengan menginstall eslint
