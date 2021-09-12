@@ -27,23 +27,6 @@ function affineCipher(method, string) {
 
   const plainTextArr = string.split("");
 
-  if (method === "encrypt" || method === "decrypt") {
-    return plainTextArr
-      .map((char) => {
-        if (char.match(/[a-zA-Z]/)) {
-          let isUpperCase = false;
-          if (char === char.toUpperCase()) {
-            isUpperCase = true;
-          }
-          return method === "encrypt" ? encrypt(char, isUpperCase) : decrypt(char, isUpperCase);
-        }
-        return char;
-      })
-      .join("");
-  }
-
-  return "Method not found !";
-  
   function encrypt(char, isUpperCase) {
     let P = alphabet.indexOf(char.toLowerCase());
     let C = (m * P + b) % n;
@@ -55,20 +38,38 @@ function affineCipher(method, string) {
     let P = (gcd() * (C - b)) % n;
     return isUpperCase ? alphabet[P].toUpperCase() : alphabet[P];
   }
-  
+
   /* 
     Mencari m^-1
     
     GCD (Great Common Divisor) atau kalau dalam bahasa Indonesia FPB (Faktor Persekutuan Terbesar)
   */
   function gcd() {
-    for(let i=0; i<n; i++) {
-       if(i * m % n === 1) {
-          break;
-          return i;
-       }
+    for (let i = 0; i < n; i++) {
+      if ((i * m) % n === 1) {
+        return i;
+      }
     }
   }
+
+  if (method === "encrypt" || method === "decrypt") {
+    return plainTextArr
+      .map((char) => {
+        if (char.match(/[a-zA-Z]/)) {
+          let isUpperCase = false;
+          if (char === char.toUpperCase()) {
+            isUpperCase = true;
+          }
+          return method === "encrypt"
+            ? encrypt(char, isUpperCase)
+            : decrypt(char, isUpperCase);
+        }
+        return char;
+      })
+      .join("");
+  }
+
+  return "Method not found !";
 }
 
 console.log(affineCipher("encrypt", "Affine Chiper 123"));
