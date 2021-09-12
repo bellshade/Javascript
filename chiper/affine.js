@@ -33,12 +33,6 @@ function affineCipher(method, string) {
     return isUpperCase ? alphabet[C].toUpperCase() : alphabet[C];
   }
 
-  function decrypt(char, isUpperCase) {
-    let C = alphabet.indexOf(char.toLowerCase());
-    let P = (gcd() * (C - b)) % n;
-    return isUpperCase ? alphabet[P].toUpperCase() : alphabet[P];
-  }
-
   /* 
     Mencari m^-1
     
@@ -50,6 +44,12 @@ function affineCipher(method, string) {
         return i;
       }
     }
+  }
+
+  function decrypt(char, isUpperCase) {
+    let C = alphabet.indexOf(char.toLowerCase());
+    let P = (gcd() * (C - b)) % n;
+    return isUpperCase ? alphabet[P].toUpperCase() : alphabet[P];
   }
 
   if (method === "encrypt" || method === "decrypt") {
