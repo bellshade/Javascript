@@ -48,7 +48,7 @@ function affineCipher(method, string) {
 
   function decrypt(char, isUpperCase) {
     let C = alphabet.indexOf(char.toLowerCase());
-    let P = (gcd() * (C - b)) % n;
+    let P = (gcd() * Math.abs(C - b)) % n;
     return isUpperCase ? alphabet[P].toUpperCase() : alphabet[P];
   }
 
@@ -72,6 +72,6 @@ function affineCipher(method, string) {
   return "Method not found !";
 }
 
-console.log(affineCipher("encrypt", "Affine Chiper 123"));
-console.log(affineCipher("decrypt", "Foojsh Tcjghu 123"));
+console.log(affineCipher("encrypt", "abcdefghijklmnopqrstuvwxyz"));
+console.log(affineCipher("decrypt", "fmtahovcjqxelszgnubipwdkry"));
 console.log(affineCipher("decryt", "Izgjx 123"));
