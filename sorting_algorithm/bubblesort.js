@@ -1,8 +1,8 @@
 /*
-Bubble Short adalah shorting algorithm yang cara kerjanya adalah dengan membandingkan 2 elemen array
+Bubble Sort adalah Sorting algorithm yang cara kerjanya adalah dengan membandingkan 2 elemen array
 lalu menggeser kedua elemen tersebut sesuai dengan urutan terus-menerus sampai akhir array
 
-Berikut gambaran cara kerja dari Bubble Short
+Berikut gambaran cara kerja dari Bubble Sort
 =============================================
 Inisialisasi [5, 3, 8, 4, 6] Inisialisasi array acak
       Elemen  1  2  3  4  5
@@ -25,7 +25,7 @@ Final        [3, 4, 5, 6, 8] Array selesai diurutkan
 =============================================
 */
 
-function bubbleShort(arr) {
+function bubbleSort(arr) {
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr.length - i - 1; j++) {
       // Membandingkan elemen j dengan elemen j + 1(1 elemen didepan j)
@@ -38,11 +38,11 @@ function bubbleShort(arr) {
   return arr;
 }
 
-console.log(bubbleShort([5, 3, 8, 4, 6]));
+console.log(bubbleSort([5, 3, 8, 4, 6]));
 
 /*
 ======= Versi output yang rapih untuk mempelajari cara kerja algoritmanya =======
-async function bubbleShortDetailed(arr) {
+async function bubbleSortDetailed(arr) {
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr.length - i - 1; j++) {
       console.log({
@@ -79,6 +79,6 @@ const delay = (ms) => {
     }, ms);
   });
 };
-console.log(bubbleShortDetailed([5, 3, 8, 4, 6]));
+console.log(bubbleSortDetailed([5, 3, 8, 4, 6]));
 ======= Versi output yang rapih untuk mempelajari cara kerja algoritmanya =======
 */
