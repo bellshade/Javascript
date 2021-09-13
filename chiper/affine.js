@@ -4,13 +4,13 @@
     Affine Cipher adalah jenis cipher substitusi monoalphabetic , di mana setiap huruf dalam alfabet dipetakan ke padanan numeriknya, dienkripsi menggunakan fungsi matematika sederhana, dan dikonversi kembali menjadi huruf. 
     
     Rumus enkripsi
-    C = mP + b mod n
+    C = aP + b mod n
     
     Rumus dekripsi
-    P = m^-1 * (C - b) mod n
+    P = a^-1 * (C - b) mod n
     
     Keterangan:
-    m = bilangan bulat relatif prima dengan "n"
+    a = bilangan bulat relatif prima dengan "n"
     P = letak alphabet
     b = jumlah pergeseran
     n = jumlah alphabet (26)
@@ -20,58 +20,54 @@
     https://en.m.wikipedia.org/wiki/Affine_cipher
 */
 function affineCipher(method, string) {
-  const alphabet = "abcdefghijklmnopqrstuvwxyz";
-  const b = 5;
-  const m = 7;
-  const n = 26;
-
-  const plainTextArr = string.split("");
+  let a = 5;
+  let b = 7;
+  let n = 26;
 
   function encrypt(char, isUpperCase) {
-    let P = alphabet.indexOf(char.toLowerCase());
-    let C = (m * P + b) % n;
-    return isUpperCase ? alphabet[C].toUpperCase() : alphabet[C];
-  }
-
-  /* 
-    Mencari m^-1
-    
-    GCD (Great Common Divisor) atau kalau dalam bahasa Indonesia FPB (Faktor Persekutuan Terbesar)
-  */
-  function gcd() {
-    for (let i = 0; i < n; i++) {
-      if ((i * m) % n === 1) {
-        return i;
-      }
-    }
+    const p = char.charCodeAt() - 97;
+    const c = ((a * p + b) % n) + 97;
+    return isUpperCase
+      ? String.fromCharCode(c).toUpperCase()
+      : String.fromCharCode(c);
   }
 
   function decrypt(char, isUpperCase) {
-    let C = alphabet.indexOf(char.toLowerCase());
-    let P = (gcd() * Math.abs(C - b)) % n;
-    return isUpperCase ? alphabet[P].toUpperCase() : alphabet[P];
+    let multinverse = 1;
+    for (i = 1; i <= 25; i = i + 2) {
+      if ((a * i) % n == 1) {
+        multinverse = i;
+      }
+    }
+    const c = char.charCodeAt() - 97;
+    const p = ((multinverse * Math.abs(c + n - b)) % n) + 97;
+    return isUpperCase
+      ? String.fromCharCode(p).toUpperCase()
+      : String.fromCharCode(p);
   }
+
+  let isUpperCase = false;
 
   if (method === "encrypt" || method === "decrypt") {
-    return plainTextArr
-      .map((char) => {
-        if (char.match(/[a-zA-Z]/)) {
-          let isUpperCase = false;
-          if (char === char.toUpperCase()) {
-            isUpperCase = true;
+    if (string) {
+      return [...string]
+        .map((char) => {
+          if (char.match(/[a-zA-Z]/)) {
+            isUpperCase = char === char.toUpperCase();
+            return method === "encrypt"
+              ? encrypt(char.toLowerCase(), isUpperCase)
+              : decrypt(char.toLowerCase(), isUpperCase);
           }
-          return method === "encrypt"
-            ? encrypt(char, isUpperCase)
-            : decrypt(char, isUpperCase);
-        }
-        return char;
-      })
-      .join("");
+          return char;
+        })
+        .join("");
+    }
+    return "Text not found!";
   }
-
-  return "Method not found !";
+  return "Method not found!";
 }
 
-console.log(affineCipher("encrypt", "abcdefghijklmnopqrstuvwxyz"));
-console.log(affineCipher("decrypt", "fmtahovcjqxelszgnubipwdkry"));
-console.log(affineCipher("decryt", "Izgjx 123"));
+const encrypted = affineCipher("encrypt", "abcdefghijklmnopqrstuvwxyz");
+const decrypted = affineCipher("decrypt", encrypted);
+console.log(encrypted);
+console.log(decrypted);
