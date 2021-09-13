@@ -7,7 +7,7 @@
 const getMean = (arr) => {
   const sum = arr.reduce((acc, value) => acc + value);
   return sum / arr.length;
-}
+};
 
 console.log(getMean([1,2,3,4,5,6]));
 console.log(getMean([2,4,6,8,10,12,14]));
