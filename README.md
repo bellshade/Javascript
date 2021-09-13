@@ -19,5 +19,5 @@ Semua _script_ yang ada pada repositori ini, dapat diakses dengan cepat lewat li
 - [Conversion](https://github.com/bellshade/Javascript/tree/main/conversion)
 - [Data Structure](https://github.com/bellshade/Javascript/tree/main/data_structure)
 - [Search](https://github.com/bellshade/Javascript/tree/main/search)
-- [Shorting Algorithm](https://github.com/bellshade/Javascript/tree/main/shorting_algorithm)
+- [Sorting Algorithm](https://github.com/bellshade/Javascript/tree/main/sorting_algorithm)
 - [Other](https://github.com/bellshade/Javascript/tree/main/other)
