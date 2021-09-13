@@ -34,8 +34,8 @@ function affineCipher(method, string) {
 
   function decrypt(char, isUpperCase) {
     let multinverse = 1;
-    for (i = 1; i <= 25; i = i + 2) {
-      if ((a * i) % n == 1) {
+    for (let i = 1; i <= 25; i = i + 2) {
+      if ((a * i) % n === 1) {
         multinverse = i;
       }
     }
