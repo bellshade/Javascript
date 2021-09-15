@@ -9,8 +9,8 @@ semua boleh ikut berkontribusi walaupun hal kecil dengan pengecualian sebagai be
   - jika kami menemukan kesamaan maka kami tidak `merged`.
 - hasil kerja kamu akan berlisensi [MIT](LICENSE) ketika permintaan pull kamu sudah di merged
 - hasil kerja kamu wajib mengikuti standar dan style koding dari kami
-- penggunaan nama file yang bersifat camelCase dan berlaku juga untuk variable dan identifier
-- menggunakan ouput `console.log()`
+- penggunaan nama file bersifat camelCase dan berlaku juga untuk variable dan identifier
+- menggunakan output `console.log()`
 - menghindari penggunaan library pada koding (jika dibutuhkan silahkan diskusi di [issue](https://github.com/bellshade/JavascriptAlgorithm/issues))
 
 **apa itu algoritma?**

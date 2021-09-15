@@ -9,7 +9,7 @@
  * @param {Integer} degree 
  * @returns 
  */
-const temperatureConversion = (from = "celcius", to = "fahrenheit", degree = 0) => {
+const convertTemperature = (from = "celcius", to = "fahrenheit", degree = 0) => {
 
     // Celcius ke Reamur
     if (from == "celcius" && to == "reamur") {
@@ -71,11 +71,30 @@ const temperatureConversion = (from = "celcius", to = "fahrenheit", degree = 0) 
         return printResult(from, to, degree, result)
     }
 
-    return "Parameter Salah!";
+    return "Parameter Salah!\n";
 }
 
+// Menampilkan informasi konversi suhu
 const printResult = (from, to, degree, result) => {
-    return (`=== Konversi Suhu ===\nDari: ${from}, ${degree}\nKe: ${to}, ${result}`);
+    return (`=== Konversi Suhu ===\nDari: ${from}, ${degree}\nKe: ${to}, ${result}\n`);
 }
 
-console.log(temperatureConversion("celcius", "fahrenheit", 32));
+
+/** 
+ * Contoh implementasi
+*/
+
+// Celcius ke Fahrenheit
+console.log(convertTemperature("celcius", "fahrenheit", 32));
+
+// Celcius ke Reamur
+console.log(convertTemperature("celcius", "reamur", 27));
+
+// Fahrenheit ke Celcius
+console.log(convertTemperature("fahrenheit", "celcius", 60));
+
+// Kelvin ke Fahrenheit
+console.log(convertTemperature("kelvin", "fahrenheit", 100));
+
+// Reamur ke Kelvin
+console.log(convertTemperature("reamur", "kelvin", 18));
