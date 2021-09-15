@@ -23,13 +23,17 @@ function printFactorOf(n) {
   }
 }
 
-printFactorOf(42);
-// contoh output jika n=210
+printFactorOf(84);
+// contoh output jika n=84
 // 1
 // 2
 // 3
+// 4
 // 6
 // 7
+// 12
 // 14
 // ----- angka 21 tidak dicetak
+// 28
 // ----- angka 42 tidak dicetak
+// ----- angka 84 tidak dicetak
