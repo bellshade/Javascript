@@ -13,9 +13,9 @@
  */
 function printFactorOf(n) {
   for (let i = 1; i <= n; i++) {
-    if (n % i == 0) {
+    if (n % i === 0) {
       // lewati angka kelipatan 21
-      if (i % 21 == 0) {
+      if (i % 21 === 0) {
         continue;
       }
       console.log(i);

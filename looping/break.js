@@ -7,9 +7,9 @@
  */
 function printFactorOf(n) {
   for (let i = 1; i <= n; i++) {
-    if (n % i == 0) {
+    if (n % i === 0) {
       // jika ada angka 21, cetak ERROR dan hentikan program
-      if (i == 21) {
+      if (i === 21) {
         console.log("ERROR");
         break;
       }

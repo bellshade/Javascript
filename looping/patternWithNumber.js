@@ -27,7 +27,9 @@ function generatePattern(n) {
     for (let j = 1; j <= i; j++) {
 
       // jika angka lebih dari 9, kembalikan menjadi 0
-      if (num > 9) num = 0;
+      if (num > 9) {
+        num = 0;
+      }
 
       pattern += num;
       num++;
