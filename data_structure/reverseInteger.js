@@ -20,26 +20,26 @@
 // Bahasa: Javascript
 
 /**
- * 
- * @param {Integer} x 
+ *
+ * @param {Integer} x
  * @returns
  */
 const reverse = (x) => {
-    let result = 0
-    let temp = 0
+  let result = 0;
+  let temp = 0;
 
-    while(x - temp != 0) {
-        temp = x % 10
-        result = (result + temp)
-        if (x % 10 != x) {
-            result *= 10
-        }
-        x = (x - temp) / 10
+  while (x - temp != 0) {
+    temp = x % 10;
+    result = result + temp;
+    if (x % 10 != x) {
+      result *= 10;
     }
+    x = (x - temp) / 10;
+  }
 
-    return result
-}
+  return result;
+};
 
-console.log(reverse(123))
-console.log(reverse(-123))
-console.log(reverse(120))
+console.log(reverse(123));
+console.log(reverse(-123));
+console.log(reverse(120));
