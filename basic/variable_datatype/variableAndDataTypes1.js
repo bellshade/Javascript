@@ -5,7 +5,7 @@
  * yang digunakan harus unik.
  *
  * Dalam bahasa pemrograman JavaScript sendiri memiliki
- * 3 cara mendeklarasikan sebuah variabel, ya itu
+ * 3 cara mendeklarasikan sebuah variabel, yaitu
  *
  * 1. const (constant) - sifatnya konstan tidak bisa diubah
  * 2. let (let it change) - sifatnya bisa diubah, lebih aman untuk digunakan
