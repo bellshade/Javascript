@@ -37,7 +37,6 @@
  */
 
 const jumlahBuah = null;
-const dapur = typeof undefined;
 
 // Object orang ini akan berisi nama dan umur
 const orang = {
@@ -46,7 +45,6 @@ const orang = {
 };
 
 console.log(jumlahBuah);
-console.log(dapur);
 
 // Ini akan menampilkan dua key beserta valuenya
 console.log(orang);
