@@ -5,7 +5,7 @@
  * 1. null
  *  - Merupakan tipe data yang biasanya digunakan untuk menyatakan
  *    suatu yang tidak ada. null ini bersifat falsy jika digunakan
- *    untuk boolean operator..
+ *    untuk boolean operator.
  *    Value dari null hanya null.
  *
  * 2. undefined
