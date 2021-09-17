@@ -37,7 +37,7 @@
  */
 
 const jumlahBuah = null;
-const dapur = undefined;
+const dapur = typeof undefined;
 
 // Object orang ini akan berisi nama dan umur
 const orang = {
