@@ -14,6 +14,8 @@ Dipersilahkan bila ingin melakukan open pull request atau kontribusi pada reposi
 
 Semua _script_ yang ada pada repositori ini, dapat diakses dengan cepat lewat link berikut:
 
+- [Basic: Variable and Data Type](https://github.com/bellshade/Javascript/tree/main/basic/variable_datatype)
+- [Basic: Looping](https://github.com/bellshade/Javascript/tree/main/basic/looping)
 - [Backtracking](https://github.com/bellshade/Javascript/tree/main/backtracking)
 - [Cipher](https://github.com/bellshade/Javascript/tree/main/chiper)
 - [Conversion](https://github.com/bellshade/Javascript/tree/main/conversion)
