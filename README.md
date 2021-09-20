@@ -10,16 +10,26 @@ Repositori ini berisi kumpulan dari berbagai macam script struktur data dan algo
 
 Dipersilahkan bila ingin melakukan open pull request atau kontribusi pada repositori **Javascript**. Sebelum itu, bacalah terlebih dahulu [peraturan dan pedomannya](CONTRIBUTING.md) yang dapat ditemukan pada `CONTRIBUTING.md`.
 
-## Quick Access
+## Quick Access (Akses Cepat)
 
 Semua _script_ yang ada pada repositori ini, dapat diakses dengan cepat lewat link berikut:
 
-- [Basic: Variable and Data Type](https://github.com/bellshade/Javascript/tree/main/basic/variable_datatype)
-- [Basic: Looping](https://github.com/bellshade/Javascript/tree/main/basic/looping)
-- [Backtracking](https://github.com/bellshade/Javascript/tree/main/backtracking)
-- [Cipher](https://github.com/bellshade/Javascript/tree/main/chiper)
-- [Conversion](https://github.com/bellshade/Javascript/tree/main/conversion)
-- [Data Structure](https://github.com/bellshade/Javascript/tree/main/data_structure)
-- [Search](https://github.com/bellshade/Javascript/tree/main/search)
-- [Sorting Algorithm](https://github.com/bellshade/Javascript/tree/main/sorting_algorithm)
-- [Other](https://github.com/bellshade/Javascript/tree/main/other)
+### B
+  - [Backtracking](backtracking)
+  - [Basic: Hello World](basic/helloWorld.js)
+  - [Basic: Looping](basic/looping)
+  - [Basic: Variable and Data Type](basic/variable_datatype)
+
+### C
+  - [Cipher](chiper)
+  - [Conversion](conversion)
+
+### D
+  - [Data Structure](data_structure)
+
+### O
+  - [Other](other)
+
+### S
+  - [Search](search)
+  - [Sorting Algorithm](sorting_algorithm)
