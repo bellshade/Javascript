@@ -52,6 +52,9 @@
  * Catatan:
  * Operator ini bisa digunakan sebagai
  * conditional statement if atau else if.
+ * Kode dibawah ini beberapa diberi komentar karena
+ * alasan code quality. Matikan komentar pada baris
+ * 66, 67, 71, 72 untuk melihat hasil keluarannya.
  *
  * Misal kita akan membandingkan sebuah angka
  * Contoh:
@@ -60,13 +63,13 @@
 const x = 10;
 
 // Menyamakan
-console.log(x == 10); // true
-console.log(x == 1); // false, karena x itu 10
+// console.log(x == 10); // true
+// console.log(x == 1); // false, karena x itu 10
 console.log(x === 10); // true
 
 // Membedakan
-console.log(x != 5); // true
-console.log(x != 10); // false, karena x itu 10
+// console.log(x != 5); // true
+// console.log(x != 10); // false, karena x itu 10
 console.log(x !== 12); // true
 console.log(x !== 10); // false, karena x itu 10
 
