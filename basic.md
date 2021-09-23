@@ -1,0 +1,14 @@
+# Dasar - dasar Javascript
+- Hello world
+- variabel data types
+- Operator
+- Rekayasa string
+- String
+- Pengkondisian
+- Perulangan
+- Operasi matematika
+- Fungsi
+- Array
+- Manipulasi array
+- Kelas
+- Folder berisi contoh program sederhana dengan menggunakan fungsi, rekayasa string, logika
