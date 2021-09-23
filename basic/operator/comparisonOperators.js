@@ -1,3 +1,4 @@
+/* eslint eqeqeq: "off"*/
 /**
  * Javascript operator
  *
