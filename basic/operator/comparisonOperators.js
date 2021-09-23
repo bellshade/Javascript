@@ -1,6 +1,6 @@
 /* eslint eqeqeq: "off"*/
 /**
- * Javascript operator
+ * Javascript comparison (perbandingan) operator
  *
  * Operator dalam bahasa pemrograman berguna untuk memberi informasi
  * kepada compiler atau intepreter untuk melakukan sebuah operasi
