@@ -1,11 +1,11 @@
-# Dasar - dasar Javascript
+# Dasar - Dasar Javascript
 - [Hello world](https://github.com/bellshade/Javascript/blob/main/basic/helloWorld.js)
-- variabel data types
+- [Variabel dan data types](https://github.com/bellshade/Javascript/tree/main/basic/variable_datatype)
 - Operator
 - Rekayasa string
 - String
 - Pengkondisian
-- Perulangan
+- [Perulangan](https://github.com/bellshade/Javascript/tree/main/basic/looping)
 - Operasi matematika
 - Fungsi
 - Array
