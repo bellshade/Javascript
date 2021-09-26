@@ -16,9 +16,6 @@ Semua _script_ yang ada pada repositori ini, dapat diakses dengan cepat lewat li
 
 ### B
   - [Backtracking](backtracking)
-  - [Basic: Hello World](basic/helloWorld.js)
-  - [Basic: Looping](basic/looping)
-  - [Basic: Variable and Data Type](basic/variable_datatype)
 
 ### C
   - [Cipher](chiper)
