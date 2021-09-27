@@ -49,7 +49,7 @@ npm install
 Untuk mengecek linting kode, Jalankan
 
 ```bash
-npm test
+npm run lint
 ```
 
 Kemudian, untuk menjaga struktur kode tetap rapih, jalankan prettier.
