@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Repositori untuk belajar pemrograman dalam bahasa Javascript",
   "scripts": {
-    "test": "eslint sorting_algorithm/**/*.js search/**/*.js other/**/*.js data_structure/**/*.js conversion/**/*.js cipher/**/*.js basic/**/*.js backtracking/**/*.js",
+    "lint": "eslint sorting_algorithm/**/*.js search/**/*.js other/**/*.js data_structure/**/*.js conversion/**/*.js cipher/**/*.js basic/**/*.js backtracking/**/*.js",
     "prettier": "prettier -w sorting_algorithm/**/*.js search/**/*.js other/**/*.js data_structure/**/*.js conversion/**/*.js cipher/**/*.js basic/**/*.js backtracking/**/*.js"
   },
   "repository": {
