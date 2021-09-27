@@ -36,51 +36,39 @@ Algoritma harus memiliki:
 
 Untuk mengikuti standar dari kode kami, kami menggunakan doctesting untuk mengeceknya
 
-### Instalasi Doctest
+### Testing Bawaan
+
+Kita sudah ada testing bawaan untuk mengecek apakah kode kamu masuk standar kami atau belum, sudah ada npm script tinggal pakai. Terdapat prettier dan eslint untuk merapikan juga menguji apakah kode dapat diterima.
+
+Lakukan instalasi terlebih dahulu
 
 ```bash
-npm install doctest
+npm install
 ```
 
-Jalankan doctest
+Untuk mengecek linting kode, Jalankan
 
 ```bash
-doctest MyFile.js
+npm test
 ```
 
-Jika memiliki masalah kamu bisa menggunakan perintah `npx`
+Kemudian, untuk menjaga struktur kode tetap rapih, jalankan prettier.
+
+```bash
+npm run prettier
+```
+
+### Menjalankan Doctest
+
+Karena doctest sudah di install sebelumnya, tidak usah menginstall lagi karena sudah termasuk di `package.json`.
+
+Doctest dibuat terpisah karena tidak mungkin doctest masuk dalam npm script, jika termasuk maka semua kode dalam repo ini akan dijalankan. Jalankan doctest menggunakan perintah `npx` dengan menyebutkan file spesifik.
 
 ```bash
 npx doctest MyFile.js
 ```
 
-Kami juga menyarankan menginstall prettier untuk mengatur format kode yang lebih baik
-
-### Instalasi Prettier
-
-```bash
-npm install prettier
-```
-
-Kemudian jalankan perintah ``prettier``
-
-```bash
-npx prettier --write perubahanSaya.js
-```
-
-Dan usahakan kamu juga mengecek lint pada kode kamu dengan menginstall eslint
-
-```bash
-npm install eslint
-```
-
-Kemudian jalankan perintah ``eslint``
-
-```bash
-npx eslint
-```
-
-Testing penting bagi kami untuk mengecek apakah koding kamu bisa digunakan, jika testing gagal maka kami akan mengecek kembali.
+Testing penting bagi kami untuk mengecek apakah kode kamu bisa digunakan atau tidak, jika testing gagal maka kami akan mengecek kembali.
 
 ## Pull Request
 
@@ -113,7 +101,7 @@ Pull request `merged` jika:
 
 ## Tambahan
 
-- Jika ada kendala atau masalah dalam pull request, kamu bisa laporkan masalah pada [issue](https://github.com/bellshade/JavascriptAlgorithm/issues)
+- Jika ada kendala atau masalah dalam pull request, kamu bisa laporkan masalah pada [issue](https://github.com/bellshade/Javascript/issues)
 - Jika ada test yang tidak lewat atau gagal, kami akan mengecek kembali perubahan.
 
-Untuk pull request kami sarankan untuk menjelaskan secara detail yang kamu ubah atau tambahkan, dan bersikap sopan, serta selalu berterima kasih, itu salah satu bentuk tata krama yang baik terhadap sesama contributor dan programmer lainnya.terima kasih sudah berkontribusi di **JavascriptAlgorithm**.
+Untuk pull request kami sarankan untuk menjelaskan secara detail yang kamu ubah atau tambahkan, dan bersikap sopan, serta selalu berterima kasih, itu salah satu bentuk tata krama yang baik terhadap sesama contributor dan programmer lainnya.terima kasih sudah berkontribusi di **Javascript**.
