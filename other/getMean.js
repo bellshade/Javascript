@@ -9,6 +9,6 @@ const getMean = (arr) => {
   return sum / arr.length;
 };
 
-console.log(getMean([1,2,3,4,5,6]));
-console.log(getMean([2,4,6,8,10,12,14]));
-console.log(getMean([4,6,8,3,5,8,1,7,3,9]));
+console.log(getMean([1, 2, 3, 4, 5, 6]));
+console.log(getMean([2, 4, 6, 8, 10, 12, 14]));
+console.log(getMean([4, 6, 8, 3, 5, 8, 1, 7, 3, 9]));
