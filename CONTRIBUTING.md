@@ -46,6 +46,12 @@ Lakukan instalasi terlebih dahulu
 npm install
 ```
 
+Untuk memudahkan doctest, ada mode watch yang bisa digunakan. Jika file javascript di save, maka otomatis doctest berjalan.
+
+```bash
+npm run doctest-watch
+```
+
 Untuk mengecek linting kode, Jalankan
 
 ```bash
@@ -56,16 +62,6 @@ Kemudian, untuk menjaga struktur kode tetap rapih, jalankan prettier.
 
 ```bash
 npm run prettier
-```
-
-### Menjalankan Doctest
-
-Karena doctest sudah di install sebelumnya, tidak usah menginstall lagi karena sudah termasuk di `package.json`.
-
-Doctest dibuat terpisah karena tidak mungkin doctest masuk dalam npm script, jika termasuk maka semua kode dalam repo ini akan dijalankan. Jalankan doctest menggunakan perintah `npx` dengan menyebutkan file spesifik.
-
-```bash
-npx doctest MyFile.js
 ```
 
 Testing penting bagi kami untuk mengecek apakah kode kamu bisa digunakan atau tidak, jika testing gagal maka kami akan mengecek kembali.
