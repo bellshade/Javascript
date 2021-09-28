@@ -5,7 +5,7 @@
  *  @param angka = bilangan yang akan dicari faktorialnya
  */
 
-const getFactorial = (angka) => {
+function getFactorial(angka){
   // Factorial dari 0 adalah 1
   if (angka === 0){
     return 1;
