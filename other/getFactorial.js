@@ -24,7 +24,7 @@ function getFactorial(angka){
     result *= i;
   }
   return result;
-};
+}
 
 console.log(getFactorial(0)); // output 1
 console.log(getFactorial(-7)); // output "Tidak terdefinisi"
