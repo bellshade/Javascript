@@ -1,0 +1,31 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "Repositori untuk belajar pemrograman dalam bahasa Javascript",
+  "scripts": {
+    "lint": "eslint sorting_algorithm/**/*.js search/**/*.js other/**/*.js data_structure/**/*.js conversion/**/*.js cipher/**/*.js basic/**/*.js backtracking/**/*.js",
+    "prettier": "prettier -w sorting_algorithm/**/*.js search/**/*.js other/**/*.js data_structure/**/*.js conversion/**/*.js cipher/**/*.js basic/**/*.js backtracking/**/*.js",
+    "doctest-watch": "onchange '**/*.js' -- doctest {{changed}}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reacto11mecha/Javascript.git"
+  },
+  "keywords": [
+    "javascript",
+    "indonesia",
+    "hacktoberfest"
+  ],
+  "author": "@bellshade/javascript-team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reacto11mecha/Javascript/issues"
+  },
+  "homepage": "https://github.com/reacto11mecha/Javascript#readme",
+  "devDependencies": {
+    "doctest": "^0.18.1",
+    "eslint": "^7.32.0",
+    "onchange": "^7.1.0",
+    "prettier": "^2.4.1"
+  }
+}
