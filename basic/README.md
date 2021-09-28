@@ -17,6 +17,7 @@
 5. String
 
 6. Pengkondisian
+
    - [if,else,else if](conditioning/conditionalStatements.js)
   
 7. Perulangan
