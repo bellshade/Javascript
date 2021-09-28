@@ -1,3 +1,5 @@
+/* eslint-disable quotes */
+
 // Hapus beberapa kode yang dikomentari untuk melihat hasilnya.
 // Beberapa kode dikomentari karena prettier
 
