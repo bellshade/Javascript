@@ -17,8 +17,8 @@ const concatPertambahan =
   ".";
 console.log(concatPertambahan);
 
-const templateLitteral = `Halo, nama saya ${nama}, saya berumur ${umur} tahun. Makanan favorit saya adalah ${makananKesukaan}.`;
-console.log(templateLitteral);
+const templateLiteral = `Halo, nama saya ${nama}, saya berumur ${umur} tahun. Makanan favorit saya adalah ${makananKesukaan}.`;
+console.log(templateLiteral);
 
 console.log(concatPertambahan === templateLiteral); // true
 
