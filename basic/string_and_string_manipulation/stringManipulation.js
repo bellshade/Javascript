@@ -20,7 +20,7 @@ console.log(concatPertambahan);
 const templateLitteral = `Halo, nama saya ${nama}, saya berumur ${umur} tahun. Makanan favorit saya adalah ${makananKesukaan}.`;
 console.log(templateLitteral);
 
-console.log(concatPertambahan === templateLitteral); // true
+console.log(concatPertambahan === templateLiteral); // true
 
 const obj = {
   nama: "Ujang",
@@ -32,5 +32,5 @@ const stringDariObject = `Halo, nama saya ${obj.nama}, saya berumur ${obj.umur} 
 console.log(stringDariObject);
 
 // === Mengganti Isi Tulisan === //
-console.log(templateLitteral.replace(nama, "Andi"));
+console.log(templateLiteral.replace(nama, "Andi"));
 console.log(stringDariObject.replace(obj.nama, "Ollie"));

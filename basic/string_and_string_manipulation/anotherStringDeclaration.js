@@ -7,14 +7,14 @@
 // const errorKetiga = ````;
 
 // ==== Jenis Deklarasi === //
-const kutipDua = "Ini adalah tulisan";
-console.log(kutipDua);
-
 // const kutipSatu = 'Tulisan ini didalam kutip satu';
 // console.log(kutipSatu);
 
-const templateLitteral = `Saya tinggal di planet bumi.`;
-console.log(templateLitteral);
+const kutipDua = "Ini adalah tulisan";
+console.log(kutipDua);
+
+const templateLiteral = `Saya tinggal di planet bumi.`;
+console.log(templateLiteral);
 
 // === Penggunaan Deklarasi laim dalam string === //
 const kutipSatuDidalamnya = "Nama benda ini adalah 'Sapu'";
