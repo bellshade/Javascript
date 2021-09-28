@@ -1,31 +1,20 @@
 # Dasar - Dasar Javascript
 
-1. [Hello world](helloWorld.js)
+1. [Hello world](1_hello_world_/)
 
-2. Variabel dan data types
-   
-   - [Part 1](variable_datatype/variableAndDataTypes1.js)
-   - [Part 2](variable_datatype/variableAndDataTypes2.js)
+2. [Variabel dan Tipe Data](2_variable_datatype/)
 
-3. Operator
+3. [Operator](3_operator/)
 
-   - [Operator Perbandingan](operator/comparisonOperators.js)
-   - [Operator Logika](operator/logicalOperator.js)
+4. String
 
-4. Rekayasa string
-
-5. String
+5. Rekayasa String
 
 6. Pengkondisian
 
-7. Perulangan
+7. Operasi Matematika
 
-   - [Break](https://github.com/bellshade/Javascript/blob/main/basic/looping/break.js)
-   - [Continue](https://github.com/bellshade/Javascript/blob/main/basic/looping/continue.js)
-   - [Pattern with numbers](https://github.com/bellshade/Javascript/blob/main/basic/looping/patternWithNumber.js)
-   - [Recursive loop](https://github.com/bellshade/Javascript/blob/main/basic/looping/recursiveLoop.js)
-
-8. Operasi matematika
+8. [Perulangan](8_looping/)
 
 9. Fungsi
 
