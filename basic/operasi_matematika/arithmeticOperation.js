@@ -1,6 +1,6 @@
-// Operasi Penjumlahan //
+//=== Operasi Penjumlahan ===//
 console.log(10 + 5);
-// 15
+// menghasilkan 15
 
 /**
  *    contoh perbedaan operator penjumlahan dan concatenation. semua Integer
@@ -12,17 +12,17 @@ console.log(3 + "3"); // "33"
 console.log(3 + 3 + "3"); // "63"
 console.log(3 + "3" + 3); // "333"
 
-// Operasi Pengurangan //
+//=== Operasi Pengurangan ===//
 console.log(7 - 2);
-// output 5
+// menghasilkan 5
 
-// Perkalian //
+//=== Perkalian ===//
 console.log(10 * 5);
-// output 50
+// menghasilkan 50
 
-// Pembagian //
+//=== Pembagian ===//
 console.log(8 / 4);
-// output 2
+// menghasilkan 2
 
 //=== Modulus ===//
 console.log(7 % 2);
@@ -30,14 +30,14 @@ console.log(7 % 2);
 
 //=== Eksponen ===//
 console.log(3 ** 3);
-// output 3 * 3 * 3 = 27
+// menghasilkan 3 * 3 * 3 = 27
 
-// increment //
+//=== increment ===//
 let x = 10;
 console.log(x++, x++, x++, x++);
-// output 10, 11, 12, 13
+// menghasilkan 10, 11, 12, 13
 
-// Decrement
+//=== Decrement ===//
 let y = 5;
 console.log(y--, y--, y--, y--);
-// 5, 4, 3, 2
+// menghasilkan 5, 4, 3, 2

@@ -8,42 +8,50 @@ Setiap bahasa pemrograman termasuk javascript memiliki operator aritmatika
 untuk melakukan penghitungan dasar. Dalam Javascript sendiri
 terdapat beberapa operator yaitu :
 
-1. \+ (Penjumlahan)
-   Operator ini digunakan untuk melakukan operasi penjumlahan.
+### Penjumlahan (+)
 
-   > catatan : pada javascript, operator + (penjumlahan) juga digunakan untuk
-   > rangkaian (concatenation) string. Jadi perhatikan penggunaan +
-   > pada string dan integer. Lihat contoh [ini](arithmeticOperation.js#L4-L12) agar
-   > lebih jelas
+Operator ini digunakan untuk melakukan operasi penjumlahan.
 
-2. \- (pengurangan)
-   Operator ini digunakan untuk melakukan operasi pengurangan.
+> catatan : pada javascript, operator + (penjumlahan) juga digunakan untuk
+> rangkaian (concatenation) string. Jadi perhatikan penggunaan +
+> pada string dan integer. Lihat [contoh ini](arithmeticOperation.js#L5-L13) agar
+> lebih jelas
 
-3. \*- (Perkalian)
-   Operator ini digunakan untuk melakukan operasi perkalian.
+### Pengurangan (\-)
 
-4. / (Pembagian)
-   Operator ini digunakan untuk melakukan operasi pembagian.
+Operator ini digunakan untuk melakukan operasi pengurangan.
 
-5. % (Modulus)
-   Operator ini berfungsi untuk mencari sisa bagi suatu bilangan.
-   Operator ini biasa digunakan untuk mengecek apakah
-   suatu bilangan ganjil atau genap.
+### Perkalian (\*)
 
-6. \*\* (Eksponen)
-   Sesuai namanya, operator ini berfungsi untuk membuat eksponen. Eksponen
-   atau yang biasa disebut bilangan berpangkat adalah suatu bentuk
-   perkalian dengan bilangan yang sama berulang-ulang.
+Operator ini digunakan untuk melakukan operasi perkalian.
 
-7. ++ (Increment/kenaikan)
-   Operator ini digunakan untuk menambah suatu bilangan
-   sebanyak 1 angka. Operator ini biasa digunakan
-   pada perulangan.
+### Pembagian (/)
 
-8. -- (Decrement/penurunan)
-   Operator ini kebalikan dari operator increment, digunakan
-   untuk mengurangi suatu bilangan sebanyak 1 angka.
-   Operator ini biasa digunakan pada perulangan.
+Operator ini digunakan untuk melakukan operasi pembagian.
+
+### Modulus (%)
+
+Operator ini berfungsi untuk mencari sisa bagi suatu bilangan.
+Operator ini biasa digunakan untuk mengecek apakah
+suatu bilangan ganjil atau genap.
+
+### Eksponen (\*\*)
+
+Sesuai namanya, operator ini berfungsi untuk membuat eksponen. Eksponen
+atau yang biasa disebut bilangan berpangkat adalah suatu bentuk
+perkalian dengan bilangan yang sama berulang-ulang.
+
+### Increment/Kenaikan (++)
+
+Operator ini digunakan untuk menambah suatu bilangan
+sebanyak 1 angka. Operator ini biasa digunakan
+pada perulangan.
+
+### Decrement/Penurunan (--)
+
+Operator ini kebalikan dari operator increment, digunakan
+untuk mengurangi suatu bilangan sebanyak 1 angka.
+Operator ini biasa digunakan pada perulangan.
 
 Contoh Penggunaan :
 
