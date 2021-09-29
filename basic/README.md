@@ -10,9 +10,9 @@
 
 5. [Pengkondisian](5_conditioning/)
 
-6. Operasi Matematika
-   
-7. [Perulangan](8_looping/)
+6. [Operasi Matematika](6_arithmetic_operation/)
+
+7. [Perulangan](7_looping/)
 
 8. Fungsi
 
