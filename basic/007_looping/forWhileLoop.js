@@ -24,7 +24,9 @@ let pengunjung = 0;
 
 while (pengunjung < 20) {
   pengunjung++;
-  if (pengunjung > 0) console.log(`Pengujung ke: ${pengunjung}`);
+  if (pengunjung > 0) {
+    console.log(`Pengujung ke: ${pengunjung}`);
+  }
   // console.log(pengunjung < 100);
 }
 
