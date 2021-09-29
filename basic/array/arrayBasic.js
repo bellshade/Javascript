@@ -1,8 +1,8 @@
 // == Membuat dan Mendeklarasikan Array == //
 const array1 = [1, 2, 3, 4, 5];
-const array2 = ['satu', 'dua', 'tiga'];
+const array2 = ["satu", "dua", "tiga"];
 const array3 = [true, false];
-const array4 = [1, 'satu', true];
+const array4 = [1, "satu", true];
 
 // == Mengakses Array Berdasarkan Index (dimulai dari angka 0) == //
 console.log(array1[0]); // 1
