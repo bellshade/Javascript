@@ -9,9 +9,7 @@ Variabel adalah tempat penyimpanan dimana penyimpanan itu diberi nama, dimana na
 Dalam bahasa pemrograman JavaScript sendiri memiliki **3 cara** mendeklarasikan sebuah variabel, yaitu
 
 1. `const` (constant): sifatnya konstan tidak bisa diubah
-
 2. `let` (let it change): sifatnya bisa diubah, lebih aman untuk digunakan
-
 3. `var` (variable): sifatnya bisa diubah, tidak aman untuk digunakan
 
 ## Jenis-Jenis Tipe Data
