@@ -5,7 +5,7 @@ Operator dalam bahasa pemrograman berguna untuk memberi informasi kepada compile
 Javascript sendiri memiliki banyak operator, mulai dari
 operator **perbandingan**, **kelogisan**, dan **aritmatika**.
 
-### Javascript comparison (perbandingan) operator
+## Javascript comparison (perbandingan) operator
 
 Banyak jenis operasi perbandingan. Macam-macamnya yaitu:
 
@@ -42,7 +42,7 @@ Operator ini digunakan untuk membandingkan sebuah nilai apakah lebih besar darip
 
 Operator ini digunakan untuk membandingkan sebuah nilai apakah kurang daripada atau sama dengan nilai yang lain.
 
-### Javascript logical (logika) operator
+## Javascript logical (logika) operator
 
 Logika secara harfiahnya adalah hasil pertimbangan dari akal dan pikiran seseorang, disampaikan dan diutarakan dengan bahasa.
 
@@ -60,7 +60,7 @@ Operator yang digunakan untuk mengecek apakah salah satu nilai dari dua nilai ya
 
 Operator yang digunakan untuk mengecek apakah nilai yang diuji bukanlah yang diinginkan maksudnya adalah apa benar pernyataan itu adalah kebalikannya.
 
-##### Hint
+### Hint
 
 Operator ini bisa digunakan sebagai conditional statement if atau else if.
 

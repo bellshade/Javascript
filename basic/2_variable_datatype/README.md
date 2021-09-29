@@ -4,7 +4,7 @@ Apa itu variabel dalam bahasa pemrograman ?
 
 Variabel adalah tempat penyimpanan dimana penyimpanan itu diberi nama, dimana nama yang digunakan harus unik.
 
-#### Jenis-Jenis Mendeklarasikan Variabel
+# Jenis-Jenis Mendeklarasikan Variabel
 
 Dalam bahasa pemrograman JavaScript sendiri memiliki **3 cara** mendeklarasikan sebuah variabel, yaitu
 
@@ -14,7 +14,7 @@ Dalam bahasa pemrograman JavaScript sendiri memiliki **3 cara** mendeklarasikan 
 
 3. `var` (variable): sifatnya bisa diubah, tidak aman untuk digunakan
 
-#### Jenis-Jenis Tipe Data
+# Jenis-Jenis Tipe Data
 
 Untuk tipe data, JavaScript memiliki banyak tipe data,
 kali ini membahas 3 tipe data dasar yang sering digunakan, yaitu:
@@ -45,7 +45,7 @@ Merupakan tipe data yang mempunyai pasangan key dan value. Maksud dari key adala
 
 Object ini menggunakan kurung kurawal ({}) untuk menyimpan pasangan dari key dan value.
 
-##### Hint
+## Hint
 
 Jika mengandai-andai apa itu null dan undefined, bayangkan sebuah tempat tisu toilet yang lengkap.
 
