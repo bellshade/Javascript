@@ -1,13 +1,3 @@
-/*
- * Parameter adalah variabel yang digunakan untuk menampung nilai
- * yang dikirimkan saat memanggil function.
- */
-
-/*
- * Argument adalah nilai yang dikirimkan saat function dipanggil
- * dan akan ditampung oleh parameter.
- */
-
 // == Contoh == //
 
 function tambah(a, b) {
