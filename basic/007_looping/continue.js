@@ -1,7 +1,3 @@
-// Perulangan
-// Continue merupakan statement untuk melewati/melompati perulangan.
-// Statement ini akan mengakhiri program dan melanjutkan ke perulangan selanjutnya.
-
 // Perbedaan dengan break:
 // - Break akan menghentikan program dan tidak melanjutkan perulangan
 // - Continue akan menghentikan program dan melanjutkan ke perulangan/index selanjutnya
