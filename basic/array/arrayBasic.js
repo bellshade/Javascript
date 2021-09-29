@@ -11,7 +11,7 @@ console.log(array3[1]); // false
 console.log(array4[2]); // true
 
 // == Mengecek Panjang dari Array == //
-console.log(array1.length) // 5
-console.log(array2.length) // 3
-console.log(array3.length) // 2
-console.log(array4.length) // 3
+console.log(array1.length); // 5
+console.log(array2.length); // 3
+console.log(array3.length); // 2
+console.log(array4.length); // 3
