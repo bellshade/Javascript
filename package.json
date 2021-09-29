@@ -1,7 +1,7 @@
 {
   "name": "javascript",
   "version": "1.0.0",
-  "description": "Repositori untuk belajar pemrograman dalam bahasa Javascript",
+  "description": "Repositori untuk belajar pemrograman Javascript dalam bahasa Indonesia",
   "scripts": {
     "lint": "eslint sorting_algorithm/**/*.js search/**/*.js other/**/*.js data_structure/**/*.js conversion/**/*.js cipher/**/*.js basic/**/*.js backtracking/**/*.js",
     "prettier": "prettier -w sorting_algorithm/**/*.js search/**/*.js other/**/*.js data_structure/**/*.js conversion/**/*.js cipher/**/*.js basic/**/*.js backtracking/**/*.js",
