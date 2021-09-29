@@ -5,17 +5,17 @@
  *  @param angka = bilangan yang akan dicari faktorialnya
  */
 
-function getFactorial(angka){
+function getFactorial(angka) {
   // Factorial dari 0 adalah 1
-  if (angka === 0){
+  if (angka === 0) {
     return 1;
   }
-  
+
   /**
    *  Jika yang diinput adalah bilangan bulat negatif, langsung hentikan program karena bilangan bulat negatif faktorial
    *  tidak terdefinisi, nilainya yang mengecil secara terus menerus sampai bilangan negatif tak hingga.
    */
-  if (angka < 0){
+  if (angka < 0) {
     return "Tidak terdefinisi";
   }
 
