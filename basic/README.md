@@ -6,22 +6,20 @@
 
 3. [Operator](3_operator/)
 
-4. String
+4. [String dan Rekayasa String](4_string_and_string_manipulation/)
 
-5. Rekayasa String
+5. [Pengkondisian](5_conditioning/)
 
-6. Pengkondisian
+6. Operasi Matematika
+   
+7. [Perulangan](8_looping/)
 
-7. Operasi Matematika
+8. Fungsi
 
-8. [Perulangan](8_looping/)
+9. Array
 
-9. Fungsi
+10. Manipulasi array
 
-10. Array
+11. Kelas
 
-11. Manipulasi array
-
-12. Kelas
-
-13. Folder berisi contoh program sederhana dengan menggunakan fungsi, rekayasa string, logika
+12. Folder berisi contoh program sederhana dengan menggunakan fungsi, rekayasa string, logika
