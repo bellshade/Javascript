@@ -1,8 +1,3 @@
-/*
- * Sebuah function boleh mengembalikan sebuah nilai ataupun tidak mengembalikan nilai.
- * Jika ingin mengembalikan sebuah nilai maka gunakan perintah return.
- */
-
 // == Contoh == //
 function nama() {
   return "Fulan";
