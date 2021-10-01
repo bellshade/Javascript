@@ -1,10 +1,4 @@
- Class adalah template untuk membuat object. Satu class mempunyai satu atau lebih properti atau fungsi.
- Satu class dapat menghasilkan banyak object. Semua object mempunyai properti dan fungsi yang sama.
-Setiap object bisa mempunyai nilai properti yang berbeda-beda.
-
- atau lebih singkatnya 
-  class merupakan kumpulan variable dan method yang dipakai sebagai blueprint atau rancangan untuk membuat sebuah object(bukan JavaScript Object).
-  # Class
+  ## Class
 
 Class adalah template untuk membuat object. Satu class mempunyai satu atau lebih properti atau fungsi.
 Satu class dapat menghasilkan banyak object. Semua object mempunyai properti dan fungsi yang sama.
@@ -12,9 +6,9 @@ Setiap object bisa mempunyai nilai properti yang berbeda-beda.
 
 1. `syntax class pada javascript`
 
- 1. gunakan keyword class
- 2. buat nama dari class setelah keyword class (dengan huruf besar di awal)
- 3. selalu masukkan method  constructor() di awalan.
+  gunakan keyword class
+  buat nama dari class setelah keyword class (dengan huruf besar di awal)
+  selalu masukkan method  constructor() di awalan.
 
 Contoh:
 
