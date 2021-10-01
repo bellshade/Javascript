@@ -10,10 +10,17 @@ class Animal {
 // disini kita bisa membuat object dengan menggunakan class yang kita buat barusan
 let myAnimal1 = new Animal("Turtle", false);
 let myAnimal2 = new Animal("Elephant", true);
+console.log(myAnimal1);
 // variabel myAnimal1 isinya menjadi seperti ini :
 // {
 //     "name": "Turtle",
 //     "isMamal": false
+// }
+console.log(myAnimal2);
+// variabel myAnimal1 isinya menjadi seperti ini :
+// {
+//     "name": "Elephant",
+//     "isMamal": true
 // }
 
 //---------------------- class method --------------------------------------
