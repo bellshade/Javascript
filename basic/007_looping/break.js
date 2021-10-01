@@ -1,6 +1,3 @@
-// Perulangan
-// Break merupakan statement untuk mengakhiri perulangan
-
 /**
  * Mencetak faktor dari n, hentikan program jika terdapat angka 21
  * @param {number} n - bilangan yang akan dicari faktornya

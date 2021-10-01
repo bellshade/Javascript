@@ -18,14 +18,12 @@ function generatePattern(n) {
 
   // untuk baris ke-1 sampai ke-n
   for (let i = 1; i <= n; i++) {
-
     // untuk kolom ke-1 sampai ke-i
     // note: jumlah kolom mengikuti baris saat itu
     //       misal: baris ke-1 mempunyai 1 kolom
     //              baris ke-2 mempunyai 2 kolom
     //              dst.
     for (let j = 1; j <= i; j++) {
-
       // jika angka lebih dari 9, kembalikan menjadi 0
       if (num > 9) {
         num = 0;
