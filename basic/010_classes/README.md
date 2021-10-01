@@ -25,7 +25,6 @@ apa itu constructor ?
     Biasanya method ini digunakan untuk inisialisasi atau mempersiapkan data untuk objek.
     jika kita tidak memasukkan method constructor pada class yang kita buat, maka javascript akan memasukkan method constructor kosong
 
-
 3. `class method`
 
 method-method di class dibuat dengan sintaks yang sama dengan sintaks method di object
