@@ -64,6 +64,12 @@ Operator yang digunakan untuk mengecek apakah nilai yang diuji bukanlah yang dii
 
 Nullish coalescing operator merupakan adalah logical operator yang mengembalikan right-hand value jika left-hand bernilai `null` atau `undefined`.
 
+## Ternary operator
+
+Ternary operator merupakan pengkondisian yang fungsinya sama seperti if else, namun penulisan syntaxnya lebih sederhana.
+
+> condition ? ifTruthy : ifFalsy
+
 ### Hint
 
 Operator ini bisa digunakan sebagai conditional statement if atau else if.
