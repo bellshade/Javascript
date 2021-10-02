@@ -28,6 +28,7 @@ Semua _script_ yang ada pada repositori ini, dapat diakses dengan cepat lewat li
   - [Looping](basic/007_looping)
   - [Function](basic/008_function)
   - [Array](basic/009_array)
+  - [Array Manipulation](basic/010_array_manipulation)
   - [Class](basic/011_classes)
 
 ### C
