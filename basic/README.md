@@ -1,6 +1,6 @@
 # Dasar - Dasar Javascript
 
-1. [Hello world](001_hello_world_/)
+1. [Hello world](001_hello_world/)
 2. [Variabel dan Tipe Data](002_variable_datatype/)
 3. [Operator](003_operator/)
 4. [String dan Rekayasa String](004_string_and_string_manipulation/)
