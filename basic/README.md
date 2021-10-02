@@ -10,5 +10,5 @@
 8. [Fungsi](008_looping/)
 9. [Array](009_array/)
 10. Manipulasi array
-11. Kelas
+11. [Kelas](011_classes/)
 12. Folder berisi contoh program sederhana dengan menggunakan fungsi, rekayasa string, logika
