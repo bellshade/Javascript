@@ -60,8 +60,12 @@ Operator yang digunakan untuk mengecek apakah salah satu nilai dari dua nilai ya
 
 Operator yang digunakan untuk mengecek apakah nilai yang diuji bukanlah yang diinginkan maksudnya adalah apa benar pernyataan itu adalah kebalikannya.
 
+## Nullish coalescing operator (??)
+
+Nullish coalescing operator merupakan adalah logical operator yang mengembalikan right-hand value jika left-hand bernilai `null` atau `undefined`.
+
 ### Hint
 
 Operator ini bisa digunakan sebagai conditional statement if atau else if.
 
-Untuk contoh kode, cek contoh untuk [operator perbandingan](comparisonOperators.js) dan [operator logika](logicalOperator.js).
+Untuk contoh kode, cek contoh untuk [operator perbandingan](comparisonOperators.js), [operator logika](logicalOperator.js), dan [nullish coalescing operator](nullishCoalescingOperator.js).
