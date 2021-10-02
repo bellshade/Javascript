@@ -16,12 +16,12 @@
  * Referensi: https://developer.mozilla.org/en-US/docs/Glossary/Falsy
  */
 
-let theme = null;
-let color = theme ?? "dark";
+const theme = null;
+const color = theme ?? "dark";
 
 console.log(color); // dark
 
-let user = "";
-let username = user ?? "admin";
+const user = "";
+const username = user ?? "admin";
 
 console.log(username); // ''
