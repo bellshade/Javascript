@@ -74,4 +74,4 @@ Ternary operator merupakan pengkondisian yang fungsinya sama seperti if else, na
 
 Operator ini bisa digunakan sebagai conditional statement if atau else if.
 
-Untuk contoh kode, cek contoh untuk [operator perbandingan](comparisonOperators.js), [operator logika](logicalOperator.js), dan [nullish coalescing operator](nullishCoalescingOperator.js).
+Untuk contoh kode, cek contoh untuk [operator perbandingan](comparisonOperators.js), [operator logika](logicalOperator.js), [nullish coalescing operator](nullishCoalescingOperator.js), dan [ternary operator](ternaryOperator.js).
