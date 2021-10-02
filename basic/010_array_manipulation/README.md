@@ -1,0 +1,137 @@
+Sebuah array bisa ditambah, dikurangi, atau diubah isinya. Operasi tersebut disebut dengan memanipulasi array.
+
+## Jenis Method Untuk Memanipulasi Array
+
+### 1. Filter
+
+Method`.filter()` akan **membuat sebuah array baru** berisi element yang sesuai dengan kondisi yang diberikan. Method ini tidak akan mengubah array yang sebelumnya.
+
+```js
+let result = array.filter(function(item, index) {
+	return true;
+})
+```
+
+- `item`: nilai dari element yang sedang diproses
+- `index`: index dari element yang sedang diproses *(optional)*
+
+**Contoh:**
+
+Mendapatkan array berisi bilangan ganjil
+
+```js
+let numbers = [1, 2, 3, 4, 5];
+let oddNum = numbers.filter(function(number) {
+	return number % 2 === 1;
+})
+
+console.log(numbers);
+// expected output: [1, 2, 3, 4, 5]
+console.log(oddNum);
+// expected output: [1, 3, 5]
+```
+
+### 2. Map
+
+Method `.map()` akan membuat array baru berisi hasil dari operasi yang diberikan.
+
+```js
+let result = array.map(function(item, index) {
+	return true;
+})
+```
+
+- `item`: nilai dari element yang sedang diproses
+- `index`: index dari element yang sedang diproses *(optional)*
+
+**Contoh:**
+
+Mengalikan semua nilai dalam array dengan 2
+
+```js
+let numbers = [1, 2, 3, 4, 5];
+let oddNum = numbers.map(function(number) {
+	return number * 2;
+})
+
+console.log(numbers);
+// expected output: [1, 2, 3, 4, 5]
+console.log(oddNum);
+// expected output: [2, 4, 6, 8, 10]
+```
+Lihat contoh lainnya di [map.js](map.js)
+
+### 3. Sort
+
+Method `.sort()` akan mengurutkan element dalam array.
+
+```js
+array.sort();
+array.sort(function(firstEl, secondEl) {
+	...
+})
+```
+
+- `firstEl`: element pertama yang akan dibandingkan
+- `secondEl`: element kedua yang akan dibandingkan
+
+**Contoh:**
+
+```js
+let numbers = [3, 2, 5, 1, 4];
+
+numbers.sort();
+console.log(numbers);
+// expected output: [1, 2, 3, 4, 5]
+```
+
+### 4. Push & Pop
+
+Method `.push()` akan **menambahkan** element baru pada akhir array, sedangkan `.pop()` akan **menghapus** element terakhir dari array. Kedua method ini akan mengubah array asli.
+
+```js
+array.push(item1, item2, ..., itemN);
+array.pop();
+```
+
+- `item`: element yang akan ditambahkan ke array
+
+**Contoh:**
+
+```js
+let numbers = [1, 2, 3, 4, 5];
+
+numbers.push(6) // menambahkan angka 6
+console.log(numbers);
+// expected output: [1, 2, 3, 4, 5, 6]
+
+numbers.pop() // menghapus angka terakhir
+console.log(numbers);
+// expected output: [1, 2, 3, 4, 5]
+```
+Lihat contoh lainnya di [push.js](push.js)
+
+### 5. Shift & Unshift
+
+Method `.unshift()` akan **menambahkan** element baru pada awal array, sedangkan `.shift()` akan **menghapus** element pertama dari array. Kedua method ini akan mengubah array asli.
+
+```js
+array.unshift(item1, item2, ..., itemN);
+array.shift();
+```
+
+- `item`: element yang akan ditambahkan ke array
+
+**Contoh:**
+
+```js
+let numbers = [1, 2, 3, 4, 5];
+
+numbers.unshift(-1, 0) // menambahkan angka -1 dan 0
+console.log(numbers);
+// expected output: [-1, 0, 1, 2, 3, 4, 5]
+
+numbers.shift() // menghapus angka pertama
+console.log(numbers);
+// expected output: [0, 1, 2, 3, 4, 5]
+```
