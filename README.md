@@ -15,18 +15,34 @@ Dipersilahkan bila ingin melakukan open pull request atau kontribusi pada reposi
 Semua _script_ yang ada pada repositori ini, dapat diakses dengan cepat lewat link berikut:
 
 ### B
-  - [Backtracking](backtracking)
+
+- [Backtracking](backtracking)
+- [Basic](basic)
+  - [Hello World](basic/001_hello_world)
+  - [Variable & Data Type](basic/002_variable_datatype)
+  - [Operator](basic/003_operator)
+  - [String](basic/004_string_and_string_manipulation)
+  - [Conditioning](basic/005_conditioning)
+  - [Arithmetic Operation](basic/006_arithmetic_operation)
+  - [Looping](basic/007_looping)
+  - [Function](basic/008_function)
+  - [Array](basic/009_array)
+  - [Class](basic/010_classes)
 
 ### C
-  - [Cipher](chiper)
-  - [Conversion](conversion)
+
+- [Cipher](chiper)
+- [Conversion](conversion)
 
 ### D
-  - [Data Structure](data_structure)
+
+- [Data Structure](data_structure)
 
 ### O
-  - [Other](other)
+
+- [Other](other)
 
 ### S
-  - [Search](search)
-  - [Sorting Algorithm](sorting_algorithm)
+
+- [Search](search)
+- [Sorting Algorithm](sorting_algorithm)
