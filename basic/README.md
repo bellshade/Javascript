@@ -1,6 +1,6 @@
 # Dasar - Dasar Javascript
 
-1. [Hello world](001_hello_world_/)
+1. [Hello world](001_hello_world/)
 2. [Variabel dan Tipe Data](002_variable_datatype/)
 3. [Operator](003_operator/)
 4. [String dan Rekayasa String](004_string_and_string_manipulation/)
@@ -10,5 +10,5 @@
 8. [Fungsi](008_looping/)
 9. [Array](009_array/)
 10. Manipulasi array
-11. Kelas
+11. [Kelas](011_classes/)
 12. Folder berisi contoh program sederhana dengan menggunakan fungsi, rekayasa string, logika

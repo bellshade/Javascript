@@ -44,24 +44,28 @@ Lakukan instalasi terlebih dahulu
 
 ```bash
 npm install
+# or yarn install
 ```
 
 Untuk memudahkan doctest, ada mode watch yang bisa digunakan. Jika file javascript di save, maka otomatis doctest berjalan.
 
 ```bash
 npm run doctest-watch
+# or yarn doctest-watch
 ```
 
 Untuk mengecek linting kode, Jalankan
 
 ```bash
 npm run lint
+# or yarn lint
 ```
 
 Kemudian, untuk menjaga struktur kode tetap rapih, jalankan prettier.
 
 ```bash
 npm run prettier
+# or yarn prettier
 ```
 
 Testing penting bagi kami untuk mengecek apakah kode kamu bisa digunakan atau tidak, jika testing gagal maka kami akan mengecek kembali.
