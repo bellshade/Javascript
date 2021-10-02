@@ -17,7 +17,7 @@ let result = array.filter(function(item, index) {
 - `item`: nilai dari element yang sedang diproses
 - `index`: index dari element yang sedang diproses *(optional)*
 
-#### Contoh
+Contoh:
 
 Mendapatkan array berisi bilangan ganjil
 
@@ -46,7 +46,7 @@ let result = array.map(function(item, index) {
 - `item`: nilai dari element yang sedang diproses
 - `index`: index dari element yang sedang diproses *(optional)*
 
-#### Contoh
+Contoh:
 
 Mengalikan semua nilai dalam array dengan 2
 
@@ -77,7 +77,7 @@ array.sort(function(firstEl, secondEl) {
 - `firstEl`: element pertama yang akan dibandingkan
 - `secondEl`: element kedua yang akan dibandingkan
 
-#### Contoh
+Contoh:
 
 ```js
 let numbers = [3, 2, 5, 1, 4];
@@ -98,7 +98,7 @@ array.pop();
 
 - `item`: element yang akan ditambahkan ke array
 
-#### Contoh
+Contoh:
 
 ```js
 let numbers = [1, 2, 3, 4, 5];
@@ -124,7 +124,7 @@ array.shift();
 
 - `item`: element yang akan ditambahkan ke array
 
-#### Contoh
+Contoh:
 
 ```js
 let numbers = [1, 2, 3, 4, 5];
