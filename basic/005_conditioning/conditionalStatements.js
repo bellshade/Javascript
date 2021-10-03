@@ -30,3 +30,25 @@ if (jam < 12) {
   // jika tidak ada syarat yang terpenuhi dari kedua blok diatas, maka blok else akan dieksekusi
   console.log("SALAH, variabel x lebih besar dari angka 10");
 }
+
+//------------switch case------------
+
+// contoh implementasi
+const buah = "Jeruk";
+
+// pertama, kita tentukan variabel apa yang akan kita cek
+switch (buah) {
+  // kita cek, apakah variabel buah berisi Apel?
+  case "Apel":
+    console.log("Apel harganya 10 ribu");
+    break;
+  // jika tidak maka lanjut ke case berikutnya
+  // apakah variabel buah berisi Nanas?
+  case "Nanas":
+    console.log("Nanas harganya 12 ribu");
+    break;
+  // jika masih tidak, maka akan mengambil dari default
+  default:
+    console.log("Jeruk sudah habis");
+    break;
+}
