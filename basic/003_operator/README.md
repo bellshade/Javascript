@@ -70,6 +70,10 @@ Ternary operator merupakan pengkondisian yang fungsinya sama seperti if else, na
 
 > condition ? ifTruthy : ifFalsy
 
+## In Operator
+
+In operator adalah operator yang berfungsi untuk mengecek sebuah property dari object serta bisa juga untuk mengecek sebuah index didalam array dan akan mengembalikan boolean.
+
 ### Hint
 
 Operator ini bisa digunakan sebagai conditional statement if atau else if.
