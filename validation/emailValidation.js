@@ -1,6 +1,6 @@
-let string = "bellshade";
-let mail = "bellshade@gmail.com";
-let pattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+const string = "bellshade";
+const mail = "bellshade@gmail.com";
+const pattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
 
 if(string.match(pattern)) {
   console.log("This is a valid email"); 
