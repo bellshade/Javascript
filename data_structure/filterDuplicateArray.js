@@ -6,8 +6,6 @@ let countries = [
   "Cambodia"
 ];
 
-countries = countries.filter(
-  (value, index, arr) => arr.indexOf(value) === index
-);
+const filteredCountry = [...new Set(countries)];
 
-console.log(countries); // ['Indonesia', 'Malaysia, 'Phillipine, 'Cambodia']
+console.log(filteredCountry); // ['Indonesia', 'Malaysia, 'Phillipine, 'Cambodia']
