@@ -1,7 +1,7 @@
-const nama = 'Bintang Nur Pradana'
-const totalkata = nama.split('').length
+const Nama = 'Bintang Nur Pradana'
+const TotalKata = Nama.split('').length
 
-if (totalkata > 8) {
+if (TotalKata > 8) {
 	console.log('Nama Anda Valid!')
 } else {
 	console.log('Minimal Nama 8 Karakter/Invalid!')
