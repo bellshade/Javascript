@@ -14,7 +14,7 @@ function getKeywords(query) {
     .split(/\s+/g) // split per word
     .filter(function (data, pos, self) {
       // remove duplicate word
-      return self.indexOf(data) == pos;
+      return self.indexOf(data) === pos;
     })
     .filter((data) => {
       // remove null character
