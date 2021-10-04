@@ -4,10 +4,10 @@
  */
 
 // tester data
-const test_data = require("./data-test.json");
+const testData = require("./data-test.json");
 
 // untuk mendapatkan array dari sebuah keyword
-function get_keywords(query) {
+function getKeywords(query) {
   return String(query)
     .toLowerCase()
     .replace(/[^a-z0-9_\s]/g, "") // only alphabet and number
@@ -35,7 +35,7 @@ function get_keywords(query) {
  * @returns
  */
 function search(array, keywords, percentage) {
-  const keyword = get_keywords(keywords);
+  const keyword = getKeywords(keywords);
   return array.filter((data) => {
     if (typeof data === "object" && !Array.isArray(data) && data !== null) {
       const keys = Object.keys(data);
@@ -60,4 +60,4 @@ function search(array, keywords, percentage) {
 }
 
 // result
-console.log(search(test_data, "is women", 40));
+console.log(search(testData, "is women", 40));
