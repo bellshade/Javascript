@@ -55,7 +55,6 @@ switch (buah) {
 
 //--------------Operator Ternary-------------
 // Contoh implementasi
-const nama = "lorem";
 function Jumlah(num) {
   /* Mendifinisikan 3 nilai
         1. Nilai pertama merupakan nilai yang akan dilakukan pengkondisian
