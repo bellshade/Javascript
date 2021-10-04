@@ -4,7 +4,7 @@
  */
 
 // tester data
-const testData = require("./dataTest.json");
+const testData = require("./data-test.json");
 
 // untuk mendapatkan array dari sebuah keyword.
 function getKeywords(query) {
