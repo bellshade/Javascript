@@ -52,3 +52,17 @@ switch (buah) {
     console.log("Jeruk sudah habis");
     break;
 }
+
+//--------------Operator Ternary-------------
+// Contoh implementasi
+const nama = "lorem";
+function Jumlah(num) {
+  /* Mendifinisikan 3 nilai
+        1. Nilai pertama merupakan nilai yang akan dilakukan pengkondisian
+        2. Nilai kedua merupakan nilai yg akan dikembalikan jika nilai pertama benar / ada 
+        3. Nilai kedua merupakan nilai yg akan dikembalikan jika nilai pertama salah / tidak ada 
+  */
+  return num ? 100 : 50;
+}
+
+console.log("Hasil Operator Ternary", "=", Jumlah(true)); // output = 100

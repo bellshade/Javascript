@@ -68,4 +68,24 @@ switch (buah) {
 }
 ```
 
+5. `Operator Ternary`
+
+Operator Ternary merupakan operator yang mendefinisikan 3 nilai, nilai pertama selalu di akhiri dengan tanda tanya (?), operator kedua dan ketiga di apit oleh tanda titik dua (:)
+
+Untuk mendefinisikan nilai pertama dari operator Ternary tidak hanya menggunakan tipe data boolean (true / false) pada nilai pertama, tetapi bisa juga dengan tipe data lain.
+
+contoh :
+
+```js
+const namaSiswa = "Budi";
+function Nilai(num) {
+  return num ? 100 : 70;
+}
+
+console.log(Nilai(true)); //  Output = 100
+console.log(Nilai(namaSiswa)); //  Output = 100
+// jika bukan variabel namaSiswa
+console.log(Nilai(!namaSiswa)); //  Output = 70
+```
+
 Lihat kode lengkapnya [disini](conditionalStatements.js).
