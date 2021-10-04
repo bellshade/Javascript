@@ -1,10 +1,10 @@
 /**
- * Search Engine untuk kebutuhan mencari data pada database atau data kita
+ * Search Engine untuk membantu kebutuhan dalam mencari data pada database atau data kita
  * Language : Javascript
  */
 
 // tester data
-const testData = require("./data-test.json");
+const testData = require("./dataTest.json");
 
 // untuk mendapatkan array dari sebuah keyword.
 function getKeywords(query) {
