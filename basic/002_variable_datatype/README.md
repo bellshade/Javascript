@@ -66,3 +66,6 @@ console.log(umur); // 15
 ```
 
 Cek file [pertama](variableAndDataTypes1.js) dan [kedua](variableAndDataTypes2.js) untuk contoh lebih lengkapnya.
+
+
+Selain itu, kita juga bisa mengecek type data sebuah variabel dengan menggunakan type of, contoh nya adalah [seperti ini](typeOf.js)
