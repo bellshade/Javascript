@@ -8,7 +8,7 @@ const timeConversion = (time) => {
         timeArr[0] = (timeArr[0] % 12) + 12;
     }  
     return timeArr.join(":");
-}
+};
 console.log(timeConversion('11:00:59PM'));
 
 /* Penjelasan ada di bawah ini
@@ -26,9 +26,9 @@ const timeConversion = (time) => {
     }  
     return timeArr.join(":");
     //Mengkonversi array menjadi string dan sudah berupa format time 24jam
-}
+};
 
-console.log(timeConversion('11:00:59PM')); 
+console.log(timeConversion("11:00:59PM")); 
 //Output menghasilkan 23:00:59
 
 */
