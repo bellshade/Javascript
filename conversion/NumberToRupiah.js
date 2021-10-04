@@ -14,4 +14,4 @@ function numberToRupiah(angka) {
   console.log(result);
 }
 
-numberToRupiah(10000) // Rp. 10.000
+numberToRupiah(10000); // Rp. 10.000
