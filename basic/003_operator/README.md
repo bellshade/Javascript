@@ -74,8 +74,12 @@ Ternary operator merupakan pengkondisian yang fungsinya sama seperti if else, na
 
 In operator adalah operator yang berfungsi untuk mengecek sebuah property dari object serta bisa juga untuk mengecek sebuah index didalam array dan akan mengembalikan boolean.
 
+## Optional Chaining Operator
+
+Optional chaining operator merupakan cara yang aman untuk mengambil nilai dari object, karena tidak menimbulkan error apabila kita mengakses property yang tidak tersedia di object tersebut dan akan mengembalikan nilai undefined.
+
 ### Hint
 
 Operator ini bisa digunakan sebagai conditional statement if atau else if.
 
-Untuk contoh kode, cek contoh untuk [operator perbandingan](comparisonOperators.js), [operator logika](logicalOperator.js), [nullish coalescing operator](nullishCoalescingOperator.js), [ternary operator](ternaryOperator.js), dan [in operator](inOperator.js).
+Untuk contoh kode, cek contoh untuk [operator perbandingan](comparisonOperators.js), [operator logika](logicalOperator.js), [nullish coalescing operator](nullishCoalescingOperator.js), [ternary operator](ternaryOperator.js), [in operator](inOperator.js), [optional chaining operator](optionalChainingOperator.js).
