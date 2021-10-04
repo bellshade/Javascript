@@ -14,7 +14,7 @@ function getKeywords(query) {
     .split(/\s+/g) // split per word
     .filter(function (data, pos, self) {
       // remove duplicate word
-      return self.indexOf(data) === pos;
+      return self.indexOf(data) === pos
     })
     .filter((data) => {
       // remove null character
@@ -42,18 +42,13 @@ function search(array, keywords, percentage) {
       const match = [];
       for (let i = 0; i < keys.length; i++) {
         const key = keys[i];
-        if (
-          keyword.some((kw) => {
-            return String(data[key]).includes(kw);
-          })
-        ) {
+        if (keyword.some((kw) => {
+          return String(data[key]).includes(kw);
+        })) {
           match.push(key);
         }
       }
-      return (
-        parseFloat(((match.length / keys.length) * 100).toFixed(2)) >=
-        percentage
-      );
+      return (parseFloat(((match.length / keys.length) * 100).toFixed(2)) >= percentage);
     }
     return false;
   });
