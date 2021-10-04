@@ -9,7 +9,7 @@ const timeConversion = (time) => {
     }  
     return timeArr.join(":");
 };
-console.log(timeConversion('11:00:59PM'));
+console.log(timeConversion("11:00:59PM"));
 
 /* Penjelasan ada di bawah ini
 
