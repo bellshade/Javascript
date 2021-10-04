@@ -66,3 +66,10 @@ console.log(umur); // 15
 ```
 
 Cek file [pertama](variableAndDataTypes1.js) dan [kedua](variableAndDataTypes2.js) untuk contoh lebih lengkapnya.
+
+Selain itu, kita juga bisa mengecek type data sebuah variabel dengan menggunakan typeOf.
+### typeOf
+
+typeOf adalah salah satu jenis operator java script yang dapat digunakan untuk mengecek/melihat tipe data dari sebuah variabel 
+
+contoh dari penggunaan typeOf adalah [ini](typeOf.js)
