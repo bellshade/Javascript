@@ -29,7 +29,6 @@ console.log(y);
 /* ReferenceError: Cannot access 'y' before initialization */
 ```
 
-
 ## let
 `let` adalah sebuah kata kunci untuk mendeklarasikan variabel dengan lingkup blok.
 
