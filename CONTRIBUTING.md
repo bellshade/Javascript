@@ -68,7 +68,7 @@ npm run prettier
 # or yarn prettier
 ```
 
-Jika tidak ada prettier di _code editor_, bisa juga menjalanakn prettier dengan mode watch.
+Jika tidak ada prettier di _code editor_, bisa juga menjalankan prettier dengan mode watch.
 
 ```bash
 npm run prettier-watch
