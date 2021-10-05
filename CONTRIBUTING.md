@@ -68,6 +68,13 @@ npm run prettier
 # or yarn prettier
 ```
 
+Jika tidak ada prettier di _code editor_, bisa juga menjalanakn prettier dengan mode watch.
+
+```bash
+npm run prettier-watch
+# or yarn prettier-watch
+```
+
 Testing penting bagi kami untuk mengecek apakah kode kamu bisa digunakan atau tidak, jika testing gagal maka kami akan mengecek kembali.
 
 ## Pull Request
@@ -100,10 +107,12 @@ Berikut adalah jenis - jenis pesan commit.
 Referensi:
 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
-### Contoh penggunaan 
+### Contoh penggunaan
+
 ```bash
 git commit -m "docs: menambahkan dokumentasi"
 ```
+
 ```bash
 git commit -m  "feat: menambahkan algoritma terbaru"
 ```
