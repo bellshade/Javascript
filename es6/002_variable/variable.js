@@ -23,7 +23,8 @@ console.log(z); // 80
 console.log(minuman); // jus
 
 // Variabel const tidak dapat diinisialisasi ulang nilainya
-minuman = "susu";
+// minuman = "susu";
 
 // Ketika ditampilkan akan error
-console.log(minuman); // TypeError: Assignment to constant variable
+// console.log(minuman); 
+// TypeError: Assignment to constant variable
