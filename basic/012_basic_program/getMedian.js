@@ -3,17 +3,34 @@
 /*
  * Algortima:
  * 1. Mengurutkan array dari terkecil ke terbesar
+ *     -- Pada contoh kali ini menggunakan algoritma pengurutan yang bernama bubbleSort, untuk lebih detailnya bisa kunjungi folder sorting_algorithm
  * 2. Mengambil nilai tengah dari array yang sudah diurutkan dengan cara:
  *     -- Jika panjang / banyaknya array adalah genap, maka nilai tengahnya = (panjang array dibagi dua) ditambah (panjang array dibagi dua dikurang satu), lalu hasilnya dibagi dua
  *     -- Jika panjang / banyaknya array adalah ganjil, maka nilai tengahnya = panjang array dibagi dua, lalu dibulatkan kebawah
  */
 
+function bubbleSort(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length - i - 1; j++) {
+      // Membandingkan elemen j dengan elemen j + 1(1 elemen didepan j)
+      if (arr[j] > arr[j + 1]) {
+        // Jika j lebih besar maka tukar posisi dengan j + 1(1 elemen didepan j)
+        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+      }
+    }
+  }
+  return arr;
+}
+
 const getMedian = (arr) => {
-  arr.sort((a, b) => a - b);
-  if (arr.length % 2 === 0) {
-    return (arr[arr.length / 2] + arr[arr.length / 2 - 1]) / 2;
+  const sortedArr = bubbleSort(arr);
+  if (sortedArr.length % 2 === 0) {
+    return (
+      (sortedArr[sortedArr.length / 2] + sortedArr[sortedArr.length / 2 - 1]) /
+      2
+    );
   } else {
-    return arr[Math.floor(arr.length / 2)];
+    return sortedArr[Math.floor(sortedArr.length / 2)];
   }
 };
 

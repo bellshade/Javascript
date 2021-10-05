@@ -15,7 +15,7 @@
 function getMode(arr) {
   const data = {};
   arr.forEach((num) => {
-    if (data[num] === undefined) {
+    if (!data[num]) {
       data[num] = 0;
     }
     data[num]++;
