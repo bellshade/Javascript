@@ -1,8 +1,10 @@
 // Menentukan mean/rata-rata dari sebuah kumpulan nilai (array)
 
-// Algoritma:
-// 1. Menjumlahkan seluruh nilai yang ada di dalam array
-// 2. Membagi hasil penjumlahan sebelumnya dengan banyaknya nilai di dalam array
+/*
+ * Algoritma:
+ * 1. Menjumlahkan seluruh nilai yang ada di dalam array
+ * 2. Membagi hasil penjumlahan sebelumnya dengan banyaknya nilai di dalam array
+ */
 
 const getMean = (arr) => {
   const sum = arr.reduce((acc, value) => acc + value);
