@@ -1,3 +1,4 @@
+//Anagram adalah sebuah kata yang dapat membentuk kata lain ataupun kalimat dengan huruf yang sama
 const anagramCheck = (kata1, kata2) => {
   let found = 0;
 
