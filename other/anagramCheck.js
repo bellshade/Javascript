@@ -16,12 +16,12 @@ const anagramCheck = (kata1, kata2) => {
       }
     }
     //Jika semua kata memiliki kesamaan maka found akan memiliki nilai yang sama dengan panjang kata tersebut
-    if (found == kata1.length) {
+    if (found === kata1.length) {
       return "Anagram";
     } else {
       return "Bukan Anagram";
     }
-    
+
   } else {
     return "Bukan Anagram";
   }
