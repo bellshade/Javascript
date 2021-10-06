@@ -1,7 +1,7 @@
 // Jangan gunakan var, gunakan let untuk melakukan pengulangan
 
 // i artinya index
-// kode dibawah ini akan berjalan 5 kali
+// kode di bawah ini akan berjalan 5 kali
 // yang dimulai dari angka 0
 for (let i = 0; i < 5; i++) {
   console.log(i);
@@ -61,7 +61,7 @@ Hasil:
 */
 
 // while loop biasa
-// Kode dibawah ini akan berjalan bedasarkan
+// Kode di bawah ini akan berjalan berdasarkan
 // paramater yang diberikan.
 // Jika paramater berupa nilai true maka
 // while loop akan terus dijalankan.

@@ -15,7 +15,7 @@ Semua boleh ikut berkontribusi walaupun hal kecil dengan pengecualian sebagai be
 
 ## Apa Itu Algoritma?
 
-Algoritma adalah langkah-langkah untuk menyelesaikan suatu pekerjaan dimana terdiri dari 3 bagian utama, yaitu:
+Algoritma adalah langkah-langkah untuk menyelesaikan suatu pekerjaan di mana terdiri dari 3 bagian utama, yaitu:
 
 - Input/masukan, sebelum menjalankan sebuah algoritma maka hal yang pertama harus dilakukan adalah menerima masukan, input dapat berasal dari pengguna ataupun dari langkah sebelumnya.
 - Proses, bagian utama dari algoritma yang melakukan pengolahan input yang akan menghasilkan output.

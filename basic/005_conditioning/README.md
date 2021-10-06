@@ -1,10 +1,10 @@
 # Pengkondisian
 
-Kegunaan dari pengkondisian adalah memberi tau program blok kode mana yang bisa di di eksekusi/jalankan. Dalam javascript terdapat tiga macam pengkondisian, yaitu:
+Kegunaan dari pengkondisian adalah memberi tau program blok kode mana yang bisa dieksekusi/dijalankan. Dalam javascript terdapat tiga macam pengkondisian, yaitu:
 
 1. `if`
 
-Didalam bahasa pemrograman javascript ada sebuah cara dimana kita bisa mengeksekusi sebuah kode, jika syarat yang kita tentukan sudah terpenuhi (`true`) yakni dengan menggunakan statement if biasanya syarat di if statement menggunakan comparison (perbandingan) operator ataupun logical (logika) operator kode yang didalam if statement akan dieksekusi hanya jika syarat mengeluarkan nilai `true`.
+Di dalam bahasa pemrograman javascript ada sebuah cara di mana kita bisa mengeksekusi sebuah kode, jika syarat yang kita tentukan sudah terpenuhi (`true`) yakni dengan menggunakan statement if biasanya syarat di if statement menggunakan comparison (perbandingan) operator ataupun logical (logika) operator kode yang di dalam if statement akan dieksekusi hanya jika syarat mengeluarkan nilai `true`.
 
 Contoh:
 
@@ -16,7 +16,7 @@ if (true) {
 
 2. `else`
 
-Javascript juga memiliki sebuah cara untuk mengeksekusi sebuah kode jika syarat yang kita tentukan tidak terpenuhi (`false`) yakni dengan menggunakan statement else jika kode didalam if tidak dieksekusi karena syarat tidak terpenuhi atau mengeluarkan nilai false, maka kode didalam blok else akan dieksekusi.
+Javascript juga memiliki sebuah cara untuk mengeksekusi sebuah kode jika syarat yang kita tentukan tidak terpenuhi (`false`) yakni dengan menggunakan statement else jika kode di dalam if tidak dieksekusi karena syarat tidak terpenuhi atau mengeluarkan nilai false, maka kode di dalam blok else akan dieksekusi.
 
 Contoh:
 
@@ -48,7 +48,7 @@ if (tanggal < 5) {
 
 4. `switch case`
 
-Ada alternatif lain untuk melakukan pengecekan ber-urut yaitu dengan switch case. Kita bisa menentukan variabel mana yang akan kita cek, lalu tambahkan beberapa case dibawahnya untuk mengecek isi dari variabel yang kita tentukan di dalam switch tadi. Kita juga bisa memberikan kondisi default sama halnya dengan else di atas.
+Ada alternatif lain untuk melakukan pengecekan ber-urut yaitu dengan switch case. Kita bisa menentukan variabel mana yang akan kita cek, lalu tambahkan beberapa case di bawahnya untuk mengecek isi dari variabel yang kita tentukan di dalam switch tadi. Kita juga bisa memberikan kondisi default sama halnya dengan else di atas.
 
 Contoh:
 

@@ -9,7 +9,7 @@
 // const errorKetiga = ````;
 
 // ==== Jenis Deklarasi === //
-// const kutipSatu = 'Tulisan ini didalam kutip satu';
+// const kutipSatu = 'Tulisan ini di dalam kutip satu';
 // console.log(kutipSatu);
 
 const kutipDua = "Ini adalah tulisan";
@@ -22,8 +22,8 @@ console.log(templateLiteral);
 const kutipSatuDidalamnya = "Nama benda ini adalah 'Sapu'";
 console.log(kutipSatuDidalamnya);
 
-const kutipDuaDidalamnya = 'Didalam kutip satu ini terdapat ""';
+const kutipDuaDidalamnya = 'Di dalam kutip satu ini terdapat ""';
 console.log(kutipDuaDidalamnya);
 
-// const kutipDuaDouble = "Kutip dua didalam \"Kutip Dua\""
+// const kutipDuaDouble = "Kutip dua di dalam \"Kutip Dua\""
 // console.log(kutipDuaDouble);

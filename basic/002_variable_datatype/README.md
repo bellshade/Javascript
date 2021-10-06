@@ -2,7 +2,7 @@
 
 Apa itu variabel dalam bahasa pemrograman ?
 
-Variabel adalah tempat penyimpanan dimana penyimpanan itu diberi nama, dimana nama yang digunakan harus unik.
+Variabel adalah tempat penyimpanan di mana penyimpanan itu diberi nama, di mana nama yang digunakan harus unik.
 
 ## Jenis-Jenis Mendeklarasikan Variabel
 

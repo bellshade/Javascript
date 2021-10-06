@@ -1,14 +1,14 @@
 // Mengecek apakah sesuatu itu ada dalam sebuah array
 let anggotaKeluarga = ["ibu", "ayah", "anak"];
 
-// Semua yang dibawah ini hasilnya akan true
+// Semua yang di bawah ini hasilnya akan true
 console.log(anggotaKeluarga.includes("ayah"));
 console.log(anggotaKeluarga.includes("ibu"));
 console.log(anggotaKeluarga.includes("anak"));
 
 console.log(anggotaKeluarga.includes("kakek")); // false
 
-// parameter kedua adalah index dimana pencarian harus dimulai
+// parameter kedua adalah index di mana pencarian harus dimulai
 console.log(anggotaKeluarga.includes("ibu", 0)); // true
 
 // "ibu" dimulai dari index 0, jika index di set 1 maka hasilnya false

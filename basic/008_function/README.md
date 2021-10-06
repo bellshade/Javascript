@@ -1,6 +1,6 @@
 ## Fungsi
 
-Function (fungsi) adalah sebuah sub-program / pecahan code yang dapat dipanggil berulang kali dimanapun dan kapanpun. Function digunakan agar program yang dibuat lebih efisien dan mudah untuk dibaca, sehingga akan lebih mudah dalam menangani error.
+Function (fungsi) adalah sebuah sub-program / pecahan code yang dapat dipanggil berulang kali di manapun dan kapanpun. Function digunakan agar program yang dibuat lebih efisien dan mudah untuk dibaca, sehingga akan lebih mudah dalam menangani error.
 
 ### Macam-Macam Function
 

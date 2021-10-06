@@ -72,7 +72,7 @@ Ternary operator merupakan pengkondisian yang fungsinya sama seperti if else, na
 
 ## In Operator
 
-In operator adalah operator yang berfungsi untuk mengecek sebuah property dari object serta bisa juga untuk mengecek sebuah index didalam array dan akan mengembalikan boolean.
+In operator adalah operator yang berfungsi untuk mengecek sebuah property dari object serta bisa juga untuk mengecek sebuah index di dalam array dan akan mengembalikan boolean.
 
 ## Optional Chaining Operator
 
