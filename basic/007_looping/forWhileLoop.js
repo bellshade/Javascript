@@ -31,8 +31,8 @@ Hasil:
 */
 
 // for of
-const buah = ['Anggur', 'Apel', 'Pepaya', 'Nanas', 'Jeruk']
-for (const x of buah){
+const buah2 = ['Anggur', 'Apel', 'Pepaya', 'Nanas', 'Jeruk']
+for (const x of buah2){
   console.log(x)
 }
 /*
@@ -46,8 +46,8 @@ Jeruk
 */
 
 // for of dengan entries
-const buah = ['Anggur', 'Apel', 'Pepaya', 'Nanas', 'Jeruk']
-for (const [n, x] of buah.entries()){
+const buah3 = ['Anggur', 'Apel', 'Pepaya', 'Nanas', 'Jeruk']
+for (const [n, x] of buah3.entries()){
   console.log(`${+n + 1}. ${x}`)
 }
 /*
