@@ -40,6 +40,13 @@ Semua _script_ yang ada pada repositori ini, dapat diakses dengan cepat lewat li
 
 - [Data Structure](data_structure)
 
+### E
+
+- [ES6](es6)
+  - [Introduction](es6/001_introduction)
+  - [Variable](es6/002_variable)
+  - [Arrow Function](es6/003_arrow_function)
+
 ### O
 
 - [Other](other)
