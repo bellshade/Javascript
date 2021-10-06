@@ -20,7 +20,7 @@ console.log(jualBuah()); // Output : Buah undifiend dengan berat undifiend, di p
 
 // Menggunakan Default Parameter
 function outfit(baju = "Erigo", celana = "Carvil", sepatu = "Ventela") {
-  return `Hari ni, saya menggunakan baju dari ${baju}, celana dari ${celana}, dan sepatu dari ${sepatu}`;
+  return `Hari ini, saya menggunakan baju dari ${baju}, celana dari ${celana}, dan sepatu dari ${sepatu}`;
 }
 
 console.log(outfit("Uniqlo", "Levis", "Nike"));
