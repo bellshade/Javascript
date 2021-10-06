@@ -1,6 +1,6 @@
 # Default Parameter
 
-`Default parameter` memungkinkan untuk memberikan `value`/nilai pengganti yang diberikan ke sebuah fungsi, apabila fungsi tersebut tidak mendapatkan argument pada parameter tersebut, maka argument akan memberikan nilai `default` (`undifined`).
+`Default parameter` memungkinkan untuk memberikan `value`/nilai pengganti yang diberikan ke sebuah fungsi, apabila fungsi tersebut tidak mendapatkan argument pada parameter tersebut, maka argument akan memberikan nilai `default` (`undefined`).
 
 ```javascript
 // ES5
