@@ -43,6 +43,12 @@ Merupakan tipe data yang mempunyai pasangan key dan value. Maksud dari key adala
 
 Object ini menggunakan kurung kurawal ({}) untuk menyimpan pasangan dari key dan value.
 
+### typeOf
+
+`typeOf` adalah salah satu jenis operator java script yang dapat digunakan untuk mengecek/melihat tipe data dari sebuah variabel.
+
+contoh dari penggunaan typeOf adalah [ini](typeOf.js)
+
 ### Hint
 
 Jika mengandai-andai apa itu null dan undefined, bayangkan sebuah tempat tisu toilet yang lengkap.

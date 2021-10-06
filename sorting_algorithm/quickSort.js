@@ -19,9 +19,10 @@ Hasil        [3, 4, 5, 6, 8]
 =============================================
 */
 
-
 function partisi(array, kiri, kanan) {
-  let poros = array[Math.floor((kanan + kiri) / 2)], i = kiri, j = kanan;
+  let poros = array[Math.floor((kanan + kiri) / 2)],
+    i = kiri,
+    j = kanan;
 
   while (i <= j) {
     while (array[i] < poros) {

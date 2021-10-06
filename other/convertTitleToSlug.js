@@ -13,7 +13,6 @@
  di sini saya akan memperlihatkan 3 cara menconvert title ke slug dengan javascript
 */
 
-
 const title = "Convert Title To Slug";
 
 // menggunakan split, join, dan toLowerCase

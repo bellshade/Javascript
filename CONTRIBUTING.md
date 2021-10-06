@@ -2,11 +2,11 @@
 
 ## Kontributor
 
-Kami sangat senang anda telah ikut berkontribusi dalam implementasi algortima, struktur data atau memperbaiki error.
+Kami sangat senang dan berterima kasih bila anda ikut berkontribusi dalam repositori ini.
 Semua boleh ikut berkontribusi walaupun hal kecil dengan pengecualian sebagai berikut:
 
 - Hasil pekerjaan kamu adalah buatan kamu sendiri dan tidak ada hak cipta dari orang lain.
-  - Jika kami menemukan kesamaan maka kami tidak `merged`.
+  - Jika ditemukan kesamaan, maka tidak akan kami `merge`.
 - Hasil kerja kamu akan berlisensi [MIT](LICENSE) ketika permintaan pull kamu sudah di merged.
 - Hasil kerja kamu wajib mengikuti standar dan style koding dari kami.
 - Penggunaan nama file bersifat `camelCase` dan berlaku juga untuk variable dan identifier.
@@ -23,7 +23,7 @@ Algoritma adalah langkah-langkah untuk menyelesaikan suatu pekerjaan dimana terd
 
 Algoritma harus dikemas sedemikian rupa sehingga memudahkan pembaca untuk memasukkannya ke dalam program yang lebih besar.
 
-Algoritma harus memiliki:
+Algoritma harus:
 
 - Memiliki nama kelas dan fungsi intuitif yang memperjelas tujuannya bagi pembaca
 - Menggunakan konvensi penamaan Javascript dan nama variabel intuitif untuk memudahkan pemahaman
@@ -68,6 +68,13 @@ npm run prettier
 # or yarn prettier
 ```
 
+Jika tidak ada prettier di _code editor_, bisa juga menjalankan prettier dengan mode watch.
+
+```bash
+npm run prettier-watch
+# or yarn prettier-watch
+```
+
 Testing penting bagi kami untuk mengecek apakah kode kamu bisa digunakan atau tidak, jika testing gagal maka kami akan mengecek kembali.
 
 ## Pull Request
@@ -87,12 +94,28 @@ git commit -m "add: menambahkan algoritma baru"
 
 - Lakukan push ke branch kamu dan kemudian open pull request
 
-### Saran Pesan Commit
+### Pesan Commit
 
-- `add` untuk menambah algoritma atau tambahan lainnya
-- `fix` untuk mengubah algoritma yang sudah ada atau memperbaiki
-- `docs` untuk mengubah atau membuat dokumentasi
-- `style` untuk mengubah atau memperbaiki style kode untuk contohnya bisa dilihat pada commit yang diatas
+Pesan / message commit harus mengikuti conventional commit. Kami menggunakan bot label agar tidak susah dalam labeling.
+Berikut adalah jenis - jenis pesan commit.
+
+- `fix:` untuk memperbaiki bug (label `bug`).
+- `feat:` untuk menambahkan algoritma terbaru (label `enhancement`).
+- `docs:` untuk menambahkan dokumentasi (label `documentation`).
+- `fix(UnknownScope):` memperbaiki algoritma yang sudah ada (label `fix`).
+
+Referensi:
+[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+
+### Contoh penggunaan
+
+```bash
+git commit -m "docs: menambahkan dokumentasi"
+```
+
+```bash
+git commit -m  "feat: menambahkan algoritma terbaru"
+```
 
 Pull request `merged` jika:
 
