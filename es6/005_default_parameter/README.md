@@ -16,8 +16,8 @@ console.log(penjumlahan()); //NaN
 
 `console.log` Ketiga menghasilkan output `NaN` / `Not a Number` karena parameter _a_ tidak memiliki nilai sedangkan pada parameter _b_ memiliki operator logika `OR` atau `||` pada fungsi penjumlahan. Artinya parameter b akan diset ke _b_ atau 1.
 
-Kita ingat sebelumnya, jika parameter tidak memiliki nilai, maka nilai yang akan diberikan ke argumentnya adalah `undifined`. Sehingga `console.log` ketiga berjalan sebagai berikut :
-`undifined + 1`
+Kita ingat sebelumnya, jika parameter tidak memiliki nilai, maka nilai yang akan diberikan ke argumentnya adalah `undefined`. Sehingga `console.log` ketiga berjalan sebagai berikut :
+`undefined + 1`
 Sehingga output yang dihasilkan adalah `NaN`.
 
 ```javascript
