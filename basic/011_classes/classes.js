@@ -41,4 +41,4 @@ class Car {
 // membuat objek di class Car dengan nama mobil : Ford , dan tahun mobil dibuat : 2014
 let myCar = new Car("Ford", 2014);
 // jika kita console.log seperti ini
-console.log(myCar.age()); // mengeluarkan angka umur mobil yang diambil dari fungsi age didalam class Car
+console.log(myCar.age()); // mengeluarkan angka umur mobil yang diambil dari fungsi age di dalam class Car

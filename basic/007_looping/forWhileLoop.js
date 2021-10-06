@@ -1,7 +1,7 @@
 // Jangan gunakan var, gunakan let untuk melakukan pengulangan
 
 // i artinya index
-// kode dibawah ini akan berjalan 5 kali
+// kode di bawah ini akan berjalan 5 kali
 // yang dimulai dari angka 0
 for (let i = 0; i < 5; i++) {
   console.log(i);
@@ -13,8 +13,55 @@ for (let i = 1; i <= 10; i++) {
   console.log(i);
 }
 
+// Bentuk "for" yang lain
+
+// for in
+const buah = ['Anggur', 'Apel', 'Pepaya', 'Nanas', 'Jeruk']
+for (const n in buah){
+  console.log(`${+n + 1}. ${buah[n]}`)
+}
+/*
+Hasil:
+
+1. Anggur
+2. Apel
+3. Pepaya
+4. Nanas
+5. Jeruk
+*/
+
+// for of
+const buah2 = ['Anggur', 'Apel', 'Pepaya', 'Nanas', 'Jeruk']
+for (const x of buah2){
+  console.log(x)
+}
+/*
+Hasil:
+
+Anggur
+Apel
+Pepaya
+Nanas
+Jeruk
+*/
+
+// for of dengan entries
+const buah3 = ['Anggur', 'Apel', 'Pepaya', 'Nanas', 'Jeruk']
+for (const [n, x] of buah3.entries()){
+  console.log(`${+n + 1}. ${x}`)
+}
+/*
+Hasil:
+
+1. Anggur
+2. Apel
+3. Pepaya
+4. Nanas
+5. Jeruk
+*/
+
 // while loop biasa
-// Kode dibawah ini akan berjalan bedasarkan
+// Kode di bawah ini akan berjalan berdasarkan
 // paramater yang diberikan.
 // Jika paramater berupa nilai true maka
 // while loop akan terus dijalankan.

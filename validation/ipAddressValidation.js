@@ -33,7 +33,7 @@ console.log(isValidIpAddress(anotherIpAdress));
  * Variable anotherIpAddress berisi nilai IP Address yang tidak valid
  *
  * Fungsi isValidIpAddress() menerima parameter berupa String IP Address
- * didalam fungsi tersebut terdapat berbagai pengecekan
+ * di dalam fungsi tersebut terdapat berbagai pengecekan
  *
  * 1. Variable splitted berisi parameter ipAddress yang di pecah menjadi array berdasarkan . (dot / titik) menggunakan fungsi split()
  * untuk dokumentasi split() bisa di buka di https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split?retiredLocale=id

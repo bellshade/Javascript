@@ -3,8 +3,8 @@
  *
  *
  * In operator adalah sebuah operator yang digunakan untuk mengecek sebuah properti dari sebuah objek.
- * Jika properti ada didalam objek maka akan mengembalikan boolean true dan sebaliknya.
- * Selain itu in operator juga bisa digunakan untuk mengecek index didalam array.
+ * Jika properti ada di dalam objek maka akan mengembalikan boolean true dan sebaliknya.
+ * Selain itu in operator juga bisa digunakan untuk mengecek index di dalam array.
  *
  * Note:
  * - In operator hanya mengecek apakah property atau index ada atau tidak

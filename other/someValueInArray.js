@@ -17,7 +17,7 @@ console.log(isiDapurTiga.some((isi) => isi === "sodet")); // true
 console.log(isiDapurSatu.some((isi) => isiDapurDua.includes(isi))); // true
 console.log(isiDapurDua.some((isi) => isiDapurSatu.includes(isi))); // true
 
-// Semua yang dibawah ini hasilnya akan false
+// Semua yang di bawah ini hasilnya akan false
 console.log(isiDapurTiga.some((isi) => isiDapurSatu.includes(isi)));
 console.log(isiDapurTiga.some((isi) => isiDapurDua.includes(isi)));
 

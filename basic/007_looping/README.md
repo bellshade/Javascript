@@ -1,6 +1,6 @@
 ## Pengulangan (Looping)
 
-Looping dalam bahasa pemrograman manapun itu melakukan tugas yang berulang bedasarkan kondisi yang diberikan.
+Looping dalam bahasa pemrograman manapun itu melakukan tugas yang berulang berdasarkan kondisi yang diberikan.
 
 ### Jenis-Jenis Looping
 
@@ -12,7 +12,7 @@ Dalam JavaScript terdapat beberapa fungsi looping, diantaranya:
 
 ```
 for(initial, expressionCondition, increment) {
-  // kode didalam sini
+  // kode di dalam sini
 }
 ```
 
@@ -34,7 +34,7 @@ Jika `for loop` berjalan dengan cara mengikuti instruksi tetap, `while loop` ini
 
 ```
 while (boolean) {
-  // kode didalam sini
+  // kode di dalam sini
 }
 ```
 
@@ -54,7 +54,7 @@ while (angka < 5) {
 
 3. `dohile` loop
 
-Pengulangan yang dilakukan `do while loop` ini mirip dengan `while` loop, tetapi ada satu perbedaan ya itu `do` dimana didalamnya akan tetap di eksekusi. Selanjutnya akan menjalankan instruksi `while`. Instruksi didalam `do` akan tetap dijalankan oleh `while` dibawahnya.
+Pengulangan yang dilakukan `do while loop` ini mirip dengan `while` loop, tetapi ada satu perbedaan ya itu `do` di mana didalamnya akan tetap di eksekusi. Selanjutnya akan menjalankan instruksi `while`. Instruksi di dalam `do` akan tetap dijalankan oleh `while` di bawahnya.
 
 ```
 do {

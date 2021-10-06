@@ -1,6 +1,6 @@
 /* eslint eqeqeq: "off"*/
 /**
- * Kode dibawah ini beberapa diberi komentar karena
+ * Kode di bawah ini beberapa diberi komentar karena
  * alasan code quality. Matikan komentar pada baris
  * 14, 15, 19, dan 20 untuk melihat hasil keluarannya.
  *
