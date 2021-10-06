@@ -10,7 +10,9 @@ function isPrime(num) {
 
   //Didalam perulangan berikut bilangan tersebut akan dicek apakah bilangan tersebut habis dibagi dengan bilangan lainnya
   for (var i = 2; i < num; i++) {
-    if (num % i === 0) return "Bukan Bilangan Prima";
+    if (num % i === 0) {
+      return "Bukan Bilangan Prima";
+    }
   }
   //Jika perulangan/kondisi diatas tidak memenuhi maka akan return "Bilangan Prima"
   return "Bilangan Prima";
