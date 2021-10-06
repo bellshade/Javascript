@@ -1,5 +1,5 @@
 // == let ==
-// Mendeklarasikan dan menginisialisasi variabel 
+// Mendeklarasikan dan menginisialisasi variabel
 let y = 50;
 let benda = "laptop";
 
@@ -26,5 +26,5 @@ console.log(minuman); // jus
 // minuman = "susu";
 
 // Ketika ditampilkan akan error
-// console.log(minuman); 
+// console.log(minuman);
 // TypeError: Assignment to constant variable
