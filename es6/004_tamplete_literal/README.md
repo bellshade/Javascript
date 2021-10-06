@@ -1,8 +1,8 @@
 # Template Literal
 
-`Template literal` adalah cara alternatif untuk menyisipkan sebuah ekpresi pada syntax `Javascript`.
+`Template literal` adalah cara alternatif untuk menyisipkan sebuah ekspresi pada syntax `Javascript`.
 
-Jika pada syntax `es5 (commonjs)` kita masih menggunakan tanda `+` untuk memisahkan sebuah ekpresi atau penggambungan string
+Jika pada syntax `es5 (commonjs)` kita masih menggunakan tanda `+` untuk memisahkan sebuah ekspresi atau penggambungan string
 
 contoh: 
 
@@ -13,7 +13,7 @@ let say = "Selamat Pagi";
 console.log("Halo Sandhika, " + say);
 ```
 
-Dengan adanya `Template Literal` kita bisa mengkombinasikan langsung sebuah ekpresi di dalam string, bahkan kita juga bisa membuat multilane menggunakan `Template Literal`, dan masih banyak lagi kegunaan lainnya.
+Dengan adanya `Template Literal` kita bisa mengkombinasikan langsung sebuah ekspresi di dalam string, bahkan kita juga bisa membuat multiline menggunakan `Template Literal`, dan masih banyak lagi kegunaan lainnya.
 
 Syntax Template Literal cukup menggunakan tanda `backtik` lalu di dalam nya menggunakan tanda `${}`
 
@@ -45,4 +45,3 @@ console.log(`5 + 10 hasilnya adalah ${5+10}`); // 5 + 10 hasilnya adalah 15
 ```
 
 Referensi: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
-
