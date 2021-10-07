@@ -26,7 +26,7 @@ const person = {
 
 console.log(Object.values(person)); // [ "John Doe", 24, "male" ]
 ```
-Contoh penggunaan: [Object.keys()](objectValues.js)
+Contoh penggunaan: [Object.values()](objectValues.js)
 
 ## Object.entries()
 Method ini mengembalikan array yang berpasangan antara key dan value dari object yang diberikan.
