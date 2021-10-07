@@ -58,4 +58,4 @@ const object2 = {
 
 console.log(Object.assign(object1, object2)); // { firstName: "Brendan", lastName: "Eich" }
 ```
-Contoh penggunaan: [Object.assign()](objectEntries.js)
+Contoh penggunaan: [Object.assign()](objectAssign.js)
