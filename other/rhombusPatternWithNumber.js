@@ -36,34 +36,34 @@
 
 function rhombusPattern(num) {
 
-  let num1 = []
-  let num2 = []
-  let num3 = []
-  let num4 = []
-  let line = "-----"
+  let num1 = [];
+  let num2 = [];
+  let num3 = [];
+  let num4 = [];
+  let line = "-----";
 
   // Looping untuk mengisi Array dengan maksimal nilai sesuai dengan input
   for (let i = 0; i < num; i++) {
     num1.unshift(i+1); // fungsi unshift dilakukan untuk memasukkan nilai kedalam array pada bagian awal array tersebut dengan output yang diharapkan adalah [9,8,7,6,5,4,3,2,1]
     num2.push(i+1); // fungsi push dilakukan untuk memasukkan nilai kedalam array pada bagian akhir array tersebut dengan output yang diharapkan adalah [1,2,3,4,5,6,7,8,9]
-    num3.push(' '); // fungsi push ini dilakukan untuk memasukkan nilai kedalam array pada bagian akhir array tersebut dengan output yang diharapkan adalah [' ',' ',' ',' ',' ',' ',' ',' ',' ']
-    num4.push(' ');
+    num3.push(" "); // fungsi push ini dilakukan untuk memasukkan nilai kedalam array pada bagian akhir array tersebut dengan output yang diharapkan adalah [' ',' ',' ',' ',' ',' ',' ',' ',' ']
+    num4.push(" ");
   }
 
   // Looping untuk membuat pattern pada sisi bagian 1 dan 2
   for (let i = 0; i < num ; i++) {
-    console.log(num1.join(' ') + ' | ' + num2.join(' ')); // ditampilkan angka yang berisi dari semua array input sebelumnya dengan pola 9 8 7 6 5 4 3 2 1 | 1 2 3 4 5 6 7 8 9
+    console.log(num1.join(" ") + " | " + num2.join(" ")); // ditampilkan angka yang berisi dari semua array input sebelumnya dengan pola 9 8 7 6 5 4 3 2 1 | 1 2 3 4 5 6 7 8 9
     num1.shift(); // fungsi shift() berfungsi untuk menghapus array pada bagian awal maka hasilnya 8 7 6 5 4 3 2 1 | 1 2 3 4 5 6 7 8 9
-    num1.push(' ') // fungsi push disini untuk memberikan spasi pada akhir array num1 sehingga menjadikan pola agar tetap presisi 8 7 6 5 4 3 2 1   | 1 2 3 4 5 6 7 8 9
+    num1.push(" "); // fungsi push disini untuk memberikan spasi pada akhir array num1 sehingga menjadikan pola agar tetap presisi 8 7 6 5 4 3 2 1   | 1 2 3 4 5 6 7 8 9
     num2.pop(); // fungsi pop untuk menghapus nilai pada akhir array num2 8 7 6 5 4 3 2 1   | 1 2 3 4 5 6 7 8
-    num2.unshift(' '); // fungsi unshift() digunakan untuk memberikan spasi pada awal array num2 agar output tetap presisi 8 7 6 5 4 3 2 1   |   1 2 3 4 5 6 7 8
+    num2.unshift(" "); // fungsi unshift() digunakan untuk memberikan spasi pada awal array num2 agar output tetap presisi 8 7 6 5 4 3 2 1   |   1 2 3 4 5 6 7 8
 
     // fungsi diatas akan terus di looping hingga nilainya menjadi 1                 |                  1
   }
   
   // Looping untuk membuat pemisah garis tengah antara sisi 1,2 dan sisi 3,4
   for (let i = 1; i < num; i++) {
-    line += '----'; // setiap nilai num bertambah 1 misalnya dari num=1 menjadi num=2 maka garis pemisah dibawah akan ditambah sebanyak ----
+    line += "----"; // setiap nilai num bertambah 1 misalnya dari num=1 menjadi num=2 maka garis pemisah dibawah akan ditambah sebanyak ----
   }
   console.log(line); // menampilkan garis pemisah
   
@@ -75,7 +75,7 @@ function rhombusPattern(num) {
     num3.unshift(i); // fungsi untuk menambah nilai pada awal array [ 1 ,' ',' ',' ',' ',' ',' ',' ',' ']
     num4.shift(); // fungsi untuk menghapus nilai pada awal array [' ',' ',' ',' ',' ',' ',' ',' ']
     num4.push(i); // fungsi untuk menambah nilai pada akhir array [' ',' ',' ',' ',' ',' ',' ',' ', 1]
-    console.log(num3.join(' ') + ' | ' + num4.join(' ')); // output pada iterasi 1 adalah 1                 |                  1
+    console.log(num3.join(" ") + " | " + num4.join(" ")); // output pada iterasi 1 adalah 1                 |                  1
   }
 }
 
