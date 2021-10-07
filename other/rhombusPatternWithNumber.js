@@ -83,3 +83,29 @@ rhombusPattern(9);
 
 
 // Note : jika ada saran atau optimasi algoritma ini agar menjadi lebih baik lagi bisa tolong dibuatkan solusinya dibawah agar ada opsi terbaik untuk menyelesaikan permasalahan ini.
+
+// Note Bug : Algoritma ini belum presisi untuk input diatas 9. 
+/*
+10 9 8 7 6 5 4 3 2 1 | 1 2 3 4 5 6 7 8 9 10
+9 8 7 6 5 4 3 2 1   |   1 2 3 4 5 6 7 8 9
+8 7 6 5 4 3 2 1     |     1 2 3 4 5 6 7 8
+7 6 5 4 3 2 1       |       1 2 3 4 5 6 7
+6 5 4 3 2 1         |         1 2 3 4 5 6
+5 4 3 2 1           |           1 2 3 4 5
+4 3 2 1             |             1 2 3 4
+3 2 1               |               1 2 3
+2 1                 |                 1 2
+1                   |                   1
+-----------------------------------------
+1                   |                   1
+2 1                 |                 1 2
+3 2 1               |               1 2 3
+4 3 2 1             |             1 2 3 4
+5 4 3 2 1           |           1 2 3 4 5
+6 5 4 3 2 1         |         1 2 3 4 5 6
+7 6 5 4 3 2 1       |       1 2 3 4 5 6 7
+8 7 6 5 4 3 2 1     |     1 2 3 4 5 6 7 8
+9 8 7 6 5 4 3 2 1   |   1 2 3 4 5 6 7 8 9
+10 9 8 7 6 5 4 3 2 1 | 1 2 3 4 5 6 7 8 9 10
+*/
+// jadi untuk siapa saja yang membaca dan mencoba kode ini bisa sama sama mencari solusi agar jika input lebih dari 9 tampilannya bisa lebih presisi.
