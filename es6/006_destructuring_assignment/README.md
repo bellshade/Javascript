@@ -9,7 +9,7 @@ Before:
 ```JS
 // Object
 
-let obj = {
+const obj = {
   id: 0,
   name: "Sandhika Galih",
   country: "Indonesia"
@@ -19,7 +19,7 @@ console.log(obj.name); // Sandhika Galih
 
 // Array
 
-let arr = [
+const arr = [
   "Indonesia",
   "Malaysia",
   "Brunei",
@@ -33,13 +33,13 @@ After:
 ```JS
 // Object
 
-let obj = {
+const obj = {
   id: 0,
   name: "Sandhika Galih",
   country: "Indonesia"
 };
 
-let {id, name, country} = obj;
+const {id, name, country} = obj;
 
 console.log(name); // Sandhika Galih
 
@@ -47,19 +47,19 @@ console.log(name); // Sandhika Galih
  * Note: Destructuring pada object, nama variabel yang akan di akses wajib mengikuti key yang ada. Tetapi kalian bisa memberikan alias pada key tersebut.
  *
  * Example:
- * let {name: nama, country: negara} = obj;
+ * const {name: nama, country: negara} = obj;
  * console.log(negara); // Indonesia
  */
 
 // Array
 
-let arr = [
+const arr = [
   "Indonesia",
   "Malaysia",
   "Brunei",
 ];
 
-let [country1, country2, country3] = arr
+const [country1, country2, country3] = arr
 
 console.log(country1); // Indonesia
 
