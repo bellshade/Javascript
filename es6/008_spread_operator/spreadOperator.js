@@ -16,7 +16,7 @@ jumlahkan(...angka);
 // Sebelum ES6
 let makanan = ["Nasi Goreng", "Bubur Ayam", "Bakso"];
 let minuman = ["Kopi Panas", "Teh Hangat", "Air Mineral"];
-makananPlusMinuman = makanan.concat(minuman);
+let makananPlusMinuman = makanan.concat(minuman);
 console.log(makananPlusMinuman);
 
 // ES6
