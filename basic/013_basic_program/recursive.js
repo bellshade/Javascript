@@ -14,9 +14,10 @@ const getEndOfGeometryLine = (a, n) => {
   let un = a;
   let u1 = n - 1;
   if (u1 > 0) {
-    getEndOfGeometryLine(un + a, u1);
+    return getEndOfGeometryLine(un + a, u1);
   } else {
-    console.log(un);
+    return un;
   }
 };
+
 console.log(getEndOfGeometryLine(2.5, 4));
