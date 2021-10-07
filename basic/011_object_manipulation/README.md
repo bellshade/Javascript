@@ -48,12 +48,14 @@ serta mengubah object target menjadi object gabungan tadi.
 Parameter yang diterima adalah beberapa object dengan urutan sebagai berikut:
 `Object.assign(target, source1, source2, source3, ...)`
 ```js
-const person = {
-  name: "John Doe",
-  age: 24,
-  gender: "male"
+const object1 = {
+  firstName: "Brendan"
 };
 
-console.log(Object.entries(person)); // [ ["name", "John Doe"], ["age", 24], ["gender", "male"] ]
+const object2 = {
+  lastName: "Eich"
+};
+
+console.log(Object.assign(object1, object2)); // { firstName: "Brendan", lastName: "Eich" }
 ```
-Contoh penggunaan: [Object.entries()](objectEntries.js)
+Contoh penggunaan: [Object.assign()](objectEntries.js)
