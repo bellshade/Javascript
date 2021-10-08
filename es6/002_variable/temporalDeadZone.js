@@ -7,7 +7,7 @@
 
 // dua console log diatas akan menghasilkan ReferenceError karena berada dalam temporal dead zone (zona sebelum variabel dideklarasikan)
 
-let benda = 'laptop';
+let benda = "laptop";
 const y = 50;
 
 console.log(benda); // laptop

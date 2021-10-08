@@ -95,4 +95,3 @@ console.log(dataDiri);  // {nama: "Luna", alamat: "Bandung", umur: 20}
 bunga = ["matahari", "dandelion"];                      // TypeError
 dataDiri = {nama: "Nisa", alamat: "Bandung", umur: 20}; // TypeError
 ```
-
