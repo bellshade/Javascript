@@ -81,7 +81,7 @@ var x = 10;
 // Disini x adalah 10
 ```
 
-Perlu diingat bahwa `array` dan `property` pada `object` masih dapat dirubah meskipun dideklarasikan menggunakan `const`.
+Perlu diingat bahwa nilai `array` dan `property` pada `object` masih dapat dirubah meskipun dideklarasikan menggunakan `const`. Meski demikian, merubah `array` dan `object` secara keseluruhan tetap menghasilkan TypeError.
 ```javascript
 const bunga = ["mawar", "melati", "anggrek"];
 const dataDiri = {nama: "Fatah", alamat: "Bandung", umur: 20};
@@ -91,4 +91,8 @@ dataDiri.nama = "Luna";
 
 console.log(bunga);     // ["mawar", "melati", "anggrek", "dahlia"]
 console.log(dataDiri);  // {nama: "Luna", alamat: "Bandung", umur: 20}
+
+bunga = ["matahari", "dandelion"];                      // TypeError
+dataDiri = {nama: "Nisa", alamat: "Bandung", umur: 20}; // TypeError
 ```
+
