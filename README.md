@@ -30,6 +30,9 @@ Semua _script_ yang ada pada repositori ini, dapat diakses dengan cepat lewat li
   - [Array](basic/009_array)
   - [Array Manipulation](basic/010_array_manipulation)
   - [Class](basic/011_classes)
+  - [Manipulasi Object](basic/011_object_manipulation/)
+  - [Class](basic/012_classes)
+  - [Strict Mode](basic/013_strict_mode)
 
 ### C
 
