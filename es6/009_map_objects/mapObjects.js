@@ -1,7 +1,7 @@
 // Membuat Objek
-const apel = {name: 'Apel'};
-const pisang = {name: 'Pisang'};
-const jeruk = {name: 'Jeruk'};
+const apel = { name: "Apel" };
+const pisang = { name: "Pisang" };
+const jeruk = { name: "Jeruk" };
 
 // Membuat Map baru
 const buah = new Map();
@@ -14,4 +14,3 @@ buah.set(jeruk, 200);
 // Menampilkan tipe Objek
 document.getElementById("demo").innerHTML = buah;
 // Output : [object Map]
-

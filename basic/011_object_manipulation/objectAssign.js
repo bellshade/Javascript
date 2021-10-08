@@ -17,7 +17,7 @@ console.log(object1); // { firstName: "Brendan", lastName: "Eich", fullName: "Br
 
 /*
  * Jika terdapat key yang sama, maka key tersebut akan diisi dengan key dari source
-*/
+ */
 
 const object4 = {
   a: "1",
