@@ -12,5 +12,6 @@ buah.set(pisang, 300);
 buah.set(jeruk, 200);
 
 // Menampilkan tipe Objek
-document.getElementById("demo").innerHTML = buah;
+// Uncomment kode dibawah ini untuk melihat hasilnya
+// document.getElementById("demo").innerHTML = buah;
 // Output : [object Map]
