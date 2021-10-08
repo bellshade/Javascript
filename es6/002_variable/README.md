@@ -29,7 +29,7 @@ console.log(y);
 /* ReferenceError: Cannot access 'y' before initialization */
 ```
 
-*`Temporal Dead Zone`* (TDZ) adalah istilah yang merujuk pada daerah sebelum sebuah variabel dideklarasikan. Variabe
+*`Temporal Dead Zone`* (TDZ) adalah istilah yang merujuk pada daerah sebelum sebuah variabel dideklarasikan.
 ```javascript
 console.log(x); // Temporal dead zone y dan x
 console.log(y); // Temporal dead zone y dan x
@@ -48,7 +48,7 @@ var x = 10;
 // Disini x adalah 10
 {
   let y = 2;
-  // Disini x adalah 2
+  // Disini y adalah 2
   console.log(y); // 2
 }
 console.log(x); // 10
