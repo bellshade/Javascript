@@ -140,7 +140,7 @@ console.log(numbers);
 
 ### 6. Reduce
 
-Method `.reduce()` akan menjalankan fungsi pada setiap element dimana disetiap iterasinya menggunakan hasil *return* dari iterasi sebelumnya. Hasil akhir method `.reduce()` adalah sebuah nilai dan bukan berupa array.
+Method `.reduce()` akan menjalankan fungsi pada setiap element dimana disetiap iterasinya menggunakan hasil *return* dari iterasi sebelumnya.
 
 ```js
 const numbers = [1, 2, 3, 4, 5];
