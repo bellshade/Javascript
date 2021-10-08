@@ -49,7 +49,7 @@
    }
 
    // Looping untuk membuat pattern pada sisi bagian 1 dan 2
-   var lineCount; // variable untuk menyimpan panjang baris pertama, nanti nya digunakan untuk membuat garis pemisah.
+   let lineCount; // variable untuk menyimpan panjang baris pertama, nanti nya digunakan untuk membuat garis pemisah.
    let spasi = 1;
 
    for (let i = 0; i < num; i++) {
