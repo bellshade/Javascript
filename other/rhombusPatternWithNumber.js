@@ -92,7 +92,7 @@
      if (i < 10 && num >= 10) {
        str = new Array(num - 9).join(" ") + str;
        console.log(num3.join(" ") + str + " | " + str + num4.join(" "));
-     } else if (i > 9 && num >= 10 && i != num) {
+     } else if (i > 9 && num >= 10 && i !== num) {
        str = new Array(spasi2).join(" ") + str;
        spasi2--;
        console.log(num3.join(" ") + str + " | " + str + num4.join(" "));
