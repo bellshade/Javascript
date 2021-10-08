@@ -10,5 +10,7 @@
 8. [Fungsi](008_looping/)
 9. [Array](009_array/)
 10. [Manipulasi Array](010_array_manipulation)
-11. [Kelas](011_classes/)
-12. Folder berisi contoh program sederhana dengan menggunakan fungsi, rekayasa string, logika
+11. [Manipulasi Object](011_object_manipulation/)
+12. [Class](012_classes)
+13. [Strict Mode](013_strict_mode)
+14. Folder berisi contoh program sederhana dengan menggunakan fungsi, rekayasa string, logika
