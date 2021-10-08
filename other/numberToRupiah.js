@@ -43,7 +43,7 @@ function numberToRupiah(num) {
 }
 
 console.log(numberToRupiah(1000000)); // Rp.1.000.000,-
-console.log(numberToRupiah(324344636)); // Rp.324.344.636,-
+console.log(numberToRupiah(2520000)); // Rp.324.344.636,-
 
 // Chainning method
 
@@ -63,4 +63,4 @@ const toRupiah = (num) => {
 };
 
 console.log(toRupiah(1000)); // Rp.1.000,-
-console.log(toRupiah(67673242343)); // Rp.67.673.242.343,-
+console.log(toRupiah(2300000)); // Rp.67.673.242.343,-
