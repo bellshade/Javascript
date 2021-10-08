@@ -20,7 +20,7 @@ console.log(x);
 /* output: 100 */
 ```
 
-*`Hoisting`*  menjadi kontroversial karena tidak sedikit developer yang dibuat bingung akan hal ini. Masalah ini sudah terselesaikan jika kita menggunakan `let` dalam mendeklarasikan variabel.
+*`Hoisting`*  menjadi kontroversial karena tidak sedikit developer yang dibuat bingung akan hal ini. Masalah ini sudah terselesaikan jika kita menggunakan `let` dan `const` dalam mendeklarasikan variabel. Berbeda dengan `var` yang dinaikkan keatas, `let` dan `const` dianggap tidak ada sebelum variabelnya dideklarasikan sehingga memunculkan `ReferenceError` ketika coba dipanggil, hal ini dikenal sebagai *`Temporal Dead Zone`* (TDZ).
 ```javascript
 y = 100;
 let y;
@@ -29,17 +29,30 @@ console.log(y);
 /* ReferenceError: Cannot access 'y' before initialization */
 ```
 
+*`Temporal Dead Zone`* (TDZ) adalah istilah yang merujuk pada daerah sebelum sebuah variabel dideklarasikan.
+```javascript
+console.log(x); // Temporal dead zone y dan x
+console.log(y); // Temporal dead zone y dan x
+let y = 100;    // Temporal dead zone x
+const x = 200;
+
+/* ReferenceError: x is not defined */
+/* ReferenceError: y is not defined */
+```
+
 ## let
-`let` adalah sebuah kata kunci untuk mendeklarasikan variabel dengan lingkup blok.
+`let` adalah sebuah kata kunci untuk mendeklarasikan variabel dengan lingkup blok. Lingkup blok berarti variabel yang dideklarasikan tidak dapat diakses diluar bloknya.
 
  ```javascript
 var x = 10;
 // Disini x adalah 10
 {
-  let x = 2;
-  // Disini x adalah 2
+  let y = 2;
+  // Disini y adalah 2
+  console.log(y); // 2
 }
-// Disini x adalah 10
+console.log(x); // 10
+console.log(y); // ReferenceError: y is not defined
  ```
 
 ## const
@@ -66,4 +79,19 @@ var x = 10;
   // Disini x adalah 2
 }
 // Disini x adalah 10
+```
+
+Perlu diingat bahwa nilai `array` dan `property` pada `object` masih dapat dirubah meskipun dideklarasikan menggunakan `const`. Meski demikian, merubah `array` dan `object` secara keseluruhan tetap menghasilkan TypeError.
+```javascript
+const bunga = ["mawar", "melati", "anggrek"];
+const dataDiri = {nama: "Fatah", alamat: "Bandung", umur: 20};
+
+bunga.push("dahlia");
+dataDiri.nama = "Luna";
+
+console.log(bunga);     // ["mawar", "melati", "anggrek", "dahlia"]
+console.log(dataDiri);  // {nama: "Luna", alamat: "Bandung", umur: 20}
+
+bunga = ["matahari", "dandelion"];                      // TypeError
+dataDiri = {nama: "Nisa", alamat: "Bandung", umur: 20}; // TypeError
 ```
