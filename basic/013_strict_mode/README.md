@@ -2,7 +2,7 @@
 
 _Strict mode_ digunakan untuk menghindari `bug` yang dapat tercipta jika dari versi lama Javascript. `Bug` tersebut antara lain adalah perilaku Javascript sebelum `ECMAScript versi 5` yang memungkinkan penggunaan variabel yang tidak dideklarasikan sebelumnya.
 
-_Strict mode_ digunakan dengan menulis string *`"use strict"`* pada bagian paling atas file javascript atau dibagian paling atas dalam sebuah fungsi.
+_Strict mode_ digunakan dengan menulis string _`"use strict"`_ pada bagian paling atas file javascript atau dibagian paling atas dalam sebuah fungsi.
 
 ```javascript
 y = 100;
