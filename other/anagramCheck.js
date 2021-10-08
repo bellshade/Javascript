@@ -22,7 +22,6 @@ const anagramCheck = (kata1, kata2) => {
     } else {
       return "Bukan Anagram";
     }
-
   } else {
     return "Bukan Anagram";
   }

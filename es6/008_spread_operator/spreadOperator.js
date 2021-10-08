@@ -1,7 +1,7 @@
 let angka = [1, 2, 3];
 
 function jumlahkan(a, b, c) {
-    console.log(a + b + c); // hasil : 6
+  console.log(a + b + c); // hasil : 6
 }
 
 // Sebelum ES6

@@ -16,9 +16,9 @@ for (let i = 1; i <= 10; i++) {
 // Bentuk "for" yang lain
 
 // for in
-const buah = ['Anggur', 'Apel', 'Pepaya', 'Nanas', 'Jeruk']
-for (const n in buah){
-  console.log(`${+n + 1}. ${buah[n]}`)
+const buah = ["Anggur", "Apel", "Pepaya", "Nanas", "Jeruk"];
+for (const n in buah) {
+  console.log(`${+n + 1}. ${buah[n]}`);
 }
 /*
 Hasil:
@@ -31,9 +31,9 @@ Hasil:
 */
 
 // for of
-const buah2 = ['Anggur', 'Apel', 'Pepaya', 'Nanas', 'Jeruk']
-for (const x of buah2){
-  console.log(x)
+const buah2 = ["Anggur", "Apel", "Pepaya", "Nanas", "Jeruk"];
+for (const x of buah2) {
+  console.log(x);
 }
 /*
 Hasil:
@@ -46,9 +46,9 @@ Jeruk
 */
 
 // for of dengan entries
-const buah3 = ['Anggur', 'Apel', 'Pepaya', 'Nanas', 'Jeruk']
-for (const [n, x] of buah3.entries()){
-  console.log(`${+n + 1}. ${x}`)
+const buah3 = ["Anggur", "Apel", "Pepaya", "Nanas", "Jeruk"];
+for (const [n, x] of buah3.entries()) {
+  console.log(`${+n + 1}. ${x}`);
 }
 /*
 Hasil:
