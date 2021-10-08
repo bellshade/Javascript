@@ -53,7 +53,7 @@
    let spasi = 1;
 
    for (let i = 0; i < num; i++) {
-     if (i == 0) {
+     if (i === 0) {
        console.log((lineCount = num1.join(" ") + " | " + num2.join(" ")));
      } else {
        let str = " ";
