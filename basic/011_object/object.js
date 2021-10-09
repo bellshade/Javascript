@@ -4,7 +4,7 @@ const hukumNewton = {
   kedua: "Percepatan (perubahan dari kecepatan) dari suatu benda akan sebanding dengan resultan gaya (jumlah gaya) yang bekerja pada benda tersebut dan berbanding terbalik dengan massa benda.",
   ketiga: "Setiap aksi akan menimbulkan reaksi, jika suatu benda memberikan gaya pada benda yang lain maka benda yang terkena gaya akan memberikan gaya yang besarnya sama dengan gaya yang diterima dari benda pertama, tetapi arahnya berlawanan.",
   gayaBerat: function(massaBenda){
-    return massaBenda * 9.8
+    return massaBenda * 9.8;
   }
 };
 
