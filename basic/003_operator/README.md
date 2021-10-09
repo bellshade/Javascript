@@ -82,4 +82,4 @@ Optional chaining operator merupakan cara yang aman untuk mengambil nilai dari o
 
 Operator ini bisa digunakan sebagai conditional statement if atau else if.
 
-Untuk contoh kode, cek contoh untuk [operator perbandingan](comparisonOperators.js), [operator logika](logicalOperator.js), [nullish coalescing operator](nullishCoalescingOperator.js), [ternary operator](ternaryOperator.js), [in operator](inOperator.js), [optional chaining operator](optionalChainingOperator.js).
+Untuk contoh kode, cek contoh untuk [operator perbandingan](comparisonOperators.js), [operator logika](logicalOperator.js), [nullish coalescing operator](nullishCoalescingOperators.js), [ternary operator](ternaryOperator.js), [in operator](inOperator.js), [optional chaining operator](optionalChainingOperator.js).
