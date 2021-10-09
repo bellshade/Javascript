@@ -140,7 +140,7 @@ console.log(numbers);
 
 ### 6. Reduce
 
-Method `.reduce()` akan menjalankan fungsi pada setiap element dimana disetiap iterasinya menggunakan hasil *return* dari iterasi sebelumnya.
+Method `.reduce()` akan menjalankan fungsi pada setiap element dimana pada setiap iterasinya menggunakan hasil *return* dari iterasi sebelumnya.
 
 ```js
 const numbers = [1, 2, 3, 4, 5];
@@ -152,7 +152,7 @@ const totalNumber = numbers.reduce((akumulator, number) => akumulator + number);
 console.log(totalNumber);	// 15
 ```
 
-dalam contoh diatas nilai awal akumulator secara *default* adalah 0, sehingga:
+dalam contoh di atas nilai awal akumulator secara *default* adalah 0, sehingga:
 - 0 + `1` = 1
 - 1 + `2` = 3
 - 3 + `3` = 6
