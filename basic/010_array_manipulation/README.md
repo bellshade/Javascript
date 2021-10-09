@@ -137,3 +137,36 @@ numbers.shift() // menghapus angka pertama
 console.log(numbers);
 // expected output: [0, 1, 2, 3, 4, 5]
 ```
+
+### 6. Reduce
+
+Method `.reduce()` akan menjalankan fungsi pada setiap element dimana pada setiap iterasinya menggunakan hasil *return* dari iterasi sebelumnya.
+
+```js
+const numbers = [1, 2, 3, 4, 5];
+
+const totalNumber = numbers.reduce((akumulator, number) => akumulator + number);
+// untuk setiap elemen akan menjalankan fungsi menambahkan akumulator dengan nilai dirinya
+// akumulator adalah nilai dari perhitungan semua elemen sebelumnya
+
+console.log(totalNumber);	// 15
+```
+
+dalam contoh di atas nilai awal akumulator secara *default* adalah 0, sehingga:
+- 0 + `1` = 1
+- 1 + `2` = 3
+- 3 + `3` = 6
+- 6 + `4` = 10
+- 10 + `5` = 15 (nilai totalNumber menjadi 15)
+
+Nilai awal akumulator dapat ditentukan pada parameter kedua method `.reduce()`
+
+```js
+const numbers = [1, 2, 3, 4, 5];
+
+const totalNumber = numbers.reduce((akumulator, number) => akumulator + number, 100);
+// parameter kedua (nilai awal akumulator) diberi nilai 100 sehingga perhitungan dimulai dari 100
+
+console.log(totalNumber);	// 115
+// nilai totalNumber menjadi 115
+```
