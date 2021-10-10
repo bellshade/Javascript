@@ -24,7 +24,7 @@ string.includes("xy"); // return nilai false
 
 method `startsWith()` digunakan untuk menentukan apakah sebuah string diawali oleh nilai tertentu. `startsWith()` mengembalikan nilai `boolean` (true/false).
 
-##### Syntax
+### Syntax
 
 ```javascript
 string.startsWith(searchString);
