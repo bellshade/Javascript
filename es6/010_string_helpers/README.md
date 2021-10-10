@@ -31,7 +31,7 @@ string.startsWith(searchString);
 string.startsWith(searchString, position);
 ```
 
-##### Contoh Kode
+#### Contoh Kode
 
 ```javascript
 let string = "abcde";
