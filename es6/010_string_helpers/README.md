@@ -12,7 +12,7 @@ method `includes()` digunakan untuk menentukan apakah sebuah string terdapat nil
 string.includes(searchString);
 ```
 
-##### Contoh Kode
+#### Contoh Kode
 
 ```javascript
 let string = "abcde";
