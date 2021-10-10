@@ -11,5 +11,5 @@ let benda = "laptop";
 const y = 50;
 
 console.log(benda); // laptop
-console.log(y);     // 50
+console.log(y); // 50
 // dua console log ini berada setelah variabel dideklarasikan sehingga nilai variabel dapat diambil dengan benar
