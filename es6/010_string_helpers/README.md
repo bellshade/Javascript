@@ -51,7 +51,7 @@ string.startsWith("ab", 1); //return nilai false
 
 method `endsWith()` digunakan untuk menentukan apakah sebuah string diakhiri oleh nilai tertentu. `endsWith()` mengembalikan nilai `boolean` (true/false).
 
-##### Syntax
+### Syntax
 
 ```javascript
 string.endsWith(searchString);
