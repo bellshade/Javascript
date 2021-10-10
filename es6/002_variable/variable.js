@@ -31,15 +31,15 @@ console.log(minuman); // jus
 
 // nilai array dan properti object dapat dirubah meskipun dideklarasikan dengan const
 const buah = ["pepaya", "nanas", "pisang", "jambu"];
-const stokBarang = {pulpen: 20, buku: 15, pensil: 25};
+const stokBarang = { pulpen: 20, buku: 15, pensil: 25 };
 
 buah.pop();
 // nilai paling ujung kanan pada array buah dihapus
 stokBarang.buku = 10;
 // nilai properti buku diubah menjadi 10
 
-console.log(buah);        // ["pepaya", "nanas", "pisang"]
-console.log(stokBarang);  // {pulpen: 20, buku: 10, pensil: 25}
+console.log(buah); // ["pepaya", "nanas", "pisang"]
+console.log(stokBarang); // {pulpen: 20, buku: 10, pensil: 25}
 
 // meski demikian, mengganti keseluruhan array atau objek menjadi array atau objek baru tetap akan menghasilkan TypeError
 // buah = ["semangka", "apel", "anggur"];       // TypeError
