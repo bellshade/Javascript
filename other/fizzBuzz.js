@@ -4,7 +4,7 @@
 
 // Jika bilangan a hasil sisa bagi 3 dan 5 adalah 0 ,maka akan mengconsole fizzbuzz
 // Jika bilangan a hasil sisa bagi 3 adalah 0, maka akan mengconsole fizz
-// Jika bilangan a hasil sisa bagi 5 adalah 0, maka akan menconsole buzz
+// Jika bilangan a hasil sisa bagi 5 adalah 0, maka akan mengconsole buzz
 // jika tidak keduanya maka akan mengconsole angka a itu sendiri
 
 // Demo kodenya
