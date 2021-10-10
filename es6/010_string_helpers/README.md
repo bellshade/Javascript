@@ -6,7 +6,7 @@ Pada ES6 ada beberapa `String helpers` yang dapat membantu programmer untuk memp
 
 method `includes()` digunakan untuk menentukan apakah sebuah string terdapat nilai tertentu. `includes()` mengembalikan nilai `boolean` (true/false).
 
-##### Syntax
+### Syntax
 
 ```javascript
 string.includes(searchString);
