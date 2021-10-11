@@ -6,14 +6,14 @@
 // kita akan membuat funcion yang bernama sum dengan nama parameternya name dan nilai  
 function sum (name,...nilai ) {
     // ...data merupakan rest parameter yang akan menyimpan value banyak 
-    let total = 0
+    let total = 0;
     // kita mambuat variable yang bernama total
     // Lalu membuat perulangan for of 
     for(const value of nilai) {
         total += value;
     }
     console.log(`total nilai ${name} adalah  ${total}`);
-};
+}
 
 sum("rai",10,20,30,40,50);
 
