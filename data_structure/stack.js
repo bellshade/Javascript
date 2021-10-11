@@ -32,7 +32,7 @@ class Stack {
 
   pop() {
     try {
-      if (this.index !== -1) {
+      if (!this.isEmpty()) {
         const removedData = this.data[this.index];
         this.data.slice(this.index, 1);
         this.index -= 1;
@@ -46,7 +46,7 @@ class Stack {
   }
 
   peek() {
-    if (this.index !== -1) {
+    if (!this.isEmpty()) {
       return this.data[this.index];
     } else {
       console.log("Data pada stack kosong");
