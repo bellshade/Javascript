@@ -32,7 +32,7 @@ pada kasus penggabungan 2 buah objek menggunakan `Spread Operator` jika terdapat
 Mirip dengan array, `Spread Operator` dapat memisahkan object menjadi pasangan properti-nilai yang membentuknya. Contoh menambahkan beberapa properti
 
 ```javascript
-// Sebelum ES6
+// Contoh sebelum ES6
 // Menambahkan beberapa properti
 let x = { a: 1, b: 2 };
 x.c = 3; // Menambahkan properti c
