@@ -33,8 +33,9 @@ class Stack {
   pop() {
     try {
       if (!this.isEmpty()) {
-        const removedData = this.data[this.index];
-        this.data.slice(this.index, 1);
+        const tmpData = [...this.data];
+        const [removedData] = tmpData.splice(this.index, 1);
+        this.data = tmpData;
         this.index -= 1;
         return removedData;
       } else {
