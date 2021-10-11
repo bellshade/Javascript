@@ -17,32 +17,24 @@ class Stack {
   }
 
   push(data) {
-    try {
-      if (this.index !== this.maxData - 1) {
-        this.data.push(data);
-        this.index += 1;
-        return data;
-      } else {
-        throw new Error("Stackoverflow! Maximum data stack telah dicapai");
-      }
-    } catch (e) {
-      console.log(e);
+    if (this.index !== this.maxData - 1) {
+      this.data.push(data);
+      this.index += 1;
+      return data;
+    } else {
+      console.log("Stackoverflow! Maximum data stack telah dicapai");
     }
   }
 
   pop() {
-    try {
-      if (!this.isEmpty()) {
-        const tmpData = [...this.data];
-        const [removedData] = tmpData.splice(this.index, 1);
-        this.data = tmpData;
-        this.index -= 1;
-        return removedData;
-      } else {
-        throw new Error("Stackunderflow! Data pada stack kosong");
-      }
-    } catch (e) {
-      console.log(e);
+    if (!this.isEmpty()) {
+      const tmpData = [...this.data];
+      const [removedData] = tmpData.splice(this.index, 1);
+      this.data = tmpData;
+      this.index -= 1;
+      return removedData;
+    } else {
+      console.log("Stackunderflow! Data pada stack kosong");
     }
   }
 
