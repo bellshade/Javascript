@@ -1,7 +1,7 @@
 // Apa sih itu rest parameter 
 // Rest parameter adalah sebuah fungsi di javascript yang memungkinkan bisa value parameter
 
-// Langsung ke codenya 
+// Langsung ke codenya  
 
 // kita akan membuat funcion yang bernama sum dengan nama parameternya name dan nilai  
 function sum (name,...nilai ) {
