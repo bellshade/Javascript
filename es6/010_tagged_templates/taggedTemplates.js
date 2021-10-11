@@ -44,12 +44,12 @@ console.log(waktuNgoding); // output: Halo Suan sudah subuh waktunya ngoding.
 
 // penggunaan tagged templates untuk css serta menggunakan rest parameters
 function boldText(strings, ...args) {
-    let result = ""; // membuat variable untuk menampung hasil akhir
-    // melakukan pengulangan forEach untuk setiap strings
-    strings.forEach((str, i) => {
-        result += `${str}<span class="textbold">${args[i] || ""}</span>`;
-    });
-    return result;
+  let result = ""; // membuat variable untuk menampung hasil akhir
+  // melakukan pengulangan forEach untuk setiap strings
+  strings.forEach((str, i) => {
+    result += `${str}<span class="textbold">${args[i] || ""}</span>`;
+  });
+  return result;
 }
 let doTemplate = boldText`Halo semuanya ${"ini adalah bagian yang dibold"} dan ${"ini juga"}`;
 console.log(doTemplate); // output: Halo semuanya <span class="textbold">ini adalah bagian yang dibold</span><span class="textbold"></span>
