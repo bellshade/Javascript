@@ -8,7 +8,7 @@
  */
 
 function randomlySort(arr) {
-  var arrLength = arr.length;
+  const arrLength = arr.length;
   const finalArr = [];
   const result = [];
 
