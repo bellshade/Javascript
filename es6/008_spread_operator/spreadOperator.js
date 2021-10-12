@@ -29,7 +29,7 @@ console.log(menuPagi);
 // karyawan.bagian = "Front-End";            // Menambakan properti bagian
 // karyawan.status = "Sudah menikah";        // Menambahkan properti status
 
-// console.log(karyawan);                
+// console.log(karyawan);
 /* Output :
   {
     "nama": "Boby",
@@ -41,13 +41,13 @@ console.log(menuPagi);
 /* Menghapus blok kode di atas akan menimbulkan error  */
 
 // ES6
-let karyawan = { nama: "Boby", umur: 25};
-karyawan = { ...karyawan, bagian: "Front-End", status: "Sudah menikah"};
+let karyawan = { nama: "Boby", umur: 25 };
+karyawan = { ...karyawan, bagian: "Front-End", status: "Sudah menikah" };
 
-console.log(karyawan);          // Output sama dengan console.log di atas.
+console.log(karyawan); // Output sama dengan console.log di atas.
 
 // Menggabungkan Object
-// Sebelum ES6 
+// Sebelum ES6
 // const nilai1 = { Andre: 75, Budi: 85 };
 // const nilai2 = { Putri: 75, Ditha: 95 };
 // const nilaiGabungan = Object.assign({}, nilai1, nilai2);
@@ -68,4 +68,4 @@ const nilai1 = { Andre: 75, Budi: 85 };
 const nilai2 = { Putri: 75, Ditha: 95 };
 const nilaiGabungan = { ...nilai1, ...nilai2 };
 
-console.log(nilaiGabungan);       // Output sama dengan console.log di atas.
+console.log(nilaiGabungan); // Output sama dengan console.log di atas.
