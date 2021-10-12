@@ -55,4 +55,19 @@ const private = 300;  // SyntaxError: Unexpected strict mode reserved word
 // kata private merupakan reserved words sehingga tidak boleh digunakan dalam strict mode
 ```
 
-Sangat disarankan untuk selalu menggunakan _strict mode_ dalam Javascript modern.
+### Strict Mode Otomatis
+
+Sangat disarankan untuk selalu menggunakan _strict mode_ jika belum menggunakan fitur ES6 seperti module dan class atau menggunakan transpiler seperti babel. Dengan menggunakan fitur ES6 tersebut, _strict mode_ akan secara otomatis diaktifkan oleh JavaScript, sedangkan transpiler akan mengubah kode JavaScript modern menjadi kode ES5 ditambah dengan string `"use strict"`.
+
+Contoh `"use strict"` otomatis aktif saat menggunakan module:
+
+```javascript
+user = {
+  id: 1,
+  name: "Andi"
+}
+
+console.log(user); // ReferenceError: user is not defined
+
+export default user;
+```
