@@ -16,3 +16,5 @@
 14. [Strict Mode](014_strict_mode)
 15. Folder berisi contoh program sederhana dengan menggunakan fungsi, rekayasa string, logika
 16. [Boolean](016_boolean/)
+17. [Number](017_number/)
+18. [Array dan Objek](018_array_dan_objek/)
