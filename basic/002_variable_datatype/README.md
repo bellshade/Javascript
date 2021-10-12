@@ -62,7 +62,7 @@ Lihat meme ini:
 
 Sumber meme [original](https://twitter.com/ddprrt/status/1074955395528040448).
 
-> Catatan: Semua tipe data bisa menggunakan semua tiga jenis variabel yang ada di JavaScript
+> Catatan: Ketiga jenis variabel bisa menggunakan semua jenis tipe data yang ada di JavaScript
 
 Contoh
 
