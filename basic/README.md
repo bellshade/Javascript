@@ -14,5 +14,6 @@
 12. [Manipulasi Object](012_object_manipulation/)
 13. [Class](013_classes)
 14. [Strict Mode](014_strict_mode)
-15. Folder berisi contoh program sederhana dengan menggunakan fungsi, rekayasa string, logika
-16. [Boolean](016_boolean/)
+15. [Boolean](015_boolean/)
+16. [Number](016_number/)
+17. Folder berisi contoh program sederhana dengan menggunakan fungsi, rekayasa string, logika
