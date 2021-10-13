@@ -140,12 +140,17 @@ class BinaryTreeUtil {
    * @returns {*|null} - Mengembalikan data pada node berdasarkan pencarian jika ditemukan, atau null.
    */
   static search(root, data) {
-    if (root == null) return null;
+    if (root == null) {
+      return null;
+    }
     if (root.data === data) {
       return root.data;
     }
     const dataLeftChild = this.search(root.left, data);
-    if (dataLeftChild) return dataLeftChild;
+    if (dataLeftChild) {
+      return dataLeftChild;
+    }
+
     return this.search(root.right, data);
   }
 
@@ -164,7 +169,9 @@ class BinaryTreeUtil {
    * @returns {Number} - Mengembalikan jumlah node pada binary tree.
    */
   static count(root) {
-    if (root == null) return 0;
+    if (root == null) {
+      return 0;
+    }
     return 1 + this.count(root.left) + this.count(root.right);
   }
 
