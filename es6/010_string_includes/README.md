@@ -1,6 +1,6 @@
 # STRING INCLUDES
 Apa sih itu string includes
-### String includes adalah
+## String includes adalah
 Property yang ada di es6 yang digunakan untuk mencari kata atau angka yang terdapat dalam variable 
 
 ## Langsung ke contohnya menggunakan string 
