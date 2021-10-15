@@ -17,6 +17,7 @@ Semua _script_ yang ada pada repositori ini, dapat diakses dengan cepat lewat li
 ### B
 
 - [Backtracking](backtracking)
+  - [Rat in Maze](backtracking/RatInMaze.js)
 
 - [Basic](basic)
   - [Hello World](basic/001_hello_world)
@@ -33,15 +34,43 @@ Semua _script_ yang ada pada repositori ini, dapat diakses dengan cepat lewat li
   - [Manipulasi Object](basic/012_object_manipulation/)
   - [Class](basic/013_classes)
   - [Strict Mode](basic/014_strict_mode)
+  - [Boolean](basic/015_boolean)
+  - [Number](basic/016_number)
+  - [Basic Program](basic/017_basic_program)
 
 ### C
 
-- [Cipher](chiper)
+- [Cipher](cipher)
+  - [Affine](cipher/affine.js)
+  - [Atbash](cipher/atbash.js)
+  - [Base64](cipher/base64.js)
+  - [Caesar](cipher/caesar.js)
+  - [Rot13](cipher/rot13.js)
 - [Conversion](conversion)
+  - [Arbitary Base](conversion/ArbitaryBase.js)
+  - [Binary to Decimal](conversion/BinaryToDecimal.js)
+  - [Decimal to Roman](conversion/DecToRoman.js)
+  - [Decimal to Octal](conversion/DecimalToOctal.js)
+  - [Hexadecimal to Decimal](conversion/HexToDecimal.js)
+  - [Hexadecimal to RGB](conversion/HexToRgb.js)
+  - [Number to Rupiah](conversion/NumberToRupiah.js)
+  - [Octal to Decimal](conversion/OctalToDecimal.js)
+  - [Temperature Conversion](conversion/TemperatureConversion.js)
+  - [Time Conversion](conversion/TimeConversion.js)
+  - [Date to Day](conversion/dateToDay.js)
+  - [Decimal to Hexadecimal](conversion/decimalToHex.js)
 
 ### D
 
 - [Data Structure](data_structure)
+  - [Binary Search Tree](data_structure/binarySearchTree.js)
+  - [Binary Tree](data_structure/binaryTree.js)
+  - [Filter Duplicate Array](data_structure/filterDuplicateArray.js)
+  - [Filter Odd Even Array](data_structure/filterEvenOddArray.js)
+  - [Queue](data_structure/queue.js)
+  - [Reverse Integer](data_structure/reverseInteger.js)
+  - [Stack](data_structure/stack.js)
+  - [Undirected Graph](data_structure/undirectedGraph.js)
 
 ### E
 
@@ -49,6 +78,15 @@ Semua _script_ yang ada pada repositori ini, dapat diakses dengan cepat lewat li
   - [Introduction](es6/001_introduction)
   - [Variable](es6/002_variable)
   - [Arrow Function](es6/003_arrow_function)
+  - [Template Literals](es6/004_template_literals)
+  - [Default Parameter](es6/005_default_parameter)
+  - [For of Loop](es6/006_for_of_loop)
+  - [Destructuring Assignment](es6/007_destructuring_assignment)
+  - [Spread Operator](es6/008_spread_operator)
+  - [Map Objects](es6/009_map_objects)
+  - [String Helpers](es6/010_string_helpers)
+  - [String Includes](es6/010_string_includes)
+  - [Tagged Templates](es6/010_tagged_templates)
 
 ### O
 
