@@ -46,7 +46,6 @@ Semua _script_ yang ada pada repositori ini, dapat diakses dengan cepat lewat li
   - [Base64](cipher/base64.js)
   - [Caesar](cipher/caesar.js)
   - [Rot13](cipher/rot13.js)
-  
 - [Conversion](conversion)
   - [Arbitary Base](conversion/ArbitaryBase.js)
   - [Binary to Decimal](conversion/BinaryToDecimal.js)
