@@ -6,7 +6,7 @@ labels: learn
 assignees:
 ---
 
-## Nama Algoritma
+## Nama Materi
 
 ## Deskripsi
 <!-- Jelaskan materi/sub-materi yang ingin kamu tambahkan -->
