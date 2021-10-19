@@ -88,8 +88,9 @@ Semua _script_ yang ada pada repositori ini, dapat diakses dengan cepat lewat li
   - [Spread Operator](learn/es6/008_spread_operator)
   - [Map Objects](learn/es6/009_map_objects)
   - [String Helpers](learn/es6/010_string_helpers)
-  - [String Includes](learn/es6/010_string_includes)
-  - [Tagged Templates](learn/es6/010_tagged_templates)
+  - [String Includes](learn/es6/011_string_includes)
+  - [Tagged Templates](learn/es6/012_tagged_templates)
+  - [Rest Parameter](learn/es6/013_rest_parameter)
 
 ### O
 
