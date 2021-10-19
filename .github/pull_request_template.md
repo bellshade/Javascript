@@ -8,8 +8,8 @@ Closes <!-- mention issue yang ingin kamu tutup dengan PR ini -->
 - [ ] saya memperbaiki algoritma yang sudah ada
 - [ ] saya menambahkan materi/sub materi basic atau ES6
 - [ ] saya memperbaiki materi/sub materi basic atau ES6
-- [ ] saya memperbaiki dokumentasi
 - [ ] saya menambah dokumentasi
+- [ ] saya memperbaiki dokumentasi
 
 ## Contributor Requirements (Syarat Kontributor)
 
