@@ -91,7 +91,7 @@ Semua _script_ yang ada pada repositori ini, dapat diakses dengan cepat lewat li
   - [String Helpers](learn/es6/010_string_helpers)
   - [String Includes](learn/es6/011_string_includes)
   - [Tagged Templates](learn/es6/012_tagged_templates)
-  - [Rest Parameter](learn/es6/013_rest_parameter)
+  - [Function Rest Parameter](learn/es6/013_function_rest_parameter)
 
 ### O
 
