@@ -21,7 +21,7 @@ console.log(sortDescending(arrayPoint)); // [ 100, 40, 25, 10, 5, 1 ]
 
 /**
  * PENJELASAN :
- * SORT dalam bahasa indonesia berarty mengurutkan
+ * SORT dalam bahasa indonesia berarti mengurutkan
  * sortAscending bertujuan untuk mengurutkan angka dalam array menjadi urutan dari yang terkecil ke terbesar
  * sortDescending bertujuan untuk mengurutkan angka dalam array menjadi urutan dari yang terbesar ke terkecil
  */
