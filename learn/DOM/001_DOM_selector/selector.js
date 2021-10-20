@@ -1,9 +1,9 @@
-// <div class="number" id="angka">
+// <div class="number" id="angka">hai</div>
 // cara menyeleksi element tersebut adalah dengan
 // 1. dengan document.getElementById
 document.getElementById("angka");
- // 2. dengan document.getElementsByClassName
- document.getElementsByClassName("number");
+// 2. dengan document.getElementsByClassName
+document.getElementsByClassName("number");
 // 3. dengan document.getElementsByTagName
 document.getElementsByTagName("div");
 // 4. dengan document.querySelector
