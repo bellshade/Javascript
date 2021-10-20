@@ -1,18 +1,17 @@
-// <div class="number" id="angka">hai</div>
-// cara menyeleksi element tersebut adalah dengan
-// 1. dengan document.getElementById
-document.getElementById("angka");
-// 2. dengan document.getElementsByClassName
-document.getElementsByClassName("number");
-// 3. dengan document.getElementsByTagName
-document.getElementsByTagName("div");
-// 4. dengan document.querySelector
-document.querySelector(".number");
-//atau
-document.querySelector("#angka");
-// 5. dengan document.querySelectorAll
-document.querySelectorAll(".number");
-//atau
-document.querySelectorAll("#angka");
-//atau ini juga bisa
-document.querySelectorAll("div");
+// cara menyeleksi elemen p adalah dengan cara
+// 1. dengan menggunakan selector document.getElementsByTagName
+document.getElementsByTagName("p");
+// 2. dengan menggunakan selector document.getElementsByClassName
+document.getElementsByClassName("paragraf");
+// 3. dengan menggunakan selector document.querySelector
+document.querySelector("p.paragraf");
+
+// cara menyeleksi elemen span adalah dengan cara
+// 1. dengan menggunakan selector document.getElementsByTagName
+document.getElementsByTagName("span");
+// 2. dengan menggunakan selector document.getElementById
+document.getElementById("kata");
+// 3. dengan menggunakan selector document.querySelector
+document.querySelector("span#kata");
+// 3. dengan menggunakan selector document.querySelectorAll
+document.querySelectorAll("span#kata");
