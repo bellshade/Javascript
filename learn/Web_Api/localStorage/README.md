@@ -12,7 +12,8 @@ Beberapa method dan properti yang bisa digunakan localStorage diantaranya: `.set
 
 ### localStorage.setItem()
 
-Method ini digunakan untuk mengeset / menyimpan data ke dalam localStorage. Parameter dibutuhkan ada 2 yaitu nama `key` dan `value`.
+Method ini digunakan untuk mengeset / menyimpan data ke dalam localStorage. Parameter yang dibutuhkan ada 2 yaitu nama `key` dan `value`.
+
 Contoh:
 ```js
 // Simpan data ke localStorage
@@ -22,6 +23,7 @@ Saat code di atas dijalankan maka di dalam localStorage akan terdapat data baru 
 
 `value` yang dikirimkan ke dalam localStorage hanya bisa yang bertipe data String, Number, dan Boolean.
 Jika ingin memasukkan `value` berupa objek atau array maka harus dilakukan konversi menjadi sebuah String menggunakan method `JSON.stringify()`.
+
 Contoh:
 ```js
 // Simpan data ke localStorage
@@ -31,7 +33,8 @@ localStorage.setItem("array", JSON.stringify(array));
 
 ### localStorage.getItem()
 
-Method ini digunakan untuk mengambil data dari dalam localStorage. Parameter dibutuhkan adalah nama `key` dari data yang ingin diambil. Data yang dikembalikan adalah `value` dari data yang diambil. Jika data yang diambil tidak ada maka akan mengembalikan nilai `null`.
+Method ini digunakan untuk mengambil data dari dalam localStorage. Parameter yang dibutuhkan adalah nama `key` dari data yang ingin diambil. Data yang dikembalikan adalah `value` dari data yang diambil. Jika data yang diambil tidak ada maka akan mengembalikan nilai `null`.
+
 Contoh:
 ```js
 // Simpan data ke localStorage
@@ -43,6 +46,7 @@ console.log(localStorage.getItem("foo")); // null
 ```
 
 Jika sebelumnya `value` yang disimpan ke dalam localStorage berupa objek atau array yang telah diubah menjadi String. Maka untuk mengambil dan mengembalikan ke tipe data semula adalah dengan menggunakan method `JSON.parse()`.
+
 Contoh:
 ```js
 // Simpan data ke localStorage
@@ -57,6 +61,7 @@ console.log(newArray); // ["hello", 1, true]
 ### localStorage.removeItem()
 
 Seperti namanya, method ini digunakan untuk menghapus data dari localStorage. Parameter yang dibutuhkan nama `key` dari data yang akan dihapus.
+
 Contoh:
 ```js
 // Simpan data ke localStorage
@@ -69,6 +74,7 @@ localStorage.removeItem("tes");
 ### localStorage.clear()
 
 Method ini digunakan untuk menghapus **seluruh** data dari dalam localStorage.
+
 Contoh
 ```js
 // Simpan data ke localStorage
@@ -83,6 +89,7 @@ localStorage.clear();
 ### localStorage.length
 
 Properti ini berisi berapa banyak data yang ada di dalam localStorage.
+
 Contoh
 ```js
 // Simpan data ke localStorage
