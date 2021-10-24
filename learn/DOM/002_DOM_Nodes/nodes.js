@@ -6,8 +6,8 @@ let dom4 = document.querySelector("#paragraf"); // menyeleksi menggunakan docume
 let dom5 = document.querySelectorAll("span.kata"); // menyeleksi menggunakan document.querySelectorAll
 
 // tahap logging
-console.log(`hasil menggunakan document.getElementById: ${dom1}`)
-console.log(`hasil menggunakan document.getElementsByClassName: ${dom2}`)
-console.log(`hasil menggunakan document.getElementsByTagName: ${dom3}`)
-console.log(`hasil menggunakan document.querySelector: ${dom4}`)
-console.log(`hasil menggunakan document.querySelectorAll: ${dom5}`)
+console.log(`hasil menggunakan document.getElementById: ${dom1}`);
+console.log(`hasil menggunakan document.getElementsByClassName: ${dom2}`);
+console.log(`hasil menggunakan document.getElementsByTagName: ${dom3}`);
+console.log(`hasil menggunakan document.querySelector: ${dom4}`);
+console.log(`hasil menggunakan document.querySelectorAll: ${dom5}`);
