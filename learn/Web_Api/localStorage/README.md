@@ -8,7 +8,7 @@ Untuk dapat melihat data di dalam localStorage adalah dengan cara membuka `DevTo
 
 Dalam menuliskan sintaks terdapat 2 cara yaitu `window.localStorage` atau `localStorage`.
 
-Beberapa method dan properti yang bisa digunakan localStorage diantaranya: `.setItem()`, `getItem()`, `.removeItem()`, `.clear()`, `.length`.
+Beberapa method dan properti yang bisa digunakan localStorage diantaranya: `.setItem()`, `getItem()`, `.removeItem()`, `.clear()`, dan `.length`.
 
 ### localStorage.setItem()
 
