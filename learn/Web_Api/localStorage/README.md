@@ -60,7 +60,7 @@ console.log(newArray); // ["hello", 1, true]
 
 ### localStorage.removeItem()
 
-Seperti namanya, method ini digunakan untuk menghapus data dari localStorage. Parameter yang dibutuhkan nama `key` dari data yang akan dihapus.
+Seperti namanya, method ini digunakan untuk menghapus data dari localStorage. Parameter yang dibutuhkan adalah nama `key` dari data yang akan dihapus.
 
 Contoh:
 ```js
