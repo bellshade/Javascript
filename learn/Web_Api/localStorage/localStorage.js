@@ -14,8 +14,8 @@ console.log(newArray);
 // Hapus data dari localStorage
 localStorage.removeItem("tes");
 
-// Hapus semua data localStorage
-localStorage.clear();
-
 // Cek banyak data dalam localStorage
 console.log(localStorage.length);
+
+// Hapus semua data localStorage
+// localStorage.clear();
