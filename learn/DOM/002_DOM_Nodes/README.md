@@ -10,7 +10,7 @@ Node memiliki banyak tipe, diantaranya:
 3. text
 4. attribute 
 
-kumpulan Node dibagi 2 yaitu: NodeList dan HTMLCollection. nanti akan dibahas dimateri selanjutnya.
+kumpulan Node dibagi 2 yaitu: NodeList dan HTMLCollection, yang nanti akan dibahas dimateri selanjutnya.
 
 
 ## selector
