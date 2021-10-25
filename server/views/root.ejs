@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="/assets/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/github-markdown-css/github-markdown-light.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+
+    <style>
+      .markdown-body {
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 45px;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    </style>
+
+    <title>Bellshade Javascript</title>
+  </head>
+  <body class="w-100 h-100 d-flex align-items-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="card shadow-lg">
+            <div class="card-header p-4">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <h4 class="mb-0">Bellshade Javascript</h4>
+                    <span class="text-muted fst-italic">
+                      Gunakan navigasi berikut untuk berpindah direktori
+                    </span>
+                  </div>
+                </div>
+                <nav>
+                  <ul class="breadcrumb mb-0">
+                    <li class="breadcrumb-item active">/</li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="list-group">
+                <% dirs.forEach((dir) => { %>
+                  <a href="/<%= dir %>" class="list-group-item">
+                    <i class="fas fa-folder me-2"></i>
+                    <%= dir %>
+                  </a>
+                <% }); %>
+              </div>
+              <hr class="mt-5 mb-3" />
+              <div class="readme-content p-5">
+                <article class="markdown-body"><%- md %></article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/assets/@fortawesome/fontawesome-free/js/all.min.js"></script>
+  </body>
+</html>
