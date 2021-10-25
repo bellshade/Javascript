@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Repositori untuk belajar pemrograman Javascript dalam bahasa Indonesia",
   "scripts": {
+    "start": "node server/app",
+    "dev": "nodemon server/app",
     "lint": "eslint **/*.js",
     "prettier": "prettier --w **/*.js",
     "prettier-watch": "onchange '**/*.js' -- prettier --w {{changed}}",
@@ -10,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/reacto11mecha/Javascript.git"
+    "url": "git+https://github.com/bellshade/Javascript.git"
   },
   "keywords": [
     "javascript",
@@ -26,7 +28,16 @@
   "devDependencies": {
     "doctest": "^0.18.1",
     "eslint": "^7.32.0",
+    "nodemon": "^2.0.14",
     "onchange": "^7.1.0",
     "prettier": "^2.4.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bootstrap": "^5.1.3",
+    "commonmark": "^0.30.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "github-markdown-css": "^5.0.0"
   }
 }
