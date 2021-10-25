@@ -19,8 +19,14 @@
 
     h3,
     h1 {
+        font-weight: 900;
+        margin-bottom: 5px;
         text-align: center;
-        color: white;
+        color: black;
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+
     }
 
     #parentnode,
@@ -29,7 +35,8 @@
     #nextelementsibling,
     #previoussibling,
     #previouselementsibling {
-        display: grid;
+        display: flex;
+        flex-direction: column;
         margin-top: 5px;
         margin-bottom: 25px;
         margin-left: 25px;
@@ -39,20 +46,19 @@
         border-radius: 10px;
         text-align: center;
         word-wrap: break-word;
-        background: linear-gradient(to bottom, red, green, blue);
+        background: linear-gradient(to bottom, red,purple);
     }
 
     #nextsibling,
     #nextelementsibling {
-        display: flex;
-        justify-items: center;
-        background: linear-gradient(to bottom, red, white)
+        align-items: center;
+        background: linear-gradient(to bottom, green, blue)
     }
 
     #previoussibling,
     #previouselementsibling {
-        justify-items: center;
-        background: linear-gradient(to bottom, yellow, white)
+        align-items: center;
+        background: linear-gradient(to bottom, yellow, orange)
     }
 
     .card {
@@ -143,8 +149,8 @@
     <h1>DOM Traversal</h1>
     <hr>
 
-    <h3>Menggunakan Method parentNode</h3>
     <div id="parentnode">
+        <h3>Menggunakan Method parentNode</h3>
         <div class="card">
             <span></span>
             <a class="nama">Muhammad Azqilana</a>
@@ -164,8 +170,8 @@
             <a class="pekerjaan">Pedagang</a>
         </div>
     </div>
-    <h3>Menggunakan Method parentElement</h3>
     <div id="parentelement">
+        <h3>Menggunakan Method parentElement</h3>
         <div class="select">
             <span class="btn"></span>
             <a a class="nama"> Larasati</a>
@@ -185,23 +191,23 @@
             <a class="pekerjaan">Guru</a>
         </div>
     </div>
-    <h3>Menggunakan Method nextSibling</h3>
     <div id="nextsibling">
+        <h3>Menggunakan Method nextSibling</h3>
         <input type="text" placeholder="Tulis Nama Warna dalam bahasa inggris">
         <div class="preview"></div>
     </div>
-    <h3>Menggunakan Method nextElementSibling</h3>
     <div id="nextelementsibling">
+        <h3>Menggunakan Method nextElementSibling</h3>
         <input type="color">
         <input type="text" placeholder="Pilih Warna disamping untuk dapat code Hex">
     </div>
-    <h3>Menggunakan Method previousSibling</h3>
     <div id="previoussibling">
+        <h3>Menggunakan Method previousSibling</h3>
         <input type="number" placeholder="panjang string">
         <input type="text" placeholder="Tulis disini">
     </div>
-    <h3>Menggunakan Method previousElementSibling</h3>
     <div id="previouselementsibling">
+        <h3>Menggunakan Method previousElementSibling</h3>
         <div class="kotak"></div>
         <input type="number" placeholder="Ketik Angka untuk memberikan rounded Pada kotak">
     </div>
