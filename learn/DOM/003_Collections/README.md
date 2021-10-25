@@ -1,10 +1,10 @@
 # DOM Collections
-DOM Collections merupakan sebuah method yang hampir mirip seperti sebuah array namun perlu diingat bahwa **HTML Collections bukan sebuah array**, HTML Collections mirip dengan array karena bisa menggunakan loop, memiliki index, dan memiliki `.length` namun kalian tidak bisa menggunakan method `.push()` / `.pop()` atau semacamnya.
+DOM Collections merupakan sebuah metode yang hampir mirip seperti sebuah array namun perlu diingat bahwa **HTML Collections bukan sebuah array**, HTML Collections mirip dengan array karena bisa menggunakan loop, memiliki index, dan memiliki `.length` namun kalian tidak bisa menggunakan metode `.push()` / `.pop()` atau semacamnya.
 
-**Referensi**: [Apa itu HTML Collections beserta property dan methodnya](https://www.w3schools.com/jsref/dom_obj_htmlcollection.asp)
+**Referensi**: [Apa itu HTML Collections beserta property dan metodenya](https://www.w3schools.com/jsref/dom_obj_htmlcollection.asp)
 
 ## Apa saja HTML Collections itu?
-HTML Collections terdiri atas 2 method yaitu:
+HTML Collections terdiri atas 2 metode yaitu:
 - `.getElementsByTagName()` - Mencari elemen sesuai tag
 - `.getElementsByClassName()` - Mencari elemen sesuai class
 
@@ -16,7 +16,7 @@ HTML Collections terdiri atas 2 method yaitu:
 
 ## Bagaimana cara pemakaiannya?
 
-Berikut cara menggunakan method `.getElementsByTagName()`:
+Berikut cara menggunakan metode `.getElementsByTagName()`:
 
 **HTML**
 ```html
@@ -48,9 +48,9 @@ console.log(p1)
 */
 ```
 **Catatan**: Index akan selalu dimulai dengan 0. 
-Method ini mengklasifikasi elemen menurut nama tag-nya.
+Metode ini mengklasifikasi elemen menurut nama tag-nya.
 
-Selanjutnya cara menggunakan method `.getElementsByClassName()`
+Selanjutnya cara menggunakan metode `.getElementsByClassName()`
 
 **HTML**
 ```html
@@ -65,7 +65,7 @@ const p = document.getElementsByClassName('Class')
 // Menyimpan seluruh elemen yang memiliki class "Class"
 // kedalam variable p
 ```
-Cara penggunaan method ini sama, terbentuk seperti array dan memiliki index, namun pengklasifikasiannya berbeda, method ini mengklasifikasi menurut nama classnya.
+Cara penggunaan metode ini sama, terbentuk seperti array dan memiliki index, namun pengklasifikasiannya berbeda, metode ini mengklasifikasi menurut nama classnya.
 
 ## HTML Collection with Loop
 Ada kala kita ingin mengubah seluruh elemen atau elemen tertentu, dengan HTML Collection kita bisa melakukan hal tersebut, Berikut salah satu caranya:
@@ -82,7 +82,7 @@ const p = document.getElementsByTagName('p')
 // Menyimpan seluruh elemen dengan tag p
 
 // Menggunakan for loop untuk mengatasi p satu per satu
-// dengan menggunakan method .length
+// dengan menggunakan metode .length
 for (var i = 0; i < p.length; i++) {
 	p[i].innerText += `${i}`
 }
