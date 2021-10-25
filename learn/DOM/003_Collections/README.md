@@ -89,7 +89,8 @@ for (var i = 0; i < p.length; i++) {
 ```
 Expected output:
 
-(Gambar)
+![domCollection](https://user-images.githubusercontent.com/87674246/138653592-49d2759f-4e18-4044-81df-31cbf582fbc3.png)
+
 
 ## References
 Selengkapnya kalian bisa mengunjungi [website berikut](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection)
