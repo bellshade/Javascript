@@ -1,6 +1,8 @@
 # Window.sessionStorage
 
-sessionStorage adalah sebuah properti yang dapat menyimpan data berdasarkan pasangan antara `key` dan `value` di browser web. namun tidak permanen seperti [localStorage](https://github.com/bellshade/Javascript/tree/main/learn/Web_Api/localStorage).  Data akan hilang jika browser sudah diclose / ditutup. Data disimpan pada setiap tab yang dibuka, jadi jika 2 tab atau lebih membuka halaman yang sama maka session dari setiap tab akan berbeda.
+sessionStorage adalah sebuah properti yang dapat menyimpan data berdasarkan pasangan antara `key` dan `value` di browser web, tetapi tidak permanen seperti [localStorage](https://github.com/bellshade/Javascript/tree/main/learn/Web_Api/localStorage).  Data akan hilang jika browser sudah diclose / ditutup.
+
+Data di dalam sessionStorage disimpan pada setiap tab yang dibuka, jadi jika 2 tab atau lebih membuka halaman yang sama maka session dari setiap tab akan berbeda.
 
 Untuk dapat melihat data di dalam sessionStorage caranya sama seperti [localStorage](https://github.com/bellshade/Javascript/tree/main/learn/Web_Api/localStorage) yaitu dengan cara membuka `DevTools` pada browser kemudian buka tab `Application`. Pada sidebar sebelah kiri terdapat beberapa menu lainnya, termasuk sessionStorage.
 
