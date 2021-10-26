@@ -23,5 +23,9 @@ module.exports = {
   ROOT,
   requiredStatic: remappedStatics.concat(remappedAssets),
   statics,
-  assets
+  assets,
+  commonRegex: (url) =>
+    statics
+      .map((static) => new RegExp(`/${static}(/*?)`))
+      .some((reg) => reg.test(url))
 };
