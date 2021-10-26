@@ -1,3 +1,4 @@
+/*eslint-disable no-undef */
 let container = document.getElementById("geo-data"); // menyeleksi container
 let btn = document.getElementById("geo-btn"); // menyeleksi button
 
