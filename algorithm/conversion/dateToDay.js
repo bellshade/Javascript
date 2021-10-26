@@ -42,11 +42,31 @@ const dateToDay = (tanggal) => {
   const th = tahun % 100; // mengambil 2 digit tahun dari belakang
   const abad = Math.floor(tahun / 100); // mengambil 2 digit tahun dari depan
 
-  if ((bulan === 2) && (tahun % 4 === 0) && (tahun % 100 !== 0) || (tahun % 400 === 0)) {
-    const hasil = Math.abs((tgl + Math.floor(2.6 * listBulan[bulan] - 0.2) - 2 * abad + th + Math.floor(th / 4) + Math.floor(abad / 4)+5) % 7);
+  if (
+    (bulan === 2 && tahun % 4 === 0 && tahun % 100 !== 0) ||
+    tahun % 400 === 0
+  ) {
+    const hasil = Math.abs(
+      (tgl +
+        Math.floor(2.6 * listBulan[bulan] - 0.2) -
+        2 * abad +
+        th +
+        Math.floor(th / 4) +
+        Math.floor(abad / 4) +
+        5) %
+        7
+    );
     return listHari[hasil];
   } else {
-    const hasil = Math.abs((tgl + Math.floor(2.6 * listBulan[bulan] - 0.2) - 2 * abad + th + Math.floor(th / 4) + Math.floor(abad / 4)) % 7);
+    const hasil = Math.abs(
+      (tgl +
+        Math.floor(2.6 * listBulan[bulan] - 0.2) -
+        2 * abad +
+        th +
+        Math.floor(th / 4) +
+        Math.floor(abad / 4)) %
+        7
+    );
     return listHari[hasil];
   }
 };

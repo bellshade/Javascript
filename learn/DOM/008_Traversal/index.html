@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Traversal</title>
+</head>
+<style>
+    * {
+        margin: 0%;
+        padding: 0;
+    }
+
+    body {
+        background: linear-gradient(to bottom, black, gray);
+    }
+
+    h3,
+    h1 {
+        font-weight: 900;
+        margin-bottom: 5px;
+        text-align: center;
+        color: black;
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+
+    }
+
+    #parentnode,
+    #parentelement,
+    #nextsibling,
+    #nextelementsibling,
+    #previoussibling,
+    #previouselementsibling {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        margin-bottom: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        text-align: center;
+        word-wrap: break-word;
+        background: linear-gradient(to bottom, red,purple);
+    }
+
+    #nextsibling,
+    #nextelementsibling {
+        align-items: center;
+        background: linear-gradient(to bottom, green, blue)
+    }
+
+    #previoussibling,
+    #previouselementsibling {
+        align-items: center;
+        background: linear-gradient(to bottom, yellow, orange)
+    }
+
+    .card {
+        display: grid;
+        margin: 5px;
+        padding: 1px 0;
+        background-color: yellow;
+    }
+
+    .select {
+        margin: 5px;
+        border: 2px solid yellow;
+        border-radius: 10px;
+        background-color: blue;
+    }
+
+    span {
+        position: absolute;
+        padding: 6px;
+        background-color: black;
+        border: 2px solid black;
+        border-radius: 50%;
+        margin-top: 1px;
+        margin-left: 5px;
+        float: right;
+    }
+
+    .btn {
+        position: relative;
+    }
+
+    a {
+        border-bottom: 1px solid black;
+    }
+
+
+
+    h3 {
+        margin-top: 5px;
+        grid-area: judul;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    input {
+        width: 50%;
+        padding: 5px;
+        text-align: center;
+        word-wrap: break-word;
+        margin: 5px;
+        border-radius: 10px;
+        outline: none;
+        border: 2px solid transparent;
+    }
+
+    .preview {
+        width: 50%;
+        background-color: transparent;
+        padding: 5px;
+        border-radius: 5px;
+        height: 10px;
+        margin-top: 8px;
+    }
+
+    textarea {
+        resize: none;
+        overflow: hidden;
+    }
+
+    .kotak {
+        width: 300px;
+        height: 300px;
+        background-color: blue;
+    }
+
+    @media screen and (max-width:670px) {
+
+        .card {
+            width: auto;
+            margin: 10px 0;
+        }
+    }
+</style>
+
+<body>
+    <h1>DOM Traversal</h1>
+    <hr>
+
+    <div id="parentnode">
+        <h3>Menggunakan Method parentNode</h3>
+        <div class="card">
+            <span></span>
+            <a class="nama">Muhammad Azqilana</a>
+            <a class="umur">21 Tahun</a>
+            <a class="pekerjaan">Mahasiswa</a>
+        </div>
+        <div class="card">
+            <span></span>
+            <a class="nama">Sopyan Hariadi</a>
+            <a class="umur">25 Tahun</a>
+            <a class="pekerjaan">Wiraswasta</a>
+        </div>
+        <div class="card">
+            <span></span>
+            <a class="nama">Alfian Hadi</a>
+            <a class="umur">25 Tahun</a>
+            <a class="pekerjaan">Pedagang</a>
+        </div>
+    </div>
+    <div id="parentelement">
+        <h3>Menggunakan Method parentElement</h3>
+        <div class="select">
+            <span class="btn"></span>
+            <a a class="nama"> Larasati</a>
+            <a class="umur">21</a>
+            <a class="pekerjaan">Pedagang</a>
+        </div>
+        <div class="select">
+            <span class="btn"></span>
+            <a a class="nama"> Ria Handriani</a>
+            <a class="umur">22</a>
+            <a class="pekerjaan">Staf</a>
+        </div>
+        <div class="select">
+            <span class="btn"></span>
+            <a a class="nama">Novi Usmiatun</a>
+            <a class="umur">22</a>
+            <a class="pekerjaan">Guru</a>
+        </div>
+    </div>
+    <div id="nextsibling">
+        <h3>Menggunakan Method nextSibling</h3>
+        <input type="text" placeholder="Tulis Nama Warna dalam bahasa inggris">
+        <div class="preview"></div>
+    </div>
+    <div id="nextelementsibling">
+        <h3>Menggunakan Method nextElementSibling</h3>
+        <input type="color">
+        <input type="text" placeholder="Pilih Warna disamping untuk dapat code Hex">
+    </div>
+    <div id="previoussibling">
+        <h3>Menggunakan Method previousSibling</h3>
+        <input type="number" placeholder="panjang string">
+        <input type="text" placeholder="Tulis disini">
+    </div>
+    <div id="previouselementsibling">
+        <h3>Menggunakan Method previousElementSibling</h3>
+        <div class="kotak"></div>
+        <input type="number" placeholder="Ketik Angka untuk memberikan rounded Pada kotak">
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
