@@ -12,6 +12,9 @@
    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
    crossorigin=""></script>
    <style>
+       html{
+           overflow-x: hidden;
+       }
        #geo-map{
            width: 600px;
            height: 300px;
@@ -36,7 +39,7 @@
        }
        #geo-btn{
            width: 130px;
-           margin: 0 auto;
+           margin: 0 calc((100vw - 130px) / 2);
        }
 
    </style>
@@ -47,7 +50,7 @@
     </div>
     <div id="geo-map"></div>
     <br>
-    <button onclick="showGeo()" id="geo-btn">tampilkan data lokasi</button>
+    <button id="geo-btn">tampilkan data lokasi</button>
     </div>
     <script src="geolocation.js"></script>
 </body>
