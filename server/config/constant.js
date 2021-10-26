@@ -1,4 +1,5 @@
 const path = require("path");
+const fs = require("fs");
 
 const ROOT = path.join(__dirname, "../../");
 const NODE_MODULES = path.join(ROOT, "node_modules");
@@ -24,8 +25,12 @@ module.exports = {
   requiredStatic: remappedStatics.concat(remappedAssets),
   statics,
   assets,
-  commonRegex: (url) =>
-    statics
+  commonRegex: (url) => {
+    const validRegex = statics
       .map((static) => new RegExp(`/${static}(/*?)`))
-      .some((reg) => reg.test(url))
+      .some((reg) => reg.test(url));
+    const isThingExists = fs.existsSync(path.join(ROOT, url));
+
+    return validRegex && isThingExists;
+  }
 };

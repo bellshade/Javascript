@@ -52,24 +52,30 @@
                 </div>
                 <nav>
                   <ul class="breadcrumb mb-0">
-                    <li class="breadcrumb-item active">/</li>
+                    <li class="breadcrumb-item active"><%= originalURL %></li>
                   </ul>
                 </nav>
               </div>
             </div>
             <div class="card-body">
               <div class="list-group">
-                <% dirs.forEach((dir) => { %>
-                  <a href="/<%= dir %>" class="list-group-item">
-                    <i class="fas fa-folder me-2"></i>
-                    <%= dir %>
+                <a href="<%= upOneDirectory %>" class="list-group-item">
+                  <i class="fas fa-folder me-2"></i>
+                  ..
+                </a>
+                <% items.forEach((item) => { %>
+                  <a href="<%= originalURL %>/<%= item.name %>" class="list-group-item">
+                    <i class="<%= item.type %> me-2"></i>
+                    <%= item.name %>
                   </a>
                 <% }); %>
               </div>
+              <% if (md) { %>
               <hr class="mt-5 mb-3" />
-              <div class="readme-content p-5">
-                <article class="markdown-body"><%- md %></article>
-              </div>
+                <div class="readme-content p-5">
+                  <article class="markdown-body"><%- md %></article>
+                </div>
+              <% } %>
             </div>
           </div>
         </div>

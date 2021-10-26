@@ -10,6 +10,10 @@ const Parser = (readmePath) => {
 
   const fullPath = path.join(ROOT, readmePath);
 
+  if (!fs.existsSync(fullPath)) {
+    return null;
+  }
+
   const markdown = fs.readFileSync(fullPath, "utf8");
 
   const parsed = reader.parse(markdown);
