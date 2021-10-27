@@ -1,33 +1,31 @@
 # DOM Traversal
--------------------------------------------------------------------------------------------------
-> Dom Traversal Ialah cara untuk melakukan dom untuk memberikan  sebuah aksi kepada sebuah Node atau Kumpulan Nodes dan Sebuah HTMLColection atau Kumpulan HTML Colection yang berada pada sebuah document HTML.
+DOM Traversal adalah metode DOM untuk memberikan sebuah aksi kepada sebuah Node atau Kumpulan Nodes dan sebuah _HTML Collection_ yang berada pada sebuah document HTML.
 
->> Untuk Melakukannya Kita menjadikan satu buah objeck atau satu buah element/node untuk menjadi Triger yang nanti akan menjadi patokkan terjadinya suatu aksi pada sebuah   Node/Element HTML Colection
+Untuk melakukannya kita menjadikan satu buah object atau satu buah element/node untuk menjadi _trigger_ yang nanti akan menjadi patokan terjadinya suatu aksi pada sebuah Node/Element HTML Collection.
 
-**Ada 6 Method yang dapat digunakkan untuk Melakukan  Penelusuran Dom**
+**Terdapat 6 metode yang dapat digunakan untuk melakukan penelusuran DOM**
 
-|            Method           |   Hasil    |
-| --------------------------- | ---------- |
-| parentElement               |   Element  |
-| parentNode                  |   Node     |
-| nextSibling                 |   Node     |
-| nextElementSibling          |   Element  |
-| previousSibling             |   Node     |
-| previousElementSibling      |   Element  |
+|              Metode            |   Hasil    |
+| ------------------------------ | ---------- |
+| .parentElement()               |   Element  |
+| .parentNode()                  |   Node     |
+| .nextSibling()                 |   Node     |
+| .nextElementSibling()          |   Element  |
+| .previousSibling()             |   Node     |
+| .previousElementSibling()      |   Element  |
 
-### Penjelasan dan Contoh
-1.Menggunakan parentElement
+## Metode `.parentElement`
+**Apa itu _parentElement_?**
 
-##### Penjelasan 
-> parentElement ialah tag atau element yang membungkus element atau tag html lainnya atau bisa di bilang orang tua dari element dari tag yang di bungkusnya
->> Seperti yang ada pada tabel di atas parentElement Menghasilan Element atau element tag html yang langsung dapat diberikan aksi dan element selalu berbentuk element tag html
+_parentElement_ merupakan tag atau element yang membungkus suatu element atau tag HTML lainnya, Bisa di bilang orang tua dari element dari tag yang di bungkusnya, Seperti yang ada pada tabel di atas `.parentElement` menghasilkan element.
 
-##### Contoh
-untuk contoh ini saya hanya akan memberikan aksi sederhana pada card dengan mengklik tombol
+**Contoh**
 
-kode HTML
+Pada contoh ini kita akan memberikan aksi sederhana pada card dengan mengklik tombol
+
+- HTML
+
 ```html
-
 <div id="parentelement">
     <div class="select">
         <span class="btn"></span>
@@ -37,85 +35,88 @@ kode HTML
     </div>
 </div>
 ```
-> Pada kode html diatas kita ada sebuah ```<div>``` yang membungkus```<div>``` yg punya kelas select
-yang dimana ```<div>``` ini memyimpan 4 elemen di dalamnya yang terdiri dari 1 ```<span>```  dan 3  ```<a>```
+Pada kode HTML diatas kita memiliki sebuah `<div>` yang membungkus `<div>` yg punya kelas select, yang dimana `<div>` select ini menyimpan 4 elemen di dalamnya yang terdiri dari 1 `<span>` dan 3 `<a>`
 
-untuk memberikannya aksi kita akan menggunakan method parentElement sebelum itu kita perlu menangkap span yang nantinya akan menjadi triger untuk terjadinya aksi
-berikut kode javascriptnya
+Untuk memberikannya aksi kita akan menggunakan metode parentElement sebelum itu kita perlu mencari span yang nantinya akan menjadi _trigger_ untuk terjadinya aksi, Berikut caranya:
 
- - pertama kita tangkap dulu spannya
+- Javascript:
+
 ```js
-const pElement = document.getElementById('parentelement');
-const toggleDua = pElement.querySelectorAll('span');
+// pertama cari span-nya(childElement) dan parentElement-nya
+const parent = document.getElementById('parentelement');
+const span = parent.querySelectorAll('span');
+console.log(span); // cek jika span sudah tersimpan kedalam variable
 ```
- - kedua kita cek apakah span nya terseleksi atau tidak
+Expected output:
 
- ```js
-const pElement = document.getElementById('parentelement');
-const toggleDua = pElement.querySelectorAll('span');
-console.log(toggleDua);
- ```
- hasilnya 
-  <img src="img/span.jpg" alt="toggle" width="50%">
+<img src="img/span.jpg" alt="toggle" width="50%">
 
-  sepeti terlihat di atas hasilnya nodelist dan nodelist bersifat seperti array dan memiliki indeks yang tentunya dimulai dari 0 sedangkan untuk memberikan aksi, trigernya haruslah element karena itu sebelum memberikan event kita lakukan pengulangan dan kita cek apakah span nya sudah berbentuk element
-  seperti dibawah ini 
+Seperti terlihat diatas hasilnya adalah tipe NodeList, NodeList ini bersifat mirip seperti array karena memiliki index yang tentunya akan selalu dimulai dari 0.
 
+**Memberi aksi:**
+
+untuk memberikan aksi, _trigger_-nya harus bertipe element karena itu sebelum memberikan event kita akan melakukan pengulangan. Contohnya:
 ```js
-const pElement = document.getElementById('parentelement');
-const toggleDua = pElement.querySelectorAll('span');
-toggleDua.forEach(function (td) {
-        console.log(td);
+const parent = document.getElementById('parentelement');
+const span = parent.querySelectorAll('span');
+
+span.forEach(function(el) {
+    console.log(el); // cek jika span-nya berupa element
 });
 ```
+Expected output:
+
 <img src="img/td.jpg" alt="toggle" width="50%">
 
-setelah di cek sekarang hasilnya spannya sudah berbentuk element
-setelah itu maka kita cek siapa parentElement dari span 
+Setelah di cek hasilnya berupa element.
+
+**Mencari parentElement:**
+
 ```js
-const pElement = document.getElementById('parentelement');
-const toggleDua = pElement.querySelectorAll('span');
-toggleDua.forEach(function (td) {
-    console.log(td);
-    td.addEventListener('click', function (e) {
+const parent = document.getElementById('parentelement');
+const span = parent.querySelectorAll('span');
+span.forEach(function(el) {
+    console.log(el);
+    // Saat span di klik maka:
+    el.addEventListener('click', function(e) {
+        // cek parentElement dari element yang di klik
         console.log(e.target.parentElement)
     });
-
 });
 ```
+Expected output:
+
 <img src="img/select.jpg" alt="toggle" width="50%">
 
-setelah itu baru kita berikan aksi 
+**Contoh penggunaan: Menambah class pada parent sebuah element**
 
 ```js
-const pElement = document.getElementById('parentelement');
-const toggleDua = pElement.querySelectorAll('span');
-toggleDua.forEach(function (td) {
-    console.log(td);
-    td.addEventListener('click', function (e) {
-        e.target.parentElement.classList.toggle('select');
-        e.target.parentElement.classList.toggle('card');
-        e.target.classList.toggle('btn');
-    });
+// Cari dan simpan parent elemen dan child elemennya
+// kedalam variable masing-masing
+const parent = document.getElementById('parentelement');
+const span = parent.querySelectorAll('span');
 
+// Loop dengan metode .forEach
+span.forEach(function(el) {
+    el.addEventListener('click', function(e) {
+      // Saat elemen span di klik,
+      // beri class "select" pada parent-nya
+      e.target.parentElement.classList.add('select');
+    });
 });
 ```
-kode diatas maksudnya jika span di klik ia akan mengecek parentElement span ada class select tidak, ada class card tidak,  jika ada hapus classnya jika nggak ada kasih classnya 
-Demo klik bawah
+ 
+**Reference:** [Klik disini](http://azqilana.github.io/Javascript/learn/DOM/008_Traversal/index.html#parentelement)
 
-<a href="http://azqilana.github.io/Javascript/learn/DOM/008_Traversal/index.html#parentelement" target="_blank" rel="noopener noreferrer"><button style="background-color:blue;border-radius:10px;">Demo</button></a>
+## Metode `.parentNode`
+**Apa itu _parentNode_?**
 
+_parentNode_ merupakan node yang membungkus kumpulan node atau tag HTML dan apapun yang berada dalam node tersebut, Seperti yang ada pada tabel di atas parentNode Menghasilan Node, Node dapat berbentuk apapun baik itu element HTML atau bukan.
 
-2.Menggunakan parentNode
+**Contoh**
+Pada contoh ini kita akan memberikan aksi sederhana pada card dengan mengklik tombol
 
-##### Penjelasan
->parentNode ialah node yang membungkus kumpulan node atau tag html dan apapun yang berada dalam node tersebut  
->Seperti yang ada pada tabel di atas parentNode Menghasilan Node dan Node dapat berbentu apapun baik itu elemnt html atau bukan
-
-##### Contoh
-untuk contoh ini saya hanya akan memberikan aksi sederhana pada card dengan mengklik tombol
-
-kode HTML
+- HTML
 ```html
 <div id="parentnode">
     <div class="card">
@@ -126,214 +127,222 @@ kode HTML
     </div>
 </div>
 ```
-> Pada kode html diatas kita ada sebuah ```<div>``` yang membungkus```<div>``` yg punya kelas select
-yang dimana ```<div>``` ini memyimpan 4 elemen di dalamnya yang terdiri dari 1 ```<span>```  dan 3  ```<a>```
+Pada kode HTML diatas kita memiliki sebuah `<div>` yang membungkus `<div>` yang mempunyai kelas select yang dimana `<div>` ini menyimpan 4 element di dalamnya yang terdiri dari 1 `<span>` dan 3 `<a>`.
 
-untuk memberikannya aksi kita akan menggunakan method parentNode sebelum itu kita perlu menangkap span yang nantinya akan menjadi triger untuk terjadinya aksi
-berikut kode javascriptnya
+Untuk memberikannya aksi kita akan menggunakan metode parentNode sebelum itu kita perlu mencari span yang nantinya akan menjadi _trigger_ untuk terjadinya aksi, Berikut caranya:
 
- - pertama kita tangkap dulu spannya
+- Javascript
+
 ```js
-const pNode = document.getElementById('parentnode');
-const toggle = pNode.querySelectorAll('span');
-```
- - kedua kita cek apakah span nya terseleksi atau tidak
-
- ```js
-const pNode = document.getElementById('parentnode');
-const toggle = pNode.querySelectorAll('span');
-console.log(toggle);
+// pertama cari span-nya(childElement) dan parentElement-nya
+const parent = document.getElementById('parentnode');
+const span = parent.querySelectorAll('span');
+console.log(span); // cek jika span sudah tersimpan kedalam variable
  ```
- hasilnya 
+Expected output:
  
-  <img src="img/span.jpg" alt="toggle" width="50%">
+<img src="img/span.jpg" alt="toggle" width="50%">
 
-  sepeti terlihat di atas hasilnya nodelist dan nodelist bersifat seperti array dan memiliki indeks yang tentunya dimulai dari 0 sedangkan untuk memberikan aksi, trigernya haruslah element karena itu sebelum memberikan event kita lakukan pengulangan dan kita cek apakah span nya sudah berbentuk element
-  seperti dibawah ini 
+Seperti yang terlihat di atas hasilnya bertipe NodeList, NodeList bersifat mirip seperti array karena memiliki index yang tentunya akan selalu dimulai dari 0.
+
+**Memberi aksi:**
+
+Untuk memberikan aksi, _trigger_-nya haruslah element karena itu sebelum memberikan event kita lakukan pengulangan.
 
 ```js
-const pNode = document.getElementById('parentnode');
-const toggle = pNode.querySelectorAll('span');
-toggle.forEach(function (t1) {
-        console.log(t1);
+const parent = document.getElementById('parentnode');
+const span = parent.querySelectorAll('span');
+span.forEach(function (el) {
+    console.log(el); // cek jika span-nya berupa elemen
 });
 ```
+Expected output:
+
 <img src="img/t1.jpg" alt="toggle" width="50%">
 
-setelah di cek sekarang hasilnya spannya sudah berbentuk element
-setelah itu maka kita cek siapa parentNode dari span 
+Setelah di cek hasilnya berupa element.
+
+**Mencari parentNode:**
+
 ```js
-const pNode = document.getElementById('parentnode');
-const toggle = pNode.querySelectorAll('span');
-toggle.forEach(function (t1) {
-    console.log(t1);
-    t1.addEventListener('click', function (e) {
+const parent = document.getElementById('parentnode');
+const toggle = parent.querySelectorAll('span');
+toggle.forEach(function (el) {
+    console.log(el);
+    // Saat span di klik maka:
+    el.addEventListener('click', function(e) {
+      // cek parentElement dari element yang di klik
         console.log(e.target.parentNode)
     });
-
 });
 ```
+Expected output:
+
 <img src="img/card.jpg" alt="toggle" width="50%">
 
-setelah itu baru kita berikan aksi 
+**Contoh penggunaan: Menambahkan class pada parentNode element**
 
 ```js
-const pNode = document.getElementById('parentnode');
-const toggle = pNode.querySelectorAll('span');
-toggle.forEach(function (t1) {
-    console.log(t1);
-    t1.addEventListener('click', function (e) {
-        e.target.parentNode.classList.toggle('select');
-        e.target.parentNode.classList.toggle('card');
-        e.target.classList.toggle('btn');
-    });
+// Cari dan simpan parent elemen dan child elemennya
+// kedalam variable masing-masing
+const parent = document.getElementById('parentnode');
+const span = parent.querySelectorAll('span');
 
+// Loop dengan metode .forEach
+span.forEach(function (el) {
+    console.log(el);
+    el.addEventListener('click', function(e) {
+      // Saat elemen span di klik,
+      // beri class "btn" pada parentNode-nya
+      e.target.parentNode.classList.add('btn');
+    });
 });
 ```
-kode diatas maksudnya jika span di klik ia akan mengecek parentNode span ada class select tidak, ada class card tidak, jika ada hapus classnya, jika nggak ada kasih classnya.
-Demo klik bawah
 
-<a href="http://azqilana.github.io/Javascript/learn/DOM/008_Traversal/index.html#parentnode" target="_blank" rel="noopener noreferrer"><button style="background-color:blue;border-radius:10px;">Demo</button></a>
+**Reference:** [Klik disini](http://azqilana.github.io/Javascript/learn/DOM/008_Traversal/index.html#parentnode)
 
-3.Menggunakan nextSibling
+## Metode `.nextSibling`
+**Apa itu _nextSibling_?**
 
-##### Penjelasan
+_nextSibling_ merupakan apapun yang berada setelah element atau tag tersebut bisa dibilang saudara atau adik dari element tersebut _nextSibling_ menghasilkan Node, maka bukan hanya menangkap element HTML tapi juga text dan apapun yang berada setelah tag atau element tersebut.
 
->>nextSibling maksudnya ialah apapun yang berada setelah element atau tag tersebut bisa dibilang saudara atau adik dr element tsb nextSibling menghasilkan node jd bukan hanya menangkap element html tp juga text dan apapun yang berada setelah tag atau element tersebut.
+**Contoh**
 
-##### Contoh
+Pada contoh kali ini kita akan membuat hal sederhana.
 
-Dalam Contoh kali ini saya akan membuat contoh sederhana saja
-
-HTML 
+- HTML 
 ```html
 <div id="nextsibling">
     <input type="text" placeholder="Tulis Nama Warna dalam bahasa inggris">
     <div class="preview"></div>
 </div>
 ```
- >Diatas kita ada ```<div>``` yang membungkus 2 element yakni ``` <input> ``` dan ```<div>```
- >>Dalam contoh kali ini saya akan melakukan dom sederhana yakni saya akan mengubah warna background ```<div>``` yang di atas sesuai dengan value yang tertulis di ``` <input> ```
+Diatas terdapat `<div>` yang membungkus 2 element yakni `<input>` dan `<div>` Dalam contoh kali ini kita akan melakukan DOM sederhana yakni mengubah warna background `<div>` yang di atas sesuai dengan value yang tertulis di `<input>`, Berikut caranya:
 
-caranya seperti ini 
-- pertama kita tangkap elementnya dalam hal ini yang akan kita tangkap element input seperti ini
+- Javascript
+
 ```js
+// pertama simpan elementnya kedalam variable
+// dalam hal ini yang akan kita tangkap element input seperti ini
 const nSibling = document.getElementById("nextsibling");
 const input = nSibling.getElementsByTagName("input")[0];
 ```
-> Code di atas sebelum menangkap inputnya saya tangkap dulu pembungkusnya untuk lebih mudah menangkap elementnya karena itu saya bisa menjadikan pembungkusnya sebagai patokan untuk mengambil element tersebut saya memberikan index [0] setelah menangkap input sebelum ';' karena saya menangkap elementnya dengan getElementsByTagName yang hasilnya itu HTML Colection yang sifat atau berperilaku seperti array dan memiliki index indexnya nol karena itu ialah tag input pertama dan satu satunya.
-- kedua cek nextSibling input siapa
+Code di atas sebelum menyimpan inputnya kita tangkap dulu pembungkusnya untuk lebih mudah menangkap elementnya karena itu kita bisa menjadikan pembungkusnya sebagai patokan untuk mengambil element tersebut kita memberikan index [0] setelah menyimpan input sebelum `;` karena kita menangkap elementnya dengan `.getElementsByTagName()` yang hasilnya itu HTML Collections yang sifat atau berperilaku mirip seperti array dan memiliki index.
+
+**Membuat aksi:**
+
 ```js
 const nSibling = document.getElementById
 ("nextsibling");
 const input = nSibling.getElementsByTagName("input")[0];
-input.addEventListener("input", function (e) {
-  console.log(e.target.nextSibling)
+
+// Saat user meng-input sesuatu pada
+// variable input ini maka:
+input.addEventListener("input", function(e) {
+  console.log(e.target.nextSibling) // cek nextSibling dari input ini
 });
 ```
-hasilnya
+Expected output:
 
 <img src="img/ns1.jpg" alt="toggle" width="50%">
 
-dilihat dari hasil di atas bahwa nextSibling input berupa textitu karena sesuai dengan tabel yang ada di atas bahwa nextSibling menghasilkan Node yang dpt berupa apa saja
-  untuk itu untuk menangap divnya caranya kita
-  bisa mengakalinya dengan memberikan nextSibling lagi setelah nextSibling
+Dilihat dari hasil diatas bahwa `.nextSibling` input berupa text itu karena sesuai dengan tabel yang ada diatas bahwa `.nextSibling` menghasilkan Node yang dapat berupa apa saja untuk itu untuk menangkap `<div>`-nya caranya kita bisa mengakalinya dengan memberikan `.nextSibling` lagi setelah `.nextSibling`, Berikut contohnya:
+
+**nextSibling to nextSibling**
 
 ```js
 const nSibling = document.getElementById
 ("nextsibling");
 const input = nSibling.getElementsByTagName("input")[0];
-input.addEventListener("input", function (e) {
+input.addEventListener("input", function(e) {
   console.log(e.target.nextSibling.nextSibling)
 });
 ```
-
-hasilnya 
+Expected output: 
 
 <img src="img/ns2.jpg" alt="toggle" width="50%">
 
->nah sekarang ```<div>``` sudah di tangkap 
- - terahir kita berikan aksi
+nah sekarang `<div>` sudah di tangkap 
+
+**Contoh penggunaan: Mengganti warna background**
 
 ```js
 const nSibling = document.getElementById("nextsibling");
 const input = nSibling.getElementsByTagName("input")[0];
-input.addEventListener("input", function (e) {
-  e.target.nextSibling.nextSibling.style.backgroundColor = "" + e.target.value;
+input.addEventListener("input", function(e) {
+  e.target.nextSibling.nextSibling.style.backgroundColor = `${e.target.value}`;
 });
 ```
-Demo klik di bawah
+**Reference:** [Klik disini](http://azqilana.github.io/Javascript/learn/DOM/008_Traversal/index.html#nextsibling)
 
-<a href="http://azqilana.github.io/Javascript/learn/DOM/008_Traversal/index.html#nextsibling" target="_blank" rel="noopener noreferrer"><button style="background-color:blue;border-radius:10px;">Demo</button></a>
+## Metode `.nextElementSibling`
+**Apa itu _nextElementSibling_?**
 
-4.Menggunakan nextElementSibling
+_nextElementSibling_ merupakan element yang berada setelah tag atau element tersebut _nextElementSibling_ menangkap element dan tidak memperdulikan node yang berada setelah element tersebut.
 
-##### Penjelasan
->nextElementSibling ialah element yang berada setelah tag atau element tersebut nextElementSibling menangkap element dan tidak memperdulikan node yang berada setelah element tersebut
+**Contoh** 
 
-##### Contoh 
+Pada contoh kali ini kita akan memberikan aksi yang bisa di bilang berkebalikan dari aksi yang dilakukan pada contoh di materi `.nextSibling`, Berikut caranya:
 
-Dalam Contoh kali ini  saya akan memberikan aksi yang bisa di bilang kebalikan dari aksi yang dilakukan pada contoh di materi nextSibling langsung saja
-
+- HTML
 ```html
-    <div id="nextelementsibling">
-        <h3>Menggunakan Method nextElementSibling</h3>
-        <input type="color">
-        <input type="text" placeholder="Pilih Warna disamping untuk dapat code Hex">
-    </div>
+<div id="nextelementsibling">
+    <h3>Menggunakan metode nextElementSibling</h3>
+    <input type="color">
+    <input type="text" placeholder="Pilih Warna disamping untuk dapat code Hex">
+</div>
 ```
+Diatas kita terdapat `<div>` yang membungkus 2 element yakni 2 buah `<input>` yang satu bertipe color yang satu bertipe text, dalam contoh kali ini kita akan melakukan dom sederhana yakni kita akan mengubah isi dari `<input>` kedua sesuai dengan value/warna yang dipilih pada `<input>` pertama yg bertipe color nanti `<input>` kedua akan memunculkan _hex code_(`#`) dari warna di input type color, Berikut contohnya: 
 
- >Diatas kita ada ```<div>``` yang membungkus 2 element yakni 2 buah ``` <input> ``` yang satu bertipe color yang satu bertipe text
- >>Dalam contoh kali ini saya akan melakukan dom sederhana yakni saya akan mengubah isi dari ```<input>``` kedua sesuai dengan value/warna yang dipilih pada ``` <input> ``` ke 1 yg bertipe color nanti ```<input>``` kedua akan memunculkan kode hexxa dr warna di input type color
-
-caranya begini 
-
+- Javascript
 ```js
+// Menyimpan element siblingnya dan input
+// kedalam variable
 const nElSibling = document.getElementById("nextelementsibling");
 const isian = nElSibling.getElementsByTagName("input")[0];
 ```
+Code di atas sebelum menangkap inputnya kita simpan dulu pembungkusnya untuk lebih mudah menangkap elementnya, karena itu kita bisa menjadikan pembungkusnya sebagai patokan untuk mengambil element tersebut kita memberikan index 0, setelah menangkap input sebelum `;` karena kita menangkap elementnya dengan `.getElementsByTagName` yang hasilnya itu HTML Collection yang sifat atau berperilaku mirip seperti array dan memiliki index indexnya nol karena itu ialah tag input pertama, Selanjutnya:
 
-> Code di atas sebelum menangkap inputnya saya tangkap dulu pembungkusnya untuk lebih mudah menangkap elementnya karena itu saya bisa menjadikan pembungkusnya sebagai patokan untuk mengambil element tersebut saya memberikan index [0] setelah menangkap input sebelum ';' karena saya menangkap elementnya dengan getElementsByTagName yang hasilnya itu HTML Colection yang sifat atau berperilaku seperti array dan memiliki index indexnya nol karena itu ialah tag input pertama.
 
-- kedua cek nextElementSibling input siapa
+**Memberi aksi:**
 ```js
 const nElSibling = document.getElementById("nextelementsibling");
 const isian = nElSibling.getElementsByTagName("input")[0];
 
-isian.addEventListener("input", function (e) {
-  console.log(e.target.nextElementSibling)
+// saat isian di input maka:
+isian.addEventListener("input", function(e) {
+  // cek nextElementSibling dari element yang terdapat pada isian
+  console.log(e.target.nextElementSibling) 
 });
 ```
-hasilnya 
+Expected output: 
 
 <img src="img/nel1.jpg" alt="toggle" width="50%">
 
-dari hasil di atas sudah di dapat nextElementSiblingnya ialah input
+Dari hasil di atas sudah di dapat nextElementSiblingnya yakni input.
 
-- terakhir lakukkan aksinya
+**Contoh penggunaan: Mengganti nilai**
 ```js
 const nElSibling = document.getElementById("nextelementsibling");
 const isian = nElSibling.getElementsByTagName("input")[0];
 
-isian.addEventListener("input", function (e) {
+isian.addEventListener("input", function(e) {
+  // mengganti value elementSibling dengan value isian
   e.target.nextElementSibling.value = e.target.value;
 });
 ```
-Demo klik di bawah
+**Reference:** [Klik disini](http://azqilana.github.io/Javascript/learn/DOM/008_Traversal/index.html#nextelementsibling)
 
-<a href="http://azqilana.github.io/Javascript/learn/DOM/008_Traversal/index.html#nextelementsibling" target="_blank" rel="noopener noreferrer"><button style="background-color:blue;border-radius:10px;">Demo</button></a>
+## Metode `.previousSibling`
+**Apa itu _previousSibling_?**
 
-5.Menggunakan previousSibling
+_previousSibling_ maksudnya apapun yang berada sebelum element atau tag tersebut bisa dibilang saudara atau kakak dari element tersebut `.previousSibling` menghasilkan Node, maka bukan hanya menangkap element HTML tapi juga text dan apapun yang berada sebelum tag atau element tersebut.
 
-##### Penjelasan
+**Contoh**
 
->>previousSibling maksudnya ialah apapun yang berada sebelum element atau tag tersebut bisa dibilang saudara atau kakak  dr element tsb previousSibling menghasilkan node jd bukan hanya menangkap element html tp juga text dan apapun yang berada sebelum tag atau element tersebut.
+Pada contoh kali ini kita akan membuat contoh sederhana saja, Berikut caranya:
 
-##### Contoh
-
-Dalam Contoh kali ini saya akan membuat contoh sederhana saja
-
-HTML 
+- HTML 
 ```html
  <div id="previouselementsibling">
         <h3>Menggunakan Method previousElementSibling</h3>
@@ -341,135 +350,117 @@ HTML
         <input type="number" placeholder="Ketik Angka untuk memberikan rounded Pada kotak">
  </div>
 ```
- >Diatas kita ada ```<div>``` yang membungkus 2 element yakni ``` <div> ``` dan ```<input>```
- >>Dalam contoh kali ini saya akan melakukan dom sederhana yakni saya akan memberikan rounded pada ```<div>``` yang di atas sesuai dengan value yang tertulis di ``` <input> ```
+ Diatas kita terdapat `<div>` yang membungkus 2 element yakni `<div>` dan `<input>`, dalam contoh kali ini kita akan melakukan DOM sederhana yakni kita akan memberikan rounded pada `<div>` yang di atas sesuai dengan value yang tertulis di `<input>`, Berikut contohnya:
 
-caranya seperti ini 
-- pertama kita tangkap elementnya dalam hal ini yang akan kita tangkap element input seperti ini
+- Javascript
 ```js
+// pertama kita menyimpan elementnya
+// dalam hal ini yang akan kita menyimpan element input seperti:
 const preEleSibling = document.getElementById("previouselementsibling");
 const rounded = preEleSibling.getElementsByTagName("input")[0];
 ```
-> Code di atas sebelum menangkap inputnya saya tangkap dulu pembungkusnya untuk lebih mudah menangkap elementnya karena itu saya bisa menjadikan pembungkusnya sebagai patokan untuk mengambil element tersebut saya memberikan index [0] setelah menangkap input sebelum ';' karena saya menangkap elementnya dengan getElementsByTagName yang hasilnya itu HTML Colection yang sifat atau berperilaku seperti array dan memiliki index indexnya satu karena itu ialah tag input kedua dan seperti dietahui index array mulai dari nol.
-- kedua cek nextSibling input siapa
+Code di atas sebelum menyimpan inputnya kita tangkap dulu pembungkusnya untuk lebih mudah menyimpan elementnya karena itu kita bisa menjadikan pembungkusnya sebagai patokan untuk mengambil element tersebut kita memberikan index 0, setelah menyimpan input sebelum `;` karena kita menyimpan elementnya dengan `.getElementsByTagName` yang hasilnya itu HTML Collection yang sifat atau berperilaku mirip seperti array dan memiliki index, indexnya satu karena itu merupakan tag input kedua dan seperti diketahui index array selalu mulai dari 0, Selanjutnya:
+
+**Memberi aksi:**
+
 ```js
 const preSibling = document.getElementById("previoussibling");
 const inputText = preSibling.getElementsByTagName("input")[1];
-inputText.addEventListener("input", function (e) {
+
+// jika user menginput pada inputText maka:
+inputText.addEventListener("input", function(e) {
+  // cek previousSibling input apa
   console.log(e.target.previousSibling)
 });
 ```
-hasilnya
+Expected output:
 
 <img src="img/presib.jpg" alt="toggle" width="50%">
 
-dilihat dari hasil di atas bahwa previousSibling input berupa textitu karena sesuai dengan tabel yang ada di atas bahwa previousSibling menghasilkan Node yang dpt berupa apa saja
-  untuk itu untuk menangap inputnyanya caranya kita
-  bisa mengakalinya dengan memberikan previousSibling lagi setelah previousSibling
+Dilihat dari hasil diatas bahwa `.previousSibling` input berupa text itu karena sesuai dengan tabel yang ada di atas bahwa `.previousSibling` menghasilkan Node yang dapat berupa apa saja, untuk itu untuk menangap inputnyanya caranya kita bisa mengakalinya dengan memberikan previousSibling lagi setelah previousSibling, Berikut caranya:
+
+**previousSibling to previousSibling**
 
 ```js
 const preSibling = document.getElementById("previoussibling");
 const inputText = preSibling.getElementsByTagName("input")[1];
-inputText.addEventListener("input", function (e) {
+inputText.addEventListener("input", function(e) {
+  // cek previousSibling dari previousSiblingnya 
   console.log(e.target.previousSibling.previousSibling)
 });
 ```
 
-hasilnya 
+Expected output: 
 
 <img src="img/presib2.jpg" alt="toggle" width="50%">
 
->nah sekarang ```<input>``` sudah di tangkap 
- - terahir kita berikan aksi
+**Contoh penggunaan: Mengganti nilai**
 
 ```js
 const preSibling = document.getElementById("previoussibling");
 const inputText = preSibling.getElementsByTagName("input")[1];
-inputText.addEventListener("input", function (e) {
+inputText.addEventListener("input", function(e) {
+  // ganti nilai dari previousSibling dari previousSiblingnya ke
+  // nilai inputText
   e.target.previousSibling.previousSibling.value = e.target.value.length;
 });
 ```
-Demo klik di bawah
+**Reference:** [Klik disini](http://azqilana.github.io/Javascript/learn/DOM/008_Traversal/index.html#previoussibling)
 
-<a href="http://azqilana.github.io/Javascript/learn/DOM/008_Traversal/index.html#previoussibling" target="_blank" rel="noopener noreferrer"><button style="background-color:blue;border-radius:10px;">Demo</button></a>
+## Metode `.previousElementSibling`
+**Apa itu _previousElementSibling_?**
 
-6.previousElementSibling
+previousElementSibling merupakan element yang berada setelah tag atau element tersebut previousElementSibling menangkap element dan tidak memperdulikan Node yang berada sebelum element tersebut
 
-##### Penjelasan
->previousElementSibling ialah element yang berada setelah tag atau element tersebut previousElementSibling menangkap element dan tidak memperdulikan node yang berada sebelum element tersebut
+**Contoh** 
 
-##### Contoh 
-
-Dalam Contoh kali ini  saya akan memberikan aksi yang dimana akan membuat rounded pada sebuah div kotak hanya dengan menambah angka inputan pada input
+Dalam Contoh kali ini kita akan memberikan aksi yang dimana akan membuat rounded pada sebuah div kotak hanya dengan menambah angka inputan pada input.
 
 ```html
-    <div id="nextelementsibling">
-        <h3>Menggunakan Method previousElementSibling</h3>
-        <input type="color">
-        <input type="text" placeholder="Pilih Warna disamping untuk dapat code Hex">
-    </div>
+<div id="nextelementsibling">
+    <h3>Menggunakan Method previousElementSibling</h3>
+    <input type="color">
+    <input type="text" placeholder="Pilih Warna disamping untuk dapat code Hex">
+</div>
 ```
 
- >Diatas kita ada ```<div>``` yang membungkus 2 element yakni 2 buah ``` <input> ``` yang satu bertipe color yang satu bertipe text
- >>Dalam contoh kali ini saya akan melakukan dom sederhana yakni saya akan mengubah isi dari ```<input>``` kedua sesuai dengan value/warna yang dipilih pada ``` <input> ``` ke 1 yg bertipe color nanti ```<input>``` kedua akan memunculkan kode hexxa dr warna di input type color
+ Diatas kita ada `<div>` yang membungkus 2 element yakni 2 buah `<input>` yang satu bertipe color yang satu bertipe text, dalam contoh kali ini kita akan melakukan dom sederhana yakni kita akan mengubah isi dari `<input>` kedua sesuai dengan value/warna yang dipilih pada `<input>` pertama yg bertipe color nanti `<input>` kedua akan memunculkan _hex code_ dari warna di input type color, Selanjutnya:
 
-caranya begini 
+- Javascript
 
 ```js
+// pertama kita menyimpan element-elementnya
+// dalam hal ini yang akan kita menyimpan element input seperti:
 const nElSibling = document.getElementById("nextelementsibling");
 const isian = nElSibling.getElementsByTagName("input")[0];
 ```
+Code di atas sebelum menyimpan inputnya kita tangkap dulu pembungkusnya untuk lebih mudah menyimpan elementnya karena itu kita bisa menjadikan pembungkusnya sebagai patokan untuk mengambil element tersebut kita memberikan index 0, setelah menyimpan input sebelum `;` karena kita menyimpan elementnya dengan `.getElementsByTagName` yang hasilnya itu HTML Collection yang sifat atau berperilaku mirip seperti array dan memiliki index, indexnya nol karena itu merupakan tag input pertama dan satu-satunya, Selanjutnya:
 
-> Code di atas sebelum menangkap inputnya saya tangkap dulu pembungkusnya untuk lebih mudah menangkap elementnya karena itu saya bisa menjadikan pembungkusnya sebagai patokan untuk mengambil element tersebut saya memberikan index [0] setelah menangkap input sebelum ';' karena saya menangkap elementnya dengan getElementsByTagName yang hasilnya itu HTML Colection yang sifat atau berperilaku seperti array dan memiliki index indexnya nol karena itu ialah tag input pertama dan satu satunya.
-
-- kedua cek previousElementSibling input siapa
+**Memberi aksi:**
 ```js
 const preEleSibling = document.getElementById("previouselementsibling");
 const rounded = preEleSibling.getElementsByTagName("input")[0];
-rounded.addEventListener("input", function (e) {
+
+// jika user menginput pada rounded maka:
+rounded.addEventListener("input", function(e) {
+  // cek elemen apa yang terdapat sebelum rounded
   console.log(e.target.previousElementSibling)
 });
 ```
-hasilnya 
+Expected output:
 
 <img src="img/nel1.jpg" alt="toggle" width="50%">
 
-dari hasil di atas sudah di dapat previousElementSiblingnya ialah input
+Dari hasil diatas sudah di dapat `.previousElementSiblingnya` yakni input.
 
-- terakhir lakukkan aksinya
+**Contoh penggunaan: Mengatur border radius**
 ```js
 const preEleSibling = document.getElementById("previouselementsibling");
 const rounded = preEleSibling.getElementsByTagName("input")[0];
-rounded.addEventListener("input", function (e) {
+rounded.addEventListener("input", function(e) {
+  // tambahkan border radius pada elemen sebelum input dengan
+  // nilai yang di input user pada rounded
   e.target.previousElementSibling.style.borderRadius = e.target.value + "%";
 });
 ```
-Demo klik di bawah
-
-<a href="http://azqilana.github.io/Javascript/learn/DOM/008_Traversal/index.html#previouselementsibling" target="_blank" rel="noopener noreferrer"><button style="background-color:blue;border-radius:10px;">Demo</button></a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+**Reference:** [Klik disini](http://azqilana.github.io/Javascript/learn/DOM/008_Traversal/index.html#previouselementsibling)
