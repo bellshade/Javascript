@@ -7,7 +7,7 @@ Cara mengakses geoLocation API adalah dengan `navigator.geolocation.getCurrentPo
 
 contoh kodenya seperti ini:
 ```js
-function showGeo() { // initialisasi fungsi showGeo
+function showGeo() { // inisialisasi fungsi showGeo
     navigator.geolocation.getCurrentPosition(show) // memanggil fungsi show 
 
 }
