@@ -5,11 +5,11 @@ let lat = document.getElementById("geo-lat"); // menyeleksi container latitude
 let btn = document.getElementById("geo-btn"); // menyeleksi button
 
 function show(position){
-    let longText = document.createTextNode(position.coords.longitude);
-    let latText = document.createTextNode(position.coords.latitude);
+    const longText = document.createTextNode(position.coords.longitude);
+    const latText = document.createTextNode(position.coords.latitude);
     long.appendChild(longText); // mengisi data longitude
     lat.appendChild(latText); // mengisi data latitude
-    var mymap = L.map("geo-map").setView([-5, 120], 4); // initialisasi leaflet map
+    let mymap = L.map("geo-map").setView([-5, 120], 4); // initialisasi leaflet map
     
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution: "&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors"
