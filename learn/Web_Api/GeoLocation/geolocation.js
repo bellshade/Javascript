@@ -22,4 +22,4 @@ function show(position){
 function showGeoData() {
     navigator.geolocation.getCurrentPosition(show); // menggunakan geolocation web api
 }
-btn.addEventListener("click",showGeoData);
+btn.addEventListener("click",showGeoData); // menjalankan showGeoData saat btn diklik
