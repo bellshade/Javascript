@@ -10,7 +10,7 @@ const romanNum = {
 
 function romanToInt(num) {
   let accumulator = 0;
-for (let i = 0; i < num.length; i++) {
+  for (let i = 0; i < num.length; i++) {
     if (num[i] === "I" && num[i + 1] === "V") {
       accumulator += 4;
       i++;
