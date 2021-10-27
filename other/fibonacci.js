@@ -26,8 +26,7 @@
  */
 const fibonacciIterative = (n) => {
   if (n < 0) {
-    console.log("Nomor invalid");
-    return;
+    return console.log("Nomor invalid");
   }
   if (n < 2) {
     return n;
@@ -61,8 +60,7 @@ const fibonacciIterative = (n) => {
 
 const fibonacciRecursive = (n) => {
   if (n < 0) {
-    console.log("Nomor invalid");
-    return;
+    return console.log("Nomor invalid");
   }
   if (n < 2) {
     return n;
@@ -80,8 +78,7 @@ const fibonacciRecursive = (n) => {
  */
 const fibonacciRecursiveMemoization = (n) => {
   if (n < 0) {
-    console.log("Nomor invalid");
-    return;
+    return console.log("Nomor invalid");
   }
   // Map untuk menyimpan hasil perhitungan
   const fibSequence = {
