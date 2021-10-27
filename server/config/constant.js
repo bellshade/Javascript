@@ -29,7 +29,9 @@ module.exports = {
     const validRegex = statics
       .map((static) => new RegExp(`/${static}(/*?)`))
       .some((reg) => reg.test(url));
-    const isThingExists = fs.existsSync(path.join(ROOT, url));
+
+    const normalizeURL = path.normalize(url);
+    const isThingExists = fs.existsSync(path.join(ROOT, normalizeURL));
 
     return validRegex && isThingExists;
   }

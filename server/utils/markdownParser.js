@@ -8,7 +8,8 @@ const Parser = (readmePath) => {
   const reader = new commonmark.Parser();
   const writer = new commonmark.HtmlRenderer();
 
-  const fullPath = path.join(ROOT, readmePath);
+  const normalize = path.normalize(readmePath);
+  const fullPath = path.join(ROOT, normalize);
 
   if (!fs.existsSync(fullPath)) {
     return null;

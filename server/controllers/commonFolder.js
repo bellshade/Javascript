@@ -20,8 +20,9 @@ const whatIcon = (file) => {
 function commonFolder(req, res, originalURL) {
   const md = markdownParser(path.join(originalURL, "README.md"));
 
+  const normalizeOriURL = path.normalize(originalURL);
   const items = fs
-    .readdirSync(path.join(ROOT, originalURL))
+    .readdirSync(path.join(ROOT, normalizeOriURL))
     .filter((item) => item !== "README.md")
     .map((item) => ({
       name: item,
