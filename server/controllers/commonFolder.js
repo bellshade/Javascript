@@ -2,7 +2,7 @@ const path = require("path");
 const fs = require("fs");
 
 const markdownParser = require("../utils/markdownParser");
-const { ROOT, statics } = require("../config/constant");
+const { ROOT } = require("../config/constant");
 
 const whatIcon = (file) => {
   const extension = file.split(".")[1];

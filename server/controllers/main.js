@@ -1,13 +1,12 @@
 const path = require("path");
-const fs = require("fs");
 
 const markdownParser = require("../utils/markdownParser");
-const { ROOT, commonRegex, statics } = require("../config/constant");
+const { commonRegex, statics } = require("../config/constant");
 
 const commonFolder = require("./commonFolder");
 
 function main(req, res) {
-  const originalURL = req.originalUrl;
+  const originalURL = path.normalize(req.originalUrl);
 
   if (originalURL === "/") {
     const md = markdownParser("README.md").replace(
