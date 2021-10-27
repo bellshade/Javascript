@@ -6,8 +6,8 @@ Closes <!-- mention issue yang ingin kamu tutup dengan PR ini -->
 <!-- deskripsikan tentang perubahan yang kamu berikan -->
 - [ ] saya menambahkan algoritma terbaru
 - [ ] saya memperbaiki algoritma yang sudah ada
-- [ ] saya menambahkan materi/sub materi basic atau ES6
-- [ ] saya memperbaiki materi/sub materi basic atau ES6
+- [ ] saya menambahkan materi/sub materi belajar
+- [ ] saya memperbaiki materi/sub materi belajar
 - [ ] saya menambah dokumentasi
 - [ ] saya memperbaiki dokumentasi
 
