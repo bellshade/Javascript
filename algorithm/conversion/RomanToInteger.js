@@ -33,8 +33,8 @@ for (let i = 0; i < num.length; i++) {
       accumulator += romanNum[num[i]];
     }
   }
-  return accumulator;
+  return console.log(accumulator);
 }
 
 // Masukan Angka Romawi Disini.
-romanToInt("");
+romanToInt("MCMLXXXIX"); // 1989
