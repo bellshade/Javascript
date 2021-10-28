@@ -46,6 +46,6 @@ function HexToHsl(hex) {
   s = +(s * 100).toFixed(1);
   l = +(l * 100).toFixed(1);
 
-  return "hsl(" + h + "," + s + "%," + l + "%)"; // kembalikan hasil yang bertipe HSL
+  return `hsl(${h},${s}%,${l}%)`; // kembalikan hasil yang bertipe HSL
 }
 console.log(HexToHsl("#f2f2f2")); // hsl(0,0%,94.9%)
