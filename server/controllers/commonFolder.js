@@ -1,7 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 
-const markdownParser = require("../utils/markdownParser");
+const { markdownParser } = require("../utils");
 const { ROOT } = require("../config/constant");
 
 const whatIcon = (file) => {
@@ -18,7 +18,7 @@ const whatIcon = (file) => {
 };
 
 function commonFolder(req, res, originalURL) {
-  const md = markdownParser(path.join(originalURL, "README.md"));
+  const md = markdownParser(path.join(originalURL, "README.md"), originalURL);
 
   const normalizeOriURL = path.normalize(originalURL);
   const items = fs
