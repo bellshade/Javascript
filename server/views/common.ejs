@@ -49,6 +49,10 @@
             </div>
             <div class="card-body">
               <div class="list-group">
+                <a href="<%= upOneDir %>" class="list-group-item">
+                  <i class="fas fa-folder me-2"></i>
+                  ..
+                </a>
                 <% items.forEach((item) => { %>
                   <a href="<%= originalURL %>/<%= item.name %>" class="list-group-item">
                     <i class="<%= item.type %> me-2"></i>

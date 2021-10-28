@@ -29,7 +29,9 @@ function commonFolder(req, res, originalURL) {
       type: !item.includes(".") ? "fas fa-folder" : whatIcon(item)
     }));
 
-  res.render("common", { md, originalURL, items });
+  const upOneDir = path.normalize(`${normalizeOriURL}/..`);
+
+  res.render("common", { md, originalURL, items, upOneDir });
 }
 
 module.exports = commonFolder;
