@@ -1,5 +1,5 @@
 # DOM Traversal
-DOM Traversal adalah metode DOM untuk memberikan sebuah aksi kepada sebuah Node atau Kumpulan Nodes dan sebuah _HTML Collection_ yang berada pada sebuah document HTML.
+DOM Traversal adalah metode DOM untuk memberikan sebuah aksi kepada sebuah Node atau Kumpulan Nodes dan sebuah _HTML Collection_ yang berada pada sebuah dokumen HTML.
 
 Untuk melakukannya kita menjadikan satu buah object atau satu buah element/node untuk menjadi _trigger_ yang nanti akan menjadi patokan terjadinya suatu aksi pada sebuah Node/Element HTML Collection.
 
@@ -227,7 +227,7 @@ Diatas terdapat `<div>` yang membungkus 2 element yakni `<input>` dan `<div>` Da
 const nSibling = document.getElementById("nextsibling");
 const input = nSibling.getElementsByTagName("input")[0];
 ```
-Code di atas sebelum menyimpan inputnya kita tangkap dulu pembungkusnya untuk lebih mudah menangkap elementnya karena itu kita bisa menjadikan pembungkusnya sebagai patokan untuk mengambil element tersebut kita memberikan index [0] setelah menyimpan input sebelum `;` karena kita menangkap elementnya dengan `.getElementsByTagName()` yang hasilnya itu HTML Collections yang sifat atau berperilaku mirip seperti array dan memiliki index.
+Kode di atas sebelum menyimpan inputnya kita tangkap dulu pembungkusnya untuk lebih mudah menangkap elementnya karena itu kita bisa menjadikan pembungkusnya sebagai patokan untuk mengambil element tersebut kita memberikan index [0] setelah menyimpan input sebelum `;` karena kita menangkap elementnya dengan `.getElementsByTagName()` yang hasilnya itu HTML Collections yang sifat atau berperilaku mirip seperti array dan memiliki index.
 
 **Membuat aksi:**
 
@@ -301,7 +301,7 @@ Diatas kita terdapat `<div>` yang membungkus 2 element yakni 2 buah `<input>` ya
 const nElSibling = document.getElementById("nextelementsibling");
 const isian = nElSibling.getElementsByTagName("input")[0];
 ```
-Code di atas sebelum menangkap inputnya kita simpan dulu pembungkusnya untuk lebih mudah menangkap elementnya, karena itu kita bisa menjadikan pembungkusnya sebagai patokan untuk mengambil element tersebut kita memberikan index 0, setelah menangkap input sebelum `;` karena kita menangkap elementnya dengan `.getElementsByTagName` yang hasilnya itu HTML Collection yang sifat atau berperilaku mirip seperti array dan memiliki index indexnya nol karena itu ialah tag input pertama, Selanjutnya:
+Kode di atas sebelum menangkap inputnya kita simpan dulu pembungkusnya untuk lebih mudah menangkap elementnya, karena itu kita bisa menjadikan pembungkusnya sebagai patokan untuk mengambil element tersebut kita memberikan index 0, setelah menangkap input sebelum `;` karena kita menangkap elementnya dengan `.getElementsByTagName` yang hasilnya itu HTML Collection yang sifat atau berperilaku mirip seperti array dan memiliki index indexnya nol karena itu ialah tag input pertama, Selanjutnya:
 
 
 **Memberi aksi:**
@@ -359,7 +359,7 @@ Pada contoh kali ini kita akan membuat contoh sederhana saja, Berikut caranya:
 const preEleSibling = document.getElementById("previouselementsibling");
 const rounded = preEleSibling.getElementsByTagName("input")[0];
 ```
-Code di atas sebelum menyimpan inputnya kita tangkap dulu pembungkusnya untuk lebih mudah menyimpan elementnya karena itu kita bisa menjadikan pembungkusnya sebagai patokan untuk mengambil element tersebut kita memberikan index 0, setelah menyimpan input sebelum `;` karena kita menyimpan elementnya dengan `.getElementsByTagName` yang hasilnya itu HTML Collection yang sifat atau berperilaku mirip seperti array dan memiliki index, indexnya satu karena itu merupakan tag input kedua dan seperti diketahui index array selalu mulai dari 0, Selanjutnya:
+Kode di atas sebelum menyimpan inputnya kita tangkap dulu pembungkusnya untuk lebih mudah menyimpan elementnya karena itu kita bisa menjadikan pembungkusnya sebagai patokan untuk mengambil element tersebut kita memberikan index 0, setelah menyimpan input sebelum `;` karena kita menyimpan elementnya dengan `.getElementsByTagName` yang hasilnya itu HTML Collection yang sifat atau berperilaku mirip seperti array dan memiliki index, indexnya satu karena itu merupakan tag input kedua dan seperti diketahui index array selalu mulai dari 0, Selanjutnya:
 
 **Memberi aksi:**
 
@@ -424,7 +424,7 @@ Dalam Contoh kali ini kita akan memberikan aksi yang dimana akan membuat rounded
 </div>
 ```
 
- Diatas kita ada `<div>` yang membungkus 2 element yakni 2 buah `<input>` yang satu bertipe color yang satu bertipe text, dalam contoh kali ini kita akan melakukan dom sederhana yakni kita akan mengubah isi dari `<input>` kedua sesuai dengan value/warna yang dipilih pada `<input>` pertama yg bertipe color nanti `<input>` kedua akan memunculkan _hex code_ dari warna di input type color, Selanjutnya:
+Diatas kita ada `<div>` yang membungkus 2 element yakni 2 buah `<input>` yang satu bertipe color yang satu bertipe text, dalam contoh kali ini kita akan melakukan dom sederhana yakni kita akan mengubah isi dari `<input>` kedua sesuai dengan value/warna yang dipilih pada `<input>` pertama yg bertipe color nanti `<input>` kedua akan memunculkan _hex code_ dari warna di input type color, Selanjutnya:
 
 - Javascript
 
@@ -434,7 +434,7 @@ Dalam Contoh kali ini kita akan memberikan aksi yang dimana akan membuat rounded
 const nElSibling = document.getElementById("nextelementsibling");
 const isian = nElSibling.getElementsByTagName("input")[0];
 ```
-Code di atas sebelum menyimpan inputnya kita tangkap dulu pembungkusnya untuk lebih mudah menyimpan elementnya karena itu kita bisa menjadikan pembungkusnya sebagai patokan untuk mengambil element tersebut kita memberikan index 0, setelah menyimpan input sebelum `;` karena kita menyimpan elementnya dengan `.getElementsByTagName` yang hasilnya itu HTML Collection yang sifat atau berperilaku mirip seperti array dan memiliki index, indexnya nol karena itu merupakan tag input pertama dan satu-satunya, Selanjutnya:
+Kode di atas sebelum menyimpan inputnya kita tangkap dulu pembungkusnya untuk lebih mudah menyimpan elementnya karena itu kita bisa menjadikan pembungkusnya sebagai patokan untuk mengambil element tersebut kita memberikan index 0, setelah menyimpan input sebelum `;` karena kita menyimpan elementnya dengan `.getElementsByTagName` yang hasilnya itu HTML Collection yang sifat atau berperilaku mirip seperti array dan memiliki index, indexnya nol karena itu merupakan tag input pertama dan satu-satunya, Selanjutnya:
 
 **Memberi aksi:**
 ```js
