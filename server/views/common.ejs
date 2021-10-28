@@ -10,28 +10,18 @@
     />
     <link
       rel="stylesheet"
-      href="/assets/github-markdown-css/github-markdown-light.css"
-    />
-    <link
-      rel="stylesheet"
       href="/assets/@fortawesome/fontawesome-free/css/all.min.css"
     />
-
-    <style>
-      .markdown-body {
-        box-sizing: border-box;
-        min-width: 200px;
-        max-width: 980px;
-        margin: 0 auto;
-        padding: 45px;
-      }
-
-      @media (max-width: 767px) {
-        .markdown-body {
-          padding: 15px;
-        }
-      }
-    </style>
+    <% if (md) { %>
+      <link
+        rel="stylesheet"
+        href="/assets/github-markdown-css/github-markdown-light.css"
+      />
+      <link
+        rel="stylesheet"
+        href="/public/css/markdown.css"
+      />
+    <% } %>
 
     <title>Bellshade Javascript</title>
   </head>
@@ -67,7 +57,7 @@
                 <% }); %>
               </div>
               <% if (md) { %>
-              <hr class="mt-5 mb-3" />
+                <hr class="mt-5 mb-3" />
                 <div class="readme-content p-5">
                   <article class="markdown-body"><%- md %></article>
                 </div>
