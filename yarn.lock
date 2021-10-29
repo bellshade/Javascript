@@ -378,16 +378,6 @@
   "resolved" "https://registry.npmjs.org/commander/-/commander-2.20.3.tgz"
   "version" "2.20.3"
 
-"commonmark@^0.30.0":
-  "integrity" "sha512-j1yoUo4gxPND1JWV9xj5ELih0yMv1iCWDG6eEQIPLSWLxzCXiFoyS7kvB+WwU+tZMf4snwJMMtaubV0laFpiBA=="
-  "resolved" "https://registry.npmjs.org/commonmark/-/commonmark-0.30.0.tgz"
-  "version" "0.30.0"
-  dependencies:
-    "entities" "~2.0"
-    "mdurl" "~1.0.1"
-    "minimist" ">=1.2.2"
-    "string.prototype.repeat" "^0.2.0"
-
 "concat-map@0.0.1":
   "integrity" "sha1-2Klr13/Wjfd5OnMDajug1UBdR3s="
   "resolved" "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz"
@@ -559,11 +549,6 @@
   "version" "2.3.6"
   dependencies:
     "ansi-colors" "^4.1.1"
-
-"entities@~2.0":
-  "integrity" "sha512-MyoZ0jgnLvB2X3Lg5HqpFmn1kybDiIfEQmKzTb5apr51Rb+T3KdmMiqa70T+bhGnyv7bQ6WMj2QMHpGMmlrUYQ=="
-  "resolved" "https://registry.npmjs.org/entities/-/entities-2.0.3.tgz"
-  "version" "2.0.3"
 
 "escape-goat@^2.0.0":
   "integrity" "sha512-8/uIhbG12Csjy2JEW7D9pHbreaVaS/OpN3ycnyvElTdwM5n6GY6W6e2IPemfvGZeUMqZ9A/3GqIZMgKnBhAw/Q=="
@@ -1188,10 +1173,10 @@
   dependencies:
     "semver" "^6.0.0"
 
-"mdurl@~1.0.1":
-  "integrity" "sha1-/oWy7HWlkDfyrf7BAP1sYBdhFS4="
-  "resolved" "https://registry.npmjs.org/mdurl/-/mdurl-1.0.1.tgz"
-  "version" "1.0.1"
+"marked@^3.0.8":
+  "integrity" "sha512-0gVrAjo5m0VZSJb4rpL59K1unJAMb/hm8HRXqasD8VeC8m91ytDPMritgFSlKonfdt+rRYYpP/JfLxgIX8yoSw=="
+  "resolved" "https://registry.npmjs.org/marked/-/marked-3.0.8.tgz"
+  "version" "3.0.8"
 
 "media-typer@0.3.0":
   "integrity" "sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g="
@@ -1237,7 +1222,7 @@
   dependencies:
     "brace-expansion" "^1.1.7"
 
-"minimist@^1.2.0", "minimist@>=1.2.2":
+"minimist@^1.2.0":
   "integrity" "sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw=="
   "resolved" "https://registry.npmjs.org/minimist/-/minimist-1.2.5.tgz"
   "version" "1.2.5"
@@ -1658,11 +1643,6 @@
     "emoji-regex" "^8.0.0"
     "is-fullwidth-code-point" "^3.0.0"
     "strip-ansi" "^6.0.1"
-
-"string.prototype.repeat@^0.2.0":
-  "integrity" "sha1-q6Nt4I3O5qWjN9SbLqHaGyj8Ds8="
-  "resolved" "https://registry.npmjs.org/string.prototype.repeat/-/string.prototype.repeat-0.2.0.tgz"
-  "version" "0.2.0"
 
 "strip-ansi@^6.0.0", "strip-ansi@^6.0.1":
   "integrity" "sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A=="

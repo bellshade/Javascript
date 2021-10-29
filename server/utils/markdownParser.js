@@ -1,15 +1,13 @@
 const fs = require("fs");
 const path = require("path");
-const commonmark = require("commonmark");
+const marked = require("marked");
 
 const { ROOT } = require("../config/constant");
 
+// contoh yang valid: img src="img/ns1.jpg
 const imageSrcRegex = new RegExp('img src="(?!http(s?))', "g");
 
 const Parser = (readmePath, originalURL) => {
-  const reader = new commonmark.Parser();
-  const writer = new commonmark.HtmlRenderer();
-
   const normalize = path.normalize(readmePath);
   const fullPath = path.join(ROOT, normalize);
 
@@ -19,14 +17,14 @@ const Parser = (readmePath, originalURL) => {
 
   const markdown = fs.readFileSync(fullPath, "utf8");
 
-  const parsed = reader.parse(markdown);
-  const result = writer.render(parsed);
+  const result = marked(markdown);
 
   const replaceAll = result
     .replace(
       "CONTRIBUTING.md",
       "https://github.com/bellshade/Javascript/blob/main/CONTRIBUTING.md"
     )
+    // replace semua yang valid menurut regex
     .replace(imageSrcRegex, `img src="${path.join("/static", originalURL)}/`);
 
   return replaceAll;
