@@ -22,7 +22,7 @@ function searchPrime(awal,akhir) {
 
     for (let i = awal; i <= akhir; i++) { // looping mulai dari angka input awal sampai input akhir
 
-        if(isPrime(i) == true){ // cek apakah angka termasuk bilangan prima
+        if(isPrime(i) === true){ // cek apakah angka termasuk bilangan prima
 
             arr.push(i); // jika ya tambahkan angka pada array pembungkus
         }
