@@ -5,7 +5,7 @@ const marked = require("marked");
 const { ROOT } = require("../config/constant");
 
 // contoh yang valid: img src="img/ns1.jpg
-const imageSrcRegex = new RegExp('img src="(?!http(s?))', "g");
+const imageSrcRegex = new RegExp(`img src="(?!http(s?))`, "g");
 
 const Parser = (readmePath, originalURL) => {
   const normalize = path.normalize(readmePath);
@@ -20,6 +20,7 @@ const Parser = (readmePath, originalURL) => {
   const result = marked(markdown);
 
   const replaceAll = result
+    // replace CONTRIBUTING.md untuk di arahkan ke github
     .replace(
       "CONTRIBUTING.md",
       "https://github.com/bellshade/Javascript/blob/main/CONTRIBUTING.md"
