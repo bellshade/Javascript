@@ -38,8 +38,13 @@ module.exports = {
     const validRegex = mappedRegex.some((reg) => reg.test(url));
 
     const normalizeURL = path.normalize(url);
-    const isThingExists = fs.existsSync(path.join(ROOT, normalizeURL));
+    const pathToThing = path.join(ROOT, normalizeURL);
 
-    return validRegex && isThingExists;
+    const isThingExists = fs.existsSync(pathToThing);
+
+    const excluded =
+      !normalizeURL.includes(".") && !normalizeURL.includes("img");
+
+    return validRegex && isThingExists && excluded;
   }
 };
