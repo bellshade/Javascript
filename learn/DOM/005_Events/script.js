@@ -16,7 +16,11 @@ let MIN = 1;
 // Ketika user menginput angka yang lebih dari 100 atau kurang dari 1
 // Maka ubah angka yang di input user menjadi 100 atau 1
 input.addEventListener("input", function(event){
-    if(input.value > MAX) input.value = MAX;
-    else if(input.value < MIN) input.value = MIN;
+    if(input.value > MAX) {
+        input.value = MAX;
+    }
+    else if(input.value < MIN) {
+        input.value = MIN;
+    }
     console.log(event);
 })
