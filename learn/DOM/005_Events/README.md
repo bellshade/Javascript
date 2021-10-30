@@ -2,7 +2,7 @@
 ## Apa itu DOM Events?
 _DOM Events_ bisa diibaratkan seperti sebuah sinyal yang disebabkan oleh suatu aksi tertentu dan bisa dilakukan dengan interaksi dari pengguna ataupun browser/client itu sendiri, Event ini seringkali dikombinasikan dengan sebuah function dan function itu tidak akan di eksekusi sebelum Event tersebut terjadi atau dilakukan.
 
-**Reference:** [Apa itu DOM Events?](https://www.w3schools.com/jsref/dom_obj_event.asp)
+**Referensi:** [Apa itu DOM Events?](https://www.w3schools.com/jsref/dom_obj_event.asp)
 
 ## Event apa saja yang ada?
 Ada beberapa event yang sering digunakan berikut event tersebut berserta fungsinya:
@@ -69,5 +69,5 @@ Ada beberapa event yang sering digunakan berikut event tersebut berserta fungsin
 | volumechanges                  |   Event yang terjadi ketika volume media di ubah termasuk _mute_
 | loadstart                      |   Event yang terjadi ketika browser/client mulai mencari sebuah data
 
-**Reference:** [Event-event yang ada pada DOM Events](https://www.w3schools.com/jsref/dom_obj_event.asp)
+**Referensi:** [Event-event yang ada pada DOM Events](https://www.w3schools.com/jsref/dom_obj_event.asp)
 
