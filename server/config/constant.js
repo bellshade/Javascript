@@ -4,6 +4,7 @@ const fs = require("fs");
 // path configuration
 const ROOT = path.join(__dirname, "../../");
 const NODE_MODULES = path.join(ROOT, "node_modules");
+const SEPARATOR = path.sep !== "/" ? "\\/" : "/";
 
 // folder configuration
 const statics = ["learn", "algorithm", "other"];
@@ -27,10 +28,20 @@ const public = {
   prefix: "/public"
 };
 
-const mappedRegex = statics.map((static) => new RegExp(`/${static}(/*?)`));
+// Regular Expression
+const mappedRegex = statics.map(
+  (static) => new RegExp(`${SEPARATOR}${static}(${SEPARATOR}*?)`)
+);
+const regexROOT = new RegExp(`${ROOT}(${SEPARATOR}?)`); // prevent traversal outside root
+const commonReplacer = new RegExp(`${SEPARATOR}`, "g");
 
 module.exports = {
   ROOT,
+  preventOutsideRootTraversal: (url) => {
+    if (!regexROOT.test(path.join(ROOT, url))) {
+      throw new Error("That's evil bro");
+    }
+  },
   requiredStatic: [...remappedAssets, ...remappedStatics, public],
   statics,
   assets,

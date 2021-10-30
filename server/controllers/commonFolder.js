@@ -2,7 +2,7 @@ const path = require("path");
 const fs = require("fs");
 
 const { markdownParser, checker } = require("../utils");
-const { ROOT } = require("../config/constant");
+const { ROOT, commonReplacer } = require("../config/constant");
 
 const whatIcon = (file) => {
   const extension = file.split(".")[1];
@@ -36,7 +36,9 @@ function commonFolder(req, res, originalURL) {
       type: !item.includes(".") ? "fas fa-folder" : whatIcon(item)
     }));
 
-  const upOneDir = path.normalize(`${normalizeOriURL}/..`);
+  const upOneDir = path
+    .normalize(`${normalizeOriURL.replace(commonReplacer, "/")}/..`)
+    .replace(commonReplacer, "/");
   const commonData = { md, originalURL, items, upOneDir };
 
   if (checker.notIncludedAnyFile(items)) {
