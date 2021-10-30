@@ -23,4 +23,4 @@ input.addEventListener("input", function(event){
         input.value = MIN;
     }
     console.log(event);
-})
+});
