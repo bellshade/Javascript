@@ -1,4 +1,4 @@
-const powThree = 1e3;
+const powThree = 1000;
 
 function main() {
   function preCode(selector) {
