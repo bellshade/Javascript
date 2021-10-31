@@ -89,7 +89,7 @@ const rearrange = [...filteredDir].map((filter) => {
       : data.filter(commonFileFilter(filter))
   ).map((item) => ({ ...item, icon: whatIcon(item) }));
 
-  return { ...filter, items };
+  return Object.assign(filter, { items });
 });
 
 module.exports = rearrange;
