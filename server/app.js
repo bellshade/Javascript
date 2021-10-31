@@ -10,13 +10,8 @@ app.register(autoLoad, {
 });
 
 const start = async () => {
-  try {
-    await app.listen(3000);
-    console.log("Listening on port 3000 | http://localhost:3000/");
-  } catch (err) {
-    console.error(err);
-    process.exit();
-  }
+  await app.listen(3000);
+  console.log("Listening on port 3000 | http://localhost:3000/");
 };
 
 start();
