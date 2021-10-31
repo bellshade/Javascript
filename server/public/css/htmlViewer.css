@@ -115,3 +115,10 @@ pre {
   border-color: transparent;
   font-weight: 500;
 }
+
+.readme-scrollable {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 368.39px;
+  z-index: -100;
+}

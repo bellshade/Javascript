@@ -19,6 +19,16 @@
     />
     <link
       rel="stylesheet"
+      href="/assets/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <% if (md) { %>
+      <link
+        rel="stylesheet"
+        href="/assets/github-markdown-css/github-markdown-dark.css"
+      />
+    <% } %>
+    <link
+      rel="stylesheet"
       href="/public/css/htmlViewer.css"
     />
 
@@ -32,18 +42,21 @@
         <!-- Tabs -->
         <nav>
           <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <button
-              class="nav-link"
-              id="nav-md-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-md"
-              type="button"
-              role="tab"
-              aria-controls="nav-md"
-              aria-selected="true"
-            >
-              MD
-            </button>
+            <% if (md) { %>
+              <button
+                class="nav-link"
+                id="nav-md-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-md"
+                type="button"
+                role="tab"
+                aria-controls="nav-md"
+                aria-selected="true"
+              >
+                <i class="fab fa-markdown me-2"></i>
+                README.md
+              </button>
+            <% } %>
             <button
               class="nav-link active"
               id="nav-html-tab"
@@ -54,7 +67,8 @@
               aria-controls="nav-html"
               aria-selected="true"
             >
-              HTML
+              <i class="<%= htmlFile.icon %> me-2"></i>
+              <%= htmlFile.name %>
             </button>
             <button
               class="nav-link"
@@ -66,7 +80,8 @@
               aria-controls="nav-js"
               aria-selected="false"
             >
-              JS
+              <i class="<%= jsFile.icon %> me-2"></i>
+              <%= jsFile.name %>
             </button>
           </div>
         </nav>
@@ -74,6 +89,13 @@
 
         <!-- Code -->
         <div class="tab-content p-0">
+          <% if (md) { %>
+            <div class="tab-pane fade" id="nav-md" role="tabpanel">
+              <div class="readme-content readme-scrollable">
+                <article class="markdown-body p-3"><%- md %></article>
+              </div>
+            </div>
+          <% } %>
           <div class="tab-pane fade show active" id="nav-html" role="tabpanel">
             <pre><code class="language-markup"></code></pre>
           </div>
@@ -87,7 +109,7 @@
 
       <!-- Console -->
       <section class="console">
-        <h6 class="pt-3 pb-2 px-3" style="color: #ffffff;">CONSOLE OUTPUT</h6>
+        <h6 class="pt-3 pb-2 px-3" style="color: #fff;">CONSOLE OUTPUT</h6>
         <div class="wrapper">
           <!-- <div class="output px-2">
             <i class="fas fa-chevron-right"></i>
@@ -126,14 +148,15 @@
       <!-- Iframe -->
       <section class="iframe">
         <iframe
-          src="https://bellshade.org/"
+          src="<%= htmlFile.iframeURL %>"
           class="w-100 h-100"
-          style="min-height: 500px;"
+          style="min-height: 500px;background-color: #fff;"
         ></iframe>
       </section>
       <!-- End Iframe -->
     </main>
 
+    <script src="/assets/@fortawesome/fontawesome-free/js/all.min.js"></script>
     <script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/assets/prismjs/components/prism-core.min.js"></script>
     <script src="/assets/prismjs/plugins/autoloader/prism-autoloader.min.js"></script>

@@ -60,7 +60,7 @@ const whatIcon = (item) => {
       case "js":
         return "fab fa-js";
       case "md":
-        return "fab fa-md";
+        return "fab fab fa-markdown";
       case "json":
         return "fas fa-code";
       default:
