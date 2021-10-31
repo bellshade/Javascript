@@ -2,10 +2,143 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="/assets/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/prismjs/themes/prism-okaidia.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/prismjs/plugins/line-numbers/prism-line-numbers.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/public/css/htmlViewer.css"
+    />
 
     <title>HTML Viewer</title>
   </head>
-  <body>
+
+  <body class="line-numbers">
+    <main>
+      <!-- Code Highlight -->
+      <section class="code-highlight p-0">
+        <!-- Tabs -->
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button
+              class="nav-link"
+              id="nav-md-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-md"
+              type="button"
+              role="tab"
+              aria-controls="nav-md"
+              aria-selected="true"
+            >
+              MD
+            </button>
+            <button
+              class="nav-link active"
+              id="nav-html-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-html"
+              type="button"
+              role="tab"
+              aria-controls="nav-html"
+              aria-selected="true"
+            >
+              HTML
+            </button>
+            <button
+              class="nav-link"
+              id="nav-js-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-js"
+              type="button"
+              role="tab"
+              aria-controls="nav-js"
+              aria-selected="false"
+            >
+              JS
+            </button>
+          </div>
+        </nav>
+        <!-- End Tabs -->
+
+        <!-- Code -->
+        <div class="tab-content p-0">
+          <div class="tab-pane fade show active" id="nav-html" role="tabpanel">
+            <pre><code class="language-markup"></code></pre>
+          </div>
+          <div class="tab-pane fade" id="nav-js" role="tabpanel">
+            <pre><code class="language-javascript"></code></pre>
+          </div>
+        </div>
+        <!-- End Code -->
+      </section>
+      <!-- End Code Highlight -->
+
+      <!-- Console -->
+      <section class="console">
+        <h6 class="pt-3 pb-2 px-3" style="color: #ffffff;">CONSOLE OUTPUT</h6>
+        <div class="wrapper">
+          <!-- <div class="output px-2">
+            <i class="fas fa-chevron-right"></i>
+            <code>"Hello World!"</code>
+          </div>
+          <div class="output px-2">
+            <i class="fas fa-chevron-right"></i>
+            <code
+              >[section.code-highlight.p-0, section.console.px-3,
+              section.iframe]</code
+            >
+          </div>
+          <div class="output px-2">
+            <i class="fas fa-chevron-right"></i>
+            <code>&lt;p id="paragraf">&lt;/p></code>
+          </div>
+          <div class="output px-2">
+            <i class="fas fa-chevron-right"></i>
+            <code>"Hello World!"</code>
+          </div>
+          <div class="output px-2">
+            <i class="fas fa-chevron-right"></i>
+            <code
+              >[section.code-highlight.p-0, section.console.px-3,
+              section.iframe]</code
+            >
+          </div>
+          <div class="output px-2">
+            <i class="fas fa-chevron-right"></i>
+            <code>&lt;p id="paragraf">&lt;/p></code>
+          </div> -->
+        </div>
+      </section>
+      <!-- End Console -->
+
+      <!-- Iframe -->
+      <section class="iframe">
+        <iframe
+          src="https://bellshade.org/"
+          class="w-100 h-100"
+          style="min-height: 500px;"
+        ></iframe>
+      </section>
+      <!-- End Iframe -->
+    </main>
+
+    <script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/assets/prismjs/components/prism-core.min.js"></script>
+    <script src="/assets/prismjs/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="/assets/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
+    <script src="/public/js/htmlViewer.js"></script>
   </body>
 </html>
