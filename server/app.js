@@ -1,25 +1,12 @@
 const fastify = require("fastify");
 const path = require("path");
 
-const fastifyStatic = require("fastify-static");
-
-// const controller = require("./controllers/main");
-const { requiredStatic } = require("./config/constant");
+const autoLoad = require("fastify-autoload");
 
 const app = fastify({ debug: false });
 
-app.register(require("point-of-view"), {
-  engine: {
-    ejs: require("ejs")
-  },
-  root: path.join(__dirname, "views")
-});
-
-requiredStatic.forEach((data, idx) => {
-  app.register(fastifyStatic, {
-    ...data,
-    decorateReply: idx < 1
-  });
+app.register(autoLoad, {
+  dir: path.join(__dirname, "plugins")
 });
 
 const start = async () => {
