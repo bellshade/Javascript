@@ -5,29 +5,17 @@ const routingData = require("../config/routingData");
 const { markdownParser, checker } = require("../utils");
 const { statics } = require("../config/constant");
 
+const controllers = require("../controllers");
+
 const handlerDecider = (route) => {
   const items = route.items;
 
   if (checker.notIncludedAnyFile(items)) {
-    return (req, reply) => {
-      const md = markdownParser(path.join(route.url, "README.md"), route.url);
-      const upOneDir = path.posix.normalize(`${route.url}/..`);
-
-      reply.view("common", {
-        upOneDir,
-        md,
-        items: route.items,
-        originalURL: route.url
-      });
-    };
+    return controllers.common(route);
   } else if (checker.includedHtml(items)) {
-    return (req, reply) => {
-      reply.view("runner/htmlViewer");
-    };
+    return controllers.html(route);
   } else if (checker.someIsJs(items)) {
-    return (req, reply) => {
-      reply.send("runner/nodeViewer");
-    };
+    return controllers.node(route);
   } else {
     return (req, reply) => reply.send("uu uu uu aa aa aa");
   }
