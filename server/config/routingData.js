@@ -50,6 +50,25 @@ function parentHandler(data, filter) {
   return data.filter(commonFileFilter(filter));
 }
 
+const whatIcon = (item) => {
+  if (item.type === "directory") {
+    return "fas fa-folder";
+  } else {
+    switch (item.extension) {
+      case "html":
+        return "fab fa-html5";
+      case "js":
+        return "fab fa-js";
+      case "md":
+        return "fab fa-md";
+      case "json":
+        return "fas fa-code";
+      default:
+        return "far fa-file";
+    }
+  }
+};
+
 const data = list
   .map((d) => ({ ...d, url: d.path.replace(rootPOSIX, "/") })) // add url property
   .map(
@@ -64,9 +83,11 @@ const filteredDir = data.filter(({ type }) => type === "directory");
 
 // rearrange data
 const rearrange = [...filteredDir].map((filter) => {
-  const items = isParent(filter.url)
-    ? parentHandler(data, filter)
-    : data.filter(commonFileFilter(filter));
+  const items = (
+    isParent(filter.url)
+      ? parentHandler(data, filter)
+      : data.filter(commonFileFilter(filter))
+  ).map((item) => ({ ...item, icon: whatIcon(item) }));
 
   return { ...filter, items };
 });

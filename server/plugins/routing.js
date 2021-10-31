@@ -1,3 +1,4 @@
+const path = require("path");
 const fp = require("fastify-plugin");
 const routingData = require("../config/routingData");
 
@@ -9,6 +10,24 @@ module.exports = fp((fastify, opts, done) => {
     const md = markdownParser("README.md", "/");
 
     reply.view("root", { dirs: statics, md });
+  });
+
+  routingData.forEach((route) => {
+    fastify.route({
+      method: "GET",
+      url: route.url,
+      handler: (req, reply) => {
+        const md = markdownParser(path.join(route.url, "README.md"), route.url);
+        const upOneDir = path.posix.normalize(`${route.url}/..`);
+
+        reply.view("common", {
+          upOneDir,
+          md,
+          items: route.items,
+          originalURL: route.url
+        });
+      }
+    });
   });
 
   done();
