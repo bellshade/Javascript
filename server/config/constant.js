@@ -1,5 +1,4 @@
 const path = require("path");
-const fs = require("fs");
 
 // path configuration
 const ROOT = path.join(__dirname, "../../");

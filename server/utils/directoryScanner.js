@@ -8,7 +8,8 @@ const scanner = (directory) => {
 
   const result = dirTree(readDir, {
     attributes: ["type", "extension"],
-    extensions: /\.(js|html)$/
+    extensions: /\.(js|html)$/,
+    normalizePath: true // convert \ to /
   });
 
   return result;

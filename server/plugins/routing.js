@@ -1,69 +1,15 @@
-const path = require("path");
 const fp = require("fastify-plugin");
-const treeToList = require("tree-to-list");
+const routingData = require("../config/routingData");
 
-const { directoryScanner } = require("../utils");
-
-const toPOSIX = (str) => str.split(path.sep).join(path.posix.sep);
-
-const { statics, ROOT } = require("../config/constant");
-const dirs = statics.map(directoryScanner);
-const list = treeToList(dirs, "children");
-
-const isParents = (url) => statics.map((s) => `/${s}`).some((s) => s === url);
-
-const rootPOSIX = toPOSIX(ROOT);
-
-const commonFileFilter =
-  (filter) =>
-  ({ url }) => {
-    const basicConstrain = url !== filter.url && url.includes(filter.url);
-
-    const filterUrlLength =
-      filter.url.split("/").filter((d) => d !== "").length + 1;
-    const urlLength = url.split("/").filter((d) => d !== "").length;
-
-    return basicConstrain && filterUrlLength === urlLength;
-  };
-
-function parentHandler(data, filter) {
-  const directoryApproach = data
-    .filter(
-      (val) =>
-        val.url !== filter.url &&
-        val.url.includes(filter.url) &&
-        val.type === "directory"
-    )
-    .filter(({ url }) => url.split("/").filter((d) => d !== "").length === 2);
-
-  if (directoryApproach.length > 0) {
-    return directoryApproach;
-  }
-
-  return data.filter(commonFileFilter(filter));
-}
-
-const data = list
-  .map((d) => ({ ...d, url: d.path.replace(rootPOSIX, "/") }))
-  .map((d) =>
-    d.extension ? { ...d, extension: d.extension.replace(".", "") } : d
-  );
-const filteredDir = data.filter(({ type }) => type === "directory");
-const rearrange = [...filteredDir].map((filter) => {
-  const items = isParents(filter.url)
-    ? parentHandler(data, filter)
-    : data.filter(commonFileFilter(filter));
-
-  return { ...filter, items };
-});
-
-// console.log(rearrange);
-// require("fs").writeFileSync("./data.json", JSON.stringify(rearrange, null, 2));
+const { markdownParser } = require("../utils");
+const { statics } = require("../config/constant");
 
 module.exports = fp((fastify, opts, done) => {
-  // fastify.get("/", (req, reply) => {
-  //   reply.view("root");
-  // });
+  fastify.get("/", (req, reply) => {
+    const md = markdownParser("README.md", "/");
+
+    reply.view("root", { dirs: statics, md });
+  });
 
   done();
 });
