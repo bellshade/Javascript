@@ -55,7 +55,9 @@ const data = list
   .map(
     // replace extension '.' to ''
     (d) => (d.extension ? { ...d, extension: d.extension.replace(".", "") } : d)
-  );
+  )
+  // remove data if url included '/img'
+  .filter(({ url }) => !url.includes("/img"));
 
 // filter data 'type' is directory only
 const filteredDir = data.filter(({ type }) => type === "directory");
@@ -69,7 +71,4 @@ const rearrange = [...filteredDir].map((filter) => {
   return { ...filter, items };
 });
 
-// remove data if url included '/img'
-const filteredRearrange = rearrange.filter(({ url }) => !url.includes("/img"));
-
-module.exports = filteredRearrange;
+module.exports = rearrange;
