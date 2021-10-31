@@ -17,13 +17,13 @@ const constructor = (cb) => (array) => {
 };
 
 const notIncludedAnyFile = (arr) =>
-  arr.some((item) => !item.name.includes("."));
+  arr.every(({ type }) => type === "directory");
 
 const includedHtml = constructor((arr) =>
-  arr.some(({ name }) => name.includes(".html"))
+  arr.some(({ extension }) => extension === "html")
 );
 const someIsJs = constructor((arr) =>
-  arr.some(({ name }) => name.includes(".js"))
+  arr.some(({ extension }) => extension === "js")
 );
 
 module.exports = { notIncludedAnyFile, includedHtml, someIsJs };
