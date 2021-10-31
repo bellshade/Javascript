@@ -487,6 +487,11 @@
   "resolved" "https://registry.npmjs.org/destroy/-/destroy-1.0.4.tgz"
   "version" "1.0.4"
 
+"directory-tree@^3.0.0":
+  "integrity" "sha512-rPOvylpnKTuGp5wwEKwnAK506lHg9e0Db+q0J8br0IwMATfOE/2Ksqjgf5Tb9mfIWA8RzVJyta0ScXPgarD6BA=="
+  "resolved" "https://registry.npmjs.org/directory-tree/-/directory-tree-3.0.0.tgz"
+  "version" "3.0.0"
+
 "doctest@^0.18.1":
   "integrity" "sha512-rs14GR+aLRR8Iiv2rA/pvWwSZ3NQiyD+/yha8LXZ8gdOOoOn5LILnZTCk7hWVYC13P82x2UqbN64asYVP0Dsrg=="
   "resolved" "https://registry.npmjs.org/doctest/-/doctest-0.18.1.tgz"
@@ -1886,6 +1891,11 @@
   "integrity" "sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A=="
   "resolved" "https://registry.npmjs.org/tree-kill/-/tree-kill-1.2.2.tgz"
   "version" "1.2.2"
+
+"tree-to-list@^2.0.0":
+  "integrity" "sha512-KqiNWyEgAhWTdPXj9jElPOiJ9A+g/QusQJO7A1pD8NZkib//Mo3aGfqWn+FbESLcBRw5N0dUV4qvSv2kZeD16g=="
+  "resolved" "https://registry.npmjs.org/tree-to-list/-/tree-to-list-2.0.0.tgz"
+  "version" "2.0.0"
 
 "type-check@^0.4.0", "type-check@~0.4.0":
   "integrity" "sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew=="
