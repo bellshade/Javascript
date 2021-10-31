@@ -1,3 +1,5 @@
+const powThree = 1e3;
+
 function main() {
   function preCode(selector) {
     let els = Array.prototype.slice.call(
@@ -15,13 +17,14 @@ function main() {
         return;
       }
 
-      let mat,
-        str,
-        re = /^[\t ]+/gm,
-        len,
-        min = 1e3;
+      let mat;
+      let str;
+      let re = /^[\t ]+/gm;
+      let len;
+      let min = powThree;
 
-      while ((mat = re.exec(txt))) {
+      while (re.exec(txt)) {
+        mat = re.exec(txt);
         len = mat[0].length;
 
         if (len < min) {
@@ -30,11 +33,12 @@ function main() {
         }
       }
 
-      if (min === 1e3) {
+      if (min === powThree) {
         return;
       }
 
-      el.textContent = txt.replace(new RegExp(`^${str}`, "gm"), "");
+      const regex = new RegExp(`^${str}`, "gm");
+      el.textContent = txt.replace(regex, "");
     });
   }
 

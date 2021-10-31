@@ -43,6 +43,10 @@ section {
   border: 1px solid #3a3a3a;
 }
 
+pre {
+  margin: 0;
+}
+
 .tab-content,
 .tab-pane,
 .code-highlight pre {
@@ -53,14 +57,10 @@ section {
   grid-area: code;
 }
 
-pre {
-  margin: 0 !important;
-}
-
 .console {
   grid-area: console;
   background-color: #191922;
-  color: #ffffff;
+  color: #fff;
 }
 
 .console .wrapper {
@@ -106,9 +106,10 @@ pre {
   background-color: #191922;
   border-color: transparent;
   font-weight: 500;
-  color: #ffffff;
+  color: #fff;
 }
 
+/* stylelint-disable no-descending-specificity */
 .nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover {
   border-color: transparent;

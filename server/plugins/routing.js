@@ -1,4 +1,3 @@
-const path = require("path");
 const fp = require("fastify-plugin");
 const routingData = require("../config/routingData");
 
