@@ -7,6 +7,7 @@ const NODE_MODULES = path.join(ROOT, "node_modules");
 // folder configuration
 const statics = ["learn", "algorithm", "other"];
 const assets = [
+  "prismjs",
   "bootstrap",
   "github-markdown-css",
   "@fortawesome/fontawesome-free"
