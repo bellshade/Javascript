@@ -1,4 +1,4 @@
-(function () {
+function main() {
   function preCode(selector) {
     let els = Array.prototype.slice.call(
       document.querySelectorAll(selector),
@@ -30,9 +30,11 @@
         }
       }
 
-      if (min == 1e3) return;
+      if (min === 1e3) {
+        return;
+      }
 
-      el.textContent = txt.replace(new RegExp("^" + str, "gm"), "");
+      el.textContent = txt.replace(new RegExp(`^${str}`, "gm"), "");
     });
   }
 
@@ -43,4 +45,6 @@
     },
     false
   );
-})();
+}
+
+main();
