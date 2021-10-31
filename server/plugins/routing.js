@@ -14,6 +14,18 @@ const isParents = (url) => statics.map((s) => `/${s}`).some((s) => s === url);
 
 const rootPOSIX = toPOSIX(ROOT);
 
+const commonFileFilter =
+  (filter) =>
+  ({ url }) => {
+    const basicConstrain = url !== filter.url && url.includes(filter.url);
+
+    const filterUrlLength =
+      filter.url.split("/").filter((d) => d !== "").length + 1;
+    const urlLength = url.split("/").filter((d) => d !== "").length;
+
+    return basicConstrain && filterUrlLength === urlLength;
+  };
+
 function parentHandler(data, filter) {
   const directoryApproach = data
     .filter(
@@ -28,11 +40,7 @@ function parentHandler(data, filter) {
     return directoryApproach;
   }
 
-  const fileApproach = data.filter(
-    ({ url }) => url !== filter.url && url.includes(filter.url)
-  );
-
-  return fileApproach;
+  return data.filter(commonFileFilter(filter));
 }
 
 const data = list
@@ -44,7 +52,7 @@ const filteredDir = data.filter(({ type }) => type === "directory");
 const rearrange = [...filteredDir].map((filter) => {
   const items = isParents(filter.url)
     ? parentHandler(data, filter)
-    : data.filter(({ url }) => url !== filter.url && url.includes(filter.url));
+    : data.filter(commonFileFilter(filter));
 
   return { ...filter, items };
 });
