@@ -1,20 +1,35 @@
-const express = require("express");
+const fastify = require("fastify");
 const path = require("path");
 
-const controller = require("./controllers/main");
+const fastifyStatic = require("fastify-static");
+
+// const controller = require("./controllers/main");
 const { requiredStatic } = require("./config/constant");
 
-const app = express();
+const app = fastify({ debug: false });
 
-app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "views"));
+app.register(require("point-of-view"), {
+  engine: {
+    ejs: require("ejs")
+  },
+  root: path.join(__dirname, "views")
+});
 
-requiredStatic.forEach((data) =>
-  app.use(data.prefix, express.static(data.path))
-);
+requiredStatic.forEach((data, idx) => {
+  app.register(fastifyStatic, {
+    ...data,
+    decorateReply: idx < 1
+  });
+});
 
-app.get("*", controller);
+const start = async () => {
+  try {
+    await app.listen(3000);
+    console.log("Listening on port 3000 | http://localhost:3000/");
+  } catch (err) {
+    console.error(err);
+    process.exit();
+  }
+};
 
-app.listen(3000, () =>
-  console.log("Listening on PORT 3000 | http://localhost:3000/")
-);
+start();
