@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-  <p id="paragraf">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script>
+      const _log = console.log;
+      console.log = function (...rest) {
+        window.parent.postMessage(
+          {
+            source: "iframe",
+            message: rest
+          },
+          "*"
+        );
+        _log.apply(console, arguments);
+      };
+    </script>
+
+    <title>DOM Nodes</title>
+  </head>
+  <body>
+    <p id="paragraf">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
       accusantium, minus, dolore nostrum provident repellat amet sed minima
       expedita, corporis dignissimos. Adipisci ratione incidunt, officia culpa
@@ -17,7 +32,7 @@
       explicabo voluptas, ab suscipit tempore totam quidem? Aliquid ipsa
       deserunt harum voluptate hic ipsum in delectus, ducimus, totam omnis
       facilis quidem id aliquam enim iure repellat.
-    </p>  
+    </p>
     <script src="nodes.js"></script>
-</body>
+  </body>
 </html>

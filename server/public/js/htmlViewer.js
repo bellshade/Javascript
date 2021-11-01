@@ -1,6 +1,45 @@
+const consoleWrapper = document.querySelector(".console .wrapper");
 const powThree = 1000;
 
+const outputAppender = (string) => {
+  const container = document.createElement("div");
+  container.setAttribute("class", "output px-2");
+
+  const icon = document.createElement("i");
+  icon.setAttribute("class", "fas fa-chevron-right");
+
+  const code = document.createElement("code");
+  code.innerText = string;
+
+  // append
+  container.append(icon);
+  container.append(code);
+
+  // write to console
+  consoleWrapper.append(container);
+};
+
 function main() {
+  window.addEventListener("message", function (response) {
+    if (response.data && response.data.source === "iframe") {
+      const message = response.data.message;
+
+      if (Array.isArray(message)) {
+        const stringToAppend = message
+          .map((d) =>
+            Array.isArray(d)
+              ? JSON.stringify(d).replace(/,/g, ", ")
+              : d === null
+              ? "null"
+              : d
+          )
+          .join(" ");
+
+        outputAppender(stringToAppend);
+      }
+    }
+  });
+
   function preCode(selector) {
     let els = Array.prototype.slice.call(
       document.querySelectorAll(selector),
