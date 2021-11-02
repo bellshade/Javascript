@@ -3,19 +3,18 @@
 
 ### Penjelasan 
 
-DOM Methods Ialah sekumpulan Method/Function yang di gunakan untuk melakukan manipulasi pada dokumen atau halaman web sehingga dapat belakukan hal yang diinginkan 
+DOM Methods Ialah sekumpulan Method/Function yang di gunakan untuk melakukan manipulasi pada Element HTML ataupun Pada Node yang ada pada dokument html tersebut sehingga dapat melakukan hal yang diinginkan 
 
-Banyak Sekali Method atau Function Yang dapat di gunakan diantaranya :
-
+Berikut beberapa Method yang dapat di gunakan  untukk melakukan DOM
+#### Method Manipulasi  Element 
 * .innerHTML
 * .style 
-* .appendChild()
 * .setAttribute()
 * .classList()
 
 ### 1. innerHTML 
 
-Method ini dapat di gunakan untuk memasukkan/Mengganti  sebuah Teks atau Element HTML didalam Halaman Web 
+Method *.innerHTML* ialah Method yang dapat di gunakan untuk memasukkan/Mengganti  sebuah Teks atau Element HTML didalam Halaman Web 
 
 contoh :
 ###### HTML
@@ -90,15 +89,15 @@ app2.innerHTML = '<h1>Sudah di ganti</h1>';
 
 <img src="img/codesesudah.jpg" alt="toggle" width="50%">
 
-### .Style
+### .style
 
-Method Style ialah method yang di gunakan untuk memberikan style pada element HTML sebegaimna ketika menggunakan CSS bedanya ini kita aan menggunaan javascript untukk memberikan style nya, jika kita menggunakan Metodhe ini untuk memberikan style pada suatu element makan ini akan memberikan Inline CSS pada element tersebut 
+Method *.style* ialah method yang di gunakan untuk memberikan style pada element HTML sebagaimana ketika menggunakan CSS bedanya ini kita akan menggunakan javascript untuk memberikan style nya, jika kita menggunakan Metodhe ini untuk memberikan style pada suatu element makan ini akan memberikan Inline CSS pada element tersebut 
 
 contoh 
 
-Untuk contoh kali ini saya akan menggunakan kembali element html di materi sebelumnya  saya  memberikan style pada ```<div>``` yang berada pada materi innerHTML yang di atas jadi kita langsung akan memberikan style dengan javascript caranya seperti ini 
+Untuk contoh kali ini saya akan menggunakan kembali element html di materi sebelumnya saya  akan memberikan style pada ```<div>``` yang berada pada materi *.innerHTML* yang di atas jadi kita langsung akan memberikan style dengan javascript caranya seperti ini 
 
-- pertama seleksi element yang akan di beri style dan di atas saya sudah melakukannya jadi saya tidak  akan melakukannya lagi silahkan lihat gambar yang ada di bawah ini yang berasal dari materi innerHTML di atas
+- pertama seleksi element yang akan di beri style dan di atas saya sudah melakukannya jadi saya tidak  akan melakukannya lagi silahkan lihat gambar yang ada di bawah ini yang berasal dari materi *.innerHTML* di atas
 
 <img src="img/hasilcode.jpg" alt="toggle" width="50%">
 
@@ -126,6 +125,53 @@ jika di inspect hasilnya akan seperti ini
 dan juga ini 
 
 <img src="img/style4.jpg" alt="toggle" width="50%">
+
+>> Jadi intinya dengan method ini kita bisa memberikan style pada element HTML tanpa Css dan untuk melakukannya cukup mudah tapi itu akan terlihat kurang rapi jika nanti yang di berikan itu banyak
+>> yang perlu di perhatikan disini ialah ketika kita memberikan style nama propertinya itu di tulis dengan metode camelCase jika terdiri dari dua kata seperti dicontoh di atas bukkan disambung dengan tanda ```-``` karena tanda itu akan di baca sebagai pengurangan oleh javascript jika satu kata ya dapat di tulis sebagaimana biasanya.
+
+### .setAttribute()
+
+Method *.setAttribute()* ialah method untuk memberikan Attribute pada element HTML, Selain itu kita juga dapat menghapus dan mengganti isi dari suatu attribute dengan Menggunakan Method *.removeAttribute()* untukk menghapus. Singkatnya Method Method ini digunakan untuk mengelola attribute suatu Element
+
+contoh 
+ 
+ HTML 
+ ```html
+     <div class="percobaan3">
+        <input type="text" class ="input">
+    </div>
+ ```
+ jika di buka di web hasilnya seperti gambar di bawah ini 
+
+Di atas saya ada sebuah ```<div>``` yang berisi ```<input>``` dalam contoh kali ini ita akan mengelola Attribute pada kedua tag tersebut caranya
+
+- Pertama kita seleksi dulu element yang akan di manipulasi
+
+Javascript
+```js
+const app3 = document.getElementsByTagName("div")[2];
+const input = document.getElementsByTagName("input")[0];
+```
+- kedua kita manipulasi 
+  * pertama kita gunakan *.setAttribute* untuk memberikan Atribut tambahan 
+
+  ```js 
+  input.setAttribute('name', 'input');
+  ```
+  * kedua kita gunakan *.removeAttribute* untuk menghapus atribut class karena tidak akan di gunakan lagi 
+  ```js
+  input.removeAttribute('class', "input");
+  ```
+
+### .classList
+
+Method *.classList* ialah metod yang di gunakan untuk mengelola class pada suatu element HTML
+
+
+  
+
+
+
 
 
 
