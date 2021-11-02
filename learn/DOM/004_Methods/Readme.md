@@ -68,7 +68,7 @@ di atas kita ada ```<div>``` seperti pada contoh pertama tapi kali ini memiiki i
 
 - jika di inspect seperti gambar di bawah 
 
-<img src="img/codesebelumc2.jpg" alt="toggle" width="50%">
+<img src="img/codesebelum.jpg" alt="toggle" width="50%">
 
 Disini saya akan mengganti isinya ```<div>``` yang merupakan  ```<a>``` dengan ```<h1>``` berikut caranya :
 
@@ -89,6 +89,46 @@ app2.innerHTML = '<h1>Sudah di ganti</h1>';
  jika di inspect source code berubah seperti ini 
 
 <img src="img/codesesudah.jpg" alt="toggle" width="50%">
+
+### .Style
+
+Method Style ialah method yang di gunakan untuk memberikan style pada element HTML sebegaimna ketika menggunakan CSS bedanya ini kita aan menggunaan javascript untukk memberikan style nya, jika kita menggunakan Metodhe ini untuk memberikan style pada suatu element makan ini akan memberikan Inline CSS pada element tersebut 
+
+contoh 
+
+Untuk contoh kali ini saya akan menggunakan kembali element html di materi sebelumnya  saya  memberikan style pada ```<div>``` yang berada pada materi innerHTML yang di atas jadi kita langsung akan memberikan style dengan javascript caranya seperti ini 
+
+- pertama seleksi element yang akan di beri style dan di atas saya sudah melakukannya jadi saya tidak  akan melakukannya lagi silahkan lihat gambar yang ada di bawah ini yang berasal dari materi innerHTML di atas
+
+<img src="img/hasilcode.jpg" alt="toggle" width="50%">
+
+- kedua kita berikan aksinya kita berikan style nya 
+
+javascript
+
+```js
+app.style.backgroundColor = 'blue';
+app2.style.borderRadius = '10px' ;
+```
+
+maka hasilnya akan seperti gambar di bawah ini 
+
+<img src="img/style3.jpg" alt="toggle" width="50%">
+
+dan juga ini 
+
+<img src="img/style1.jpg" alt="toggle" width="50%">
+
+jika di inspect hasilnya akan seperti ini 
+
+<img src="img/style2.jpg" alt="toggle" width="50%">
+
+dan juga ini 
+
+<img src="img/style4.jpg" alt="toggle" width="50%">
+
+
+
 
 
 
