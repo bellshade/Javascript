@@ -150,7 +150,7 @@ jika di inspect akan seperti ini
 <img src="img/setattribut2.jpg" alt="toggle" width="50%">
 
 
-Di atas saya ada sebuah ```<div>``` yang berisi ```<input>``` dalam contoh kali ini ita akan mengelola Attribute pada kedua tag tersebut caranya
+Di atas saya ada sebuah ```<div>``` yang berisi ```<input>``` dalam contoh kali ini kita akan mengelola Attribute pada kedua tag tersebut caranya
 
 - Pertama kita seleksi dulu element yang akan di manipulasi
 
@@ -160,7 +160,7 @@ const app3 = document.getElementsByTagName("div")[2];
 const input = document.getElementsByTagName("input")[0];
 ```
 - kedua kita manipulasi 
-  * pertama kita gunakan *.setAttribute* untuk memberikan Atribut tambahan 
+  * pertama kita gunakan *.setAttribute* untuk memberikan Attribut tambahan 
 
   ```js 
   input.setAttribute('name', 'input');
@@ -182,7 +182,7 @@ jika di inspect akan seperti gambar di bawah ini
 
 ### .classList
 
-Method *.classList* ialah metod yang di gunakan untuk mengelola class pada suatu element HTML
+Method *.classList* ialah method yang di gunakan untuk mengelola class pada suatu element HTML
 
 
 > Ada beberapa Method yang dapat digunakan mengelola class dengan Method *.classList*
@@ -225,7 +225,7 @@ dan jika di inspect akan seperti gambar di bawah ini
  Untuk contohnya saya juga akan menggunakan lagi element ```<div>``` yang ada pada materi *.setAttribute* jadi kita akan menambahkan class pada ```<div>``` yang ada pada materi *.setAttribute* tersebut
 > jadi sekarang saya akan langsung untuk menghapus class karena sebelumnya sudah saya seleksi pada materi *.setAttribute* diatas kita akan menghapus class percobaan tiga pada ```<div>``` tersebut
 
-sebelum kita lihat dulu kodenya jia di inspect sebelum hapus class percobaan
+sebelum kita lihat dulu kodenya jika di inspect sebelum hapus class percobaan
 
 
 <img src="img/classlist1.jpg" alt="toggle" width="50%">
@@ -266,6 +266,7 @@ dan jika di inspect akan seperti gambar di bawah ini
 <img src="img/classlist4.jpg" alt="toggle" width="50%">
 
 
+> Selain Method / Fungsi yang di atas masih ada fungsi lain lagi yang dapat di gunakan untuk memanipulasi sebuah element tapi method / fungsi yang di ataslah yang saya tau banyak di gunakan 
 
 
 
