@@ -167,19 +167,108 @@ const input = document.getElementsByTagName("input")[0];
   ```
 
   hasilnya seperti gambar di bawah ini jika di inspect
+
   <img src="img/settattribute3.jpg" alt="toggle" width="50%">
 
   * kedua kita gunakan *.removeAttribute* untuk menghapus atribut class karena tidak akan di gunakan lagi 
   ```js
   input.removeAttribute('class', "input");
   ```
-    hasilnya seperti gambar di bawah ini jika di inspect
+  
+jika di inspect akan seperti gambar di bawah ini
+
   <img src="img/setattribute.jpg" alt="toggle" width="50%">
 
 
 ### .classList
 
 Method *.classList* ialah metod yang di gunakan untuk mengelola class pada suatu element HTML
+
+
+> Ada beberapa Method yang dapat digunakan mengelola class dengan Method *.classList*
+
+1. .classList.add() Untuk Menambah class
+
+contoh 
+ Untuk contohnya saya akan menggunakan lagi element ```<div>``` yang ada pada materi *.setAttribute* jadi kita akan menambahkan class pada ```<div>``` yang ada pada materi *.setAttribute* tersebut
+> jadi sekarang saya akan langsung untuk menambahkan class karena sebelumnya sudah saya seleksi pada materi *.setAttribute* diatas
+
+sebelumnya kita lihat dulu gambar sebelum di tambahkan class 
+<img src="img/setattribut1.jpg" alt="toggle" width="50%">
+
+
+dan jika di inspect akan seperti gambar di bawah ini
+
+
+<img src="img/setattribute.jpg" alt="toggle" width="50%">
+
+```js
+app3.classList.add('gradient');
+```
+jadi di atas saya sudah memberikan class gradient yang memiliki style css seperti di bawah ini
+```css
+ .gradient{
+        background: linear-gradient(to bottom, blue , yellow , red );
+        border-radius: 10px;
+        border-color: transparent;
+    }
+```
+berikut hasil setelah class gradient di tambahkan
+
+<img src="img/classlist5.jpg" alt="toggle" width="50%">
+
+dan jika di inspect akan seperti gambar di bawah ini 
+
+<img src="img/classlist1.jpg" alt="toggle" width="50%">
+
+2. .classList.remove() Untuk Menghapus class
+ Untuk contohnya saya juga akan menggunakan lagi element ```<div>``` yang ada pada materi *.setAttribute* jadi kita akan menambahkan class pada ```<div>``` yang ada pada materi *.setAttribute* tersebut
+> jadi sekarang saya akan langsung untuk menghapus class karena sebelumnya sudah saya seleksi pada materi *.setAttribute* diatas kita akan menghapus class percobaan tiga pada ```<div>``` tersebut
+
+sebelum kita lihat dulu kodenya jia di inspect sebelum hapus class percobaan
+
+
+<img src="img/classlist1.jpg" alt="toggle" width="50%">
+
+```js
+app3.classList.remove('percobaan3');
+```
+
+dan jika di inspect akan seperti gambar di bawah ini
+
+<img src="img/classlist2.jpg" alt="toggle" width="50%">
+
+
+3. .classList.replace() Untuk Mengganti class
+
+ Untuk contohnya saya akan menggunakan element ```<div>``` yang ada pada materi *.innerHTML* jadi kita akan mengganti class pada ```<div>``` yang ada pada materi *.innerHTML* tersebut dari class percobaan2 menjadi gradient
+
+ sebelumnya kita lihat dulu sebelum di ganti classnya 
+
+<img src="img/style1.jpg" alt="toggle" width="50%">
+
+
+dan jika di inspect akan seperti gambar di bawah ini
+
+
+<img src="img/style4.jpg" alt="toggle" width="50%">
+
+
+ ```js 
+ app2.classList.replace('percobaan2', 'gradient');
+ ```
+berikut hasilnya setelah kelasnya di rubah 
+
+<img src="img/classlist3.jpg" alt="toggle" width="50%">
+
+dan jika di inspect akan seperti gambar di bawah ini
+
+<img src="img/classlist4.jpg" alt="toggle" width="50%">
+
+
+
+
+
 
 
   
