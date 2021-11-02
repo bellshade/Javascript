@@ -72,12 +72,12 @@ di atas kita ada ```<div>``` seperti pada contoh pertama tapi kali ini memiiki i
 
 Disini saya akan mengganti isinya ```<div>``` yang merupakan  ```<a>``` dengan ```<h1>``` berikut caranya :
 
-- pertama kita seleksi div nya
+- pertama kita seleksi ```<div>``` nya
 ###### Javascript
 ```js
 const app2 = document.getElementsByTagName('div')[1];
 ```
-- kedua kita masukkan tag dan tulisannya 
+- kedua kita masukkan ```<a>``` dan tulisannya 
 ```js 
 const app2 = document.getElementsByTagName('div')[1];
 app2.innerHTML = '<h1>Sudah di ganti</h1>';
@@ -111,7 +111,7 @@ app.style.backgroundColor = 'blue';
 app2.style.borderRadius = '10px' ;
 ```
 
-maka hasilnya akan seperti gambar di bawah ini 
+maka hasilnya akan seperti gambar di bawah ini  di browser
 
 <img src="img/style3.jpg" alt="toggle" width="50%">
 
