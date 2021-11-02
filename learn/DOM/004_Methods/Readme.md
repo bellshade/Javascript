@@ -143,6 +143,13 @@ contoh
  ```
  jika di buka di web hasilnya seperti gambar di bawah ini 
 
+ <img src="img/setattribut1.jpg" alt="toggle" width="50%">
+
+jika di inspect akan seperti ini 
+
+<img src="img/setattribut2.jpg" alt="toggle" width="50%">
+
+
 Di atas saya ada sebuah ```<div>``` yang berisi ```<input>``` dalam contoh kali ini ita akan mengelola Attribute pada kedua tag tersebut caranya
 
 - Pertama kita seleksi dulu element yang akan di manipulasi
@@ -158,10 +165,17 @@ const input = document.getElementsByTagName("input")[0];
   ```js 
   input.setAttribute('name', 'input');
   ```
+
+  hasilnya seperti gambar di bawah ini jika di inspect
+  <img src="img/settattribute3.jpg" alt="toggle" width="50%">
+
   * kedua kita gunakan *.removeAttribute* untuk menghapus atribut class karena tidak akan di gunakan lagi 
   ```js
   input.removeAttribute('class', "input");
   ```
+    hasilnya seperti gambar di bawah ini jika di inspect
+  <img src="img/setattribute.jpg" alt="toggle" width="50%">
+
 
 ### .classList
 

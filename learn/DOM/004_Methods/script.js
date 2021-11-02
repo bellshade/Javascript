@@ -16,7 +16,4 @@ console.log(app3);
 const input = document.getElementsByTagName("input")[0];
 console.log(input);
 input.setAttribute("name", "input");
-input.removeAttribute('class', "input");
-
-
-
+input.removeAttribute("class", "input");
