@@ -77,7 +77,8 @@ pre {
   padding-bottom: 0.5rem;
 }
 
-.console .output i {
+.console .output i,
+.console .output svg {
   font-size: 0.8rem;
   margin-top: 6px;
   margin-right: 0.5rem;
@@ -119,6 +120,7 @@ pre {
 .readme-scrollable {
   overflow-y: auto;
   overflow-x: hidden;
-  height: 368.39px;
+  height: calc(100% - 15px);
   z-index: -100;
+  background: #3a3a3a;
 }
