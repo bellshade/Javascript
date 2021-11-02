@@ -19,6 +19,6 @@ input.setAttribute("name", "input");
 input.removeAttribute("class", "input");
 
 //Menggunakan .classList
-app3.classList.add('gradient');
-app3.classList.remove('percobaan3');
-app2.classList.replace('percobaan2', 'gradient');
+app3.classList.add("gradient");
+app3.classList.remove("percobaan3");
+app2.classList.replace("percobaan2", "gradient");
