@@ -269,8 +269,6 @@ Berikut hasilnya setelah class-nya dirubah
 dan jika kita inspect, maka akan seperti gambar di bawah ini
 
 <img src="img/classlist4.jpg" alt="toggle" width="50%">
-<<<<<<< HEAD
-=======
 
-> Selain Method/Fungsi yang di atas masih ada fungsi lain lagi yang dapat di gunakan untuk memanipulasi sebuah element tapi method /fungsi yang di ataslah yang saya tau banyak di gunakan.
->>>>>>> 29b3d6face660dc1ae486b864af34bc1d85ab7ff
+
+
