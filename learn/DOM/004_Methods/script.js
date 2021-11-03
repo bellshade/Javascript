@@ -22,3 +22,4 @@ input.removeAttribute("class", "input");
 app3.classList.add("gradient");
 app3.classList.remove("percobaan3");
 app2.classList.replace("percobaan2", "gradient");
+

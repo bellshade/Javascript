@@ -1,6 +1,7 @@
 #                                                 DOM Method  
 --------------------------------------------------------------------------------------------------------------------------
 
+
 ### Penjelasan 
 
 DOM Methods Ialah sekumpulan Method/Function yang di gunakan untuk melakukan manipulasi pada Element HTML ataupun Pada Node yang ada pada dokument html tersebut sehingga dapat melakukan hal yang diinginkan 
