@@ -1,0 +1,49 @@
+pull_request_rules:
+  - name: ci testing kalo sukses ke squash dengan label
+    conditions:
+      - check-success=build (14.x)
+      - base=main
+      - label=ready-to-merge
+    actions:
+      merge:
+        method: squash
+  - name: javascript label
+    conditions:
+      - files~=\.js$
+    actions:
+      label:
+        add:
+          - javascript file
+          - request tim javascript untuk review js file
+  - name: html label
+    conditions:
+      - files~=\.html$
+    actions:
+      label:
+        add:
+          - html files
+          - request tim javascript untuk review html file
+
+  - name: markdown label
+    conditions:
+      - files~=\.md$
+    actions:
+      label:
+        add:
+          - markdown files
+          - request docs team untuk review
+  - name: review docs team untuk file markdown
+    conditions:
+      - label=markdown files
+    actions:
+      request_reviews:
+        teams:
+          - "@bellshade/docs-team"
+
+  - name: review javascript team untuk file markdown
+    conditions:
+      - label=javascript files
+    actions:
+      request_reviews:
+        teams:
+          - "@bellshade/javascript-team"

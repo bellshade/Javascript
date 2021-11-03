@@ -26,11 +26,11 @@
   },
   "homepage": "https://github.com/reacto11mecha/Javascript#readme",
   "devDependencies": {
-    "doctest": "^0.18.1",
-    "eslint": "^7.32.0",
-    "nodemon": "^2.0.14",
-    "onchange": "^7.1.0",
-    "prettier": "^2.4.1"
+    "doctest": "0.18.1",
+    "eslint": "8.1.0",
+    "nodemon": "2.0.14",
+    "onchange": "7.1.0",
+    "prettier": "2.4.1"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
