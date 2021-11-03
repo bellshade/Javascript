@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Methods</title>
+</head>
+
+<script>
+    const _log = console.log;
+    console.log = function (...rest) {
+        window.parent.postMessage(
+            {
+                source: "iframe",
+                message: rest
+            },
+            "*"
+        );
+        _log.apply(console, arguments);
+    };
+</script>
+
+<style>
+    div {
+        border: 2px solid blue;
+        margin: 10px auto;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .gradient {
+        background: linear-gradient(to bottom, blue, yellow, red);
+        border-radius: 10px;
+        border-color: transparent;
+    }
+</style>
+
+<body>
+    <div class="percobaan">
+    </div>
+    <div class="percobaan2">
+        <a>ini akan di ganti dengan innerHTML</a>
+    </div>
+    <div class="percobaan3">
+        <input type="text" class="input">
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
