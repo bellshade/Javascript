@@ -1,5 +1,5 @@
 /*
-    Vowel Sort, algoritma sorting yang bertujuan memisahkan antara huruf vocal dan huruf konsonan
+    Vowel Sort, algoritma sorting yang bertujuan memisahkan antara huruf vocal dan huruf konsonan (vowel)
 */
 function vowelSort(text) {
   // inisialisasi function
