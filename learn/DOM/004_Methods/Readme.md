@@ -269,6 +269,3 @@ Berikut hasilnya setelah class-nya dirubah
 dan jika kita inspect, maka akan seperti gambar di bawah ini
 
 <img src="img/classlist4.jpg" alt="toggle" width="50%">
-
-
-
