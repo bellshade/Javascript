@@ -1,112 +1,67 @@
-# Javascript
+# Bellshade - JavaScript
+> Part of Bellshade Project, managed by [WPU Discord Community](http://discord.gg/S4rrXQU) <br>
+> WPU Community is the fastest growing software developer forum initiated by [Mr. Sandhika Galih](https://www.youtube.com/c/WebProgrammingUNPAS)
 
 ![codequality](https://img.shields.io/lgtm/grade/javascript/github/bellshade/Javascript?label=code%20quality%3A%20js&style=for-the-badge)
 ![codefactor](https://img.shields.io/codefactor/grade/github/bellshade/Javascript/main?label=code%20factor%20quality&style=for-the-badge)
 ![buildTesting](https://img.shields.io/github/workflow/status/bellshade/Javascript/Node%20CI?style=for-the-badge)
 [![discord](https://img.shields.io/discord/722002048643497994?logo=discord&logoColor=white&style=for-the-badge)](http://discord.gg/S4rrXQU)
 
-Repositori ini berisi kumpulan dari berbagai macam script struktur data dan algoritma yang diimplementasikan dengan menggunakan bahasa pemrograman Javascript.
+Repositori ini berisi kumpulan code JavaScript yang dapat digunakan sebagai pembelajaran bagi siapa saja. Mulai dari materi Basic, DOM, ES6, hingga Web Api yang dapat kalian gunakan sebagai sumber belajar kalian. Tidak hanya itu, repositori ini juga memiliki berbagai macam code mengenai struktur data dan algoritma yang diimplementasikan dengan menggunakan bahasa pemrograman JavaScript.
 
-## Peraturan dan Pedoman Kontribusi
+![image](https://teknojurnal.com/wp-content/uploads/2016/09/Kelebihan-Bahasa-Pemrograman-JavaScript-Banner.jpg)
 
-Dipersilahkan bila ingin melakukan open pull request atau kontribusi pada repositori **Javascript**. Sebelum itu, bacalah terlebih dahulu [peraturan dan pedomannya](CONTRIBUTING.md) yang dapat ditemukan pada `CONTRIBUTING.md`.
+## 🎉🎉 Selamat Datang di Javascript 🎉🎉
+JavaScript adalah bahasa pemrograman yang digunakan dalam pengembangan website agar lebih dinamis dan interaktif. Jika sebelumnya kalian mungkin belajar [HTML dan CSS](https://github.com/bellshade/HTML-CSS) maka dengan JavaScript kalian bisa membuat tampilan dari website kalian menjadi lebih interaktif lagi.
 
-## Quick Access (Akses Cepat)
+### Alasan untuk belajar JavaScript
+
+Tentunya belajar JavaScript pada saat seperti ini merupakan pilihan yang tepat, dikarenakan JavaScript adalah bahasa yang ramah untuk pemulai alias _beginner-freindly_ yang pastinya akan membuat kalian dapat mempelajarinya dengan mudah. Oleh karena itu JavaScript menjadi bahasa paling populer berdasarkan survei yang dilakukan oleh [Stackoverflow](https://insights.stackoverflow.com/survey/2021).
+
+![image](https://cdn.discordapp.com/attachments/696006258792333352/905693077484736512/unknown.png)
+
+### Contoh manfaat dari penggunaan JavaScript
+
+Dengan JavaScript kita bisa membuat website yang jauh lebih baik pastinya. Seperti membuat navbar, slider, timer, hingga membuat sebuah game sekalipun yang dapat berjalan di browser, dan tentunya masih banyak lagi yang bisa dibuat dengan JavaScript.
+
+Beberapa contoh sederhana penggunaan JavaScript:
+1. [Countdown](https://codepen.io/AllThingsSmitty/pen/JJavZN)
+2. [Slider](https://codepen.io/gurovoleg/pen/OqjPLy)
+3. [Accordion](https://codepen.io/whit1346/pen/MmeQLR)
+4. [Navbar](https://codepen.io/abdosteif/pen/bRoyMb?editors=1100)
+5. [Game Sederhana](https://codepen.io/msval/pen/qKhcD)
+
+
+> ### Tertarik untuk Belajar? Yuk [Belajar Sekarang](learn) 🌟
+> Untuk mendapatkan pengetahuan tentang JavaScript dengan baik, kalian perlu menguasai dasar-dasar pemrograman pada JavaScript dengan mengikut alur belajar yang sudah kami siapkan dibawah ini.
+
+| Langkah | Topik | Target Pembelajaran | Materi | Video Rujukan |
+| :-----------: | :----------------------------------------: |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------: | :---------------------------------------------------------------------: | 
+| 01 | Membuat program pertama | Memahami bagaimana penulisan program JavaScript dengan benar | [Hello World]() | [Video]() |
+| 02 | Variabel dan Tipe Data | Memahami apa itu variabel dan tipe data yang ada di JavaScript | [Variable and Data Type]() | [Video]() |
+| 03 | Operasi Aritmatik | Dapat melakukan operasi aritmatika sederhana | [Operator]() | [Video]() |
+| 04 | Boolean | Mengenal apa itu boolean dan perannya dalam proses pemograman | [Boolean]() | [Video]() |
+| 05 | Pengkondisian | Memahami salah satu dari inti dari membuat pemograman yaitu melakukan pengkondisian | [Conditioning]() | [Video]() |
+| 06 | Perulangan | Memahami inti kedua dari pemograman yaitu melakukan perulangan | [Looping]() | [Video]() |
+| 07 | Fungsi | Mengenal konsep fungsi dalam teknik pemograman | [Function]() | [Video]() |
+| 08 | Konsep Array | Memahami konsep Array dan mencoba untuk mengimplemntasikannya dalam program | [Array]() | [Video]() |
+| 09 | Konsep Object | Mengenal konsep Object yang menjadi konsep paling penting di Javascript | [Object]() | [Video]() |
+
+Setelah menyelesaikan seluruh materi pengenalan dasar-dasar pemograman, kalian dapat mulai untuk mempelajari topik-topik lain yang jauh lebih seru!
+Kalian bisa mempelajari materi [DOM](learn/dom) ataupun [ES6](learn/es6) yang merupakan materi yang sangat menarik di JavaScript.
+
+## ⚡ Quick Access ⚡
 
 Semua _script_ yang ada pada repositori ini, dapat diakses dengan cepat lewat link berikut:
 
-### B
+- [Learn](learn/)
+- [Algorithm](algorithm/)
+- [Other](other/)
 
-- [Backtracking](algorithm/backtracking)
+## 🤩 Ayo ikut kami dan berkontribusi! 🤩 
 
-  - [Rat in Maze](algorithm/backtracking/RatInMaze.js)
+Bantuan kalian diperlukan! Untuk Bellshade dapat lebih jauh lagi membantu anak-anak Indonesia belajar *programming*, kita butuh tenaga kalian.
+> "Dengan Bellshade, aku jadi bisa *ngoding*! Terima kasih Bellshade!!"
+Kami sangat senang bila kalian ingin melakukan kontribusi pada repositori **JavaScript** ini. Tapi, sebelum itu, silahkan baca terlebih dahulu [Peraturan dan Pedoman Kontribusi](CONTRIBUTING.md) yang telah kami siapkan. Terima kasih! 
 
-- [Basic](learn/basic)
-  - [Hello World](learn/basic/001_hello_world)
-  - [Variable & Data Type](learn/basic/002_variable_datatype)
-  - [Operator](learn/basic/003_operator)
-  - [String](learn/basic/004_string_and_string_manipulation)
-  - [Conditioning](learn/basic/005_conditioning)
-  - [Arithmetic Operation](learn/basic/006_arithmetic_operation)
-  - [Looping](learn/basic/007_looping)
-  - [Function](learn/basic/008_function)
-  - [Array](learn/basic/009_array)
-  - [Array Manipulation](learn/basic/010_array_manipulation)
-  - [Object](learn/basic/011_object)
-  - [Manipulasi Object](learn/basic/012_object_manipulation/)
-  - [Class](learn/basic/013_classes)
-  - [Strict Mode](learn/basic/014_strict_mode)
-  - [Boolean](learn/basic/015_boolean)
-  - [Number](learn/basic/016_number)
-  - [Basic Program](learn/basic/017_basic_program)
-
-### C
-
-- [Cipher](algorithm/cipher)
-
-  - [Affine](algorithm/cipher/affine.js)
-  - [Atbash](algorithm/cipher/atbash.js)
-  - [Base64](algorithm/cipher/base64.js)
-  - [Caesar](algorithm/cipher/caesar.js)
-  - [Rot13](algorithm/cipher/rot13.js)
-
-- [Conversion](algorithm/conversion)
-  - [Arbitary Base](algorithm/conversion/ArbitaryBase.js)
-  - [Binary to Decimal](algorithm/conversion/BinaryToDecimal.js)
-  - [Decimal to Roman](algorithm/conversion/DecToRoman.js)
-  - [Decimal to Octal](algorithm/conversion/DecimalToOctal.js)
-  - [Hexadecimal to Decimal](algorithm/conversion/HexToDecimal.js)
-  - [Hexadecimal to RGB](algorithm/conversion/HexToRgb.js)
-  - [Number to Rupiah](algorithm/conversion/NumberToRupiah.js)
-  - [Octal to Decimal](algorithm/conversion/OctalToDecimal.js)
-  - [Temperature Conversion](algorithm/conversion/TemperatureConversion.js)
-  - [Time Conversion](algorithm/conversion/TimeConversion.js)
-  - [Date to Day](algorithm/conversion/dateToDay.js)
-  - [Decimal to Hexadecimal](algorithm/conversion/decimalToHex.js)
-
-### D
-
-- [Data Structure](algorithm/data_structure)
-  - [Binary Search Tree](algorithm/data_structure/binarySearchTree.js)
-  - [Binary Tree](algorithm/data_structure/binaryTree.js)
-  - [Filter Duplicate Array](algorithm/data_structure/filterDuplicateArray.js)
-  - [Filter Odd Even Array](algorithm/data_structure/filterEvenOddArray.js)
-  - [Queue](algorithm/data_structure/queue.js)
-  - [Reverse Integer](algorithm/data_structure/reverseInteger.js)
-  - [Stack](algorithm/data_structure/stack.js)
-  - [Undirected Graph](algorithm/data_structure/undirectedGraph.js)
-
-### E
-
-- [ES6](learn/es6)
-  - [Introduction](learn/es6/001_introduction)
-  - [Variable](learn/es6/002_variable)
-  - [Arrow Function](learn/es6/003_arrow_function)
-  - [Template Literals](learn/es6/004_template_literals)
-  - [Default Parameter](learn/es6/005_default_parameter)
-  - [For of Loop](learn/es6/006_for_of_loop)
-  - [Destructuring Assignment](learn/es6/007_destructuring_assignment)
-  - [Spread Operator](learn/es6/008_spread_operator)
-  - [Map Objects](learn/es6/009_map_objects)
-  - [String Helpers](learn/es6/010_string_helpers)
-  - [String Includes](learn/es6/011_string_includes)
-  - [Tagged Templates](learn/es6/012_tagged_templates)
-  - [Rest Parameter](learn/es6/013_rest_parameter)
-
-### O
-
-- [Other](other)
-
-### S
-
-- [Search](algorithm/search)
-
-  - [Binary Search](algorithm/search/binarySearch.js)
-  - [Linear Search](algorithm/search/linearSearch.js)
-  - [Search Engine](algorithm/search/searchEngine.js)
-
-- [Sorting Algorithm](algorithm/sorting_algorithm)
-  - [Bubble Sort](algorithm/sorting_algorithm/bubbleSort.js)
-  - [Counting Sort](algorithm/sorting_algorithm/countingSort.js)
-  - [Insertion Sort](algorithm/sorting_algorithm/insertionSort.js)
-  - [Quick Sort](algorithm/sorting_algorithm/insertionSort.js)
+Untuk informasi lebih lanjut, mari gabung dalam komunitas [Discord Channel WPU](http://discord.gg/S4rrXQU)
