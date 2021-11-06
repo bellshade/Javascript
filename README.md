@@ -56,7 +56,7 @@ Jalur belajar ini diperuntukkan bagi kalian yang masih awam atau baru saja terju
 Jika sebelumnya kalian sudah mempelajari dan memahamai dasar-dasar JavaScript, selanjutnya kalian bisa belajar DOM. Disini kalian akan belajar bagaimana berinteraksi langsung dengan website dengan cara memanipulasi objek / element html dengan menggunakan JavaScript.
 | Langkah | Topik | Target Pembelajaran | Video Rujukan |
 | :-----------: | :----------------------------------------: |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------: | 
-| 01 | Pengenalan | Mengenelai apa itu DOM dan cara kerjanya | [WPU - Pengenalan DOM](https://youtu.be/aT60R1cySLM) |
+| 01 | Pengenalan | Mengenali apa itu DOM dan cara kerjanya | [WPU - Pengenalan DOM](https://youtu.be/aT60R1cySLM) |
 | 02 | Nodes | Memahami konsep _Nodes_ pada DOM | [WPU - DOM Tree](https://youtu.be/zY5RlT5q5EM) |
 | 03 | Collections | Memahami konsep _Colections_ pada DOM | [WPU - DOM Tree](https://youtu.be/zY5RlT5q5EM) |
 | 04 | Method | Memahami bagaimana cara memanipulasi DOM dengan menggunakan _method_ yang ada | [WPU - DOM Manipulation](https://youtu.be/ff5aKnXmnx0) |
@@ -69,6 +69,14 @@ Jika sebelumnya kalian sudah mempelajari dan memahamai dasar-dasar JavaScript, s
 Jalur belajar ini bisa kalian ambil jika sudah memahami dasar-dasar JavaScript *tanpa mempelajari DOM terlebih dahulu*. Disini kalian akan belajar sintaks dan konsep JavaScript terbaru yang tentunya lebih berguna nantinya.
 | Langkah | Topik | Target Pembelajaran | Video Rujukan |
 | :-----------: | :----------------------------------------: |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------: | 
+| 01 | Pengenalan | Pengenalan apa itu ES6 | - |
+| 02 | Variabel | Mengenali sintaks terbaru dalam membuat variabel | [WPU - VAR, LET & CONST](https://youtu.be/7HDgJScwIrI) |
+| 03 | Arrow Function | Mengenali sintaks terbaru dalam membuat function | [WPU - Arrow Function](https://youtu.be/C8U_3_SBk6s) |
+| 04 | Template Literals | Memahami cara menyisipkan ekspresi ke dalam sebuah _string_  | [WPU - Template Literals](https://youtu.be/LywZF-xcfd8) |
+| 05 | Destructuring Assignment | Memahami apa itu _Destructuring Assignment_ dalam memecah array maupun objek  | [WPU - Destrucuting Assignment](https://youtu.be/7f11bDxZSP0) |
+| 06 | Spread Operator | Memahami apa itu _Spread Operator_ untuk memanipulasi array atau objek | [WPU - Spread Operator](https://youtu.be/AT5hfOL1Ddk) |
+| 07 | Rest Parameter | Memahami penggunaannya dalam menangkap banyak parameter dari sebuah _function_ | [WPU - Rest Parameter](https://youtu.be/C0mPB-lyI1I) |
+| 08 | For..Of Loop | Memahamai sintaks looping yang terbaru | [WPU - For..Of](https://youtu.be/LXOG9rHkYOo) |
 
 ## ⚡ Quick Access ⚡
 
