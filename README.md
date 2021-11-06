@@ -33,22 +33,42 @@ Beberapa contoh sederhana penggunaan JavaScript:
 
 
 > ### Tertarik untuk Belajar? Yuk [Belajar Sekarang](learn) 🌟
-> Untuk mendapatkan pengetahuan tentang JavaScript dengan baik, kalian perlu menguasai dasar-dasar pemrograman pada JavaScript dengan mengikut alur belajar yang sudah kami siapkan dibawah ini.
+> Berikut kami sediakan tahapan atau panduan dalam belajar JavaScript agar kalian tidak bingung dalam menentukan jalur belajar.
 
-| Langkah | Topik | Target Pembelajaran | Materi | Video Rujukan |
-| :-----------: | :----------------------------------------: |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------: | :---------------------------------------------------------------------: | 
-| 01 | Membuat program pertama | Memahami bagaimana penulisan program JavaScript dengan benar | [Hello World]() | [Video]() |
-| 02 | Variabel dan Tipe Data | Memahami apa itu variabel dan tipe data yang ada di JavaScript | [Variable and Data Type]() | [Video]() |
-| 03 | Operasi Aritmatik | Dapat melakukan operasi aritmatika sederhana | [Operator]() | [Video]() |
-| 04 | Boolean | Mengenal apa itu boolean dan perannya dalam proses pemograman | [Boolean]() | [Video]() |
-| 05 | Pengkondisian | Memahami salah satu dari inti dari membuat pemograman yaitu melakukan pengkondisian | [Conditioning]() | [Video]() |
-| 06 | Perulangan | Memahami inti kedua dari pemograman yaitu melakukan perulangan | [Looping]() | [Video]() |
-| 07 | Fungsi | Mengenal konsep fungsi dalam teknik pemograman | [Function]() | [Video]() |
-| 08 | Konsep Array | Memahami konsep Array dan mencoba untuk mengimplemntasikannya dalam program | [Array]() | [Video]() |
-| 09 | Konsep Object | Mengenal konsep Object yang menjadi konsep paling penting di Javascript | [Object]() | [Video]() |
+## :books: Tahapan Belajar Pemrograman JavaScript :books:
 
-Setelah menyelesaikan seluruh materi pengenalan dasar-dasar pemograman, kalian dapat mulai untuk mempelajari topik-topik lain yang jauh lebih seru!
-Kalian bisa mempelajari materi [DOM](learn/dom) ataupun [ES6](learn/es6) yang merupakan materi yang sangat menarik di JavaScript.
+### :one: Jalur Belajar Basic
+
+Jalur belajar ini diperuntukkan bagi kalian yang masih awam atau baru saja terjun di dunia pemrograman. Disini kalian akan belajar dasar-dasar JavaScript mulai dari variabel hingga objek. Tentunya sangat cocok untuk kalian yang masih pemula.
+| Langkah | Topik | Target Pembelajaran | Video Rujukan |
+| :-----------: | :----------------------------------------: |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------: | 
+| 01 | Pengenalan | Memahami bagaimana JavaScript bekerja | [WPU - Pengenalan JavaScript](https://youtu.be/RUTV_5m4VeI) |
+| 02 | Variabel dan Tipe Data | Memahami apa itu variabel dan tipe data yang ada di JavaScript | [WPU - Variabel](https://youtu.be/X1q_cK0Qv6o) dan [WPU - Tipe Data](https://youtu.be/1FAnrYu7LCM) |
+| 03 | Operator Aritmatik | Dapat melakukan operasi aritmatika sederhana | [WPU - Operator Aritmatika](https://youtu.be/EnXClrVdpTM) |
+| 04 | Pengkondisian | Memahami salah satu dari inti dari membuat pemograman yaitu melakukan pengkondisian | [WPU - Pengkondisian](https://youtu.be/hXbDQryJAh0) |
+| 05 | Perulangan | Memahami inti kedua dari pemograman yaitu melakukan perulangan | [WPU - Perulangan dengan For](https://youtu.be/1HussC8jKrk) dan [WPU - Perulangan dengan While](https://youtu.be/61XLzozBj2c) |
+| 06 | Fungsi | Mengenal konsep fungsi dalam teknik pemograman | [WPU - Function](https://youtu.be/6-UqHXBtYkg) |
+| 07 | Konsep Array | Memahami konsep Array dan mencoba untuk mengimplemntasikannya dalam program | [WPU - Array](https://youtu.be/CW5pfpafgDE) |
+| 08 | Konsep Object | Mengenal konsep Object yang menjadi konsep paling penting di Javascript | [WPU - Object](https://youtu.be/RKsapPaUgww) |
+
+### :two: Jalur Belajar DOM
+
+Jika sebelumnya kalian sudah mempelajari dan memahamai dasar-dasar JavaScript, selanjutnya kalian bisa belajar DOM. Disini kalian akan belajar bagaimana berinteraksi langsung dengan website dengan cara memanipulasi objek / element html dengan menggunakan JavaScript.
+| Langkah | Topik | Target Pembelajaran | Video Rujukan |
+| :-----------: | :----------------------------------------: |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------: | 
+| 01 | Pengenalan | Mengenelai apa itu DOM dan cara kerjanya | [WPU - Pengenalan DOM](https://youtu.be/aT60R1cySLM) |
+| 02 | Nodes | Memahami konsep _Nodes_ pada DOM | [WPU - DOM Tree](https://youtu.be/zY5RlT5q5EM) |
+| 03 | Collections | Memahami konsep _Colections_ pada DOM | [WPU - DOM Tree](https://youtu.be/zY5RlT5q5EM) |
+| 04 | Method | Memahami bagaimana cara memanipulasi DOM dengan menggunakan _method_ yang ada | [WPU - DOM Manipulation](https://youtu.be/ff5aKnXmnx0) |
+| 05 | Events | Memahami apa itu _event_ pada DOM yang berguna untuk memberikan interaksi pada element HTML | [WPU - DOM Events](https://youtu.be/ndYweb0Yn6o) |
+| 06 | Event Listener | Memahami cara penulisan _addEventListener_ yang digunakan untuk memberikan _events_ pada element | [WPU - DOM Events](https://youtu.be/ndYweb0Yn6o) |
+| 07 | Event Bubbling | Memahami lebih dalam mengenai _events_ dan _method-method_ di dalamnya | [WPU - Event Bubbling](https://youtu.be/a_JFfPHTAf4) |
+| 08 | Traversal | Memahami tentang bagaimana cara mengambil element berdasarkan objek yang ada | [WPU - DOM Traversal](https://youtu.be/SVOCSoGYdpQ) |
+
+### :three: Jalur Belajar ES6
+Jalur belajar ini bisa kalian ambil jika sudah memahami dasar-dasar JavaScript *tanpa mempelajari DOM terlebih dahulu*. Disini kalian akan belajar sintaks dan konsep JavaScript terbaru yang tentunya lebih berguna nantinya.
+| Langkah | Topik | Target Pembelajaran | Video Rujukan |
+| :-----------: | :----------------------------------------: |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------: | 
 
 ## ⚡ Quick Access ⚡
 
@@ -58,7 +78,7 @@ Semua _script_ yang ada pada repositori ini, dapat diakses dengan cepat lewat li
 - [Algorithm](algorithm/)
 - [Other](other/)
 
-## 🤩 Ayo ikut kami dan berkontribusi! 🤩 
+## 🤩 Yuk ikut berkontribusi ke Bellshade! 🤩 
 
 Bantuan kalian diperlukan! Untuk Bellshade dapat lebih jauh lagi membantu anak-anak Indonesia belajar *programming*, kita butuh tenaga kalian.
 > "Dengan Bellshade, aku jadi bisa *ngoding*! Terima kasih Bellshade!!"
