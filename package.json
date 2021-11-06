@@ -27,8 +27,8 @@
   "homepage": "https://github.com/reacto11mecha/Javascript#readme",
   "devDependencies": {
     "doctest": "0.18.1",
-    "eslint": "8.1.0",
-    "nodemon": "2.0.14",
+    "eslint": "8.2.0",
+    "nodemon": "^2.0.14",
     "onchange": "7.1.0",
     "prettier": "2.4.1"
   },

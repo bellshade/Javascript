@@ -1,7 +1,8 @@
 /**
  * Dapatkan Bilangan Prima Dalam Range Tertentu
  */
-function isPrime(number) { // mengecek apakah itu bilangan prima
+function isPrime(number) {
+  // mengecek apakah itu bilangan prima
 
   //Mengecek apakah bilangan tersebut lebih kecil dari 2 atau tidak ,karena Bilangan Prima dimulai dari 2, ini juga berfungsi sebagai pengecekan Bilangan negatif
   if (number < 2) {
@@ -20,8 +21,10 @@ function isPrime(number) { // mengecek apakah itu bilangan prima
 
 function searchPrime(awal, akhir) {
   let arr = []; // tahap inisialisasi array pembungkus, yang nanti akan berisi hasil bilangan prima
-  for (let i = awal; i <= akhir; i++) { // looping mulai dari angka input awal sampai input akhir
-    if (isPrime(i) === true) { // cek apakah angka termasuk bilangan prima
+  for (let i = awal; i <= akhir; i++) {
+    // looping mulai dari angka input awal sampai input akhir
+    if (isPrime(i) === true) {
+      // cek apakah angka termasuk bilangan prima
       arr.push(i); // jika ya tambahkan angka pada array pembungkus
     }
   }
