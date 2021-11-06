@@ -14,22 +14,22 @@ const assets = [
 ];
 
 // map all folder configuration to array of object
-const remappedStatics = statics.map((static) => ({
-  root: path.join(ROOT, static),
-  prefix: `/static/${static}/`
+const remappedStatics = statics.map((staticFolder) => ({
+  root: path.join(ROOT, staticFolder),
+  prefix: `/static/${staticFolder}/`
 }));
 const remappedAssets = assets.map((asset) => ({
   root: path.join(NODE_MODULES, asset),
   prefix: `/assets/${asset}/`
 }));
-const public = {
+const publicPath = {
   root: path.join(ROOT, "server/public"),
   prefix: "/public/"
 };
 
 module.exports = {
   ROOT,
-  requiredStatic: [...remappedAssets, ...remappedStatics, public],
+  requiredStatic: [...remappedAssets, ...remappedStatics, publicPath],
   statics,
   assets
 };
