@@ -122,6 +122,26 @@ Pull request `merged` jika:
 - Mengikuti standar dan arahan dari `CONTRIBUTING.md`
 - Lulus test dan cek dari beberapa test yang sudah kami siapkan
 
+## Snippet Tambahan
+
+Jika kamu menambahkan kode yang memerlukan html didalamnya, wajib tambahkan kode dibawah ini, tambahkan kodenya di bagian `head` dari htmlnya.
+
+```html
+<script>
+  const _log = console.log;
+  console.log = function (...rest) {
+    window.parent.postMessage(
+      {
+        source: "iframe",
+        message: rest
+      },
+      "*"
+    );
+    _log.apply(console, arguments);
+  };
+</script>
+```
+
 ## Tambahan
 
 - Jika ada kendala atau masalah dalam pull request, kamu bisa laporkan masalah pada [issue](https://github.com/bellshade/Javascript/issues)
