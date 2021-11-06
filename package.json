@@ -5,10 +5,10 @@
   "scripts": {
     "start": "node server/app",
     "dev": "nodemon server/app",
-    "lint": "eslint **/*.js",
-    "prettier": "prettier --w **/*.js",
-    "prettier-watch": "onchange '**/*.js' -- prettier --w {{changed}}",
-    "doctest-watch": "onchange '**/*.js' -- doctest {{changed}}"
+    "lint": "eslint {learn,algorithm,other,server}/**/*.js --ignore-pattern node_modules",
+    "prettier": "prettier --w {learn,algorithm,other,server}/**/*{.js,.html}",
+    "prettier-watch": "onchange {learn,algorithm,other,server}/**/*{.js,.html}' -- prettier --w {{changed}}",
+    "doctest-watch": "onchange '{learn,algorithm,other,server}/**/*.js' -- doctest {{changed}}"
   },
   "repository": {
     "type": "git",
