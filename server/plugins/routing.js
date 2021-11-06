@@ -33,6 +33,12 @@ module.exports = fp((fastify, opts, done) => {
       url: route.url,
       handler: handlerDecider(route)
     });
+
+    fastify.route({
+      method: "GET",
+      url: `${route.url}/`,
+      handler: (req, reply) => reply.code(301).redirect(route.url)
+    });
   });
 
   done();
