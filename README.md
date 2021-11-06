@@ -83,8 +83,11 @@ Jalur belajar ini bisa kalian ambil jika sudah memahami dasar-dasar JavaScript *
 Semua _script_ yang ada pada repositori ini, dapat diakses dengan cepat lewat link berikut:
 
 - [Learn](learn/)
+  - [Basic](learn/Basic/)
+  - [DOM](learn/DOM/)
+  - [ES6](learn/ES6/)
+  - [Web Api](learn/WebApi)
 - [Algorithm](algorithm/)
-- [Other](other/)
 
 ## 🤩 Yuk ikut berkontribusi ke Bellshade! 🤩 
 
