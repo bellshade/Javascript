@@ -62,7 +62,7 @@ Jika sebelumnya kalian sudah mempelajari dan memahamai dasar-dasar JavaScript, s
 | :-----------: | :----------------------------------------: |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------: |:---------------------------------------------------------------------: |
 | 01 | Pengenalan | Mengenali apa itu DOM dan cara kerjanya | [Introduction](learn/DOM/001_Introduction) | [WPU - Pengenalan DOM](https://youtu.be/aT60R1cySLM) |
 | 02 | Nodes | Memahami konsep _Nodes_ pada DOM | [Nodes](learn/DOM/002_DOM_Nodes) | [WPU - DOM Tree](https://youtu.be/zY5RlT5q5EM) |
-| 03 | Collections | Memahami konsep _Colections_ pada DOM | [COllections](learn/DOM/003_Collections) | [WPU - DOM Tree](https://youtu.be/zY5RlT5q5EM) |
+| 03 | Collections | Memahami konsep _Colections_ pada DOM | [Collections](learn/DOM/003_Collections) | [WPU - DOM Tree](https://youtu.be/zY5RlT5q5EM) |
 | 04 | Method | Memahami bagaimana cara memanipulasi DOM dengan menggunakan _method_ yang ada | [Method](learn/DOM/004_Methods) | [WPU - DOM Manipulation](https://youtu.be/ff5aKnXmnx0) |
 | 05 | Events | Memahami apa itu _event_ pada DOM yang berguna untuk memberikan interaksi pada element HTML | [Events](learn/DOM/005_Events) | [WPU - DOM Events](https://youtu.be/ndYweb0Yn6o) |
 | 06 | Event Listener | Memahami cara penulisan _addEventListener_ yang digunakan untuk memberikan _events_ pada element | [Event Listener](learn/DOM/006_Event_Listener) | [WPU - DOM Events](https://youtu.be/ndYweb0Yn6o) |
