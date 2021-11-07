@@ -10,18 +10,18 @@ const asyncHandler = (socket, file) => () => {
   const child = spawn("node", [file.path]);
 
   child.on("error", (err) =>
-    socket.send("child:error", { error: true, message: err })
+    socket.emit("child:error", { error: true, message: err })
   );
 
   child.stdout.on("data", (message) =>
-    socket.send("child:stdio:out", { message })
+    socket.emit("child:stdout", { message })
   );
 
   child.stderr.on("data", (message) =>
-    socket.send("child:stdio:err", { message })
+    socket.emit("child:stderr", { message })
   );
 
-  child.on("close", (code) => socket.send("child:close", { code }));
+  child.on("close", (code) => socket.emit("child:close", { code }));
 };
 
 socketController.on("file:run", (socket, { url, name }) => {
@@ -33,22 +33,22 @@ socketController.on("file:run", (socket, { url, name }) => {
       if (file.type === "file" && file.extension === "js") {
         setImmediate(asyncHandler(socket, file));
       } else {
-        socket.send("file:error", {
+        socket.emit("file:error", {
           error: true,
           message: "Invalid file type"
         });
       }
     } else {
-      socket.send("file:error", { error: true, message: "Huh ?" });
+      socket.emit("file:error", { error: true, message: "Huh ?" });
     }
   });
 });
 
-// Kesimpulan apa yang di send
+// Kesimpulan apa yang di emit
 // file:error
 // child:error
-// child:stdio:out
-// child:stdio:err
+// child:stdout
+// child:stderr
 // child:close
 
 module.exports = socketController;

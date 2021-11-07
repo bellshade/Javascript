@@ -114,6 +114,7 @@ pre *::selection {
   border-color: transparent;
   font-weight: 500;
   color: #ffffff;
+  white-space: nowrap;
 }
 
 .nav-tabs .nav-link:focus,
@@ -123,4 +124,25 @@ pre *::selection {
 
 .token.operator {
   background: none;
+}
+
+.run {
+  border: none;
+  border-radius: 4px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  background-color: rgb(15, 218, 15);
+  color: #191922;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.run:hover {
+  background-color: rgb(0, 202, 0);
+}
+
+.run:active {
+  background-color: rgb(0, 235, 0);
 }

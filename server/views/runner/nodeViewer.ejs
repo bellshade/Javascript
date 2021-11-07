@@ -34,7 +34,7 @@
       <!-- Code Highlight -->
       <section class="code-highlight p-0">
         <!-- Tabs -->
-        <nav class="d-flex">
+        <nav class="d-flex" style="display: grid; grid-template-columns: 1fr 96px;">
           <div class="nav nav-tabs" id="nav-tab" role="tablist">
             <% if (md) { %>
             <button
@@ -66,6 +66,7 @@
               <%= item.name %>
             </button>
             <% }); %>
+            <button class="run" type="button"><i class="fas fa-play"></i> RUN</button>
           </div>
         </nav>
         <!-- End Tabs -->
@@ -101,6 +102,8 @@
     <script src="/assets/prismjs/plugins/autoloader/prism-autoloader.min.js"></script>
     <script src="/assets/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
 
+    <script src="/socket.io/socket.io.min.js"></script>
     <script src="/public/js/common.js"></script>
+    <script src="/public/js/nodeViewer.js"></script>
   </body>
 </html>

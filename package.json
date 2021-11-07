@@ -4,7 +4,7 @@
   "description": "Repositori untuk belajar pemrograman Javascript dalam bahasa Indonesia",
   "scripts": {
     "start": "node server/app",
-    "dev": "nodemon server/app",
+    "dev": "nodemon server/app --ignore server/public",
     "lint": "eslint {learn,algorithm,other,server}/**/*.js --ignore-pattern node_modules",
     "prettier": "prettier --w {learn,algorithm,other,server}/**/*{.js,.html}",
     "prettier-watch": "onchange {learn,algorithm,other,server}/**/*{.js,.html}' -- prettier --w {{changed}}",
