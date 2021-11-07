@@ -62,8 +62,8 @@ Jika sebelumnya kalian sudah mempelajari dan memahamai dasar-dasar JavaScript, s
 | 04 | Method | Memahami bagaimana cara memanipulasi DOM dengan menggunakan _method_ yang ada | [WPU - DOM Manipulation](https://youtu.be/ff5aKnXmnx0) |
 | 05 | Events | Memahami apa itu _event_ pada DOM yang berguna untuk memberikan interaksi pada element HTML | [WPU - DOM Events](https://youtu.be/ndYweb0Yn6o) |
 | 06 | Event Listener | Memahami cara penulisan _addEventListener_ yang digunakan untuk memberikan _events_ pada element | [WPU - DOM Events](https://youtu.be/ndYweb0Yn6o) |
-| 07 | Event Bubbling | Memahami lebih dalam mengenai _events_ dan _method-method_ di dalamnya | [WPU - Event Bubbling](https://youtu.be/a_JFfPHTAf4) |
-| 08 | Traversal | Memahami tentang bagaimana cara mengambil element berdasarkan objek yang ada | [WPU - DOM Traversal](https://youtu.be/SVOCSoGYdpQ) |
+| 07 | Traversal | Memahami tentang bagaimana cara mengambil element berdasarkan objek yang ada | [WPU - DOM Traversal](https://youtu.be/SVOCSoGYdpQ) |
+| 08 | Event Bubbling | Memahami lebih dalam mengenai _events_ dan _method-method_ di dalamnya | [WPU - Event Bubbling](https://youtu.be/a_JFfPHTAf4) |
 
 ### :three: Jalur Belajar ES6
 Jalur belajar ini bisa kalian ambil jika sudah memahami dasar-dasar JavaScript *tanpa mempelajari DOM terlebih dahulu*. Disini kalian akan belajar sintaks dan konsep JavaScript terbaru yang tentunya lebih berguna nantinya.
