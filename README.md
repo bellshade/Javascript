@@ -79,7 +79,7 @@ Jalur belajar ini bisa kalian ambil jika sudah memahami dasar-dasar JavaScript _
 | 03 | Arrow Function | Mengenali sintaks terbaru dalam membuat function | [Arrow Function](learn/ES6/003_arrow_function) | [WPU - Arrow Function](https://youtu.be/C8U_3_SBk6s) |
 | 04 | Template Literals | Memahami cara menyisipkan ekspresi ke dalam sebuah _string_ | [Template Literals](learn/ES6/005_template_literals) | [WPU - Template Literals](https://youtu.be/LywZF-xcfd8) |
 | 05 | Destructuring Assignment | Memahami apa itu _Destructuring Assignment_ dalam memecah array maupun objek | [Destructuring Assignment](learn/ES6/007_destructuring_assignment) | [WPU - Destrucuting Assignment](https://youtu.be/7f11bDxZSP0) |
-| 06 | For..Of Loop | Memahamai sintaks looping yang terbaru | [](learn/ES6/007_for_of_loop) | [WPU - For..Of](https://youtu.be/LXOG9rHkYOo) |
+| 06 | For..Of Loop | Memahamai sintaks looping yang terbaru | [For..Of](learn/ES6/007_for_of_loop) | [WPU - For..Of](https://youtu.be/LXOG9rHkYOo) |
 | 07 | Spread Operator | Memahami apa itu _Spread Operator_ untuk memanipulasi array atau objek | [Spread Operator](learn/ES6/008_spread_operator) | [WPU - Spread Operator](https://youtu.be/AT5hfOL1Ddk) |
 | 08 | Rest Parameter | Memahami penggunaannya dalam menangkap banyak parameter dari sebuah _function_ | [Rest Parameter](learn/ES6/009_function_rest_parameter) | [WPU - Rest Parameter](https://youtu.be/C0mPB-lyI1I) |
 
