@@ -16,7 +16,7 @@ JavaScript adalah bahasa pemrograman yang digunakan dalam pengembangan website a
 
 ### Alasan untuk belajar JavaScript
 
-Tentunya belajar JavaScript pada saat seperti ini merupakan pilihan yang tepat, dikarenakan JavaScript adalah bahasa yang ramah untuk pemulai alias _beginner-freindly_ yang pastinya akan membuat kalian dapat mempelajarinya dengan mudah. Oleh karena itu JavaScript menjadi bahasa paling populer berdasarkan survei yang dilakukan oleh [Stackoverflow](https://insights.stackoverflow.com/survey/2021).
+Tentunya belajar JavaScript pada saat seperti ini merupakan pilihan yang tepat, dikarenakan JavaScript adalah bahasa yang ramah untuk pemula alias _beginner-friendly_ yang pastinya akan membuat kalian dapat mempelajarinya dengan mudah. Oleh karena itu JavaScript menjadi bahasa paling populer berdasarkan survei yang dilakukan oleh [Stackoverflow](https://insights.stackoverflow.com/survey/2021).
 
 ![image](https://cdn.discordapp.com/attachments/696006258792333352/905693077484736512/unknown.png)
 
@@ -39,7 +39,7 @@ Beberapa contoh sederhana penggunaan JavaScript:
 
 ### :one: Jalur Belajar Basic
 
-Jalur belajar ini diperuntukkan bagi kalian yang masih awam atau baru saja terjun di dunia pemrograman. Disini kalian akan belajar dasar-dasar JavaScript mulai dari variabel hingga objek. Tentunya sangat cocok untuk kalian yang masih pemula.
+Jalur belajar ini diperuntukkan bagi kalian yang masih awam atau baru saja terjun di dunia pemrograman. Di sini kalian akan belajar dasar-dasar JavaScript mulai dari variabel hingga objek.
 | Langkah | Topik | Target Pembelajaran | Video Rujukan |
 | :-----------: | :----------------------------------------: |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------: | 
 | 01 | Pengenalan | Memahami bagaimana JavaScript bekerja | [WPU - Pengenalan JavaScript](https://youtu.be/RUTV_5m4VeI) |
@@ -53,7 +53,7 @@ Jalur belajar ini diperuntukkan bagi kalian yang masih awam atau baru saja terju
 
 ### :two: Jalur Belajar DOM
 
-Jika sebelumnya kalian sudah mempelajari dan memahamai dasar-dasar JavaScript, selanjutnya kalian bisa belajar DOM. Disini kalian akan belajar bagaimana berinteraksi langsung dengan website dengan cara memanipulasi objek / element html dengan menggunakan JavaScript.
+Jika sebelumnya kalian sudah mempelajari dan memahamai dasar-dasar JavaScript, selanjutnya kalian bisa belajar DOM. Di sini kalian akan belajar bagaimana berinteraksi langsung dengan website dengan cara memanipulasi objek / element HTML dengan menggunakan JavaScript.
 | Langkah | Topik | Target Pembelajaran | Video Rujukan |
 | :-----------: | :----------------------------------------: |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------: | 
 | 01 | Pengenalan | Mengenali apa itu DOM dan cara kerjanya | [WPU - Pengenalan DOM](https://youtu.be/aT60R1cySLM) |
@@ -66,7 +66,7 @@ Jika sebelumnya kalian sudah mempelajari dan memahamai dasar-dasar JavaScript, s
 | 08 | Event Bubbling | Memahami lebih dalam mengenai _events_ dan _method-method_ di dalamnya | [WPU - Event Bubbling](https://youtu.be/a_JFfPHTAf4) |
 
 ### :three: Jalur Belajar ES6
-Jalur belajar ini bisa kalian ambil jika sudah memahami dasar-dasar JavaScript *tanpa mempelajari DOM terlebih dahulu*. Disini kalian akan belajar sintaks dan konsep JavaScript terbaru yang tentunya lebih berguna nantinya.
+Jalur belajar ini bisa kalian ambil jika sudah memahami dasar-dasar JavaScript *tanpa mempelajari DOM terlebih dahulu*. Di sini kalian akan belajar sintaks dan konsep JavaScript terbaru yang tentunya lebih berguna nantinya.
 | Langkah | Topik | Target Pembelajaran | Video Rujukan |
 | :-----------: | :----------------------------------------: |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------: | 
 | 01 | Pengenalan | Pengenalan apa itu ES6 | - |
