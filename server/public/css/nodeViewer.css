@@ -31,11 +31,8 @@ main {
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-columns: 40% 60%;
-  grid-template-rows: 60% 40%;
-  grid-template-areas:
-    "code iframe"
-    "console iframe";
+  grid-template-columns: 60% 40%;
+  grid-template-areas: "code console";
   gap: 1rem;
 }
 
@@ -43,24 +40,28 @@ section {
   border: 1px solid #3a3a3a;
 }
 
-pre {
-  margin: 0;
-}
-
 .tab-content,
 .tab-pane,
 .code-highlight pre {
-  height: calc(100% - 14px);
+  height: calc(100vh - 45px);
 }
 
 .code-highlight {
   grid-area: code;
 }
 
+pre {
+  margin: 0 !important;
+}
+
+pre *::selection {
+  background-color: rgba(187, 187, 255, 0.2) !important;
+}
+
 .console {
   grid-area: console;
   background-color: #191922;
-  color: #fff;
+  color: #ffffff;
 }
 
 .console .wrapper {
@@ -77,8 +78,7 @@ pre {
   padding-bottom: 0.5rem;
 }
 
-.console .output i,
-.console .output svg {
+.console .output i {
   font-size: 0.8rem;
   margin-top: 6px;
   margin-right: 0.5rem;
@@ -88,18 +88,24 @@ pre {
 .console code {
   color: #cacaca;
   display: block;
-}
-
-.iframe {
-  grid-area: iframe;
+  padding-right: 1rem;
 }
 
 .nav-tabs {
   border-color: #3a3a3a;
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+  min-width: 100%;
+}
+
+.nav-tabs::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
 }
 
 .nav-tabs .nav-link {
-  color: #fff;
+  color: #ffffff;
 }
 
 .nav-tabs .nav-item.show .nav-link,
@@ -107,24 +113,14 @@ pre {
   background-color: #191922;
   border-color: transparent;
   font-weight: 500;
-  color: #fff;
+  color: #ffffff;
 }
 
-/* stylelint-disable no-descending-specificity */
 .nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover {
   border-color: transparent;
-  font-weight: 500;
 }
 
-.readme-scrollable {
-  overflow-y: auto;
-  overflow-x: hidden;
-  height: calc(100% - 15px);
-  z-index: -100;
-  background: #3a3a3a;
-}
-
-pre *::selection {
-  background-color: rgba(187, 187, 255, 0.2) !important;
+.token.operator {
+  background: none;
 }
