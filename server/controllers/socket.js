@@ -1,3 +1,5 @@
+/*eslint-disable security/detect-child-process */
+
 const EventEmitter = require("events");
 const { spawn } = require("child_process");
 

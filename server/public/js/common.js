@@ -1,4 +1,4 @@
-/*eslint-disable detect-non-literal-regexp */
+/*eslint-disable security/detect-non-literal-regexp */
 
 const consoleWrapper = document.querySelector(".console .wrapper");
 const powThree = 1000;

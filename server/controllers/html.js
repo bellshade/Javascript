@@ -1,4 +1,4 @@
-/*eslint-disable detect-non-literal-fs-filename */
+/*eslint-disable security/detect-non-literal-fs-filename */
 
 const fs = require("fs");
 const path = require("path");
