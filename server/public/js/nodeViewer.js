@@ -46,6 +46,13 @@ function main() {
   socket.on("file:error", () => {
     runBtn.disabled = false;
   });
+
+  document.querySelectorAll(".nav.nav-tabs .nav-link").forEach((nav) => {
+    nav.addEventListener(
+      "click",
+      () => (document.querySelector(".console .wrapper").innerHTML = "")
+    );
+  });
 }
 
 main();

@@ -62,11 +62,12 @@ pre *::selection {
   grid-area: console;
   background-color: #191922;
   color: #ffffff;
+  width: calc(100% - 1rem);
 }
 
 .console .wrapper {
   overflow-y: auto;
-  height: calc(100% - 60px);
+  height: calc(100vh - 45px);
 }
 
 .console .output {
@@ -78,7 +79,8 @@ pre *::selection {
   padding-bottom: 0.5rem;
 }
 
-.console .output i {
+.console .output i,
+.console .output svg {
   font-size: 0.8rem;
   margin-top: 6px;
   margin-right: 0.5rem;
@@ -89,6 +91,7 @@ pre *::selection {
   color: #cacaca;
   display: block;
   padding-right: 1rem;
+  white-space: break-spaces;
 }
 
 .nav-tabs {
@@ -106,6 +109,7 @@ pre *::selection {
 
 .nav-tabs .nav-link {
   color: #ffffff;
+  white-space: nowrap;
 }
 
 .nav-tabs .nav-item.show .nav-link,

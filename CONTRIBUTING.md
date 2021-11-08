@@ -124,16 +124,18 @@ Pull request `merged` jika:
 
 ## Snippet Tambahan
 
-Jika kamu menambahkan kode yang memerlukan html didalamnya, wajib tambahkan kode dibawah ini, tambahkan kodenya di bagian `head` dari htmlnya.
+Jika kamu menambahkan kode yang memerlukan html dan ada `console.log` didalamnya, wajib tambahkan kode dibawah ini, tambahkan kodenya di bagian `head` dari htmlnya.
 
 ```html
 <script>
   const _log = console.log;
+  const encoder = new TextEncoder();
+
   console.log = function (...rest) {
     window.parent.postMessage(
       {
         source: "iframe",
-        message: rest
+        message: rest.map((d) => encoder.encode(d))
       },
       "*"
     );

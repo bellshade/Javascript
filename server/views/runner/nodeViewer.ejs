@@ -34,7 +34,7 @@
       <!-- Code Highlight -->
       <section class="code-highlight p-0">
         <!-- Tabs -->
-        <nav class="d-flex" style="display: grid; grid-template-columns: 1fr 96px;">
+        <nav style="display: grid; grid-template-columns: 1fr 96px">
           <div class="nav nav-tabs" id="nav-tab" role="tablist">
             <% if (md) { %>
             <button
@@ -66,8 +66,10 @@
               <%= item.name %>
             </button>
             <% }); %>
-            <button class="run" type="button"><i class="fas fa-play"></i> RUN</button>
           </div>
+          <button class="run" type="button">
+            <i class="fas fa-play"></i> RUN
+          </button>
         </nav>
         <!-- End Tabs -->
 
