@@ -127,7 +127,11 @@ pre {
   background: #3a3a3a;
 }
 
-/* stylelint-disable declaration-no-important */
 pre *::selection {
-  background-color: rgba(187, 187, 255, 0.2) !important;
+  background-color: rgba(
+    187,
+    187,
+    255,
+    0.2
+  ) !important; /* csslint allow: important */
 }
