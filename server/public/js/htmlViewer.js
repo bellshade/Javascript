@@ -1,21 +1,13 @@
+const decoder = new TextDecoder();
+
 function main() {
   window.addEventListener("message", function (response) {
     if (response.data && response.data.source === "iframe") {
-      const message = response.data.message;
+      const message = response.data.message
+        .map((msg) => decoder.decode(msg))
+        .join(" ");
 
-      if (Array.isArray(message)) {
-        const stringToAppend = message
-          .map((d) =>
-            Array.isArray(d)
-              ? JSON.stringify(d).replace(/,/g, ", ")
-              : d === null
-              ? "null"
-              : d
-          )
-          .join(" ");
-
-        outputAppender(stringToAppend);
-      }
+      outputAppender(message);
     }
   });
 }

@@ -7,11 +7,13 @@
 
     <script>
       const _log = console.log;
+      const encoder = new TextEncoder();
+
       console.log = function (...rest) {
         window.parent.postMessage(
           {
             source: "iframe",
-            message: rest
+            message: rest.map(encoder.encode)
           },
           "*"
         );

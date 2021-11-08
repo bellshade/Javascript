@@ -1,16 +1,19 @@
 const pathname = window.location.pathname;
+const dec = new TextDecoder();
 
-const decoder = (message) => {
-  const enc = new TextDecoder("utf-8");
-
-  return enc.decode(message);
-};
+const decoder = (message) => dec.decode(message);
 
 function main() {
   const runBtn = document.querySelector("button.run");
   const socket = io();
 
   let currentFile = "";
+
+  const commonAppender = ({ message }) => {
+    const pesan = decoder(message);
+
+    outputAppender(pesan);
+  };
 
   runBtn.addEventListener("click", () => {
     const currentlyActive = document.querySelector(
@@ -27,16 +30,8 @@ function main() {
     runBtn.disabled = true;
   });
 
-  socket.on("child:stdout", ({ message }) => {
-    const pesan = decoder(message);
-
-    outputAppender(pesan);
-  });
-  socket.on("child:stderr", ({ message }) => {
-    const pesan = decoder(message);
-
-    outputAppender(pesan);
-  });
+  socket.on("child:stdout", commonAppender);
+  socket.on("child:stderr", commonAppender);
 
   socket.on("child:close", ({ code }) => {
     runBtn.disabled = false;
@@ -46,6 +41,10 @@ function main() {
     );
 
     currentFile = "";
+  });
+
+  socket.on("file:error", () => {
+    runBtn.disabled = false;
   });
 }
 

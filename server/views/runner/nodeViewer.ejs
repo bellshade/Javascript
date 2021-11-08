@@ -73,6 +73,13 @@
 
         <!-- Code -->
         <div class="tab-content p-0">
+          <% if (md) { %>
+          <div class="tab-pane fade" id="nav-md" role="tabpanel">
+            <div class="readme-content readme-scrollable">
+              <article class="markdown-body p-3"><%- md %></article>
+            </div>
+          </div>
+          <% } %>
           <% items.forEach((item, idx) => { %>
           <div
             class="tab-pane fade show <%= idx === 0 ? 'active' : '' %>"

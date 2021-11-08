@@ -5,7 +5,7 @@ const ROOT = path.join(__dirname, "../../");
 const NODE_MODULES = path.join(ROOT, "node_modules");
 
 // folder configuration
-const statics = ["learn", "algorithm", "other"];
+const statics = ["learn", "algorithm"];
 const assets = [
   "prismjs",
   "bootstrap",
