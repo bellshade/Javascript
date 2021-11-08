@@ -33,15 +33,17 @@
         display: flex;
         flex-direction: column;
     }
-    h1{
+
+    h1 {
         text-align: center;
         background-color: black;
         padding: 10px;
         color: white;
     }
-    .contoh{
+
+    .contoh {
         display: flex;
-        border :2px solid white;
+        border: 2px solid white;
         margin: 100px 10px;
         border-radius: 10px;
     }
@@ -57,7 +59,10 @@
     }
 
     .bub {
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-around;
         position: relative;
         border-radius: 10px;
         margin: 10px auto;
@@ -67,9 +72,7 @@
     }
 
     .bub1 {
-        position: absolute;
         background-color: rebeccapurple;
-        margin: 80px 60px;
     }
 
     .bub2 {
@@ -78,16 +81,14 @@
 
     .bub3 {
         background-color: sandybrown;
-
-    }
-
-    #bub {
-        background-color: white;
         cursor: pointer;
     }
 
     .anbub {
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-around;
         position: relative;
         border-radius: 10px;
         margin: 10px auto;
@@ -97,9 +98,7 @@
     }
 
     .anbub1 {
-        position: absolute;
         background-color: rebeccapurple;
-        margin: 80px 60px;
     }
 
     .anbub2 {
@@ -108,28 +107,24 @@
 
     .anbub3 {
         background-color: sandybrown;
-
-    }
-
-    #anbub {
-        background-color: white;
         cursor: pointer;
     }
 
     .cap {
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-around;
         position: relative;
         border-radius: 10px;
         margin: 10px auto;
-        background: linear-gradient(to right ,yellow, green);
+        background: linear-gradient(to right, yellow, green);
         height: 250px;
         width: 250px;
     }
 
     .cap1 {
-        position: absolute;
         background-color: rebeccapurple;
-        margin: 80px 60px;
     }
 
     .cap2 {
@@ -138,12 +133,26 @@
 
     .cap3 {
         background-color: sandybrown;
-
+        cursor: pointer;
     }
 
-    #cap {
-        background-color: white;
-        cursor: pointer;
+    /* class ketika di klik */
+    .abu {
+        background-color: gray;
+    }
+
+    .hijau {
+        background-color: green;
+    }
+
+    .kuning {
+        background-color: yellow;
+    }
+
+    @media screen and (max-width:900px) {
+        .contoh {
+            flex-direction: column;
+        }
     }
 </style>
 
@@ -155,9 +164,6 @@
             <div class="bub1">
                 <div class="bub2">
                     <div class="bub3">
-                        <div id="bub">
-                            KLIK
-                        </div>
                     </div>
                 </div>
             </div>
@@ -167,9 +173,6 @@
             <div class="anbub1">
                 <div class="anbub2">
                     <div class="anbub3">
-                        <div id="anbub">
-                            KLIK
-                        </div>
                     </div>
                 </div>
             </div>
@@ -179,9 +182,6 @@
             <div class="cap1">
                 <div class="cap2">
                     <div class="cap3">
-                        <div id="cap">
-                            KLIK
-                        </div>
                     </div>
                 </div>
             </div>

@@ -6,11 +6,9 @@ console.log(app2);
 app.innerHTML = "<a>Menggunakkan innerHTML</a>";
 app2.innerHTML = "<h1>Sudah di ganti</h1>";
 
-
 //Menggunakan .style
 app.style.backgroundColor = "blue";
 app2.style.borderRadius = "10px";
-
 
 //Menggunakan .setAttribute
 const app3 = document.getElementsByTagName("div")[2];
@@ -24,4 +22,3 @@ input.removeAttribute("class", "input");
 app3.classList.add("gradient");
 app3.classList.remove("percobaan3");
 app2.classList.replace("percobaan2", "gradient");
-
