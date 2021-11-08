@@ -1,3 +1,5 @@
+/* stylelint-disable declaration-no-important */
+
 ::-webkit-scrollbar {
   background-color: transparent;
   width: 8px;

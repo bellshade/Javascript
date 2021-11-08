@@ -1,4 +1,5 @@
-/* stylelint-disable no-descending-specificity, declaration-no-important */
+/* stylelint-disable no-descending-specificity */
+/* stylelint-disable declaration-no-important */
 
 ::-webkit-scrollbar {
   background-color: transparent;
@@ -119,7 +120,7 @@ pre *::selection {
   background-color: #191922;
   border-color: transparent;
   font-weight: 500;
-  color: #ffffff;
+  color: #fff;
   white-space: nowrap;
 }
 
