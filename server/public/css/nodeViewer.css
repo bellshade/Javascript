@@ -1,3 +1,5 @@
+/* stylelint-disable no-descending-specificity, declaration-no-important */
+
 ::-webkit-scrollbar {
   background-color: transparent;
   width: 8px;
@@ -61,7 +63,7 @@ pre *::selection {
 .console {
   grid-area: console;
   background-color: #191922;
-  color: #ffffff;
+  color: #fff;
   width: calc(100% - 1rem);
 }
 

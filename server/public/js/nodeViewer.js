@@ -1,3 +1,5 @@
+/*eslint-disable no-undef */
+
 const pathname = window.location.pathname;
 const dec = new TextDecoder();
 

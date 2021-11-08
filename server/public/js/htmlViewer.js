@@ -1,3 +1,5 @@
+/*eslint-disable no-undef */
+
 const decoder = new TextDecoder();
 
 function main() {
