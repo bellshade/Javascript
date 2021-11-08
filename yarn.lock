@@ -113,12 +113,7 @@
   "resolved" "https://registry.npmjs.org/acorn-jsx/-/acorn-jsx-5.3.2.tgz"
   "version" "5.3.2"
 
-"acorn@^6.0.0 || ^7.0.0 || ^8.0.0", "acorn@7.3.x":
-  "integrity" "sha512-tLc0wSnatxAQHVHUapaHdz72pi9KUyHjq5KyHjGg9Y8Ifdc79pTh2XvI6I1/chZbnM7QtNKzh66ooDogPZSleA=="
-  "resolved" "https://registry.npmjs.org/acorn/-/acorn-7.3.1.tgz"
-  "version" "7.3.1"
-
-"acorn@^8.5.0":
+"acorn@^6.0.0 || ^7.0.0 || ^8.0.0", "acorn@^8.5.0", "acorn@8.5.x":
   "integrity" "sha512-yXbYeFy+jUuYd3/CDcg2NkIYE991XYX/bje7LmjJigUciaeO1JR4XxXgCIV1/Zc/dRuFEyw1L0pbA+qynJkW5Q=="
   "resolved" "https://registry.npmjs.org/acorn/-/acorn-8.5.0.tgz"
   "version" "8.5.0"
@@ -503,16 +498,16 @@
   "resolved" "https://registry.npmjs.org/directory-tree/-/directory-tree-3.0.0.tgz"
   "version" "3.0.0"
 
-"doctest@0.18.1":
-  "integrity" "sha512-rs14GR+aLRR8Iiv2rA/pvWwSZ3NQiyD+/yha8LXZ8gdOOoOn5LILnZTCk7hWVYC13P82x2UqbN64asYVP0Dsrg=="
-  "resolved" "https://registry.npmjs.org/doctest/-/doctest-0.18.1.tgz"
-  "version" "0.18.1"
+"doctest@0.19.0":
+  "integrity" "sha512-c4i750OeEiSL7vCl9wtxnitNcRsHvvLNLnuA70tzepT+BK8/dg0jrqhKhSFZb/tZMQRsN6ESgTI/ej96s+xCQg=="
+  "resolved" "https://registry.npmjs.org/doctest/-/doctest-0.19.0.tgz"
+  "version" "0.19.0"
   dependencies:
-    "acorn" "7.3.x"
+    "acorn" "8.5.x"
     "coffeescript" "1.12.x"
     "commander" "2.20.x"
-    "sanctuary-show" "1.0.x"
-    "sanctuary-type-classes" "10.0.x"
+    "sanctuary-show" "2.0.x"
+    "sanctuary-type-classes" "12.1.x"
 
 "doctrine@^3.0.0":
   "integrity" "sha512-yS+Q5i3hBf7GBkd4KG8a7eBNNWNGLTaEwwYWUijIYM7zrlYDM0BFXHjjPWlWZ1Rg7UaddZeIDmi9jF3HmqiQ2w=="
@@ -1686,22 +1681,22 @@
   dependencies:
     "ret" "~0.2.0"
 
-"sanctuary-show@1.0.x":
-  "integrity" "sha512-63UqNGr5M6wkzKp6eGc/Gy6JBIV2PbzPd3q88+0F9z0qydAQsCWJ+7e4oor39rEEwj2GkZMDEhqGuiMl9eEnYw=="
-  "resolved" "https://registry.npmjs.org/sanctuary-show/-/sanctuary-show-1.0.0.tgz"
-  "version" "1.0.0"
+"sanctuary-show@2.0.x":
+  "integrity" "sha512-REj4ZiioUXnDLj6EpJ9HcYDIEGaEexmB9Fg5o6InZR9f0x5PfnnC21QeU9SZ9E7G8zXSZPNjy8VRUK4safbesw=="
+  "resolved" "https://registry.npmjs.org/sanctuary-show/-/sanctuary-show-2.0.0.tgz"
+  "version" "2.0.0"
 
-"sanctuary-type-classes@10.0.x":
-  "integrity" "sha512-h5Q1VkW/CmVbmoWDf6HdsgJbx5gc3n6R5lRzzKRssYSkghmqEuAr+0ThJs/bqJK8aiQwh3N2PXP4ZppYEDlSdg=="
-  "resolved" "https://registry.npmjs.org/sanctuary-type-classes/-/sanctuary-type-classes-10.0.0.tgz"
-  "version" "10.0.0"
+"sanctuary-type-classes@12.1.x":
+  "integrity" "sha512-oWP071Q88dEgJwxHLZp8tc7DoS+mWmYhYOuhP85zznPpIxV1ZjJfyRvcR59YCazyFxyFeBif7bJx1giLhDZW0Q=="
+  "resolved" "https://registry.npmjs.org/sanctuary-type-classes/-/sanctuary-type-classes-12.1.0.tgz"
+  "version" "12.1.0"
   dependencies:
-    "sanctuary-type-identifiers" "2.0.1"
+    "sanctuary-type-identifiers" "3.0.0"
 
-"sanctuary-type-identifiers@2.0.1":
-  "integrity" "sha1-/FJM9t2Szr/LsN2VCe/xkxWaIO0="
-  "resolved" "https://registry.npmjs.org/sanctuary-type-identifiers/-/sanctuary-type-identifiers-2.0.1.tgz"
-  "version" "2.0.1"
+"sanctuary-type-identifiers@3.0.0":
+  "integrity" "sha512-YFXYcG0Ura1dSPd/1xLYtE2XAWUEsBHhMTZvYBOvwT8MeFQwdUOCMm2DC+r94z6H93FVq0qxDac8/D7QpJj6Mg=="
+  "resolved" "https://registry.npmjs.org/sanctuary-type-identifiers/-/sanctuary-type-identifiers-3.0.0.tgz"
+  "version" "3.0.0"
 
 "secure-json-parse@^2.0.0":
   "integrity" "sha512-Q5Z/97nbON5t/L/sH6mY2EacfjVGwrCcSi5D3btRO2GZ8pf1K1UN7Z9H5J57hjVU2Qzxr1xO+FmBhOvEkzCMmg=="
