@@ -54,16 +54,13 @@ section {
 }
 
 pre {
-  margin: 0 !important; /* csslint allow: important */
+  /* csslint allow: important */
+  margin: 0 !important;
 }
 
 pre *::selection {
-  background-color: rgba(
-    187,
-    187,
-    255,
-    0.2
-  ) !important; /* csslint allow: important */
+  /* csslint allow: important */
+  background-color: rgba(187, 187, 255, 0.2) !important;
 }
 
 .console {
