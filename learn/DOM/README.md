@@ -5,8 +5,8 @@
 </p>
 
 ## Preview Materi
-Javascript DOM (Document Object Model) adalah *interface* yang memungkinkan *developer* untuk memanipulasi konten, struktur dan *style* pada situs web. Pada folder ini kita akan mempelajari apa itu DOM, bagaimana cara kita untuk memanipulasi DOM menggunakan Javascript. Sebelum memasuki DOM, diharapkan sudah memahami basic dari HTML dan Javascript, jika belum bisa terlebih dahulu untuk mempelajari basic dari HTML dan Javascript. 
-- [Menuju materi basic HTML.](https://github.com/bellshade/HTML-CSS)
+Javascript DOM (Document Object Model) adalah *interface* yang memungkinkan *developer* untuk memanipulasi konten, struktur dan *style* pada situs web. Pada folder ini kita akan mempelajari apa itu DOM, bagaimana cara kita untuk memanipulasi DOM menggunakan Javascript. Sebelum memasuki DOM, diharapkan sudah memahami basic dari HTML-CSS dan Javascript, jika belum bisa terlebih dahulu untuk mempelajari basic dari HTML dan Javascript. 
+- [Menuju materi basic HTML-CSS.](https://github.com/bellshade/HTML-CSS)
 - [Menuju materi basic Javascript.](../Basic/README.md)
 
 ### Tools yang digunakan
