@@ -92,7 +92,7 @@ app2.innerHTML = '<h1>Sudah di ganti</h1>';
 
 <img src="img/codesesudah.jpg" alt="toggle" width="50%">
 
-### .style
+### 2. style
 
 Method *.style* ialah method yang digunakan untuk memberikan style pada elemen HTML sebagaimana ketika menggunakan CSS, bedanya ini kita akan menggunakan javascript untuk memberikan stylenya, jika kita menggunakan metode ini untuk memberikan style pada suatu elemen, maka ini akan memberikan Inline CSS pada elemen tersebut .
 
@@ -132,7 +132,7 @@ dan juga ini
 > Jadi intinya dengan method ini kita bisa memberikan style pada element HTML tanpa file CSS dan untuk melakukannya cukup mudah tapi itu akan terlihat kurang rapi jika nanti yang di berikan style itu banyak.
 > Yang perlu diperhatikan di sini ialah ketika kita memberikan style nama propertinya itu ditulis dengan metode camelCase jika terdiri dari dua kata seperti contoh di atas bukan disambung dengan tanda ```-``` karena tanda itu akan dibaca sebagai pengurangan oleh javascript, jika satu kata ya dapat ditulis sebagaimana biasanya.
 
-### .setAttribute()
+### 3. setAttribute()
 
 Method *.setAttribute()* ialah method untuk memberikan attribute pada element HTML, selain itu kita juga dapat menghapus dan mengganti isi dari suatu attribute dengan menggunakan method *.removeAttribute()* untuk menghapus. Singkatnya method ini digunakan untuk mengelola attribute dari suatu element.
 
@@ -184,7 +184,7 @@ Jika kita inspect, akan seperti gambar di bawah ini
   <img src="img/setattribute.jpg" alt="toggle" width="50%">
 
 
-### .classList
+### 4. classList
 
 Method *.classList* ialah method yang digunakan untuk mengelola class pada suatu elemen HTML.
 
