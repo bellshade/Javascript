@@ -38,8 +38,8 @@ const cap2 = document.getElementsByClassName("cap2")[0];
 const cap3 = document.getElementsByClassName("cap3")[0];
 
 cap.addEventListener("click", function () {
-  cap.classList.toggle("abu")
-}, capture = true );
+  cap.classList.toggle("abu");
+}, true );
 cap2.addEventListener("click", () => {
   cap2.classList.toggle("hijau");
 });
