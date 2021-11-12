@@ -10,4 +10,6 @@ Pada pembahasan kali ini saya akan membahas dua hal yang bisa dibilang bertentan
 
 **2. Capturing**
 
->*Event Capturing* ialah saat dimana event/aksi yang di berikan pada sebuah element juga menangkap dan menjalanan event/aksi yang di berikan kepada element yang di bungkus / yang berada di dalam element tersebut (*child Element*), jadi sesuai dengan namanya _Capturing_ Menangkap jadi ia menangkap event/aksi dari element yang di bungkus / yang berada di dalam element tersebut (*child Element*).
+>*Event Capturing* ialah saat dimana event/aksi yang di berikan pada sebuah element juga menangkap dan menjalanan event/aksi yang di berikan kepada element pembungkusnya (*parentElement*), jadi sesuai dengan namanya _Capturing_ Menangkap jadi ia menangkap event/aksi dari element pembungkusnya (*parentElement*).
+
+
