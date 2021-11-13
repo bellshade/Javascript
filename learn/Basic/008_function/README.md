@@ -40,7 +40,7 @@ Contoh:
 
 ```js
 (function() {
-  console.log('Halo');
+  console.log("Halo");
 })();
 ```
 
@@ -52,7 +52,7 @@ Contoh:
 
 ```js
 masukkanFunction(function() {
-  console.log('hai');
+  console.log("hai");
 });
 ```
 
