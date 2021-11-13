@@ -7,7 +7,7 @@ function masukkanFunction(functionCallback) {
     /**
      * passParam adalah variable yang akan kita terima di functionCallback
     */
-    const passParam = 'hai';
+    const passParam = "hai";
     return functionCallback(passParam); // Panggil functionCallback dan jalankan kode yang di berikan.
 }
 
