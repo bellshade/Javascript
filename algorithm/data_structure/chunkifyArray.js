@@ -1,10 +1,25 @@
+const dataList = [
+    'a',
+    'b',
+    'c',
+    'd',
+    'e',
+    '1',
+    '2',
+    '3',
+    '4',
+    '5'
+];
+
 /**
  * @param { Array[*] } arr 
  * @param { Integer } splitInto 
  * @returns { Array[Array[*]] }
  */
 function chunkifyArray(arr, splitInto) {
-    if(!Number.isInteger(splitInto)) throw new Error("Array chunk must be divided by an integer number!");
+    if(!Number.isInteger(splitInto)) {
+         throw new Error("Array chunk must be divided by an integer number!");
+    }
     let returnArr = [];
     let temp = []; 
     for(let i = 0; i < arr.length; i++) {
