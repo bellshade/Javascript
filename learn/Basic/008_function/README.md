@@ -32,6 +32,30 @@ const benda = function () {
 benda();
 ```
 
+3. Function Anonymous / Tidak ada nama:
+
+Function anonymous adalah function yang tidak memiliki nama/identifier. Jenis function ini biasa digunakan jika function akan langsung dipanggil atau biasa juga digunakan jika sebuah function membutuhkan parameter function (function callback).
+
+Contoh:
+
+```js
+(function() {
+  console.log('Halo');
+})();
+```
+
+4. Function Callback
+
+Function callback adalah function yang biasanya di gunakan sebagai parameter function lainnya. Function callback berfungsi jika kita ingin mengeksekusi kode setelah memanggil suatu function. Biasanya juga function callback adalah function anonymous.
+
+Contoh:
+
+```js
+masukkanFunction(function() {
+  console.log('hai');
+});
+```
+
 Function juga bisa memproses data yang dinamis, disitulah Parameter dan Argumen ada.
 
 - Parameter adalah variabel yang digunakan untuk menampung nilai
