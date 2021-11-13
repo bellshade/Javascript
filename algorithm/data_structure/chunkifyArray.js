@@ -1,5 +1,4 @@
 /**
- * 
  * @param { Array[*] } arr 
  * @param { Integer } splitInto 
  * @returns { Array[Array[*]] }
