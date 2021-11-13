@@ -9,7 +9,7 @@ Pada pembahasan kali ini saya akan membahas dua hal yang bisa dibilang bertentan
 
 ### **Penjelasan**
 
-> *Event Bubbling* ialah saat dimana event/aksi yang di berikan pada sebuah element juga memicu atau menjalanan event/aksi yang di berikan kepada element pembungkusnya (*parentElement*), jadi sesuai dengan namanya _Bubbling_ gelembung jadi event/aksi nya mengelembung ke element pembungkusnya (*parentElement*).
+> *Event Bubbling* ialah saat dimana event/aksi yang di berikan pada sebuah element juga memicu atau menjalankan event/aksi yang di berikan kepada element pembungkusnya (*parentElement*), jadi sesuai dengan namanya _Bubbling_ gelembung jadi event/aksi nya mengelembung ke element pembungkusnya (*parentElement*).
 
 ### **Contoh** 
   * **Event Bubbling**
@@ -78,7 +78,7 @@ Diatas saya ada sebuah `<div>` yang berisi `<div>` dan `<h3>` yang di dalam `<di
 
  <img src="img/bub2.jpg" alt="toggle" width="50%">
 
-jadi kita akan memberian event kesetiap `<div>` mulai dari yang punya class bub1 sampai yang punya class bub3.
+jadi kita akan memberikan event kesetiap `<div>` mulai dari yang punya class bub1 sampai yang punya class bub3.
 
 * pertama kita seleksi/tangkap setiap element , (dalam hai ini saya menyeleksinya berdasarkan class jadi harus diberi index)
 
@@ -120,7 +120,7 @@ Hasil ketika di beri aksi/event dapat di lihat pada gift di bawah
 
 Pada gift diatas sudah kita lihat pada console bahwa setelah menjalanan event pada variabel bu3 javascript juga menjalankan event pada element pembungkus (*parentElement*) dari bu3 dan begitu seterusnya sampai eventnya berhenti pada varibel bu1 dan itu dapat terlihat jelas dengan hasil console yang mencetak hasil console dari bu3 terlebih dahulu kemudian bu2 terus yang terakhir bu1 yang di mana bu1 ini variabel yang merupakan hasil inisialisasi dari element div yang punya class bub1 yang merupakan pembungkus dari `<div>` yang punya class bub2.
 
-Tapi *Event Bubbling* dapat menjadi masalah jika kita menginginkan eventnya berjalan saat element itu sendiri yang di klik, dan tidak ingin eventnya berjalan saat mengklik event yang ada di dalamnya, dan untuk mengatasinya dengan memberikan *event.stopPropagation();* yang akan menjalankan event hanya pada element yang di klik.
+Tapi *Event Bubbling* dapat menjadi masalah jika kita menginginkan eventnya berjalan saat element itu sendiri yang di klik, dan tidak ingin eventnya berjalan saat mengklik event yang ada di dalamnya, dan untuk mengatasinya dengan memberikan *event.stopPropagation();* yang akan hanya akan menjalankan event pada element yang di klik.
 
 
   * **Event Bubbling Tidak Berlaku**
@@ -217,13 +217,13 @@ Hasil ketika di beri aksi/event dapat di lihat pada gift di bawah
 
 <img src="img/anbub.gif" alt="toggle">
 
-Pada gift diatas sudah kita lihat pada console bahwa setelah menjalanan event pada variabel anbu3 javascript tidak lagi menjalankan event pada element pembungkus (*parentElement*) dari anbu3 dan begitu seterusnya dapat terlihat jelas dengan hasil console yang mencetak hasil console dari anbu3 dan tidak kemudian memberi aksi/event pada anbu2 sanpai anbu2 di beri aksi/event baru hasil console - nya  di jalankan dan begitupun yang terjadi pada hasil console dari anbu yang di jalankan setelah di beri aksi/event.
+Pada gift diatas sudah kita lihat pada console bahwa setelah menjalankan event pada variabel anbu3 javascript tidak lagi menjalankan event pada element pembungkus (*parentElement*) dari anbu3 dan begitu seterusnya dapat terlihat jelas dengan hasil console yang mencetak hasil console dari anbu3 dan tidak kemudian memberi aksi/event pada anbu2 sampai anbu2 di beri aksi/event baru hasil console - nya  di jalankan dan begitupun yang terjadi pada hasil console dari anbu yang di jalankan setelah di beri aksi/event.
 
 ## **2. Capturing**
 
 ### **Penjelasan**
 
->*Event Capturing* ialah saat dimana event/aksi yang di berikan pada sebuah element juga menangkap dan menjalanan event/aksi yang di berikan kepada element pembungkusnya (*parentElement*), jadi sesuai dengan namanya _Capturing_ Menangkap jadi ia menangkap event/aksi dari element pembungkusnya (*parentElement*).
+>*Event Capturing* ialah saat dimana event/aksi yang di berikan pada sebuah element juga menangkap dan menjalankan event/aksi yang di berikan kepada element pembungkusnya (*parentElement*), jadi sesuai dengan namanya _Capturing_ Menangkap jadi ia menangkap event/aksi dari element pembungkusnya (*parentElement*).
 
 ### **Contoh** 
 
@@ -288,7 +288,7 @@ const cap2 = document.getElementsByClassName("cap2")[0];
 const cap3 = document.getElementsByClassName("cap3")[0];
 ```
 
-* kedua kita berikan aksi/event pada setiap `<div>`,tapi pada kali ini saya akan memberikan nilai bollean `true` pada setiap event nya nilai true ini merarti bahwa event capture nya bernilai true atau berlau pada event pada element tersebut
+* kedua kita berikan aksi/event pada setiap `<div>`,tapi pada kali ini saya akan memberikan nilai bollean `true` pada setiap event nya nilai true ini memiliki arti bahwa event capture nya bernilai true atau berlaku pada event yang diberikan element tersebut
   **Javascript**
 
 ```js
