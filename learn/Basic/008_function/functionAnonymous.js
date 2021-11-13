@@ -1,3 +1,4 @@
+/* eslint-disable wrap-iife */
 // == Contoh == //
 
 (function() {
