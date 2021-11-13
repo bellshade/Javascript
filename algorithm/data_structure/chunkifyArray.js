@@ -4,7 +4,7 @@
  * @returns { Array[Array[*]] }
  */
 function chunkifyArray(arr, splitInto) {
-    if(!Number.isInteger(splitInto)) throw new Error('Array chunk must be divided by an integer number!');
+    if(!Number.isInteger(splitInto)) throw new Error("Array chunk must be divided by an integer number!");
     let returnArr = [];
     let temp = []; 
     for(let i = 0; i < arr.length; i++) {
