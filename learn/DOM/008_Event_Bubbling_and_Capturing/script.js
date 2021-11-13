@@ -47,21 +47,21 @@ cap.addEventListener(
   function () {
     console.log("cap");
   },
- capture = true
-); 
+  true
+);
 
 cap2.addEventListener(
   "click",
   () => {
     console.log("cap2");
   },
- capture = true
+  true
 );
 
 cap3.addEventListener("click",
   function () {
-  console.log("cap3");
+    console.log("cap3");
   },
-  capture = true
+  true
 );
 
