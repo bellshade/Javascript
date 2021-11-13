@@ -227,3 +227,103 @@ Pada gift diatas sudah kita lihat pada console bahwa setelah menjalanan event pa
 
 ### **Contoh** 
 
+Pada contoh kali ini saya akan memberikan contoh bagaimana cara kerja dari *Event Capturing* lansung ke contohnya 
+
+```html
+<div class="cap">
+  <h3>Capturing</h3>
+    <div class="cap1">
+        <div class="cap2">
+            <div class="cap3">
+            </div>
+        </div>
+    </div>
+</div>
+```
+Yang diberikan style
+
+```css
+
+    .cap {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-around;
+        position: relative;
+        border-radius: 10px;
+        margin: 10px auto;
+        background: linear-gradient(to right, yellow, green);
+        height: 250px;
+        width: 250px;
+    }
+
+    .cap1 {
+        background-color: rebeccapurple;
+        cursor: pointer;
+    }
+
+    .cap2 {
+        background-color: red;
+        cursor: pointer;
+    }
+
+    .cap3 {
+        background-color: sandybrown;
+        cursor: pointer;
+    }
+```
+Berikut tampilan di browser
+
+ <img src="img/cap.jpg" alt="toggle" width="50%">
+
+Jadi di atas saya ada element yang susunannya sama seperti element pada contoh pertama hanya berbeda nama class nya saja pada element di atas saya akan melakukan hal yang sama seperti pada contoh pertama
+
+* pertama kita seleksi/tangkap setiap element , (dalam hai ini saya menyeleksinya berdasarkan class jadi harus diberi index)
+
+  **Javascript**
+
+```js
+const cap = document.getElementsByClassName("cap1")[0];
+const cap2 = document.getElementsByClassName("cap2")[0];
+const cap3 = document.getElementsByClassName("cap3")[0];
+```
+
+* kedua kita berikan aksi/event pada setiap `<div>`,tapi pada kali ini saya akan memberikan nilai bollean `true` pada setiap event nya nilai true ini merarti bahwa event capture nya bernilai true atau berlau pada event pada element tersebut
+  **Javascript**
+
+```js
+const cap = document.getElementsByClassName("cap1")[0];
+const cap2 = document.getElementsByClassName("cap2")[0];
+const cap3 = document.getElementsByClassName("cap3")[0];
+
+cap.addEventListener(
+  "click",
+  function () {
+    console.log("cap");
+  },
+  true
+);
+
+cap2.addEventListener(
+  "click",
+  () => {
+    console.log("cap2");
+  },
+  true
+);
+
+cap3.addEventListener("click",
+  function () {
+    console.log("cap3");
+  },
+  true
+);
+```
+
+Hasil ketika di beri aksi/event dapat di lihat pada gift di bawah 
+
+<img src="img/cap.gif" alt="toggle">
+
+Pada gift diatas sudah kita lihat pada console bahwa javascript menangkap dan menjalankan terlebih dahulu event dari pembungkus terluarnya baru setelah itu menjalankan event pada child nya.
+
+
