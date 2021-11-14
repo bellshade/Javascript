@@ -1,6 +1,6 @@
 # DOM Event Listener
 
-setelah sebelumnya kita belajar tentang Event dan macam-macam Event pada javascript. Sekarang kita akan menerapkannya pada HTML dengan Event Listener
+Setelah sebelumnya kita belajar tentang Event dan macam-macam Event pada javascript. Sekarang kita akan menerapkannya pada HTML dengan Event Listener
 
 Event listener adalah cara kita memasang Event pada element HTML, jika element terjadi Event maka akan ditangani oleh Event Listener ini apa yang akan terjadi selanjutnya
 
