@@ -53,15 +53,15 @@ section {
   grid-area: code;
 }
 
+/* csslint ignore:start */
 pre {
-  /* csslint allow: important */
   margin: 0 !important;
 }
 
 pre *::selection {
-  /* csslint allow: important */
   background-color: rgba(187, 187, 255, 0.2) !important;
 }
+/* csslint ignore:end */
 
 .console {
   grid-area: console;
