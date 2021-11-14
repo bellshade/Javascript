@@ -15,7 +15,7 @@ form.addEventListener("submit",function(e) {
 
 btn.addEventListener("click",function() {
     let list = document.createElement("li");
-    let text = document.createTextNode(`button telah diklik`);
+    let text = document.createTextNode("button telah diklik");
     list.appendChild(text);
     log.appendChild(list);
 });
