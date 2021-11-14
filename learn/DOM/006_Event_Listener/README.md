@@ -16,7 +16,7 @@ atau bisa menggunakan eksternal Function, contohnya:
 
 ```js
 let button = document.getElementById("btn"); // menyeleksi element HTML 
-button.addEventListener("click", handleClick); menambahkan Event Listener Click pada element button
+button.addEventListener("click", handleClick); // menambahkan Event Listener Click pada element button
 
 function handleClick(){
     console.log("button telah diklik")
