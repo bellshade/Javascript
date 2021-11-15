@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling and Capturing</title>
+</head>
+
+<script>
+    const _log = console.log;
+    console.log = function (...rest) {
+        window.parent.postMessage(
+            {
+                source: "iframe",
+                message: rest
+            },
+            "*"
+        );
+        _log.apply(console, arguments);
+    };
+</script>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: linear-gradient(to left, red, white, yellow);
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        text-align: center;
+        background-color: black;
+        padding: 10px;
+        color: white;
+    }
+
+    .contoh {
+        display: flex;
+        border: 2px solid white;
+        margin: 100px 10px;
+        border-radius: 10px;
+    }
+
+    div {
+        padding: 15px;
+    }
+
+    h3 {
+        margin-top: 5%;
+        text-align: center;
+        color: white;
+    }
+
+    .bub {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-around;
+        position: relative;
+        border-radius: 10px;
+        margin: 10px auto;
+        background: linear-gradient(to bottom, red, green, blue);
+        height: 250px;
+        width: 250px;
+    }
+
+    .bub1 {
+        background-color: rebeccapurple;
+        cursor: pointer;
+    }
+
+    .bub2 {
+        background-color: red;
+        cursor: pointer;
+    }
+
+    .bub3 {
+        background-color: sandybrown;
+        cursor: pointer;
+    }
+
+    .anbub {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-around;
+        position: relative;
+        border-radius: 10px;
+        margin: 10px auto;
+        background: linear-gradient(to left, red, green);
+        height: 250px;
+        width: 250px;
+    }
+
+    .anbub1 {
+        background-color: rebeccapurple;
+        cursor: pointer;
+    }
+
+    .anbub2 {
+        background-color: red;
+        cursor: pointer;
+    }
+
+    .anbub3 {
+        background-color: sandybrown;
+        cursor: pointer;
+    }
+
+    .cap {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-around;
+        position: relative;
+        border-radius: 10px;
+        margin: 10px auto;
+        background: linear-gradient(to right, yellow, green);
+        height: 250px;
+        width: 250px;
+    }
+
+    .cap1 {
+        background-color: rebeccapurple;
+        cursor: pointer;
+    }
+
+    .cap2 {
+        background-color: red;
+        cursor: pointer;
+    }
+
+    .cap3 {
+        background-color: sandybrown;
+        cursor: pointer;
+    }
+
+    /* class ketika di klik */
+    .abu {
+        background-color: gray;
+    }
+
+    .hijau {
+        background-color: green;
+    }
+
+    .kuning {
+        background-color: yellow;
+    }
+
+    @media screen and (max-width:900px) {
+        .contoh {
+            flex-direction: column;
+        }
+    }
+</style>
+
+<body>
+    <h1>DOM Event Bubbling And Capturing</h1>
+    <div class="contoh">
+        <div class="bub">
+            <h3>Event Bubbling</h3>
+            <div class="bub1">
+                <div class="bub2">
+                    <div class="bub3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="anbub">
+            <h3>Event Bubbling Tidak Berlaku</h3>
+            <div class="anbub1">
+                <div class="anbub2">
+                    <div class="anbub3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cap">
+            <h3>Capturing</h3>
+            <div class="cap1">
+                <div class="cap2">
+                    <div class="cap3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
