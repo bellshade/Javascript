@@ -5,7 +5,7 @@ Untuk melakukannya kita menjadikan satu buah object atau satu buah element/node 
 
 **Terdapat 6 metode yang dapat digunakan untuk melakukan penelusuran DOM**
 
-|              Metode            |   Hasil    |
+|              Method            |   Hasil    |
 | ------------------------------ | ---------- |
 | .parentElement()               |   Element  |
 | .parentNode()                  |   Node     |
@@ -106,7 +106,7 @@ span.forEach(function(el) {
 });
 ```
  
-**Reference:** [Klik disini](http://azqilana.github.io/Javascript/learn/DOM/008_Traversal/index.html#parentelement)
+**Reference:** [Klik disini](http://azqilana.github.io/Javascript/learn/DOM/007_Traversal/index.html#parentelement)
 
 ## Metode `.parentNode`
 **Apa itu _parentNode_?**
@@ -199,7 +199,7 @@ span.forEach(function (el) {
 });
 ```
 
-**Reference:** [Klik disini](http://azqilana.github.io/Javascript/learn/DOM/008_Traversal/index.html#parentnode)
+**Reference:** [Klik disini](http://azqilana.github.io/Javascript/learn/DOM/007_Traversal/index.html#parentnode)
 
 ## Metode `.nextSibling`
 **Apa itu _nextSibling_?**
@@ -273,7 +273,7 @@ input.addEventListener("input", function(e) {
   e.target.nextSibling.nextSibling.style.backgroundColor = `${e.target.value}`;
 });
 ```
-**Reference:** [Klik disini](http://azqilana.github.io/Javascript/learn/DOM/008_Traversal/index.html#nextsibling)
+**Reference:** [Klik disini](http://azqilana.github.io/Javascript/learn/DOM/007_Traversal/index.html#nextsibling)
 
 ## Metode `.nextElementSibling`
 **Apa itu _nextElementSibling_?**
@@ -331,7 +331,7 @@ isian.addEventListener("input", function(e) {
   e.target.nextElementSibling.value = e.target.value;
 });
 ```
-**Reference:** [Klik disini](http://azqilana.github.io/Javascript/learn/DOM/008_Traversal/index.html#nextelementsibling)
+**Reference:** [Klik disini](http://azqilana.github.io/Javascript/learn/DOM/007_Traversal/index.html#nextelementsibling)
 
 ## Metode `.previousSibling`
 **Apa itu _previousSibling_?**
@@ -405,7 +405,7 @@ inputText.addEventListener("input", function(e) {
   e.target.previousSibling.previousSibling.value = e.target.value.length;
 });
 ```
-**Reference:** [Klik disini](http://azqilana.github.io/Javascript/learn/DOM/008_Traversal/index.html#previoussibling)
+**Reference:** [Klik disini](http://azqilana.github.io/Javascript/learn/DOM/007_Traversal/index.html#previoussibling)
 
 ## Metode `.previousElementSibling`
 **Apa itu _previousElementSibling_?**
@@ -463,4 +463,4 @@ rounded.addEventListener("input", function(e) {
   e.target.previousElementSibling.style.borderRadius = e.target.value + "%";
 });
 ```
-**Reference:** [Klik disini](http://azqilana.github.io/Javascript/learn/DOM/008_Traversal/index.html#previouselementsibling)
+**Reference:** [Klik disini](http://azqilana.github.io/Javascript/learn/DOM/007_Traversal/index.html#previouselementsibling)
