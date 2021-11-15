@@ -44,6 +44,7 @@
     "fastify-static": "^4.4.2",
     "github-markdown-css": "^5.0.0",
     "marked": "^3.0.8",
+    "node-emoji": "^1.11.0",
     "point-of-view": "^4.15.2",
     "prismjs": "^1.25.0",
     "tree-to-list": "^2.0.0"
