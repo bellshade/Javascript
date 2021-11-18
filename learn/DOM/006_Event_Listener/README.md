@@ -2,10 +2,10 @@
 
 Setelah sebelumnya kita belajar tentang Event dan macam-macam Event pada javascript. Sekarang kita akan menerapkannya pada HTML dengan Event Listener
 
-Event listener adalah cara kita memasang Event pada element HTML, jika element terjadi Event maka akan ditangani oleh Event Listener ini apa yang akan terjadi selanjutnya
+Event listener adalah sebuah fungsi Javascript yang menangani event yang terjadi pada DOM, bisa menambahkan event maupun menghilangkan event.
 
-Cara memakai Event listener. contohnya:
-
+## addEventListener
+adalah method yang digunakan untuk menambahkan event, contoh penggunaannya :
 ```js
 let button = document.getElementById("btn"); // menyeleksi element HTML 
 button.addEventListener("click", function(){ // menambahkan Event Listener Click pada element button
@@ -19,9 +19,21 @@ let button = document.getElementById("btn"); // menyeleksi element HTML
 button.addEventListener("click", handleClick); // menambahkan Event Listener Click pada element button
 
 function handleClick(){
-    console.log("button telah diklik")
+    console.log("button telah diklik");
 };
 
 ```
-untuk `click` bisa disesuaikan dengan Event yang kalian mau.
+
+## removeEventListener
+adalah method yang berguna untuk menghilangkan event pada DOM, contoh penggunaannya:
+```js
+let button = document.getElementById("btn"); // menyeleksi element HTML 
+button.addEventListener("click", function(){ // menambahkan Event Listener Click pada element button
+   document.getElementById("input").removeEventListener("change", function(){ // menghilangkan event change pada input
+        return true // mereturn apa saja
+   });
+});
+```
+
+Untuk `click` dan `change` bisa disesuaikan dengan event yang kalian mau.
 
