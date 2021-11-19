@@ -63,3 +63,7 @@ Contoh Penggunaan :
 - [Eksponen](arithmeticOperation.js#L31-L33)
 - [Increment](arithmeticOperation.js#L35-L38)
 - [Decrement](arithmeticOperation.js#L40-L43)
+
+[<img align="left" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517970833428/Previous-prev.png" />](../005_conditioning)
+
+[<img align="right" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517756944414/Next-next.png" />](../007_looping)
