@@ -1,0 +1,158 @@
+/* stylelint-disable no-descending-specificity */
+/* stylelint-disable declaration-no-important */
+/* stylelint-disable comment-empty-line-before */
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #404047;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+:focus-visible {
+  outline: none;
+}
+
+body {
+  background-color: #0f0f13;
+  overflow: hidden;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background-color: #191922;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: "code console";
+  gap: 1rem;
+}
+
+section {
+  border: 1px solid #3a3a3a;
+}
+
+.tab-content,
+.tab-pane,
+.code-highlight pre {
+  height: calc(100vh - 45px);
+}
+
+.code-highlight {
+  grid-area: code;
+}
+
+/* csslint ignore:start */
+pre {
+  margin: 0 !important;
+}
+
+pre *::selection {
+  background-color: rgba(187, 187, 255, 0.2) !important;
+}
+/* csslint ignore:end */
+
+.console {
+  grid-area: console;
+  background-color: #191922;
+  color: #fff;
+  width: calc(100% - 1rem);
+}
+
+.console .wrapper {
+  overflow-y: auto;
+  height: calc(100vh - 45px);
+}
+
+.console .output {
+  display: flex;
+  align-items: flex-start;
+  color: #cacaca;
+  border-bottom: 1px solid #3a3a3a;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.console .output i,
+.console .output svg {
+  font-size: 0.8rem;
+  margin-top: 6px;
+  margin-right: 0.5rem;
+  color: #3a3a3a;
+}
+
+.console code {
+  color: #cacaca;
+  display: block;
+  padding-right: 1rem;
+  white-space: break-spaces;
+}
+
+.nav-tabs {
+  border-color: #3a3a3a;
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+  min-width: 100%;
+}
+
+.nav-tabs::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+.nav-tabs .nav-link {
+  color: #fff;
+  white-space: nowrap;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  background-color: #191922;
+  border-color: transparent;
+  font-weight: 500;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  border-color: transparent;
+}
+
+.token.operator {
+  background: none;
+}
+
+.run {
+  border: none;
+  border-radius: 4px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  background-color: rgb(15, 218, 15);
+  color: #191922;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.run:hover {
+  background-color: rgb(0, 202, 0);
+}
+
+.run:active {
+  background-color: rgb(0, 235, 0);
+}

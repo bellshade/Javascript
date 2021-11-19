@@ -1,0 +1,135 @@
+/* stylelint-disable declaration-no-important */
+/* stylelint-disable comment-empty-line-before */
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #404047;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+:focus-visible {
+  outline: none;
+}
+
+body {
+  background-color: #0f0f13;
+  overflow: hidden;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background-color: #191922;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 60% 40%;
+  grid-template-areas:
+    "code iframe"
+    "console iframe";
+  gap: 1rem;
+}
+
+section {
+  border: 1px solid #3a3a3a;
+}
+
+pre {
+  margin: 0;
+}
+
+.tab-content,
+.tab-pane,
+.code-highlight pre {
+  height: calc(100% - 14px);
+}
+
+.code-highlight {
+  grid-area: code;
+}
+
+.console {
+  grid-area: console;
+  background-color: #191922;
+  color: #fff;
+}
+
+.console .wrapper {
+  overflow-y: auto;
+  height: calc(100% - 60px);
+}
+
+.console .output {
+  display: flex;
+  align-items: flex-start;
+  color: #cacaca;
+  border-bottom: 1px solid #3a3a3a;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.console .output i,
+.console .output svg {
+  font-size: 0.8rem;
+  margin-top: 6px;
+  margin-right: 0.5rem;
+  color: #3a3a3a;
+}
+
+.console code {
+  color: #cacaca;
+  display: block;
+}
+
+.iframe {
+  grid-area: iframe;
+}
+
+.nav-tabs {
+  border-color: #3a3a3a;
+}
+
+.nav-tabs .nav-link {
+  color: #fff;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  background-color: #191922;
+  border-color: transparent;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* stylelint-disable no-descending-specificity */
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  border-color: transparent;
+  font-weight: 500;
+}
+
+.readme-scrollable {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(100% - 15px);
+  z-index: -100;
+  background: #3a3a3a;
+}
+
+/* csslint ignore:start */
+pre *::selection {
+  background-color: rgba(187, 187, 255, 0.2) !important;
+}
+/* csslint ignore:end */

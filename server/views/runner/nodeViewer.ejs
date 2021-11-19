@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="/assets/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/assets/prismjs/themes/prism-okaidia.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/prismjs/plugins/line-numbers/prism-line-numbers.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <% if (md) { %>
+    <link
+      rel="stylesheet"
+      href="/assets/github-markdown-css/github-markdown-dark.css"
+    />
+    <% } %>
+    <link rel="stylesheet" href="/public/css/nodeViewer.css" />
+
+    <title>Node JS Runner</title>
+  </head>
+
+  <body class="line-numbers">
+    <main>
+      <!-- Code Highlight -->
+      <section class="code-highlight p-0">
+        <!-- Tabs -->
+        <nav style="display: grid; grid-template-columns: 1fr 96px">
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <% if (md) { %>
+            <button
+              class="nav-link"
+              id="nav-md-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-md"
+              type="button"
+              role="tab"
+              aria-controls="nav-md"
+              aria-selected="true"
+            >
+              <i class="fab fa-markdown me-2"></i>
+              README.md
+            </button>
+            <% } %>
+            <% items.forEach((item, idx) => { %>
+            <button
+              class="nav-link <%= idx === 0 ? 'active' : '' %>"
+              id="<%= item.rename %>-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#<%= item.rename %>"
+              type="button"
+              role="tab"
+              aria-controls="<%= item.rename %>"
+              aria-selected="true"
+            >
+              <i class="<%= item.icon %> me-2"></i>
+              <%= item.name %>
+            </button>
+            <% }); %>
+          </div>
+          <button class="run" type="button">
+            <i class="fas fa-play"></i> RUN
+          </button>
+        </nav>
+        <!-- End Tabs -->
+
+        <!-- Code -->
+        <div class="tab-content p-0">
+          <% if (md) { %>
+          <div class="tab-pane fade" id="nav-md" role="tabpanel">
+            <div class="readme-content readme-scrollable">
+              <article class="markdown-body p-3"><%- md %></article>
+            </div>
+          </div>
+          <% } %>
+          <% items.forEach((item, idx) => { %>
+          <div
+            class="tab-pane fade show <%= idx === 0 ? 'active' : '' %>"
+            id="<%= item.rename %>"
+            role="tabpanel"
+          >
+            <pre><code class="language-javascript"><%= item.content %></code>
+          </pre>
+          </div>
+          <% }); %>
+        </div>
+        <!-- End Code -->
+      </section>
+      <!-- End Code Highlight -->
+
+      <!-- Console -->
+      <section class="console">
+        <h6 class="pt-3 pb-2 px-3" style="color: #ffffff">CONSOLE OUTPUT</h6>
+        <div class="wrapper"></div>
+      </section>
+      <!-- End Console -->
+    </main>
+
+    <script src="/assets/@fortawesome/fontawesome-free/js/all.min.js"></script>
+    <script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/assets/prismjs/components/prism-core.min.js"></script>
+    <script src="/assets/prismjs/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="/assets/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
+    <script src="/socket.io/socket.io.min.js"></script>
+    <script src="/public/js/common.js"></script>
+    <script src="/public/js/nodeViewer.js"></script>
+  </body>
+</html>

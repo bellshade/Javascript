@@ -31,14 +31,15 @@ pull_request_rules:
       label:
         add:
           - markdown files
-          - request docs team untuk review
-  - name: review docs team untuk file markdown
+          - request javascript team docs untuk review
+  - name: review javascript team docs untuk file markdown
     conditions:
       - label=markdown files
     actions:
       request_reviews:
-        teams:
-          - "@bellshade/docs-team"
+        users:
+          - dhafitf
+          - nomadkode
 
   - name: review javascript team untuk file markdown
     conditions:

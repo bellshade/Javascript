@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bellshade - localStorage</title>
-</head>
+    <script>
+      const _log = console.log;
+      const encoder = new TextEncoder();
 
-<body>
-  <script src="localStorage.js"></script>
-</body>
+      console.log = function (...rest) {
+        window.parent.postMessage(
+          {
+            source: "iframe",
+            message: rest.map((d) => encoder.encode(d))
+          },
+          "*"
+        );
+        _log.apply(console, arguments);
+      };
+    </script>
 
+    <title>Bellshade - localStorage</title>
+  </head>
+
+  <body>
+    <script src="localStorage.js"></script>
+  </body>
 </html>

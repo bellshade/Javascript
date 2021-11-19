@@ -1,64 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>geolocation</title>
-     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-   crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-   crossorigin=""></script>
-   <style>
-       html{
-           overflow-x: hidden;
-       }
-       #geo-map{
-           width: 600px;
-           height: 300px;
-           margin: 0 auto;
-       }
-       #geo-data{
-           display: flex;
-           flex-direction: row;
-           margin: 0 auto;
-           justify-content: space-evenly;
-       }
-       #geo-data div{
-           margin: 10px;
-           font-size: 20px;
-       }
-       .geo{
-           display: flex;
-           flex-direction: column;
-           justify-content: center;
-           width: 80vw;
-           margin: 10px auto;
-       }
-       #geo-btn{
-           width: 130px;
-           margin: 0 calc((100vw - 130px) / 2);
-       }
-
-   </style>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <style>
+      html {
+        overflow-x: hidden;
+      }
+      #geo-map {
+        width: 600px;
+        height: 300px;
+        margin: 0 auto;
+      }
+      #geo-data {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        justify-content: space-evenly;
+      }
+      #geo-data div {
+        margin: 10px;
+        font-size: 20px;
+      }
+      .geo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80vw;
+        margin: 10px auto;
+      }
+      #geo-btn {
+        width: 130px;
+        margin: 0 calc((100vw - 130px) / 2);
+      }
+    </style>
+  </head>
+  <body>
     <div class="geo">
-        <div id="geo-data">
-            <div id="geo-long">
-                <span>longitude: </span>
-            </div>
-            <div id="geo-lat">
-                <span>latitude :</span>
-            </div>
+      <div id="geo-data">
+        <div id="geo-long">
+          <span>longitude: </span>
         </div>
+        <div id="geo-lat">
+          <span>latitude :</span>
+        </div>
+      </div>
     </div>
     <div id="geo-map"></div>
-    <br>
+    <br />
     <button id="geo-btn">tampilkan data lokasi</button>
-    </div>
     <script src="geolocation.js"></script>
-</body>
+  </body>
 </html>
