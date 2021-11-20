@@ -9,18 +9,21 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [14.x]
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+      - uses: actions/setup-node@v2
         with:
-          node-version: ${{ matrix.node-version }}
-      - name: npm install, build, and test
-        run: |
-          npm install doctest
-          npx doctest **/*.js || true
-        env:
-          CI: true
+          node-version: "14"
+          cache: npm
+      - name: testing install dependencies
+        run: npm ci
+
+      - name: testing
+        run: npm test
+      # - name: npm install, build, and test
+      #   run: |
+      #     npm install doctest
+      #     npx doctest **/*.js || true
+      #   env:
+      #     CI: true
+      
