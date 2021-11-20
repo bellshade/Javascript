@@ -3,7 +3,8 @@
 const consoleWrapper = document.querySelector(".console .wrapper");
 const powThree = 1000;
 
-const outputAppender = (string) => {
+// prettier-ignore
+const outputAppender = (string) => { // lgtm [js/unused-local-variable]
   const container = document.createElement("div");
   container.setAttribute("class", "output px-2");
 

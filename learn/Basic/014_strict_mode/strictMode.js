@@ -3,7 +3,7 @@
 
 // strict mode sebaiknya ditulis dibagian paling atas, diatasnya boleh ada komentar
 
-let pekerjaan = "front end developer";
+let pekerjaan = "front end developer"; // lgtm [js/useless-assignment-to-local]
 
 // perkerjaan = "fullstack developer";   // typo pada kata pekerjaan menjadi perkerjaan
 
