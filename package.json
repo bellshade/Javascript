@@ -16,7 +16,7 @@
     "@babel/preset-env": "^7.11.5",
     "atob": "2.1.2",
     "jsdom": "^16.3.0",
-    "node": "^14.13.1",
+    "node": "^17.0.0",
     "node-fetch": "3.1.0"
   },
   "standard": {
