@@ -1,12 +1,13 @@
 pull_request_rules:
   - name: ci testing kalo sukses ke squash dengan label
     conditions:
-      - check-success=build (14.x)
+      - check-success=build
       - base=main
       - label=ready-to-merge
     actions:
       merge:
         method: squash
+
   - name: javascript label
     conditions:
       - files~=\.js$
@@ -15,6 +16,7 @@ pull_request_rules:
         add:
           - javascript file
           - request tim javascript untuk review js file
+
   - name: html label
     conditions:
       - files~=\.html$
@@ -31,15 +33,6 @@ pull_request_rules:
       label:
         add:
           - markdown files
-          - request javascript team docs untuk review
-  - name: review javascript team docs untuk file markdown
-    conditions:
-      - label=markdown files
-    actions:
-      request_reviews:
-        users:
-          - dhafitf
-          - nomadkode
 
   - name: review javascript team untuk file markdown
     conditions:
