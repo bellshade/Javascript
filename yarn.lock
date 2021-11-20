@@ -1442,7 +1442,7 @@ atob@2.1.2, atob@^2.1.2:
   resolved "https://registry.npmjs.org/atob/-/atob-2.1.2.tgz"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-babel-jest@^26.3.0, babel-jest@^26.6.3:
+babel-jest@26.6.3, babel-jest@^26.6.3:
   version "26.6.3"
   resolved "https://registry.npmjs.org/babel-jest/-/babel-jest-26.6.3.tgz"
   integrity sha512-pl4Q+GAVOHwvjrck6jKjvmGhnO3jHX/xuB9d27f+EJZ/6k+6nMuPjorrYp7s++bKKdANwzElBWnLWaObvTnaZA==
@@ -2594,7 +2594,7 @@ globals@^12.1.0:
   dependencies:
     type-fest "^0.8.1"
 
-globby@^12.0.2:
+globby@12.0.2:
   version "12.0.2"
   resolved "https://registry.npmjs.org/globby/-/globby-12.0.2.tgz"
   integrity sha512-lAsmb/5Lww4r7MM9nCCliDZVIKbZTavrsunAsHLr9oHthrZP1qi7/gAnHOsUs9bLvEt2vKVJhHmxuL7QbDuPdQ==
@@ -3451,7 +3451,7 @@ jest-worker@^26.6.2:
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
 
-jest@^26.4.2:
+jest@26.6.3:
   version "26.6.3"
   resolved "https://registry.npmjs.org/jest/-/jest-26.6.3.tgz"
   integrity sha512-lGS5PXGAzR4RF7V5+XObhqz2KZIDUA1yD0DG6pBVmy10eh0ZIXQImRuzocsI/N2XZ1GrLFwTS27In2i2jlpq1Q==
@@ -4775,7 +4775,7 @@ standard-engine@^14.0.1:
     pkg-conf "^3.1.0"
     xdg-basedir "^4.0.0"
 
-standard@^16.0.4:
+standard@16.0.4:
   version "16.0.4"
   resolved "https://registry.npmjs.org/standard/-/standard-16.0.4.tgz"
   integrity sha512-2AGI874RNClW4xUdM+bg1LRXVlYLzTNEkHmTG5mhyn45OhbgwA+6znowkOGYy+WMb5HRyELvtNy39kcdMQMcYQ==
