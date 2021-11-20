@@ -59,3 +59,7 @@ const object2 = {
 console.log(Object.assign(object1, object2)); // { firstName: "Brendan", lastName: "Eich" }
 ```
 Contoh penggunaan: [Object.assign()](objectAssign.js)
+
+[<img align="left" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517970833428/Previous-prev.png" />](../011_object)
+
+[<img align="right" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517756944414/Next-next.png" />](../013_classes)

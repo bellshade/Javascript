@@ -42,3 +42,7 @@ class ClassName {
 ```
 
 Lihat kode lengkapnya [disini](classes.js).
+
+[<img align="left" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517970833428/Previous-prev.png" />](../012_object_manipulation)
+
+[<img align="right" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517756944414/Next-next.png" />](../014_strict_mode)

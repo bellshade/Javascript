@@ -170,3 +170,7 @@ const totalNumber = numbers.reduce((akumulator, number) => akumulator + number, 
 console.log(totalNumber);	// 115
 // nilai totalNumber menjadi 115
 ```
+
+[<img align="left" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517970833428/Previous-prev.png" />](../009_array)
+
+[<img align="right" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517756944414/Next-next.png" />](../011_object)

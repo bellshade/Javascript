@@ -70,3 +70,7 @@ console.log(teks.replace("siti", "budi")); // Perkenalkan nama saya budi
 ```
 
 Atau lihat contoh yang [ini](stringManipulation.js#L35-L36)
+
+[<img align="left" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517970833428/Previous-prev.png" />](../003_operator)
+
+[<img align="right" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517756944414/Next-next.png" />](../005_conditioning)
