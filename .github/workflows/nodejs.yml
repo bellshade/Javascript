@@ -15,15 +15,9 @@ jobs:
         with:
           node-version: "14"
           cache: npm
-      - name: testing install dependencies
-        run: npm ci
-
-      - name: testing
-        run: npm test
-      # - name: npm install, build, and test
-      #   run: |
-      #     npm install doctest
-      #     npx doctest **/*.js || true
-      #   env:
-      #     CI: true
-      
+      - name: npm install, build, and test
+        run: |
+          npm install doctest
+          npx doctest **/*.js || true
+        env:
+          CI: true
