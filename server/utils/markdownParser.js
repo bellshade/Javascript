@@ -22,7 +22,7 @@ const Parser = (readmePath, originalURL) => {
 
   const markdown = fs.readFileSync(fullPath, "utf8");
 
-  const result = marked(markdown);
+  const result = marked.parse(markdown);
 
   const replaceAll = result
     // replace CONTRIBUTING.md untuk di arahkan ke github
