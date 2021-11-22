@@ -75,4 +75,4 @@ Referensi: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Tem
 
 [<img align="left" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517970833428/Previous-prev.png" />](../004_template_literals)
 
-[<img align="right" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517756944414/Next-next.png" />](../006_destructing_assignment)
+[<img align="right" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517756944414/Next-next.png" />](../006_destructuring_assignment)
