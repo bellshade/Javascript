@@ -326,4 +326,4 @@ Hasil ketika di beri aksi/event dapat di lihat pada gif di bawah ini :
 
 Pada gif diatas dapat kita lihat pada console bahwa javascript menangkap dan menjalankan terlebih dahulu event dari pembungkus terluarnya baru setelah itu menjalankan event pada child nya.
 
-
+[<img align="left" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517970833428/Previous-prev.png" />](../007_Traversal)

@@ -45,3 +45,7 @@ console.log(`5 + 10 hasilnya adalah ${5+10}`); // 5 + 10 hasilnya adalah 15
 ```
 
 Referensi: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+
+[<img align="left" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517970833428/Previous-prev.png" />](../003_arrow_functions)
+
+[<img align="right" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517756944414/Next-next.png" />](../005_tagged_templates)

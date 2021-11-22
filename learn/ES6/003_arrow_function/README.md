@@ -20,3 +20,7 @@ Anda hanya dapat menghilangkan kata kunci `return` dan kurung kurawal jika fungs
 ```javascript
 const x = (x, y) => { return x * y };
 ```
+
+[<img align="left" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517970833428/Previous-prev.png" />](../002_variable)
+
+[<img align="right" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517756944414/Next-next.png" />](../004_template_literals)

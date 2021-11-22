@@ -32,3 +32,7 @@ console.log(penjumlahan()); //NaN
 ```
 
 Dengan menggunakan `Default Parameter`, kode menjadi lebih singkat dan mudah dibaca.
+
+[<img align="left" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517970833428/Previous-prev.png" />](../009_function_rest_parameter)
+
+[<img align="right" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517756944414/Next-next.png" />](../011_map_objects)

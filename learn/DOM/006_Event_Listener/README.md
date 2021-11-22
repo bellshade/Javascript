@@ -37,3 +37,6 @@ button.addEventListener("click", function(){ // menambahkan Event Listener Click
 
 Untuk `click` dan `change` bisa disesuaikan dengan event yang kalian mau.
 
+[<img align="left" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517970833428/Previous-prev.png" />](../005_Events)
+
+[<img align="right" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517756944414/Next-next.png" />](../007_Traversal)

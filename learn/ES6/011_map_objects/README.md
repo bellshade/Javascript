@@ -20,3 +20,7 @@ buah.set(jeruk, 200);
 document.getElementById("demo").innerHTML = buah;
 // Output : [object Map]
 ```
+
+[<img align="left" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517970833428/Previous-prev.png" />](../010_default_parameter)
+
+[<img align="right" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517756944414/Next-next.png" />](../012_string_includes)

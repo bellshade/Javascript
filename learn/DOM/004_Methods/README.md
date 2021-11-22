@@ -269,3 +269,8 @@ Berikut hasilnya setelah class-nya dirubah
 dan jika kita inspect, maka akan seperti gambar di bawah ini
 
 <img src="img/classlist4.jpg" alt="toggle" width="50%">
+---
+
+[<img align="left" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517970833428/Previous-prev.png" />](../003_Collections)
+
+[<img align="right" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517756944414/Next-next.png" />](../005_Events)

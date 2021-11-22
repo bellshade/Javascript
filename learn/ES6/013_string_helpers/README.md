@@ -75,3 +75,5 @@ string.endsWith("cd", 4); // return nilai true
 ```
 
 Parameter `length` pada method `endsWith()` menentukan berapa panjang string yang dicari. Dengan memberikan argumen `4` pada contoh diatas berarti dari string `abcde` hanya `abcd` yang digunakan.
+
+[<img align="left" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517970833428/Previous-prev.png" />](../012_string_includes)
