@@ -73,6 +73,6 @@ Dalam penerapannya `Tagged Templates` banyak digunakan untuk:
 
 Referensi: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#tagged_templates
 
-[<img align="left" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517970833428/Previous-prev.png" />](../004_template_literals)
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Template%20Literals" />](../004_template_literals)
 
-[<img align="right" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517756944414/Next-next.png" />](../006_destructuring_assignment)
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Destructuring%20Assignment" />](../006_destructuring_assignment)

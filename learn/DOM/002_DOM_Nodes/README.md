@@ -35,6 +35,6 @@ supaya lebih paham coba lihat tabel berikut ini:
 atau jalankan file `index.html` dan `Nodes.js` lalu lihat output di console.
 
 
-[<img align="left" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517970833428/Previous-prev.png" />](../001_Introduction)
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Introduction" />](../001_Introduction)
 
-[<img align="right" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517756944414/Next-next.png" />](../003_Collections)
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Collections" />](../003_Collections)

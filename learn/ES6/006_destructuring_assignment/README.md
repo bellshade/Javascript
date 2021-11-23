@@ -74,6 +74,6 @@ Dan masih banyak manfaat penggunaan `Destructuring Assigment` yang tidak saya se
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
 
-[<img align="left" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517970833428/Previous-prev.png" />](../005_tagged_templates)
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Tagged%20Templates" />](../005_tagged_templates)
 
-[<img align="right" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517756944414/Next-next.png" />](../007_for_of_loop)
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=For%20of%20Loop" />](../007_for_of_loop)

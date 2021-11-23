@@ -96,6 +96,6 @@ bunga = ["matahari", "dandelion"];                      // TypeError
 dataDiri = {nama: "Nisa", alamat: "Bandung", umur: 20}; // TypeError
 ```
 
-[<img align="left" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517970833428/Previous-prev.png" />](../001_introduction)
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Introduction" />](../001_introduction)
 
-[<img align="right" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517756944414/Next-next.png" />](../003_arrow_function)
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Arrow%20Function" />](../003_arrow_function)

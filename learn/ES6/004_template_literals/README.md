@@ -46,6 +46,6 @@ console.log(`5 + 10 hasilnya adalah ${5+10}`); // 5 + 10 hasilnya adalah 15
 
 Referensi: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 
-[<img align="left" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517970833428/Previous-prev.png" />](../003_arrow_function)
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Arrow%20Function" />](../003_arrow_function)
 
-[<img align="right" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517756944414/Next-next.png" />](../005_tagged_templates)
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Tagged%20Templates" />](../005_tagged_templates)

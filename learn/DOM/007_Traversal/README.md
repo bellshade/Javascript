@@ -465,6 +465,6 @@ rounded.addEventListener("input", function(e) {
 ```
 **Reference:** [Klik disini](http://azqilana.github.io/Javascript/learn/DOM/007_Traversal/index.html#previouselementsibling)
 
-[<img align="left" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517970833428/Previous-prev.png" />](../006_Event_Listener)
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Event%20Listener" />](../006_Event_Listener)
 
-[<img align="right" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517756944414/Next-next.png" />](../008_Event_Bubbling_and_Capturing)
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Event%20Bubbling%20and%20Capturing" />](../008_Event_Bubbling_and_Capturing)

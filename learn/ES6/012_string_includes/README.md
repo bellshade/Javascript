@@ -19,6 +19,6 @@ Semoga Bermanfaat
 
 ## Referensi (https://www.w3schools.com/js/js_es6.asp#mark_includes)
 
-[<img align="left" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517970833428/Previous-prev.png" />](../011_map_objects)
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Map%20Objects" />](../011_map_objects)
 
-[<img align="right" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517756944414/Next-next.png" />](../013_string_helpers)
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=String%20Helpers" />](../013_string_helpers)

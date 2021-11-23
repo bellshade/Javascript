@@ -73,4 +73,4 @@ document.querySelectorAll(".number"); //maka semua element dengan class number a
 
 ---
 
-[<img align="right" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517756944414/Next-next.png" />](../002_DOM_Nodes)
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=DOM%20Nodes" />](../002_DOM_Nodes)
