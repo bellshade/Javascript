@@ -464,3 +464,7 @@ rounded.addEventListener("input", function(e) {
 });
 ```
 **Reference:** [Klik disini](http://azqilana.github.io/Javascript/learn/DOM/007_Traversal/index.html#previouselementsibling)
+
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Event%20Listener" />](../006_Event_Listener)
+
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Event%20Bubbling%20and%20Capturing" />](../008_Event_Bubbling_and_Capturing)

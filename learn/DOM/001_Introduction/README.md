@@ -72,3 +72,5 @@ document.querySelectorAll(".number"); //maka semua element dengan class number a
 ```
 
 ---
+
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=DOM%20Nodes" />](../002_DOM_Nodes)

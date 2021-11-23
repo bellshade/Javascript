@@ -31,3 +31,7 @@ for (let [index, item] of array.entries()) {
   console.log(index, item);
 }
 ```
+
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Destructuring%20Assignment" />](../006_destructuring_assignment)
+
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Spread%20Operators" />](../008_spread_operator)

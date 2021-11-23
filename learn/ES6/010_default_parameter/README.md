@@ -32,3 +32,7 @@ console.log(penjumlahan()); //NaN
 ```
 
 Dengan menggunakan `Default Parameter`, kode menjadi lebih singkat dan mudah dibaca.
+
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Function%20Rest%20Parameter" />](../009_function_rest_parameter)
+
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Map%20Objects" />](../011_map_objects)

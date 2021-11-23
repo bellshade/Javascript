@@ -49,3 +49,7 @@ console.log(x); // Output : { "a": 1, "b": 2, "c": 3, "d": 4 }
 ```
 
 Referensi: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=For%20of%20Loop" />](../007_for_of_loop)
+
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Function%20Rest%20Parameter" />](../009_function_rest_parameter)

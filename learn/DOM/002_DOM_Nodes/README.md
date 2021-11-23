@@ -33,3 +33,8 @@ supaya lebih paham coba lihat tabel berikut ini:
 | document.querySelectorAll       | NodeList       |
 
 atau jalankan file `index.html` dan `Nodes.js` lalu lihat output di console.
+
+
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Introduction" />](../001_Introduction)
+
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Collections" />](../003_Collections)

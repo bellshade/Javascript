@@ -71,3 +71,7 @@ Ada beberapa event yang sering digunakan berikut event tersebut berserta fungsin
 
 **Referensi:** [Event-event yang ada pada DOM Events](https://www.w3schools.com/jsref/dom_obj_event.asp)
 
+
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Methods" />](../004_Methods)
+
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Event%20Listener" />](../006_Event_Listener)

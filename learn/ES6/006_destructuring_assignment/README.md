@@ -73,3 +73,7 @@ Penggunaan `Destructuring Assigment` akan berguna jika kita memiliki kasus pada 
 Dan masih banyak manfaat penggunaan `Destructuring Assigment` yang tidak saya sebutkan, kalian bisa mengulik lebih dalam lagi pada referensi yang saya berikan di bawah ini:
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Tagged%20Templates" />](../005_tagged_templates)
+
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=For%20of%20Loop" />](../007_for_of_loop)

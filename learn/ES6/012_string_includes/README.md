@@ -18,3 +18,7 @@ Jika tidak maka akan me-return `false`
 Semoga Bermanfaat
 
 ## Referensi (https://www.w3schools.com/js/js_es6.asp#mark_includes)
+
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Map%20Objects" />](../011_map_objects)
+
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=String%20Helpers" />](../013_string_helpers)

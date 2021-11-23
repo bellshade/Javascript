@@ -72,3 +72,7 @@ Dalam penerapannya `Tagged Templates` banyak digunakan untuk:
 * dan lainnya.
 
 Referensi: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#tagged_templates
+
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Template%20Literals" />](../004_template_literals)
+
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Destructuring%20Assignment" />](../006_destructuring_assignment)

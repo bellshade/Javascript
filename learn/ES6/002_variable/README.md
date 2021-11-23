@@ -95,3 +95,7 @@ console.log(dataDiri);  // {nama: "Luna", alamat: "Bandung", umur: 20}
 bunga = ["matahari", "dandelion"];                      // TypeError
 dataDiri = {nama: "Nisa", alamat: "Bandung", umur: 20}; // TypeError
 ```
+
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Introduction" />](../001_introduction)
+
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Arrow%20Function" />](../003_arrow_function)

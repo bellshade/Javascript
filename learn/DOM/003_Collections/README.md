@@ -94,3 +94,8 @@ Expected output:
 
 ## References
 Selengkapnya kalian bisa mengunjungi [website berikut](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection)
+
+
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=DOM%20Nodes" />](../002_DOM_Nodes)
+
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Methods" />](../004_Methods)
