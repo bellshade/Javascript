@@ -4,7 +4,7 @@
 
 OOP (Object Oriented Programming) atau dalam bahasa Indonesia disebut Pemrograman Berbasis Objek adalah sebuah paradigma pemrograman yang menggunakan [objek](../../Basic/011_object) sebagai representasi dari sebuah / sebagian program.
 
-Nantinya [objek](../../Basic/011_object) yang dibuat dapat saling berinteraksi satu sama lain, sehingga dapat menyelesaikan suat masalah dengan lebih mudah dan efisien.
+Nantinya [objek](../../Basic/011_object) yang dibuat dapat saling berinteraksi satu sama lain, sehingga dapat menyelesaikan suatu masalah dengan lebih mudah dan efisien.
 
 ## Bekerja dengan OOP
 
@@ -18,7 +18,7 @@ class Produk {
 }
 ```
 
-Untuk membuat sebuah _instance_ dari `class` Produk kita gunakan keyword `new` dan diikuti nama `class` tersebut.
+Untuk membuat sebuah _instance_ dari `class` Produk, kita gunakan keyword `new` dan diikuti nama `class` tersebut.
 
 ```js
 const produk1 = new Produk()
@@ -38,7 +38,7 @@ function Produk () {
 const produk1 = new Produk();
 ```
 
-Kedepannya kita akan menggunakan `class` dalam mebuat sebuah objek.
+Kedepannya kita akan menggunakan `class` dalam membuat sebuah objek.
 
 ### Alasan menggunakan `class`
 
@@ -52,7 +52,7 @@ const produk1 = {
 };
 ```
 
-Kita biasa membuat sebuah objek dengan cara di atas, tentunya sangat mudah. Namun bagaimana jika kita ingin membuat objek lebih banyak lagi, misalkan 10, 100, atau bahkan 1000. Nah, disinilah `class` dapat kita andalkan.
+Kita biasa membuat sebuah objek dengan cara di atas, tentunya sangat mudah. Namun bagaimana jika kita ingin membuat objek lebih banyak lagi, misalkan 10, 100, atau bahkan 1000. Nah, di sinilah `class` dapat kita andalkan.
 
 ```js
 class Produk {
