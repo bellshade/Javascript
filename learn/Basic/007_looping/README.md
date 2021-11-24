@@ -52,7 +52,7 @@ while (angka < 5) {
 
 > Jangan beri parameter **true** pada while loop, atau itu akan berjalan selamanya!
 
-3. `dohile` loop
+3. `do..while` loop
 
 Pengulangan yang dilakukan `do while loop` ini mirip dengan `while` loop, tetapi ada satu perbedaan ya itu `do` di mana didalamnya akan tetap di eksekusi. Selanjutnya akan menjalankan instruksi `while`. Instruksi di dalam `do` akan tetap dijalankan oleh `while` di bawahnya.
 
