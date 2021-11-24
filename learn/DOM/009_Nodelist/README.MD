@@ -6,22 +6,22 @@ DOM Nodelist sendiri adalah kumpulan Node yang diekstrak melalui dokumen HTML. J
 
 Nodelist memiliki beberapa method seperti :
 
-- **Nodelist.item()**
-  Digunakan untuk mengembalikan item dalam daftar menurut indeksnya.
-- **Nodelist.entries()**
-  Berguna untuk mengembalikan iterator untuk mendapatkan key atau value.
-- **Nodelist.forEach()**
-  Digunakan untuk mengambil semua elemen yang ada pada Nodelist.
-- **Nodelist.keys()**
-  Berguna untuk mengembalikan iterator keys dari key atau value berupa urutan index 0 dan seterusnya.
-- **Nodelist.values()**
-  Berguna untuk mengembalikan iterator values dari key atau value yang ada pada collection.
+- **Nodelist.item() :**
+  `Digunakan untuk mengembalikan item dalam daftar menurut indeksnya.`
+- **Nodelist.entries() :**
+  `Berguna untuk mengembalikan iterator untuk mendapatkan key atau value.`
+- **Nodelist.forEach() :**
+  `Digunakan untuk mengambil semua elemen yang ada pada Nodelist.`
+- **Nodelist.keys() :**
+  `Berguna untuk mengembalikan iterator keys dari key atau value berupa urutan index 0 dan seterusnya.`
+- **Nodelist.values() :**
+  `Berguna untuk mengembalikan iterator values dari key atau value yang ada pada collection.`
 
 ## Penggunaan Nodelist
 
 **Studi kasus pertama**
 
-HTML :
+`HTML :`
 
 ```html
 <p>Halo Dunia!</p>
@@ -29,7 +29,7 @@ HTML :
 <p id="test"></p>
 ```
 
-Javascript :
+`Javascript :`
 
 ```javascript
 const nodeList = document.querySelectorAll("p");
@@ -53,18 +53,20 @@ Diawal kita buat terlebih dahulu beberapa elemen paragraf yang akan kita manipul
 
 Kita juga menggunakan `for loop` untuk mengambil semua element yang ada pada `Nodelist` untuk memanipulasi elemen paragraf menjadi warna biru untuk teksnya dan penggunan `forEach` disini sama halnya dengan `for loop` yakni mengambil semua elemen `Nodelist` dan memanipulasi elemen paragraf dengan memberi background hitam.
 
-**Hasil:**
-<img src="img/nodelist1.png" alt="toggle" width="80%">
+**Hasil:<br>**
+<img src="img/nodelist1.png" alt="toggle" width="60%">
 
 **Studi kasus kedua**
 
-HTML :
+`HTML :`
 
 ```html
 <input type="checkbox" />
 <input type="checkbox" />
 <input type="checkbox" />
 ```
+
+`Javascript :`
 
 ```javascript
 const check = document.querySelectorAll("input[type=checkbox]");
@@ -74,12 +76,12 @@ for (checkbox of check) {
 }
 ```
 
-##Penjelasan
+## Penjelasan
 
 Pada studi kasus kedua ini kita ingin mengambil semua elemen input bertipe `checkbox`, tentu dengan menggunakan `Nodelist` akan menjadi lebih mudah karena kita bisa langsung mengambil semua inputnya. Pertama kita seleksi semua elemennya menggunakan `querySelectorAll()` sama seperti studi kasus pertama, setelahnya kita akan menggunakan `for of` untuk mengambil elemennya satu per satu untuk kita manipulasi checkboxnya agar terceklis untuk pertama kali.
 
-**Hasil:**
-<img src="img/nodelist2.png" alt="toggle" width="100%">
+**Hasil:<br>**
+<img src="img/nodelist2.png" alt="toggle" width="60%">
 
 **Referensi:** [HTML DOM Nodelist W3School](https://www.w3schools.com/js/js_htmldom_nodelist.asp)
 **Referensi:** [HTML DOM Nodelist MDN](https://developer.mozilla.org/en-US/docs/Web/API/NodeList)
