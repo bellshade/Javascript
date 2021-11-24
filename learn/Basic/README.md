@@ -46,9 +46,7 @@ Memanipulasikan **Array** dengan beberapa jenis metode seperti `Filter`, `Map`, 
 Mengenal **Object** pada **Javascript** serta cara penggunaannya.
 12. [**Manipulasi Object**](012_object_manipulation/)<br> 
 Memanipulasi **Object** dengan beberapa metode seperti `Object.keys()`, `Object.values()`, `Object.enties()`, dan `Object.assign()`.
-13. [**Class**](013_classes)<br> 
-Penjelasan **Class** pada **Javascript** serta cara penggunaannya.
-14. [**Strict Mode**](014_strict_mode)<br> 
+13. [**Strict Mode**](013_strict_mode)<br> 
 Mengenal **Strict Mode** dan penggunaannya pada **Javascript**.
-15. [**Basic Program**](015_basic_program)<br> 
+14. [**Basic Program**](014_basic_program)<br> 
 Berisi contoh program sederhana dengan menggunakan fungsi, rekayasa string, logika.

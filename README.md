@@ -54,7 +54,6 @@ Jalur belajar ini diperuntukkan bagi kalian yang masih awam atau baru saja terju
 |   06    |         Fungsi         |                   Mengenal konsep fungsi dalam teknik pemograman                    |           [Function](learn/Basic/008_function)           |                                        [WPU - Function](https://youtu.be/6-UqHXBtYkg)                                         |
 |   07    |      Konsep Array      |     Memahami konsep Array dan mencoba untuk mengimplemntasikannya dalam program     |              [Array](learn/Basic/009_array)              |                                          [WPU - Array](https://youtu.be/CW5pfpafgDE)                                          |
 |   08    |      Konsep Objek      |       Mengenal konsep Object yang menjadi konsep paling penting di Javascript       |             [Object](learn/Basic/011_object)             |                                         [WPU - Object](https://youtu.be/RKsapPaUgww)                                          |
-|   09    |         Class          |              Memahami penggunaan _class_ dalam pembuatan sebuah objek               |            [Classes](learn/Basic/013_classes)             |                                       [WPU - Prototype](https://youtu.be/2CQhh_6xU3s)                                          |
 
 ### :two: Jalur Belajar DOM
 

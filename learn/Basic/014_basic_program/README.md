@@ -7,4 +7,4 @@ Di folder ini berisi beberapa contoh program sederhana hasil dari implementasi p
 > Agar kemampuan _programming_ kalian semakin terasah maka hal yang harus dilakukan adalah perbanyak praktek.
 > Dengan begitu kalian bisa tahu bagaimana program sesungguhnya bisa berjalan dengan baik.
 
-[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Strict Mode" />](../014_strict_mode)
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Strict Mode" />](../013_strict_mode)
