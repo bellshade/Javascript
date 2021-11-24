@@ -62,4 +62,4 @@ Contoh penggunaan: [Object.assign()](objectAssign.js)
 
 [<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Object" />](../011_object)
 
-[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Class" />](../013_classes)
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Strict Mode" />](../013_strict_mode)
