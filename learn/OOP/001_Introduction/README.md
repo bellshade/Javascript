@@ -8,7 +8,7 @@ Nantinya [objek](../../Basic/011_object) yang dibuat dapat saling berinteraksi s
 
 ## Bekerja dengan OOP
 
-Dalam JavaScript kita menggunakan `class` agar dapat membuat program yng berbasis objek. `class` adalah sebuah _blueprint_ untuk membuat sebuah objek yang nantinya akan kita gunakan.
+Dalam JavaScript kita menggunakan `class` agar dapat membuat program yang berbasis objek. `class` adalah sebuah _blueprint_ untuk membuat sebuah objek yang nantinya akan kita gunakan.
 
 ### Membuat `class`
 
