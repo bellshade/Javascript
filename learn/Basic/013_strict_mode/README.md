@@ -72,6 +72,6 @@ console.log(user); // ReferenceError: user is not defined
 export default user;
 ```
 
-[<img align="left" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517970833428/Previous-prev.png" />](../013_classes)
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Object Manipulation" />](../012_object_manipulation)
 
-[<img align="right" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517756944414/Next-next.png" />](../015_basic_program)
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Basic Program" />](../014_basic_program)
