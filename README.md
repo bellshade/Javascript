@@ -7,6 +7,7 @@
 ![codefactor](https://img.shields.io/codefactor/grade/github/bellshade/Javascript/main?label=code%20factor%20quality&style=for-the-badge)
 ![buildTesting](https://img.shields.io/github/workflow/status/bellshade/Javascript/Node%20CI?style=for-the-badge)
 [![discord](https://img.shields.io/discord/722002048643497994?logo=discord&logoColor=white&style=for-the-badge)](http://discord.gg/S4rrXQU)
+![visitor](https://visitor-badges.glitch.me/?username=bellshade&repo=Javascript&color=orange&style=for-the-badge)
 
 Repositori ini berisi kumpulan code JavaScript yang dapat digunakan sebagai pembelajaran bagi siapa saja. Mulai dari materi Basic, DOM, ES6, hingga Web Api yang dapat kalian gunakan sebagai sumber belajar. Tidak hanya itu, repositori ini juga memiliki berbagai macam code mengenai struktur data dan algoritma yang diimplementasikan dengan menggunakan JavaScript.
 
