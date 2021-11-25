@@ -84,6 +84,6 @@ Operator ini bisa digunakan sebagai conditional statement if atau else if.
 
 Untuk contoh kode, cek contoh untuk [operator perbandingan](comparisonOperators.js), [operator logika](logicalOperator.js), [nullish coalescing operator](nullishCoalescingOperators.js), [ternary operator](ternaryOperator.js), [in operator](inOperator.js), [optional chaining operator](optionalChainingOperator.js).
 
-[<img align="left" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517970833428/Previous-prev.png" />](../002_variable_datatype)
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Variable and Datatype" />](../002_variable_datatype)
 
-[<img align="right" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517756944414/Next-next.png" />](../004_string_and_string_manipulation)
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=String" />](../004_string_and_string_manipulation)
