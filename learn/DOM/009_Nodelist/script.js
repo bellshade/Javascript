@@ -3,7 +3,8 @@ const test = document.getElementById("test");
 const check = document.querySelectorAll("input[type=checkbox]");
 
 // Mengambil elemen nodelist menggunakan index
-test.innerHTML = `Saya berkata : ${nodeList[0].innerHTML} & ${nodeList[1].innerHTML}`;
+test.innerHTML =
+  "Saya berkata :" + nodeList[0].innerHTML + "&" + nodeList[1].innerHTML;
 
 // Mengambil elemen nodelist menggunakan for loop untuk memberi warna text elemen <p> menjadi berwarna biru
 for (let i = 0; i < nodeList.length; i++) {
