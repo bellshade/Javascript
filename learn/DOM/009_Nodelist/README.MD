@@ -34,8 +34,8 @@ const nodeList = document.querySelectorAll("p");
 const test = document.getElementById("test");
 
 // Mengambil elemen nodelist menggunakan index
-test.innerHTML =
-  "Saya berkata :" + nodeList[0].innerHTML + "&" + nodeList[1].innerHTML;
+const text = document.createTextNode(`Saya berkata : ${nodeList[0].innerHTML} & ${nodeList[1].innerHTML}`);
+test.appendChild(text);
 
 // Membuat semua elemen <p> memiliki text berwarna biru
 for (let i = 0; i < nodeList.length; i++) {
@@ -69,11 +69,11 @@ Kita juga menggunakan `for loop` untuk mengambil semua elemen yang ada pada `Nod
 `Javascript :`
 
 ```javascript
-const check = document.querySelectorAll("input[type=checkbox]");
+const checkbox = document.querySelectorAll("input[type=checkbox]");
 
 // Mengambil elemen nodelist menggunakan for of untuk memanipulasi checkbox agar terceklis untuk pertama kali
-for (checkbox of check) {
-  checkbox.checked = true;
+for (check of checkbox) {
+  check.checked = true;
 }
 ```
 
