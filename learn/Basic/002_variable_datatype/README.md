@@ -73,6 +73,6 @@ console.log(umur); // 15
 
 Cek file [pertama](variableAndDataTypes1.js) dan [kedua](variableAndDataTypes2.js) untuk contoh lebih lengkapnya.
 
-[<img align="left" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517970833428/Previous-prev.png" />](../001_hello_world)
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Hello World" />](../001_hello_world)
 
-[<img align="right" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517756944414/Next-next.png" />](../003_operator)
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Operator" />](../003_operator)

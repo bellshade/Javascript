@@ -92,6 +92,6 @@ console.log(contohReturningFunction);
 
 Lihat contoh lengkap untuk [Basic Function](functionBasic.js), [Argumen dan Parameter](parameterAndArgument.js), dan [Returning function](functionReturn.js).
 
-[<img align="left" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517970833428/Previous-prev.png" />](../007_looping)
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Looping" />](../007_looping)
 
-[<img align="right" src="https://cdn.discordapp.com/attachments/696006258792333352/911046517756944414/Next-next.png" />](../009_array)
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Array" />](../009_array)
