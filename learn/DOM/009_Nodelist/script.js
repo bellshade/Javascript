@@ -12,7 +12,7 @@ for (let i = 0; i < nodeList.length; i++) {
 }
 
 // Mengambil elemen nodelist menggunakan for of untuk memanipulasi checkbox agar terceklis untuk pertama kali
-for (check of checkbox) {
+for (const check of checkbox) {
   check.checked = true;
 }
 

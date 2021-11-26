@@ -72,7 +72,7 @@ Kita juga menggunakan `for loop` untuk mengambil semua elemen yang ada pada `Nod
 const checkbox = document.querySelectorAll("input[type=checkbox]");
 
 // Mengambil elemen nodelist menggunakan for of untuk memanipulasi checkbox agar terceklis untuk pertama kali
-for (check of checkbox) {
+for (const check of checkbox) {
   check.checked = true;
 }
 ```
