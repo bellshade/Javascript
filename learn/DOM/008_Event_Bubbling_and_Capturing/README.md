@@ -6,7 +6,7 @@ Pada pembahasan kali ini saya akan membahas dua hal yang bisa dibilang bertentan
 
 ### **Penjelasan**
 
-> _Event Bubbling_ ialah saat dimana event/aksi yang di berikan pada sebuah element juga memicu atau menjalankan event/aksi yang di berikan kepada element pembungkusnya (_parentElement_), jadi sesuai dengan namanya _Bubbling_ gelembung maka event/aksi nya akan menggelembung ke element pembungkusnya (_parentElement_).
+> _Event Bubbling_ ialah saat dimana event/aksi yang diberikan pada sebuah element juga memicu atau menjalankan event/aksi yang diberikan kepada element pembungkusnya (_parentElement_), jadi sesuai dengan namanya _Bubbling_ gelembung maka event/aksi nya akan menggelembung ke element pembungkusnya (_parentElement_).
 
 ### **Contoh**
 
@@ -69,15 +69,15 @@ h3 {
 }
 ```
 
-Diatas saya ada sebuah `<div>` yang berisi `<div>` dan `<h3>` yang di dalam `<div>` ada `<div>` yang di dalamnya ada `<div>` juga , kali ini saya akan menunjukkan event bubbling yang terjadi pada element element di atas.
+Di atas saya ada sebuah `<div>` yang berisi `<div>` dan `<h3>` yang di dalam `<div>` ada `<div>` yang di dalamnya ada `<div>` juga, kali ini saya akan menunjukkan event bubbling yang terjadi pada element element di atas.
 
 Berikut tampilan di browser
 
  <img src="img/bub2.jpg" alt="toggle" width="50%">
 
-jadi kita akan memberikan event ke setiap `<div>` mulai dari yang punya class bub1 sampai class bub3.
+Jadi kita akan memberikan event ke setiap `<div>` mulai dari yang punya class bub1 sampai class bub3.
 
-- pertama kita seleksi/tangkap setiap element , (dalam hai ini saya menyeleksinya berdasarkan class jadi harus diberi index)
+- Pertama, kita seleksi/tangkap setiap element, (dalam hai ini saya menyeleksinya berdasarkan class jadi harus diberi index)
 
   **Javascript**
 
@@ -88,7 +88,7 @@ const bu2 = bu1.getElementsByClassName("bub2")[0];
 const bu3 = bu2.getElementsByClassName("bub3")[0];
 ```
 
-- kedua kita berikan aksi/event pada setiap `<div>`
+- Kedua, kita berikan aksi/event pada setiap `<div>`
   **Javascript**
 
 ```js
@@ -111,18 +111,18 @@ bu3.addEventListener("click", function () {
 });
 ```
 
-Hasil ketika di beri aksi/event dapat di lihat pada gif di bawah ini :
+Hasil ketika diberi aksi/event dapat di lihat pada gif di bawah ini :
 
 <img src="img/bub1.gif" alt="toggle">
 
-Pada gif diatas dapat kita lihat pada console bahwa setelah menjalankan event pada variabel bu3 javascript juga menjalankan event pada element pembungkus (_parentElement_) dari bu3 dan begitu seterusnya sampai eventnya berhenti pada varibel bu1 dan itu dapat terlihat jelas dengan hasil console yang mencetak hasil console dari bu3 terlebih dahulu kemudian bu2 terus yang terakhir bu1 yang di mana bu1 ini variabel yang merupakan hasil inisialisasi dari element div yang memiliki class bub1 yang merupakan pembungkus dari `<div>` yang memiliki class bub2.
+Pada gif di atas dapat kita lihat pada console bahwa setelah menjalankan event pada variabel bu3 javascript juga menjalankan event pada element pembungkus (_parentElement_) dari bu3 dan begitu seterusnya sampai eventnya berhenti pada varibel bu1 dan itu dapat terlihat jelas dengan hasil console yang mencetak hasil console dari bu3 terlebih dahulu kemudian bu2 terus yang terakhir bu1 yang di mana bu1 ini variabel yang merupakan hasil inisialisasi dari element div yang memiliki class bub1 yang merupakan pembungkus dari `<div>` yang memiliki class bub2.
 
 Tapi _Event Bubbling_ dapat menjadi masalah jika kita menginginkan eventnya berjalan saat element itu sendiri yang di klik, dan tidak ingin eventnya berjalan saat mengklik event yang ada di dalamnya. Untuk mengatasinya dapat memberikan _event.stopPropagation();_ yang berfungsi menjalankan event pada element yang di klik.
 
 - **Event Bubbling Tidak Berlaku**
   Pada contoh kali ini saya akan memberikan contoh ketika event bubbling pada sebuah element.
 
-Sesuai yang saya bilang sebelumnya event bubbling tidak berlaku jika diberikan _event.stopPropagation();_ pada element yang di berikan event.
+Sesuai yang saya bilang sebelumnya event bubbling tidak berlaku jika diberikan _event.stopPropagation();_ pada element yang diberikan event.
 
 Berikut Contohnya
 
@@ -175,7 +175,7 @@ Berikut tampilan di browser
 
 Jadi di atas saya ada element yang susunannya sama seperti element pada contoh pertama hanya berbeda nama class nya saja pada element di atas saya akan melakukan hal yang sama seperti pada contoh pertama
 
-- pertama kita seleksi/tangkap setiap element , (dalam hai ini saya menyeleksinya berdasarkan class jadi harus diberi index)
+- Pertama, kita seleksi/tangkap setiap element (dalam hai ini saya menyeleksinya berdasarkan class jadi harus diberi index)
 
   **Javascript**
 
@@ -185,7 +185,7 @@ const anbu2 = document.getElementsByClassName("anbub2")[0];
 const anbu3 = document.getElementsByClassName("anbub3")[0];
 ```
 
-- kedua kita berikan aksi/event pada setiap `<div>`,tapi pada kali ini saya akan memberikan _event.stopPropagation();_ pada event nya
+- Kedua, kita berikan aksi/event pada setiap `<div>`, tapi pada kali ini saya akan memberikan _event.stopPropagation();_ pada event nya
   **Javascript**
 
 ```js
@@ -209,21 +209,21 @@ anbu3.addEventListener("click", (e) => {
 });
 ```
 
-Hasil ketika di beri aksi/event dapat di lihat pada gif di bawah ini :
+Hasil ketika diberi aksi/event dapat di lihat pada gif di bawah ini :
 
 <img src="img/anbub.gif" alt="toggle">
 
-Pada gif diatas sudah kita lihat pada console bahwa setelah menjalankan event pada variabel anbu3 javascript tidak lagi menjalankan event pada element pembungkus (_parentElement_) dari anbu3 dan begitu seterusnya dapat terlihat jelas dengan hasil console yang mencetak hasil console dari anbu3 dan tidak kemudian memberi aksi/event pada anbu2 sampai anbu2 di beri aksi/event baru hasil console - nya di jalankan dan begitupun yang terjadi pada hasil console dari anbu yang di jalankan setelah di beri aksi/event.
+Pada gif di atas sudah kita lihat pada console bahwa setelah menjalankan event pada variabel anbu3 javascript tidak lagi menjalankan event pada element pembungkus (_parentElement_) dari anbu3 dan begitu seterusnya dapat terlihat jelas dengan hasil console yang mencetak hasil console dari anbu3 dan tidak kemudian memberi aksi/event pada anbu2 sampai anbu2 diberi aksi/event baru hasil console - nya di jalankan dan begitupun yang terjadi pada hasil console dari anbu yang di jalankan setelah diberi aksi/event.
 
 ## **2. Capturing**
 
 ### **Penjelasan**
 
-> _Event Capturing_ ialah saat dimana event/aksi yang di berikan pada sebuah element juga menangkap dan menjalankan event/aksi yang di berikan kepada element pembungkusnya (_parentElement_), jadi sesuai dengan namanya _Capturing_ Menangkap jadi ia menangkap event/aksi dari element pembungkusnya (_parentElement_).
+> _Event Capturing_ ialah saat dimana event/aksi yang diberikan pada sebuah element juga menangkap dan menjalankan event/aksi yang diberikan kepada element pembungkusnya (_parentElement_), jadi sesuai dengan namanya _Capturing_ yang berarti menangkap, jadi ia menangkap event/aksi dari element pembungkusnya (_parentElement_).
 
 ### **Contoh**
 
-Pada contoh kali ini saya akan memberikan contoh bagaimana cara kerja dari _Event Capturing_ lansung ke contohnya
+Pada contoh kali ini saya akan memberikan contoh bagaimana cara kerja dari _Event Capturing_, langsung ke contohnya
 
 ```html
 <div class="cap">
@@ -272,9 +272,9 @@ Berikut tampilan di browser
 
  <img src="img/cap.jpg" alt="toggle" width="50%">
 
-Jadi di atas saya memiliki element yang struktur nya sama seperti element pada contoh pertama hanya berbeda nama class nya saja pada element di atas saya akan melakukan hal yang sama seperti pada contoh pertama
+Jadi, di atas saya memiliki element yang strukturnya sama seperti element pada contoh pertama, hanya berbeda nama classnya saja, pada element di atas saya akan melakukan hal yang sama seperti pada contoh pertama
 
-- pertama kita seleksi/tangkap setiap element , (dalam hai ini saya menyeleksinya berdasarkan class jadi harus diberi index)
+- Pertama, kita seleksi/tangkap setiap element (dalam hai ini saya menyeleksinya berdasarkan class jadi harus diberi index)
 
   **Javascript**
 
@@ -284,7 +284,7 @@ const cap2 = document.getElementsByClassName("cap2")[0];
 const cap3 = document.getElementsByClassName("cap3")[0];
 ```
 
-- kedua kita berikan aksi/event pada setiap `<div>` tapi pada kali ini saya akan memberikan nilai boolean `true` pada setiap event nya. Nilai true ini memiliki arti bahwa event capture nya bernilai true atau berlaku pada event yang diberikan element tersebut
+- Kedua, kita berikan aksi/event pada setiap `<div>` tapi pada kali ini saya akan memberikan nilai boolean `true` pada setiap eventnya. Nilai true ini memiliki arti bahwa event capturenya bernilai true atau berlaku pada event yang diberikan element tersebut
 
   **Javascript**
 
@@ -318,11 +318,11 @@ cap3.addEventListener(
 );
 ```
 
-Hasil ketika di beri aksi/event dapat di lihat pada gif di bawah ini :
+Hasil ketika diberi aksi/event dapat di lihat pada gif di bawah ini :
 
 <img src="img/cap.gif" alt="toggle">
 
-Pada gif diatas dapat kita lihat pada console bahwa javascript menangkap dan menjalankan terlebih dahulu event dari pembungkus terluarnya baru setelah itu menjalankan event pada child nya.
+Pada gif di atas dapat kita lihat pada console bahwa javascript menangkap dan menjalankan terlebih dahulu event dari pembungkus terluarnya baru setelah itu menjalankan event pada child nya.
 
 [<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Traversal" />](../007_Traversal)
 [<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Nodelist" />](../009_Nodelist)
