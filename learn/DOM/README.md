@@ -41,5 +41,7 @@ Mengenal apa itu **DOM Events**, dan mengetahui **Event** apa saja yang terdapat
 Penjelasan mengenai **DOM Traversal**, dan mengenal 6 metode dari penelusuran **DOM**, yaitu `.parentElement()`, `.parentNode()`, `.nextSibling()`, `.nextElementSibling()`, `.previousSibling()`, dan `.previousElementSibling()`.
 8. [**Event Bubbling**](008_Event_Bubbling)<br>
 --
+9. [**Nodelist**](009_Nodelist)<br>
+Mengenal **DOM Nodelist** serta studi kasus dan cara penggunaannya.
 
 - [Mulai Belajar DOM](001_Introduction)
