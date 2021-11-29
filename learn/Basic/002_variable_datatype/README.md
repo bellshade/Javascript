@@ -31,11 +31,17 @@ Merupakan tipe data yang berupa hal kelogisan. Valuenya hanya dua, `true` dan `f
 
 4. `null`
 
-Merupakan tipe data yang biasanya digunakan untuk menyatakan suatu yang tidak ada. null ini bersifat false jika digunakan untuk boolean operator. Value dari `null` hanya `null`.
+Merupakan tipe data yang biasanya digunakan untuk menyatakan suatu yang tidak ada. null ini bersifat falsy jika digunakan untuk boolean operator. Value dari `null` hanya `null`.
 
 5. `undefined`
 
-Merupakan tipe data yang biasanya digunakan untuk menyatakan suatu yang tak terdefinisikan sebelumnya, akan bersifat false jika digunakan untuk boolean operator. Value dari `undefined` hanya `undefined`.
+Merupakan tipe data yang biasanya digunakan untuk menyatakan suatu yang tak terdefinisikan sebelumnya, akan bersifat falsy jika digunakan untuk boolean operator. Value dari `undefined` hanya `undefined`.
+
+**Keterangan**
+
+**Falsy** : nilai yang dianggap salah ketika ditemui dalam konteks Boolean.
+
+**Truthy**: nilai yang dianggap benar ketika ditemui dalam konteks Boolean.
 
 6.  `object`
 
@@ -58,7 +64,7 @@ Jika tisu toilet habis akan menyisakan kardus, valuenya akan menjadi 0. Kardus t
 Jika tempat tisu toilet itu dibongkar, maka valuenya undefined.
 Lihat meme ini:
 
-![Meme Penjelasan](https://pbs.twimg.com/media/DusCOfyXcAA9_F7?format=jpg&name=large)
+![MEME Penjelasan](https://pbs.twimg.com/media/DusCOfyXcAA9_F7?format=jpg&name=large)
 
 Sumber meme [original](https://twitter.com/ddprrt/status/1074955395528040448).
 
