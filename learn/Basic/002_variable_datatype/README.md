@@ -31,11 +31,11 @@ Merupakan tipe data yang berupa hal kelogisan. Valuenya hanya dua, `true` dan `f
 
 4. `null`
 
-Merupakan tipe data yang biasanya digunakan untuk menyatakan suatu yang tidak ada. null ini bersifat falsy jika digunakan untuk boolean operator. Value dari `null` hanya `null`.
+Merupakan tipe data yang biasanya digunakan untuk menyatakan suatu yang tidak ada. null ini bersifat false jika digunakan untuk boolean operator. Value dari `null` hanya `null`.
 
 5. `undefined`
 
-Merupakan tipe data yang biasanya digunakan untuk menyatakan suatu yang tak terdefinisikan sebelumnya, akan bersifat falsy jika digunakan untuk boolean operator. Value dari `undefined` hanya `undefined`.
+Merupakan tipe data yang biasanya digunakan untuk menyatakan suatu yang tak terdefinisikan sebelumnya, akan bersifat false jika digunakan untuk boolean operator. Value dari `undefined` hanya `undefined`.
 
 6.  `object`
 
