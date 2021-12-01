@@ -36,10 +36,10 @@ Penjelasan tentang apa itu **DOM Method**, dan cara penggunaannya. Beberapa **Me
 5. [**Events**](005_Events/)<br>
 Mengenal apa itu **DOM Events**, dan mengetahui **Event** apa saja yang terdapat pada **DOM Event** tersebut.
 6. [**Event Listener**](006_Event_Listener/)<br>
---
+Memahami bagaimana menggunakan `.addEventListener()` untuk melakukan event dan `.removeEventListener()` untuk menghapus Event
 7. [**Traversal**](007_Traversal/)<br>
 Penjelasan mengenai **DOM Traversal**, dan mengenal 6 metode dari penelusuran **DOM**, yaitu `.parentElement()`, `.parentNode()`, `.nextSibling()`, `.nextElementSibling()`, `.previousSibling()`, dan `.previousElementSibling()`.
-8. [**Event Bubbling**](008_Event_Bubbling)<br>
---
+8. [**Event Bubbling and Capturing**](008_Event_Bubbling_and_Capturing)<br>
+Dalam materi **Event Bubbling and Capturing** ini diharapkan mampu memahami cara kerja event bubling, menghentikan event bubbling dengan `e.stopPropagation()`, dan memahami bagaimana cara kerja dari event capturing
 
 - [Mulai Belajar DOM](001_Introduction)
