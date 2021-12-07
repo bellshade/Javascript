@@ -959,10 +959,10 @@ get-stream@^5.1.0:
   dependencies:
     pump "^3.0.0"
 
-github-markdown-css@5.0.0:
-  version "5.0.0"
-  resolved "https://registry.npmjs.org/github-markdown-css/-/github-markdown-css-5.0.0.tgz"
-  integrity sha512-0iojMu3BisjTYyGuQ6aVwnJZY4HgnyQtKvky25BGItHIcll4AHIWAtQ7Fy+6qQfkvjWdkHnZFRpFBQfMABr/EQ==
+github-markdown-css@5.1.0:
+  version "5.1.0"
+  resolved "https://registry.npmjs.org/github-markdown-css/-/github-markdown-css-5.1.0.tgz"
+  integrity sha512-QLtORwHHtUHhPMHu7i4GKfP6Vx5CWZn+NKQXe+cBhslY1HEt0CTEkP4d/vSROKV0iIJSpl4UtlQ16AD8C6lMug==
 
 glob-parent@^5.1.2, glob-parent@~5.1.2:
   version "5.1.2"
