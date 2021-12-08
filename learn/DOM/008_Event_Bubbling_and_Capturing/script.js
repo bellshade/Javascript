@@ -58,10 +58,10 @@ cap2.addEventListener(
   true
 );
 
-cap3.addEventListener("click",
+cap3.addEventListener(
+  "click",
   function () {
     console.log("cap3");
   },
   true
 );
-
