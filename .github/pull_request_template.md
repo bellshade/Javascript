@@ -28,16 +28,5 @@ saya menggunakan (im used):
 - [ ] doctesting js
 - [ ] lint testing eslint
 
-## Maintainer
-<!-- request maintainer untuk mereiview kode kamu
-usahakan kamu memilih sesuai apa yang telah kamu ubah
-**maintainer javascript**
-@bellshade/javascript-team
-
-**maintainer dokumentasi**
-@bellshade/docs-team
--->
-
-
 <!-- jika ada gagal pada salah satu test kami akan mengeceknya kembali -->
 <!-- if there is a failure in one of the tests we will check it again -->
