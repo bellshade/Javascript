@@ -28,7 +28,7 @@
     "fastify": "3.24.1",
     "fastify-autoload": "3.9.0",
     "fastify-plugin": "3.0.0",
-    "fastify-socket.io": "2.0.1",
+    "fastify-socket.io": "3.0.0",
     "fastify-static": "4.5.0",
     "github-markdown-css": "5.1.0",
     "marked": "4.0.6",
