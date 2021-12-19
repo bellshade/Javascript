@@ -31,7 +31,7 @@
     "fastify-socket.io": "3.0.0",
     "fastify-static": "4.5.0",
     "github-markdown-css": "5.1.0",
-    "marked": "4.0.6",
+    "marked": "4.0.8",
     "node-emoji": "1.11.0",
     "point-of-view": "4.16.0",
     "prismjs": "1.25.0",
