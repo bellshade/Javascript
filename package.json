@@ -36,6 +36,6 @@
     "point-of-view": "4.16.0",
     "prismjs": "1.25.0",
     "socket.io": "^4.4.0",
-    "tree-to-list": "3.0.1"
+    "tree-to-list": "3.0.2"
   }
 }
