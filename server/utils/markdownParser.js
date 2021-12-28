@@ -13,8 +13,8 @@ const imageSrcRegex = /img src="(?!http(s?))/g;
 const emojiReplacer = (match) => emoji.emojify(match);
 
 /*
- *Replacer tombol navigasi, valid ketika anchor berisi image
- *yang srcnya merujuk ke badge maker api bellshade
+ * Replacer tombol navigasi, valid ketika anchor berisi image
+ * yang srcnya merujuk ke badge maker api bellshade
  *
  * Regex dasarnya seperti ini
  * new RegExp("(<a href=(.*)>)(<img align=(.*) src=(\"https://api.bellshade.org/badge/.*\") />)(</a>)")
