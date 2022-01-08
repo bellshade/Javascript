@@ -792,10 +792,10 @@ fast-safe-stringify@^2.0.8:
   resolved "https://registry.npmjs.org/fast-safe-stringify/-/fast-safe-stringify-2.1.1.tgz"
   integrity sha512-W+KJc2dmILlPplD/H4K9l9LcAHAfPtP6BY84uVLXQ6Evcz9Lcg33Y2z1IVblT6xdY54PXYVHEv+0Wpq8Io6zkA==
 
-fastify-autoload@3.9.0:
-  version "3.9.0"
-  resolved "https://registry.npmjs.org/fastify-autoload/-/fastify-autoload-3.9.0.tgz"
-  integrity sha512-GNal/ijLiuwCJBmr7oVVQH/cuDQ9ytm/HbDZLbSWSGr3GW8doGp88vChN3SN87o99isL65whgoqwB97E+XoegQ==
+fastify-autoload@3.10.0:
+  version "3.10.0"
+  resolved "https://registry.npmjs.org/fastify-autoload/-/fastify-autoload-3.10.0.tgz"
+  integrity sha512-q77Zi9SzfaO4VExqWaexwIylG8s0iaDIXUkQG7VQEEJPNRkwTa0q8CSGJF73Wl7D4OPh7U63nxpUknekUGs1zQ==
   dependencies:
     pkg-up "^3.1.0"
     semver "^7.3.2"
