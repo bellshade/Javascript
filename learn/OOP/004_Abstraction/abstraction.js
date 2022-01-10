@@ -4,36 +4,44 @@
  * sama dengan cara yang berbeda
  *
  * Contoh dibawah ini adalah contoh sederhana
- * bagaimana menghitung luas dan keliling persgi
- * dengan satu nilai yang sama
+ * bagaimana menghitung diameter, keliling, dan
+ * luas lingkran hanya dengan menggunakan
+ * satu nilai jari-jari yang sama.
  */
-class Persegi {
-  constructor(sisi) {
-    // Mendaftarkan nilai sisi
-    // kedalam object "sisi"
-    this.sisi = sisi;
+class Lingkaran {
+  constructor(jariJari) {
+    // Mendaftarkan nilai jari-jari lingkaran
+    // kedalam object "jariJari"
+    this.jariJari = jariJari;
   }
 
-  // Menghitung luas persegi
-  // sisi x sisi => Rumus dasar
-  // sisi ^ 2 => Rumus yang disederhanakan
+  // Menghitung diameter lingkaran
+  hitungDiameter() {
+    // r x 2
+    return this.jariJari * 2;
+  }
+
+  // Menghitung luas lingkaran,
+  // hasilnya dibulatkan karena menghasilkan
+  // nilai desimal
   hitungLuas() {
-    // Contoh ini menggunakan pendekatan perpangkatan
-    // daripada memanggil sisi dua kali, untuk kerapihan
-    // dan efisiensi
-
-    // return this.sisi * this.sisi
-    return this.sisi ** 2;
+    // PI x r x r => Rumus dasar
+    // PI x r^2 => Rumus yang di disederhanakan
+    return Math.round(Math.PI * this.jariJari ** 2);
   }
 
-  // Menghitung keliling persegi
-  // sisi + sisi + sisi + sisi => Rumus dasar
-  // 4 x s => Rumus yang disederhanakan
+  // Menghitung keliling lingkaran
+  // hasilnya dibulatkan karena menghasilkan
+  // nilai desimal
   hitungKeliling() {
-    return 4 * this.sisi;
+    // 2 x PI x R
+    return Math.round(2 * Math.PI * this.jariJari);
   }
 }
 
-const persegi = new Persegi(15);
-console.log(persegi.hitungLuas());
-console.log(persegi.hitungKeliling());
+// Mendeklarasikan instance Lingkaran dengan nilai
+// jari-jari 40
+const lingkaran = new Lingkaran(40);
+console.log(lingkaran.hitungDiameter()); // 80
+console.log(lingkaran.hitungLuas()); // 527
+console.log(lingkaran.hitungKeliling()); // 251
