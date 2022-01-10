@@ -1,17 +1,17 @@
 /*
- * Contoh disini adalah bagaimana abstraksi ini
+ * Contoh di sini adalah bagaimana abstraksi ini
  * sangat berguna ketika ingin mengolah nilai yang
- * sama dengan cara yang berbeda
+ * sama dengan cara yang berbeda.
  *
- * Contoh dibawah ini adalah contoh sederhana
+ * Contoh di bawah ini adalah contoh sederhana
  * bagaimana menghitung diameter, keliling, dan
- * luas lingkran hanya dengan menggunakan
+ * luas lingkaran hanya dengan menggunakan
  * satu nilai jari-jari yang sama.
  */
 class Lingkaran {
   constructor(jariJari) {
     // Mendaftarkan nilai jari-jari lingkaran
-    // kedalam object "jariJari"
+    // ke dalam object "jariJari"
     this.jariJari = jariJari;
   }
 
@@ -26,7 +26,7 @@ class Lingkaran {
   // nilai desimal
   hitungLuas() {
     // PI x r x r => Rumus dasar
-    // PI x r^2 => Rumus yang di disederhanakan
+    // PI x r^2 => Rumus yang disederhanakan
     return Math.round(Math.PI * this.jariJari ** 2);
   }
 
@@ -39,7 +39,7 @@ class Lingkaran {
   }
 }
 
-// Mendeklarasikan instance Lingkaran dengan nilai
+// Mendeklarasikan instance lingkaran dengan nilai
 // jari-jari 40
 const lingkaran = new Lingkaran(40);
 console.log(lingkaran.hitungDiameter()); // 80
