@@ -81,7 +81,7 @@ class Siswa {
     if (typeof umur === "number") {
       this.#umur = umur;
     } else {
-      console.error('Umur harus bertipe data integer!')
+      console.error("Umur harus bertipe data integer!");
     }
   }
 }
@@ -93,8 +93,7 @@ console.log(siswa1.nama); // undefined
 siswa1.nama = "John Doe 123"; // error
 siswa1.nama = "John Doe";
 
-console.log(siswa1.nama) // "John Doe"
-
+console.log(siswa1.nama); // "John Doe"
 ```
 
 Dengan menggunakan function sebagai perantaranya kita bisa mengubah isi dari datanya sekaligus mengecek apakah data yang diberikan sudah sesuai.
