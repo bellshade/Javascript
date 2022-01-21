@@ -22,7 +22,7 @@ class Buku {
 }
 ```
 
-Kita akan membuat "rak buku" yang merupakan instance object-object yang berisikan judul buku `Malin Kundang`, `Sangkuriang`, dan `Timun Mas`. Kita akan menggunakan fungsi `cetakJudul` di seluruh buku yang ada di rak tanpa perlu khawatir akan ketersediaan method tersebut.
+Kita akan membuat "rak buku" yang merupakan instance object-object yang berisikan judul buku `Malin Kundang`, `Sangkuriang`, dan `Timun Mas`. Kita akan menggunakan fungsi `cetakJudul` di seluruh buku yang ada di rak tanpa perlu khawatir akan ketersediaan method tersebut. Rak buku yang ada akan dilakukan sebuah perulangan untuk memanggil method `cetakJudul` sebanyak jumlah buku yang ada didalam rak.
 
 ```sh
 const rakBuku = [new Buku("Malin Kundang"), new Buku("Sangkuriang"), new Buku("Timun Mas")];
