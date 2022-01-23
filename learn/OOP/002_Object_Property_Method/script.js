@@ -3,8 +3,8 @@ class Person { // membuat object dengan class
          this.name = name; // menggunakan property name dan age
          this.age = age;
          this.greet = () => {
-             console.log(`hai nama saya ${name} saya berumur ${age} tahun`)
-         }
+             console.log(`hai nama saya ${name} saya berumur ${age} tahun`);
+         };
      }
  }
 
