@@ -43,6 +43,10 @@ Merupakan tipe data yang mempunyai pasangan key dan value. Maksud dari key adala
 
 Object ini menggunakan kurung kurawal ({}) untuk menyimpan pasangan dari key dan value.
 
+> *Truthy* : nilai yang dianggap benar ketika ditemui dalam konteks Boolean.
+> *Falsy* : nilai yang dianggap salah ketika ditemui dalam konteks Boolean.
+
+
 ### typeOf
 
 `typeOf` adalah salah satu jenis operator java script yang dapat digunakan untuk mengecek/melihat tipe data dari sebuah variabel.
