@@ -1,5 +1,5 @@
 class Person { // membuat object dengan class
-     constructor(name,age){ // menambahkan property name dan age
+     constructor(name,age){ // Mendeklarasikan property name dan age
          this.name = name; // menggunakan property name dan age
          this.age = age;
          this.greet = () => {
