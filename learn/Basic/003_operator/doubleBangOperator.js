@@ -25,6 +25,7 @@ console.log(!!obj, !!arr); // true true
 const kosong = "";
 const nol = 0;
 const nullish = null;
+/* eslint-disable-next-line */
 const notDefined = undefined;
 const bukanAngka = NaN;
 const falsey = false;
