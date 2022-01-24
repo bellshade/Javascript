@@ -2,16 +2,16 @@
 
 ## Apa itu object
 
-Object adalah suatu tipe data di Javascript yang bisa menyimpan banyak value / nilai. Sama seperti array, yang membedakan adalah array memiliki index sedangkan object memiliki property. Array juga termasuk object.
+Object adalah sebuah tipe data di Javascript yang bisa menyimpan banyak value atau nilai. Sama seperti array, yang membedakan adalah array memiliki index sedangkan object memiliki property. Perlu diingat, array juga termasuk sebuah object.
 
 Contoh object:
 ```js
 const person = {
-    name: "salim",
+    name: "Salim",
     age: 20
 };
 ```
-`name` dan `age` disebut property sedangkan `"salim"` dan `14` disebut value.
+`name` dan `age` disebut property sedangkan `"Salim"` dan `20` disebut value.
 
 ## Property
 
@@ -25,12 +25,12 @@ Contohnya:
          this.age = age;
      }
  }
- console.log(new Person("burhan", 23)); // output : {name:"burhan",age: 23}
+ console.log(new Person("Burhan", 23)); // output : {name:"Burhan",age: 23}
 ```
 
 ## Method 
 
-Method adalah fungsi yang ada di property yang bisa kita eksekusi / jalankan. Misalnya saya ingin membuat method greet yang menampilkan nama dan usia di console, maka kodenya akan seperti ini:
+Method adalah fungsi yang ada di property yang bisa kita eksekusi atau jalankan. Misalnya saya ingin membuat method greet yang menampilkan nama dan usia di console, maka kodenya akan seperti ini:
 ```js
  class Person { // Membuat object dengan class
      constructor(name,age){ // Mendeklarasikan property name dan age
@@ -45,7 +45,7 @@ Method adalah fungsi yang ada di property yang bisa kita eksekusi / jalankan. Mi
 Contoh ada method `greet` yang menerima parameter `name` dan `age` dari  constructor property, yang jika dijalankan akan seperti ini
 ```js
 const person1 = new Person("burhan", 23);
-person1.greet(); // output: hai nama saya burhan saya berumur 23 tahun
+person1.greet(); // output: hai nama saya Burhan saya berumur 23 tahun
 ```
 Contoh penggunaanya seperti ini [example](example.js)
 
