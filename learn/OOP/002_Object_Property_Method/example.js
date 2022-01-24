@@ -1,6 +1,6 @@
-class Person { // membuat object dengan class
+class Person { // Membuat object dengan class
      constructor(name,age){ // Mendeklarasikan property name dan age
-         this.name = name; // menggunakan property name dan age
+         this.name = name; // Menggunakan property name dan age
          this.age = age;
         
      }
@@ -9,7 +9,7 @@ class Person { // membuat object dengan class
      }
  }
 
- const person1 = new Person("budi", 21); // membuat object person1 dengan constuctor
+ const person1 = new Person("budi", 21); // Membuat object person1 dengan constructor
 
  console.log(person1.name); // output: budi
 
