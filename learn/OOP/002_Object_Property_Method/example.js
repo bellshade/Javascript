@@ -5,7 +5,7 @@ class Person { // membuat object dengan class
         
      }
        greet() {
-         console.log(`hai nama saya ${this.name} saya berumur ${this.age} tahun`)
+         console.log(`hai nama saya ${this.name} saya berumur ${this.age} tahun`);
      }
  }
 

@@ -38,7 +38,7 @@ Method adalah fungsi yang ada di property yang bisa kita eksekusi / jalankan. Mi
          this.age = age;
      }
      greet() {
-         console.log(`hai nama saya ${this.name} saya berumur ${this.age} tahun`)
+         console.log(`hai nama saya ${this.name} saya berumur ${this.age} tahun`);
      }
  }
 
