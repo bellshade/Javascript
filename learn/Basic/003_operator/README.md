@@ -62,7 +62,7 @@ Operator yang digunakan untuk mengecek apakah nilai yang diuji bukanlah yang dii
 
 ## Nullish coalescing operator (??)
 
-Nullish coalescing operator merupakan adalah logical operator yang mengembalikan right-hand value jika left-hand bernilai `null` atau `undefined`.
+Nullish coalescing operator merupakan logical operator yang mengembalikan right-hand value jika left-hand bernilai `null` atau `undefined`.
 
 ## Ternary operator (? :)
 
