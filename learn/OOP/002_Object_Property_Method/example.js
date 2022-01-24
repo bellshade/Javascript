@@ -2,9 +2,10 @@ class Person { // membuat object dengan class
      constructor(name,age){ // Mendeklarasikan property name dan age
          this.name = name; // menggunakan property name dan age
          this.age = age;
-         this.greet = () => {
-             console.log(`hai nama saya ${name} saya berumur ${age} tahun`);
-         };
+        
+     }
+       greet() {
+         console.log(`hai nama saya ${this.name} saya berumur ${this.age} tahun`)
      }
  }
 

@@ -36,9 +36,9 @@ Method adalah fungsi yang ada di property yang bisa kita eksekusi / jalankan. Mi
      constructor(name,age){ // Mendeklarasikan property name dan age
          this.name = name; // menggunakan property name dan age
          this.age = age;
-         this.greet = () => {
-             console.log(`hai nama saya ${name} saya berumur ${age} tahun`)
-         }
+     }
+     greet() {
+         console.log(`hai nama saya ${this.name} saya berumur ${this.age} tahun`)
      }
  }
 
