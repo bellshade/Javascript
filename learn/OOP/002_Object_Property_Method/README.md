@@ -48,5 +48,6 @@ dalam contoh ada method `greet` yang menerima parameter `name` dan `age` dari  c
 const person1 = new Person("burhan", 23);
 person1.greet(); // output: hai nama saya burhan saya berumur 23 tahun
 ```
+contoh penggunaanya seperti ini [example](example.js)
 
 > dengan `property` dan `method` kita bisa membuat object yang dinamis yang bisa digunakan sesuai kebutuhan tanpa membuat banyak object
