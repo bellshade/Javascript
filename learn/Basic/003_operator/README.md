@@ -62,27 +62,31 @@ Operator yang digunakan untuk mengecek apakah nilai yang diuji bukanlah yang dii
 
 ## Nullish coalescing operator (??)
 
-Nullish coalescing operator merupakan adalah logical operator yang mengembalikan right-hand value jika left-hand bernilai `null` atau `undefined`.
+Nullish coalescing operator merupakan logical operator yang mengembalikan right-hand value jika left-hand bernilai `null` atau `undefined`.
 
-## Ternary operator
+## Ternary operator (? :)
 
 Ternary operator merupakan pengkondisian yang fungsinya sama seperti if else, namun penulisan syntaxnya lebih sederhana.
 
 > condition ? ifTruthy : ifFalsy
 
-## In Operator
+## In Operator (in)
 
 In operator adalah operator yang berfungsi untuk mengecek sebuah property dari object serta bisa juga untuk mengecek sebuah index di dalam array dan akan mengembalikan boolean.
 
-## Optional Chaining Operator
+## Optional Chaining Operator (?)
 
 Optional chaining operator merupakan cara yang aman untuk mengambil nilai dari object, karena tidak menimbulkan error apabila kita mengakses property yang tidak tersedia di object tersebut dan akan mengembalikan nilai undefined.
+
+## Double Bang (!!)
+
+Double Bang adalah operator yang mengkonversi suatu value menjadi tipe data boolean, pada dasarnya _Double Bang_ meyakinkan kita untuk selalu mendapatkan value dengan tipe data boolean.
 
 ### Hint
 
 Operator ini bisa digunakan sebagai conditional statement if atau else if.
 
-Untuk contoh kode, cek contoh untuk [operator perbandingan](comparisonOperators.js), [operator logika](logicalOperator.js), [nullish coalescing operator](nullishCoalescingOperators.js), [ternary operator](ternaryOperator.js), [in operator](inOperator.js), [optional chaining operator](optionalChainingOperator.js).
+Untuk contoh kode, cek contoh untuk [operator perbandingan](comparisonOperators.js), [operator logika](logicalOperator.js), [nullish coalescing operator](nullishCoalescingOperators.js), [ternary operator](ternaryOperator.js), [in operator](inOperator.js), [optional chaining operator](optionalChainingOperator.js), [double bang operator](doubleBangOperator.js).
 
 [<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Variable and Datatype" />](../002_variable_datatype)
 
