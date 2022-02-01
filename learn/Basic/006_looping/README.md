@@ -113,6 +113,6 @@ for (let i = 0; i <= 20; i++) {
 
 Lihat contoh dari [Jenis Looping](forWhileLoop.js), [break](break.js), dan [continue](continue.js).
 
-[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Arithmetic Operation" />](../006_arithmetic_operation)
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Arithmetic Operation" />](../005_arithmetic_operation)
 
-[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Function" />](../008_function)
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Conditioning" />](../007_conditioning)

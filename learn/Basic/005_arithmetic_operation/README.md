@@ -64,6 +64,6 @@ Contoh Penggunaan :
 - [Increment](arithmeticOperation.js#L35-L38)
 - [Decrement](arithmeticOperation.js#L40-L43)
 
-[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Conditioning" />](../005_conditioning)
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=String and String Manipulation" />](../004_string_and_string_manipulation)
 
-[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Looping" />](../007_looping)
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Looping" />](../006_looping)
