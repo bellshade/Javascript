@@ -1,14 +1,14 @@
 /**
  * Double Bang (!!)
- * 
+ *
  * Double Bang merupakan operator yang mengkonversi suatu value
  * menjadi tipe data boolean, perlu di ingat operator ini bukan
  * berarti menggunakan operator NOT (!) sebanyak 2 kali
  * operator ini sama saja dengan menggunakan fungsi Boolean()
  * yang JavaScript miliki hanya saja lebih sederhana.
- * 
+ *
  * Referensi: https://dev.to/sanchithasr/what-is-the-double-bang-operator-in-javascript-4i3h
- * 
+ *
  * Berikut contoh value yang dianggap truthy oleh JavaScript:
  */
 

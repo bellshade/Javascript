@@ -1,16 +1,18 @@
-class Person { // Membuat object dengan class
-     constructor(name,age){ // Mendeklarasikan property name dan age
-         this.name = name; // Menggunakan property name dan age
-         this.age = age;
-        
-     }
-       greet() {
-         console.log(`hai nama saya ${this.name} saya berumur ${this.age} tahun`);
-     }
- }
+// Membuat object dengan class
+class Person {
+  constructor(name, age) {
+    // Mendeklarasikan property name dan age dan menggunakannya
+    this.name = name;
+    this.age = age;
+  }
 
- const person1 = new Person("budi", 21); // Membuat object person1 dengan constructor
+  greet() {
+    console.log(`hai nama saya ${this.name} saya berumur ${this.age} tahun`);
+  }
+}
 
- console.log(person1.name); // output: budi
+const person1 = new Person("budi", 21); // Membuat object person1 dengan constructor
 
- person1.greet(); // output: hai nama saya budi saya berumur 21 tahun
+console.log(person1.name); // output: budi
+
+person1.greet(); // output: hai nama saya budi saya berumur 21 tahun
