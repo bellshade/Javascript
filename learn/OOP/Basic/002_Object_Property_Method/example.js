@@ -1,7 +1,7 @@
 // Membuat object dengan class
 class Person {
   constructor(name, age) {
-    // Mendeklarasikan property name dan age dan menggunakannya
+    // Mendeklarasikan property name dan age serta menggunakannya
     this.name = name;
     this.age = age;
   }

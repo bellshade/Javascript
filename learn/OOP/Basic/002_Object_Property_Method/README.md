@@ -22,14 +22,15 @@ Dalam pelajaran sebelumnya kita sudah belajar tentang `class`, jika kita ingin m
 Contohnya:
 
 ```js
+// Membuat object dengan class
 class Person {
-  // Membuat object dengan class
   constructor(name, age) {
-    // Mendeklarasikan property name dan age
-    this.name = name; // Menggunakan property name dan age
+    // Mendeklarasikan property name dan age serta menggunakannya
+    this.name = name;
     this.age = age;
   }
 }
+
 console.log(new Person("Burhan", 23)); // output : {name:"Burhan",age: 23}
 ```
 
@@ -41,8 +42,8 @@ Method adalah fungsi yang ada di property yang bisa kita eksekusi atau jalankan.
 class Person {
   // Membuat object dengan class
   constructor(name, age) {
-    // Mendeklarasikan property name dan age
-    this.name = name; // Menggunakan property name dan age
+    // Mendeklarasikan property name dan age serta menggunakannya
+    this.name = name;
     this.age = age;
   }
   greet() {
