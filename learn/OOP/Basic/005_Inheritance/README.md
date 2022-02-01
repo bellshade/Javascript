@@ -75,7 +75,7 @@ cat.run();
 cat.stop();
 cat.eat();
 
-/* Output 
+/* Output
 
 // hasil cat.run() //
 Kucing oren berlari dengan jarak 5 meter.
@@ -91,3 +91,7 @@ Kucing oren sedang makan whiskas.
 ```
 
 Silahkan buka file Javascript pada folder ini untuk melihat full kodenya.
+
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Abstraction" />](../004_Abstraction)
+
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Polymorphism" />](../006_Polymorphism)

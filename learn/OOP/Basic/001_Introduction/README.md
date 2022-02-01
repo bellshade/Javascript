@@ -13,15 +13,13 @@ Dalam JavaScript kita menggunakan `class` agar dapat membuat program yang berbas
 ### Membuat `class`
 
 ```js
-class Produk {
-
-}
+class Produk {}
 ```
 
 Untuk membuat sebuah _instance_ dari `class` Produk, kita gunakan keyword `new` dan diikuti nama `class` tersebut.
 
 ```js
-const produk1 = new Produk()
+const produk1 = new Produk();
 ```
 
 Selamat kalian telah membuat sebuah `class` dan `object` yang dimana menjadi pondasi awal untuk belajar konsep OOP ini.
@@ -31,9 +29,7 @@ Selamat kalian telah membuat sebuah `class` dan `object` yang dimana menjadi pon
 Sebelum JavaScript memiliki sintaks `class`, kita membuat sebuah objek menggunakan `function` sebagai _blueprint_ nya. `class` merupakan sintaks terbaru di ES6 yang diciptakan agar cara dalam membuat program OOP sama dengan bahasa pemrograman lain seperti Java atau PHP. Tetapi sebenarnya apa yang dilakukan oleh `class` adalah sama dengan menggunakan `function`.
 
 ```js
-function Produk () {
-
-}
+function Produk() {}
 
 const produk1 = new Produk();
 ```
@@ -47,7 +43,7 @@ Mungkin kalian bertanya - tanya kenapa kita harus menggunakan `class` untuk memb
 ```js
 const produk1 = {
   id: 1,
-  nama: 'Produk Satu',
+  nama: "Produk Satu",
   harga: 10000
 };
 ```
@@ -59,14 +55,16 @@ class Produk {
   constructor(id, nama, harga) {
     this.id = id;
     this.nama = nama;
-    this.harga = harga
-  };
-};
+    this.harga = harga;
+  }
+}
 
-const produk1 = new Produk(1, 'Produk Satu', 1000);
-const produk2 = new Produk(2, 'Produk Dua', 2000);
-const produk3 = new Produk(3, 'Produk Tiga', 3000);
+const produk1 = new Produk(1, "Produk Satu", 1000);
+const produk2 = new Produk(2, "Produk Dua", 2000);
+const produk3 = new Produk(3, "Produk Tiga", 3000);
 ```
 
 > `constructor` adalah sebuah function yang akan dijalankan saat membuat objek baru dari sebuah `class` atau biasa disebut dengan instansiasi (instance).
 > Biasanya digunakan untuk mendefinisikan sebuah properti yang dimiliki sebuah objek.
+
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Object, Property, Method" />](../002_Object_Property_Method)

@@ -30,7 +30,7 @@ class Car {
   #model;
   #maxSpeed;
 
-  constructor (model, maxSpeed) {
+  constructor(model, maxSpeed) {
     this.#model = model;
     this.#maxSpeed = maxSpeed;
   }
@@ -59,11 +59,11 @@ class Siswa {
   #nama;
   #umur;
 
-  get nama () {
+  get nama() {
     return this.#nama;
   }
 
-  set nama (nama) {
+  set nama(nama) {
     // Mengecek apakah data yang diberikan sudah sesuai yaitu nama tidak boleh mengandung angka
     if (new RegExp(/\d/).test(nama)) {
       console.error("Nama tidak boleh mengandung angka!");
@@ -72,11 +72,11 @@ class Siswa {
     }
   }
 
-  get umur () {
+  get umur() {
     return this.#umur;
   }
 
-  set umur (umur) {
+  set umur(umur) {
     // Mengecek apakah data berbentuk integer
     if (typeof umur === "number") {
       this.#umur = umur;
@@ -97,3 +97,7 @@ console.log(siswa1.nama); // "John Doe"
 ```
 
 Dengan menggunakan function sebagai perantaranya kita bisa mengubah isi dari datanya sekaligus mengecek apakah data yang diberikan sudah sesuai.
+
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Object, Property, Method" />](../002_Object_Property_Method)
+
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Abstraction" />](../004_Abstraction)

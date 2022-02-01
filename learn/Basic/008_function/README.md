@@ -39,7 +39,7 @@ Function anonymous adalah function yang tidak memiliki nama/identifier. Jenis fu
 Contoh:
 
 ```js
-(function() {
+(function () {
   console.log("Halo");
 })();
 ```
@@ -51,7 +51,7 @@ Function callback adalah function yang biasanya di gunakan sebagai parameter fun
 Contoh:
 
 ```js
-masukkanFunction(function() {
+masukkanFunction(function () {
   console.log("hai");
 });
 ```
@@ -92,6 +92,6 @@ console.log(contohReturningFunction);
 
 Lihat contoh lengkap untuk [Basic Function](functionBasic.js), [Argumen dan Parameter](parameterAndArgument.js), dan [Returning function](functionReturn.js).
 
-[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Looping" />](../007_looping)
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Conditioning" />](../007_conditioning)
 
 [<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Array" />](../009_array)

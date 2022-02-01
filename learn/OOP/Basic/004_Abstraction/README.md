@@ -43,3 +43,7 @@ console.log(persegi.hitungKeliling()); // 60
 ```
 
 Untuk contoh yang lain bisa cek file [abstraction.js](abstraction.js).
+
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Encapsulation" />](../003_Encapsulation)
+
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Inheritance" />](../005_Inheritance)

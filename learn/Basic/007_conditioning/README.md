@@ -70,6 +70,6 @@ switch (buah) {
 
 Lihat kode lengkapnya [disini](conditionalStatements.js).
 
-[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=String" />](../004_string_and_string_manipulation)
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Looping" />](../006_looping)
 
-[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Arithmetic Operation" />](../006_arithmetic_operation)
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Function" />](../008_function)
