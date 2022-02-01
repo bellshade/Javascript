@@ -35,5 +35,3 @@ rakBuku.forEach((buku) => {
 Untuk contoh yang lain bisa cek file [polymorphism.js](polymorphism.js).
 
 [<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Inheritance" />](../005_Inheritance)
-
-[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Association" />](../Intermediate/001_Association)
