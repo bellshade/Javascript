@@ -15,7 +15,7 @@ Contoh non functional
 ```js
 const nama = "Bellshade";
 const salam = "Halo ";
-console.log(salam + nama);
+console.log(salam + nama); // "Halo Bellshade"
 ```
 
 Pada kode diatas, kita tidak menggunakan fungsi sama sekali. Kita tidak memikirkan bagaimana cara mengubah dari sebuah masukan (input) menjadi sebuah keluaran (output).
