@@ -12,3 +12,10 @@ const arrB = arrA.map((val) => {
   return val * 2;
 });
 console.log(arrB); // [2, 4, 6, 8, 10]
+
+// Contoh 2
+const kali2 = (num) => num * 2;
+const tambah2 = (num) => num + 2;
+const lakukanOperasi = (num, fn) => fn(num);
+console.log(lakukanOperasi(5, kali2)); // 10
+console.log(lakukanOperasi(5, tambah2)); // 7

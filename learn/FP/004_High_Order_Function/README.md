@@ -26,3 +26,13 @@ const arr2 = arr1.map((val) => {
 });
 console.log(arr2); // [2, 4, 6, 8, 10]
 ```
+
+Contoh lain, kita memiliki 2 buah function untuk mengalikan sebuah angka dan menjumlahkan angka (`kali2` & `tambah2`). Dan juga ada function lain untuk melakukan operasi perhitungan berdasarkan function yang kita kirim (`lakukanOperasi`). Function `lakukanOperasi` adalah _High Order Function_.
+
+```js
+const kali2 = (num) => num * 2;
+const tambah2 = (num) => num + 2;
+const lakukanOperasi = (num, fn) => fn(num);
+console.log(lakukanOperasi(5, kali2)); // 10
+console.log(lakukanOperasi(5, tambah2)); // 7
+```
