@@ -15,7 +15,7 @@ const daftarPengguna = [
 
 // function sederhana
 const apakahMuda = (pengguna) => pengguna.umur < 30;
-const apakahPerempuan = (pengguna) => pengguna.jenisKelamin == "perempuan";
+const apakahPerempuan = (pengguna) => pengguna.jenisKelamin === "perempuan";
 
 // function composition
 const daftarPenggunaTerpilih = daftarPengguna
