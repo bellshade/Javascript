@@ -8,6 +8,7 @@ Salah satu konsep terpenting pada functional programming adalah _Pure Function_.
 const salam = (nama) => {
   return "Halo " + nama;
 };
+
 console.log(salam("Bellshade")); // Halo Bellshade
 ```
 
@@ -15,10 +16,13 @@ Fungsi `salam` akan selalu mengembalikan nilai `Halo <nama>` sesuai dengan input
 
 ```js
 let sapaan = "Halo";
+
 const salam = (nama) => {
   return `${sapaan} ${nama}`;
 };
+
 console.log(salam("Bellshade")); // Halo Bellshade
+
 sapaan = "Pagi";
 console.log(salam("Bellshade")); // Pagi Bellshade
 ```

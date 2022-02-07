@@ -13,7 +13,9 @@ const mobil = {
   model: "Tesla",
   tahun: 2020
 };
+
 console.log(mobil); // { model: "Tesla", tahun: 2020 }
+
 mobil.model = "Honda";
 console.log(mobilBaru); // { model: "Honda", tahun: 2020 }
 ```
@@ -28,6 +30,7 @@ const mobil = {
   tahun: 2020
 };
 const mobilBaru = { ...mobil, model: "Honda" };
+
 console.log(mobil); // { model: "Tesla", tahun: 2020 }
 console.log(mobilBaru); // { model: "Honda", tahun: 2020 }
 ```

@@ -17,6 +17,7 @@ Contoh non functional
 ```js
 const nama = "Bellshade";
 const salam = "Halo ";
+
 console.log(salam + nama); // "Halo Bellshade"
 ```
 

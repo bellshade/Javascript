@@ -12,6 +12,7 @@ Pada contoh pertama, Katakanlah kita memiliki sebuah nama dengan format `namaDep
 const ubahFormatNama = (nama) => nama.split("_").join(" ");
 const ubahJadiHurufBesar = (nama) => nama.toUpperCase();
 const namaOrang = "bellshade_javascript";
+
 console.log(ubahJadiHurufBesar(ubahFormatNama(namaOrang)));
 ```
 
@@ -32,6 +33,7 @@ const apakahPerempuan = (pengguna) => pengguna.jenisKelamin == "perempuan";
 const daftarPenggunaTerpilih = daftarPengguna
   .filter(apakahMuda)
   .filter(apakahPerempuan);
+  
 console.log(daftarPenggunaTerpilih); // [{ name: "Sinta", umur: 17, jenisKelamin: "perempuan" }]
 ```
 
