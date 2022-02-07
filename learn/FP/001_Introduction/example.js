@@ -1,6 +1,7 @@
 // Cara non functional
 const nama = "Bellshade";
 const salam = "Halo ";
+
 console.log(salam + nama); // "Halo Bellshade"
 
 // Cara functional

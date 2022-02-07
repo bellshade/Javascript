@@ -3,6 +3,7 @@
 const ubahFormatNama = (nama) => nama.split("_").join(" ");
 const ubahJadiHurufBesar = (nama) => nama.toUpperCase();
 const namaOrang = "bellshade_javascript";
+
 console.log(ubahJadiHurufBesar(ubahFormatNama(namaOrang)));
 
 // Contoh 2
@@ -21,4 +22,5 @@ const apakahPerempuan = (pengguna) => pengguna.jenisKelamin === "perempuan";
 const daftarPenggunaTerpilih = daftarPengguna
   .filter(apakahMuda)
   .filter(apakahPerempuan);
+
 console.log(daftarPenggunaTerpilih); // [{ name: "Sinta", umur: 17, jenisKelamin: "perempuan" }]

@@ -13,7 +13,9 @@ const arr = [() => {}];
 const cmToM = (length) => length / 100;
 const mToCm = (length) => length * 100;
 const convert = (fn, length) => fn(length);
+
 const nilaiAwal = 100;
+
 console.log(convert(cmToM, nilaiAwal)); // 1
 console.log(convert(mToCm, nilaiAwal)); // 10000
 
@@ -23,5 +25,6 @@ const helloFunc = () => {
     console.log("Hello!");
   };
 };
+
 const hello = helloFunc();
 console.log(hello()); // Hello!
