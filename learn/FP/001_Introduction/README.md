@@ -6,7 +6,7 @@ Dalam FP (Functional Programming), kita melakukan semua proses dengan menggunaka
 
 Pada dasarnya, sebuah fungsi akan menerima sebuah parameter (input) dan mengembalikan sebuah nilai (output).
 
-```
+```js
 input -> output
 ```
 
@@ -31,13 +31,3 @@ console.log(salam("Bellshade")); // "Halo Bellshade"
 ```
 
 Pada kode diatas, ada sebuah fungsi `salam` yang menerima parameter `nama` kemudian akan mengembalikan nilai `"Halo " + nama`. Jika dibandingkan dengan kode yang sebelumnya, kita akan mendapatkan hasil yang sama, namun kode diatas adalah contoh bagaimana kita berfikir menggunakan Functional Programming.
-
-<!-- TODO: tambah materi kelebihan dan kekurangan FP -->
-
-## Kelebihan Functional Programming
-
-...
-
-## Kekurangan Functional Programming
-
-...
