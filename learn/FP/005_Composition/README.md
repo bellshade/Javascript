@@ -32,3 +32,7 @@ const daftarPenggunaTerpilih = daftarPengguna
   .filter(apakahPerempuan);
 console.log(daftarPenggunaTerpilih); // [{ name: "Sinta", umur: 17, jenisKelamin: "perempuan" }]
 ```
+
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=High%20Order%20Function" />](../004_High_Order_Function)
+
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Immutability" />](../006_Immutability)

@@ -36,3 +36,7 @@ const lakukanOperasi = (num, fn) => fn(num);
 console.log(lakukanOperasi(5, kali2)); // 10
 console.log(lakukanOperasi(5, tambah2)); // 7
 ```
+
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Pure%20Function" />](../003_Pure_Function)
+
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Composition" />](../005_Composition)

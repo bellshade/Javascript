@@ -26,3 +26,7 @@ Pada contoh diatas, fungsi `salam` bergantung pada nilai variable `sapaan`. Baga
 Kondisi diatas disebut dengan _side effect_ yaitu fungsi tersebut mengembalikan nilai yang berbeda dengan input yang sama tanpa sepengetahuan fungsi tersebut.
 
 Dengan cara ini, kode yang kita buat bisa lebih mudah dipahami dan lebih mudah dimaintain.
+
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=First%20Class%20Object" />](../002_First_Class_Object)
+
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=High%20Order%20Function" />](../004_High_Order_Function)

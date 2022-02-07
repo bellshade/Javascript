@@ -31,3 +31,5 @@ console.log(salam("Bellshade")); // "Halo Bellshade"
 ```
 
 Pada kode diatas, ada sebuah fungsi `salam` yang menerima parameter `nama` kemudian akan mengembalikan nilai `"Halo " + nama`. Jika dibandingkan dengan kode yang sebelumnya, kita akan mendapatkan hasil yang sama, namun kode diatas adalah contoh bagaimana kita berfikir menggunakan Functional Programming.
+
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=First%20Class%20Object" />](../002_First_Class_Object/)

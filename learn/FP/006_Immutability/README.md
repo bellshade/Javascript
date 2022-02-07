@@ -31,3 +31,5 @@ console.log(mobilBaru); // { model: "Honda", tahun: 2020 }
 ```
 
 Pada contoh diatas, kita mengubah nilai `model` dari objek `mobil` dengan membuat objek baru menggunakan spread operator. Dengan cara ini, kita tidak mengubah objek `mobil` secara langsung, melainkan kita membuat objek baru.
+
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Composition" />](../005_Composition)

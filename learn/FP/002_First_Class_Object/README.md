@@ -44,3 +44,7 @@ const helloFunc = () => {
 const hello = helloFunc();
 console.log(hello()); // Hello!
 ```
+
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Introduction" />](../001_Introduction)
+
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Pure%20Function" />](../003_Pure_Function)
