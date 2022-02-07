@@ -4,6 +4,8 @@ Sebuah _Immutable_ [object](../../Basic/011_object/) adalah object yang tidak da
 
 ## Contoh
 
+[File contoh kode](example.js)
+
 **Contoh non-immutable:**
 
 ```js

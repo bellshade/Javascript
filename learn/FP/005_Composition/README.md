@@ -4,6 +4,8 @@ Esensi utama dari functional programming adalah composition, yaitu menyambung-ny
 
 ## Contoh
 
+[File contoh kode](example.js)
+
 Pada contoh pertama, Katakanlah kita memiliki sebuah nama dengan format `namaDepan_namaBelakang` dan kita ingin mengubah formatnya menjadi `namaDepan namaBelakang` dalam huruf besar semua.
 
 ```js

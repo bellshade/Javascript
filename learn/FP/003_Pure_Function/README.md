@@ -2,6 +2,8 @@
 
 Salah satu konsep terpenting pada functional programming adalah _Pure Function_. Functional programming mengharuskan kita untuk menuliskan fungsi yang hanya memiliki tujuan untuk mengubah input menjadi output seperti yang kita harapkan. Sebuah fungsi harus mengembalikan nilai yang sama dengan input yang sama.
 
+[File contoh kode](example.js)
+
 ```js
 const salam = (nama) => {
   return "Halo " + nama;

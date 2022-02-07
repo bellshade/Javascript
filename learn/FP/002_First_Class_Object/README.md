@@ -2,6 +2,8 @@
 
 > **Informasi**: Untuk kedepannya, penulisan function dalam materi ini akan menggunakan [arrow function](../../ES6/003_arrow_function) dikarenekan pada FP, tidak memerlukan _keyword_ `this` sesuai konsep [Pure Function](../003_Pure_Function).
 
+[File contoh kode](example.js)
+
 Dalam javascript, [function](../../Basic/008_function) adalah _first-class object_ atau "_first-class citizen_". Artinya function di javascript sama seperti [object](../../Basic/011_object) , dimana kita dapat melakukan seperti:
 
 - Disimpan di [variable](../../Basic/002_variable_datatype), object, atau [array](../../Basic/009_array)

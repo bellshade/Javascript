@@ -4,6 +4,8 @@ _Hight Order Function_ adalah sebuah function yang menerima input berupa functio
 
 ## Contoh
 
+[File contoh kode](example.js)
+
 Katakanlah kita memiliki sebuah array angka, dan kita ingin membuat array baru yang berisi nilai dua kali lipat dari setiap nilai array pertama.
 
 Tanpa _High Order Function_ (Contoh ini juga bukan merupakan functional programming karena tidak sesuai konsep [Immutability](../006_Immutability))

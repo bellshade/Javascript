@@ -10,6 +10,8 @@ Pada dasarnya, sebuah fungsi akan menerima sebuah parameter (input) dan mengemba
 input -> output
 ```
 
+[File contoh kode](example.js)
+
 Contoh non functional
 
 ```js
