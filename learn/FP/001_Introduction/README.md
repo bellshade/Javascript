@@ -1,6 +1,6 @@
 # Functional Programming
 
-Salah satu paradigma pemrograman yang bisa dilakuakan pada Javascript adalah [Functional Programming](https://en.wikipedia.org/wiki/Functional_programming).
+Salah satu paradigma pemrograman yang bisa dilakukan pada Javascript adalah [Functional Programming](https://en.wikipedia.org/wiki/Functional_programming).
 
 Dalam FP (Functional Programming), kita melakukan semua proses dengan menggunakan [fungsi](../../Basic/008_function).
 

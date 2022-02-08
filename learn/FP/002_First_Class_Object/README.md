@@ -1,6 +1,6 @@
 # _First-Class Object_
 
-> **Informasi**: Untuk kedepannya, penulisan function dalam materi ini akan menggunakan [arrow function](../../ES6/003_arrow_function) dikarenekan pada FP, tidak memerlukan _keyword_ `this` sesuai konsep [Pure Function](../003_Pure_Function).
+> **Informasi**: Untuk kedepannya, penulisan function dalam materi ini akan menggunakan [arrow function](../../ES6/003_arrow_function) dikarenakan pada FP, tidak memerlukan _keyword_ `this` sesuai konsep [Pure Function](../003_Pure_Function).
 
 [File contoh kode](example.js)
 
