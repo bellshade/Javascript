@@ -22,7 +22,7 @@ console.log(convert(mToCm, nilaiAwal)); // 10000
 // Function sebagai nilai kembalian dari sebuah function
 const helloFunc = () => {
   return () => {
-    console.log("Hello!");
+    return "Hello!";
   };
 };
 

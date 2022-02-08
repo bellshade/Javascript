@@ -42,7 +42,7 @@ console.log(convert(mToCm, nilaiAwal)); // 10000
 ```js
 const helloFunc = () => {
   return () => {
-    console.log("Hello!");
+    return "Hello!";
   };
 };
 
