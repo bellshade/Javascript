@@ -207,10 +207,10 @@ class LinkedList {
       const headData = this.toArray();
       this.data = linkedList.data;
       this.next = null;
-      linkedList.next.toArray().forEach((element) => {
+      linkedList.next.toArray().forEach(element => {
         this.insert(element);
       });
-      headData.forEach((element) => {
+      headData.forEach(element => {
         this.insert(element);
       });
     } else {
@@ -230,11 +230,11 @@ class LinkedList {
       }
 
       currentHead.next = null;
-      linkedList.toArray().forEach((element) => {
+      linkedList.toArray().forEach(element => {
         currentHead.insert(element);
       });
       if (headNextData) {
-        headNextData.forEach((element) => {
+        headNextData.forEach(element => {
           currentHead.insert(element);
         });
       }

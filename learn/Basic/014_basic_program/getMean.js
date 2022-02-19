@@ -6,7 +6,7 @@
  * 2. Membagi hasil penjumlahan sebelumnya dengan banyaknya nilai di dalam array
  */
 
-const getMean = (arr) => {
+const getMean = arr => {
   let sum = 0;
   for (let i = 0; i < arr.length; i++) {
     sum += arr[i];

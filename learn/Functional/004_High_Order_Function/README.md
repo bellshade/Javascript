@@ -25,7 +25,7 @@ Menggunakan _High Order Function_
 
 ```js
 const arr1 = [1, 2, 3, 4, 5];
-const arr2 = arr1.map((val) => {
+const arr2 = arr1.map(val => {
   return val * 2;
 });
 
@@ -35,8 +35,8 @@ console.log(arr2); // [2, 4, 6, 8, 10]
 Contoh lain, kita memiliki 2 buah function untuk mengalikan sebuah angka dan menjumlahkan angka (`kali2` & `tambah2`). Dan juga ada function lain untuk melakukan operasi perhitungan berdasarkan function yang kita kirim (`lakukanOperasi`). Function `lakukanOperasi` adalah _High Order Function_.
 
 ```js
-const kali2 = (num) => num * 2;
-const tambah2 = (num) => num + 2;
+const kali2 = num => num * 2;
+const tambah2 = num => num + 2;
 const lakukanOperasi = (num, fn) => fn(num);
 
 console.log(lakukanOperasi(5, kali2)); // 10

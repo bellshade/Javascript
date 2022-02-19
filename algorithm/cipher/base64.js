@@ -1,10 +1,10 @@
 // Implementasi enkode base64 di javascript (node js)
 
 // Fungsi enkode untuk mengubah tulisan biasa menjadi format base64
-const btoa = (kataAwal) => Buffer.from(kataAwal, "utf8").toString("base64");
+const btoa = kataAwal => Buffer.from(kataAwal, "utf8").toString("base64");
 
 // Fungsi dekode untuk mengubah format base64 menjadi tulisan biasa
-const atob = (kataTerkonversi) =>
+const atob = kataTerkonversi =>
   Buffer.from(kataTerkonversi, "base64").toString("utf8");
 
 const kataAwal = "Halo Dunia";

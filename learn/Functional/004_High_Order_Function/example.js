@@ -10,15 +10,15 @@ console.log(arr2);
 
 // Menggunakan High Order Function
 const arrA = [1, 2, 3, 4, 5];
-const arrB = arrA.map((val) => {
+const arrB = arrA.map(val => {
   return val * 2;
 });
 
 console.log(arrB); // [2, 4, 6, 8, 10]
 
 // Contoh 2
-const kali2 = (num) => num * 2;
-const tambah2 = (num) => num + 2;
+const kali2 = num => num * 2;
+const tambah2 = num => num + 2;
 const lakukanOperasi = (num, fn) => fn(num);
 
 console.log(lakukanOperasi(5, kali2)); // 10

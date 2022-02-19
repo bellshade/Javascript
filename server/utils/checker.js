@@ -1,4 +1,4 @@
-const checkIsArray = (array) => {
+const checkIsArray = array => {
   if (!array) {
     return new Error("Array is undefined");
   }
@@ -6,7 +6,7 @@ const checkIsArray = (array) => {
   return Array.isArray(array);
 };
 
-const constructor = (cb) => (array) => {
+const constructor = cb => array => {
   const isValid = checkIsArray(array);
 
   if (!isValid) {
@@ -16,13 +16,12 @@ const constructor = (cb) => (array) => {
   return cb(array);
 };
 
-const notIncludedAnyFile = (arr) =>
-  arr.every(({ type }) => type === "directory");
+const notIncludedAnyFile = arr => arr.every(({ type }) => type === "directory");
 
-const includedHtml = constructor((arr) =>
+const includedHtml = constructor(arr =>
   arr.some(({ extension }) => extension === "html")
 );
-const someIsJs = constructor((arr) =>
+const someIsJs = constructor(arr =>
   arr.some(({ extension }) => extension === "js")
 );
 

@@ -8,7 +8,7 @@ const caesarShift = (kataAwal, shifting) => {
     return caesarShift(kataAwal, shifting + 26);
   }
 
-  const shift = [...kataAwal].map((txt) => {
+  const shift = [...kataAwal].map(txt => {
     // Cek apakah text yang di mapping termsuk dalam rangkaian huruf alphabet, jika sama proses hurufnya
     if (txt.match(/[a-z]/i)) {
       const code = txt.charCodeAt();

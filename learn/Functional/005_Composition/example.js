@@ -1,7 +1,7 @@
 // Contoh 1
 
-const ubahFormatNama = (nama) => nama.split("_").join(" ");
-const ubahJadiHurufBesar = (nama) => nama.toUpperCase();
+const ubahFormatNama = nama => nama.split("_").join(" ");
+const ubahJadiHurufBesar = nama => nama.toUpperCase();
 const namaOrang = "bellshade_javascript";
 
 console.log(ubahJadiHurufBesar(ubahFormatNama(namaOrang)));
@@ -15,8 +15,8 @@ const daftarPengguna = [
 ];
 
 // function sederhana
-const apakahMuda = (pengguna) => pengguna.umur < 30;
-const apakahPerempuan = (pengguna) => pengguna.jenisKelamin === "perempuan";
+const apakahMuda = pengguna => pengguna.umur < 30;
+const apakahPerempuan = pengguna => pengguna.jenisKelamin === "perempuan";
 
 // function composition
 const daftarPenggunaTerpilih = daftarPengguna

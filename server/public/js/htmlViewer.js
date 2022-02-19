@@ -6,7 +6,7 @@ function main() {
   window.addEventListener("message", function (response) {
     if (response.data && response.data.source === "iframe") {
       const message = response.data.message
-        .map((msg) => decoder.decode(msg))
+        .map(msg => decoder.decode(msg))
         .join(" ");
 
       outputAppender(message);

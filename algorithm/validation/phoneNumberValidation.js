@@ -1,12 +1,12 @@
 const phoneNumber = "6281212641324";
 const anotherPhoneNumber = "081212641324";
 
-const isValidPhoneNumber = (phoneNumber) => {
+const isValidPhoneNumber = phoneNumber => {
   if (isNaN(phoneNumber)) {
     return "No HP harus berupa angka!";
   }
 
-  const isIndonesianFormat = (phoneNumber) => {
+  const isIndonesianFormat = phoneNumber => {
     return phoneNumber[0] + phoneNumber[1] !== "62";
   };
 

@@ -24,7 +24,7 @@
  * @param {Integer} x
  * @returns
  */
-const reverse = (x) => {
+const reverse = x => {
   let result = 0;
   let temp = 0;
 

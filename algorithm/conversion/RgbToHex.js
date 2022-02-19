@@ -17,7 +17,7 @@ function RGBToHex(r, g, b) {
      https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toString
   */
 
-  const toHex = (n) => (n || "0").toString(16).padStart(2, "0");
+  const toHex = n => (n || "0").toString(16).padStart(2, "0");
 
   // Mengkombinasikan tiap-tiap nilai hexadecimal dari hasil konversi dengan pola #+R+G+B
   return `#${toHex(r)}${toHex(g)}${toHex(b)}`;

@@ -135,7 +135,7 @@ Jika kamu menambahkan kode yang memerlukan html dan ada `console.log` didalamnya
     window.parent.postMessage(
       {
         source: "iframe",
-        message: rest.map((d) => encoder.encode(d))
+        message: rest.map(d => encoder.encode(d))
       },
       "*"
     );

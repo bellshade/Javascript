@@ -24,7 +24,7 @@
  * @param {number} n - Indeks fibonacci yang akan dihitung.
  * @returns {number} - Angka fibonacci pada indeks ke-n.
  */
-const fibonacciIterative = (n) => {
+const fibonacciIterative = n => {
   if (n < 0) {
     return console.log("Nomor invalid");
   }
@@ -58,7 +58,7 @@ const fibonacciIterative = (n) => {
  * @returns {number} - Angka fibonacci pada indeks ke-n.
  */
 
-const fibonacciRecursive = (n) => {
+const fibonacciRecursive = n => {
   if (n < 0) {
     return console.log("Nomor invalid");
   }
@@ -76,7 +76,7 @@ const fibonacciRecursive = (n) => {
  * @param {number} n - Indeks fibonacci yang akan dihitung.
  * @returns {number} - Angka fibonacci pada indeks ke-n.
  */
-const fibonacciRecursiveMemoization = (n) => {
+const fibonacciRecursiveMemoization = n => {
   if (n < 0) {
     return console.log("Nomor invalid");
   }
@@ -85,7 +85,7 @@ const fibonacciRecursiveMemoization = (n) => {
     0: 0,
     1: 1
   };
-  const fib = (n) => {
+  const fib = n => {
     // Mengembalikan hasil perhitungan sebelumnya jika sudah ada.
     if (n in fibSequence) {
       return fibSequence[n];

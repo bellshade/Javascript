@@ -3,7 +3,7 @@ Insertion Sort adalah algoritma pengurutan yang dilakukan dengan mengecek data s
 Contoh dalam kehidupan yaitu pengurutan kartu, anda pasti akan melakukan pengurutan dari kiri ke kanan,
 jika ada yang lebih kecil maka anda akan mengubah posisi kartu tersebut ke tempat yang sesuai
 */
-const insertionSort = (arr) => {
+const insertionSort = arr => {
   //temp disini berfungsi untuk menampung nilai sementara
   let temp;
   //Perulangan dibawah ini berfungsi untuk membandingkan data yang dikiri dengan yang dikanan

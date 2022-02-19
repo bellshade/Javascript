@@ -14,11 +14,11 @@ const assets = [
 ];
 
 // map all folder configuration to array of object
-const remappedStatics = statics.map((staticFolder) => ({
+const remappedStatics = statics.map(staticFolder => ({
   root: path.join(ROOT, staticFolder),
   prefix: `/static/${staticFolder}/`
 }));
-const remappedAssets = assets.map((asset) => ({
+const remappedAssets = assets.map(asset => ({
   root: path.join(NODE_MODULES, asset),
   prefix: `/assets/${asset}/`
 }));

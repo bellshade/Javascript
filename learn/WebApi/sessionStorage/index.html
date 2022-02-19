@@ -13,7 +13,7 @@
         window.parent.postMessage(
           {
             source: "iframe",
-            message: rest.map((d) => encoder.encode(d))
+            message: rest.map(d => encoder.encode(d))
           },
           "*"
         );

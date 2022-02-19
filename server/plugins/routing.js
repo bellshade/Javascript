@@ -6,7 +6,7 @@ const { statics } = require("../config/constant");
 
 const controllers = require("../controllers");
 
-const handlerDecider = (route) => {
+const handlerDecider = route => {
   const items = route.items;
 
   if (checker.notIncludedAnyFile(items)) {
@@ -27,7 +27,7 @@ module.exports = fp((fastify, opts, done) => {
     reply.view("root", { dirs: statics, md });
   });
 
-  routingData.forEach((route) => {
+  routingData.forEach(route => {
     fastify.route({
       method: "GET",
       url: route.url,

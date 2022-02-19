@@ -9,8 +9,8 @@ Esensi utama dari functional programming adalah composition, yaitu menyambung-ny
 Pada contoh pertama, Katakanlah kita memiliki sebuah nama dengan format `namaDepan_namaBelakang` dan kita ingin mengubah formatnya menjadi `namaDepan namaBelakang` dalam huruf besar semua.
 
 ```js
-const ubahFormatNama = (nama) => nama.split("_").join(" ");
-const ubahJadiHurufBesar = (nama) => nama.toUpperCase();
+const ubahFormatNama = nama => nama.split("_").join(" ");
+const ubahJadiHurufBesar = nama => nama.toUpperCase();
 const namaOrang = "bellshade_javascript";
 
 console.log(ubahJadiHurufBesar(ubahFormatNama(namaOrang)));
@@ -26,14 +26,14 @@ const daftarPengguna = [
 ];
 
 // function sederhana
-const apakahMuda = (pengguna) => pengguna.umur < 30;
-const apakahPerempuan = (pengguna) => pengguna.jenisKelamin == "perempuan";
+const apakahMuda = pengguna => pengguna.umur < 30;
+const apakahPerempuan = pengguna => pengguna.jenisKelamin == "perempuan";
 
 // function composition
 const daftarPenggunaTerpilih = daftarPengguna
   .filter(apakahMuda)
   .filter(apakahPerempuan);
-  
+
 console.log(daftarPenggunaTerpilih); // [{ name: "Sinta", umur: 17, jenisKelamin: "perempuan" }]
 ```
 

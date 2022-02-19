@@ -1,7 +1,7 @@
 const ipAddress = "0.0.0.0";
 const anotherIpAdress = "127.0.y.x";
 
-const isValidIpAddress = (ipAddress) => {
+const isValidIpAddress = ipAddress => {
   const splitted = ipAddress.split(".");
 
   for (let i = 0; i < splitted.length; i++) {

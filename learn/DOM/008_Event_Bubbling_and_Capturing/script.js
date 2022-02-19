@@ -32,7 +32,7 @@ anbu2.addEventListener("click", function (e) {
   e.target.classList.toggle("hijau");
   e.stopPropagation();
 });
-anbu3.addEventListener("click", (e) => {
+anbu3.addEventListener("click", e => {
   console.log("anbu3");
   e.target.classList.toggle("kuning");
   e.stopPropagation();

@@ -1,5 +1,5 @@
 // Pure function
-const salam = (nama) => {
+const salam = nama => {
   return "Halo " + nama;
 };
 
@@ -8,7 +8,7 @@ console.log(salam("Bellshade")); // Halo Bellshade
 // Function dengan side effect
 let sapaan = "Halo";
 
-const salamBaru = (nama) => {
+const salamBaru = nama => {
   return `${sapaan} ${nama}`;
 };
 

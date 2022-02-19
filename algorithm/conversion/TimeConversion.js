@@ -1,4 +1,4 @@
-const timeConversion = (time) => {
+const timeConversion = time => {
   let AMPM = time.slice(-2);
   let timeArr = time.slice(0, -2).split(":");
   if (AMPM === "AM" && timeArr[0] === "12") {

@@ -16,11 +16,11 @@ function getKeywords(query) {
       // remove duplicate word
       return self.indexOf(data) === pos;
     })
-    .filter((data) => {
+    .filter(data => {
       // remove null character
       return data !== "";
     })
-    .map((token) => {
+    .map(token => {
       // remove verb
       return token.replace(/(ing|s)$/, "");
     })
@@ -36,14 +36,14 @@ function getKeywords(query) {
  */
 function search(array, keywords, percentage) {
   const keyword = getKeywords(keywords);
-  return array.filter((data) => {
+  return array.filter(data => {
     if (typeof data === "object" && !Array.isArray(data) && data !== null) {
       const keys = Object.keys(data);
       const match = [];
       for (let i = 0; i < keys.length; i++) {
         const key = keys[i];
         if (
-          keyword.some((kw) => {
+          keyword.some(kw => {
             return String(data[key]).includes(kw);
           })
         ) {
