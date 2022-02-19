@@ -11,21 +11,25 @@ const socketController = new SocketEmitter();
 const asyncHandler = (socket, file) => () => {
   const child = spawn("node", [file.path]);
 
-  child.on("error", err =>
+  child.on("error", (err) =>
     socket.emit("child:error", { error: true, message: err })
   );
 
-  child.stdout.on("data", message => socket.emit("child:stdout", { message }));
+  child.stdout.on("data", (message) =>
+    socket.emit("child:stdout", { message })
+  );
 
-  child.stderr.on("data", message => socket.emit("child:stderr", { message }));
+  child.stderr.on("data", (message) =>
+    socket.emit("child:stderr", { message })
+  );
 
-  child.on("close", code => socket.emit("child:close", { code }));
+  child.on("close", (code) => socket.emit("child:close", { code }));
 };
 
 socketController.on("file:run", (socket, { url, name }) => {
   setImmediate(() => {
-    const folder = routingData.find(route => route.url === url);
-    const file = folder?.items.find(file => file.name === name);
+    const folder = routingData.find((route) => route.url === url);
+    const file = folder?.items.find((file) => file.name === name);
 
     if (folder && file) {
       if (file.type === "file" && file.extension === "js") {

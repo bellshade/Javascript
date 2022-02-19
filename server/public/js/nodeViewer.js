@@ -3,7 +3,7 @@
 const pathname = window.location.pathname;
 const dec = new TextDecoder();
 
-const decoder = message => dec.decode(message);
+const decoder = (message) => dec.decode(message);
 
 function main() {
   const runBtn = document.querySelector("button.run");
@@ -49,7 +49,7 @@ function main() {
     runBtn.disabled = false;
   });
 
-  document.querySelectorAll(".nav.nav-tabs .nav-link").forEach(nav => {
+  document.querySelectorAll(".nav.nav-tabs .nav-link").forEach((nav) => {
     nav.addEventListener(
       "click",
       () => (document.querySelector(".console .wrapper").innerHTML = "")

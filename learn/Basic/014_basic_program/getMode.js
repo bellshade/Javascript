@@ -14,7 +14,7 @@
 
 function getMode(arr) {
   const data = {};
-  arr.forEach(num => {
+  arr.forEach((num) => {
     if (!data[num]) {
       data[num] = 0;
     }

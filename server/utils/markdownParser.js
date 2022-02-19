@@ -10,7 +10,7 @@ const { ROOT } = require("../config/constant");
 // contoh yang valid: img src="img/ns1.jpg
 // const imageSrcRegex = new RegExp('img src="(?!http(s?))', "g");
 const imageSrcRegex = /img src="(?!http(s?))/g;
-const emojiReplacer = match => emoji.emojify(match);
+const emojiReplacer = (match) => emoji.emojify(match);
 
 /*
  * Replacer tombol navigasi, valid ketika anchor berisi image
@@ -53,7 +53,7 @@ const Parser = (readmePath, originalURL) => {
   // Mencari semua tombol navigasi yang ada, jika ada lakukan perulangan
   const searchMatchNavigationButton = replaceAll.match(navigationSearcher);
   if (Array.isArray(searchMatchNavigationButton)) {
-    searchMatchNavigationButton.forEach(button => {
+    searchMatchNavigationButton.forEach((button) => {
       // Mengcopy value dari tombol yang ada
       const copyButton = [...button].join("");
 

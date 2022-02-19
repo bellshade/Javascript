@@ -10,8 +10,8 @@ const obj = {
 const arr = [() => {}];
 
 // Function sebagai argumen ke dalam function
-const cmToM = length => length / 100;
-const mToCm = length => length * 100;
+const cmToM = (length) => length / 100;
+const mToCm = (length) => length * 100;
 const convert = (fn, length) => fn(length);
 
 const nilaiAwal = 100;

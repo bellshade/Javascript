@@ -22,7 +22,7 @@ function bubbleSort(arr) {
   return arr;
 }
 
-const getMedian = arr => {
+const getMedian = (arr) => {
   const sortedArr = bubbleSort(arr);
   if (sortedArr.length % 2 === 0) {
     return (

@@ -1,7 +1,7 @@
 const path = require("path");
 const { markdownParser } = require("../utils");
 
-const common = route => {
+const common = (route) => {
   const md = markdownParser(path.join(route.url, "README.md"), route.url);
   const upOneDir = path.posix.normalize(`${route.url}/..`);
 

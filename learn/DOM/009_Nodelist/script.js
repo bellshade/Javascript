@@ -19,4 +19,4 @@ for (const check of checkbox) {
 }
 
 // Mengambil elemen nodelist menggunakan forEach untuk memberi background color untuk elemen <p> berwarna hitam
-nodeList.forEach(node => (node.style.backgroundColor = "black"));
+nodeList.forEach((node) => (node.style.backgroundColor = "black"));

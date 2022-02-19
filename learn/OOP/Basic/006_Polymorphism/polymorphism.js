@@ -24,6 +24,6 @@ class Orang {
 const kontak = [new Orang("Budi"), new Orang("Anton"), new Orang("Tono")];
 
 // Melakukan perulangan sebanyak jumlah kontak yang ada
-kontak.forEach(orang => {
+kontak.forEach((orang) => {
   orang.perkenalanDiri();
 });
