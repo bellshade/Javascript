@@ -4,9 +4,9 @@
 
 ```javascript
 // Membuat Objek
-const apel = {name: 'Apel'};
-const pisang = {name: 'Pisang'};
-const jeruk = {name: 'Jeruk'};
+const apel = { name: "Apel" };
+const pisang = { name: "Pisang" };
+const jeruk = { name: "Jeruk" };
 
 // Membuat Map baru
 const buah = new Map();
@@ -23,4 +23,4 @@ document.getElementById("demo").innerHTML = buah;
 
 [<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Default%20Parameters" />](../010_default_parameter)
 
-[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=String%20Includes" />](../012_string_includes)
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=String%20Helpers" />](../012_string_helpers)

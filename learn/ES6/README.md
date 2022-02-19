@@ -50,9 +50,7 @@ Apa saja yang ada di folder ini?
     Jika sebuah parameter di function tertentu tidak memiliki value, value tersebut bisa memiliki nilai default sebagai gantinya.
 11. [**Map Objects**](011_map_objects/)<br>
     Javascript juga dapat menyimpan value dan key seperti array tetapi tidak bisa diakses begitu saja.
-12. [**String Includes**](012_string_includes/)<br>
-    Melakukan pengecekan kalimat apakah terdapat kata atau tulisan tertentu yang terdapat di sebuah string.
-13. [**String Helpers**](013_string_helpers/)<br>
+12. [**String Helpers**](012_string_helpers/)<br>
     Fitur-fitur tambahan yang didapatkan JavaScript ketika bekerja dengan string.
 
 - [Mulai Belajar ES6](001_Introduction)
