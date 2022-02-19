@@ -51,7 +51,7 @@ function affineCipher(method, string) {
   if (method === "encrypt" || method === "decrypt") {
     if (string) {
       return [...string]
-        .map(char => {
+        .map((char) => {
           if (char.match(/[a-zA-Z]/)) {
             isUpperCase = char === char.toUpperCase();
             return method === "encrypt"

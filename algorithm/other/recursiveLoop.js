@@ -9,7 +9,7 @@
  * @param {*} num
  * @returns
  */
-const loop = num => {
+const loop = (num) => {
   // Ini kondisi untuk membatasi pengulangan rekursif
   if (num > 0) {
     console.log(`Loop ke-${num}`);

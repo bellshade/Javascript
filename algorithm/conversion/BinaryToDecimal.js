@@ -1,4 +1,4 @@
-const BinaryToDecimal = binaryString => {
+const BinaryToDecimal = (binaryString) => {
   let decimalNumber = 0;
   const BinaryDigits = binaryString.split("").reverse();
   BinaryDigits.forEach((BinaryDigits, index) => {

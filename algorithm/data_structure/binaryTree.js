@@ -277,8 +277,8 @@ bTree.insert(9);
 console.log(BinaryTreeUtil.search(bTree, 7)); // 7
 console.log(BinaryTreeUtil.search(bTree, 2)); // null
 console.log(BinaryTreeUtil.count(bTree)); // 4
-console.log(BinaryTreeUtil.getLeaves(bTree).map(treeNode => treeNode.data)); // [9, 4]
-console.log(BinaryTreeUtil.getSubTrees(bTree).map(treeNode => treeNode.data)); // [1, 4, 9]
+console.log(BinaryTreeUtil.getLeaves(bTree).map((treeNode) => treeNode.data)); // [9, 4]
+console.log(BinaryTreeUtil.getSubTrees(bTree).map((treeNode) => treeNode.data)); // [1, 4, 9]
 
 // Membuat binary tree sebagai berikut:
 //        4

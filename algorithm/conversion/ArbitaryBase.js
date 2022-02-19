@@ -13,12 +13,12 @@ const convertArbitraryBase = (
 ) => {
   if (
     [stringInBaseOne, baseOneCharacters, baseTwoCharacters]
-      .map(arg => typeof arg)
-      .some(type => type !== "string")
+      .map((arg) => typeof arg)
+      .some((type) => type !== "string")
   ) {
     throw new TypeError("Only string arguments are allowed");
   }
-  [baseOneCharacters, baseTwoCharacters].forEach(baseString => {
+  [baseOneCharacters, baseTwoCharacters].forEach((baseString) => {
     const charactersInBase = [...baseString];
     if (charactersInBase.length !== new Set(charactersInBase).size) {
       throw new TypeError(

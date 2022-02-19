@@ -20,7 +20,7 @@
  * @param {string} string - String yang akan dicek apakah memiliki tanda kurung yang valid.
  * @returns {boolean} - Boolean yang menunjukkan apakah string memiliki tanda kurung yang valid.
  */
-const isValidParentheses = string => {
+const isValidParentheses = (string) => {
   const bracketMatch = {
     "(": ")",
     "{": "}",

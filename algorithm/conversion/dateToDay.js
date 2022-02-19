@@ -28,13 +28,13 @@ const listHari = {
   6: "Sabtu"
 };
 
-const dateToDay = tanggal => {
+const dateToDay = (tanggal) => {
   // validasi inputan berupa string.
   if (typeof tanggal !== "string") {
     return new TypeError("Argument harus berupa string.");
   }
   // memecah tanggal menjadi hari, bulan, tahun.
-  const [tgl, bulan, tahun] = tanggal.split("/").map(x => Number(x));
+  const [tgl, bulan, tahun] = tanggal.split("/").map((x) => Number(x));
   // validasi tanggal tidak lebih dari 31 dan bulan tidak lebih dari 12
   if (tgl < 0 || tgl > 31 || bulan > 12 || bulan < 0) {
     return new TypeError("tanggal tidak benar.");

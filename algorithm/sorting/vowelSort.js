@@ -6,7 +6,7 @@ function vowelSort(text) {
   let arr = [[], []]; // menyiapkan array kontainer, array cabang 0 berisi huruf vocal dan array cabang 1 berisi huruf konsonan
   let data = text.replace(/\s/g, "").toLowerCase().split(""); // hilangkan space dengan regex lalu ubah ke huruf kecil dan ubah menjadi array
 
-  data.forEach(element => {
+  data.forEach((element) => {
     // looping array dari text dengan forEach
     if (
       element === "i" ||
