@@ -76,4 +76,4 @@ string.endsWith("cd", 4); // return nilai true
 
 Parameter `length` pada method `endsWith()` menentukan berapa panjang string yang dicari. Dengan memberikan argumen `4` pada contoh diatas berarti dari string `abcde` hanya `abcd` yang digunakan.
 
-[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=String%20Includes" />](../012_string_includes)
+[<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Map Objects" />](../011_map_objects)

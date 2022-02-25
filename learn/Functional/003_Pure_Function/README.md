@@ -5,7 +5,7 @@ Salah satu konsep terpenting pada functional programming adalah _Pure Function_.
 [File contoh kode](example.js)
 
 ```js
-const salam = (nama) => {
+const salam = nama => {
   return "Halo " + nama;
 };
 
@@ -17,7 +17,7 @@ Fungsi `salam` akan selalu mengembalikan nilai `Halo <nama>` sesuai dengan input
 ```js
 let sapaan = "Halo";
 
-const salam = (nama) => {
+const salam = nama => {
   return `${sapaan} ${nama}`;
 };
 
