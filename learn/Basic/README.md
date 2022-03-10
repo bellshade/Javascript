@@ -22,12 +22,12 @@ Pada folder ini kita akan mempelajari hal-hal basic atau dasar dari Pemrograman 
   - Command Line : Terminal atau cmd, Git Bash, dll.
   - Install NodeJS. [Cara Install](https://www.youtube.com/watch?v=VfN1_pEdQAA)
 
-  ### Cara menjalankan program
+### Cara menjalankan program
 
-  - Ubah dahulu port untuk localhost di port.json di folder root
-    <br> Default port 3000
-  - Setelah itu buka terminal dan jalankan program menggunakan command **Node .**
-    <br> Pastikan directory anda sudah berada di folder yang benar
+- Ubah dahulu port untuk localhost di port.json di folder root
+  <br> Default port 3000.
+- Setelah itu buka terminal dan jalankan program menggunakan perintah **node .** / **npm start**
+  <br> Pastikan directory terminal anda sudah berada di folder yang benar.
 
 ---
 
