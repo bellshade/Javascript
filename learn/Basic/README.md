@@ -17,9 +17,17 @@ Pada folder ini kita akan mempelajari hal-hal basic atau dasar dari Pemrograman 
     <br> Intel Celeron atau yang setara. (Rekomendasi Intel Core I3 dan AMD A4 atau yang setara)
   - RAM : 2 GB. (Rekomendasi 4 GB)
 - Software
+
   - Teks Editor : VSCode, Sublime Text, Notepad++, Atom, Vim, dll.
   - Command Line : Terminal atau cmd, Git Bash, dll.
   - Install NodeJS. [Cara Install](https://www.youtube.com/watch?v=VfN1_pEdQAA)
+
+  ### Cara menjalankan program
+
+  - Ubah dahulu port untuk localhost di port.json di folder root
+    <br> Default port 3000
+  - Setelah itu buka terminal dan jalankan program menggunakan command **Node .**
+    <br> Pastikan directory anda sudah berada di folder yang benar
 
 ---
 
