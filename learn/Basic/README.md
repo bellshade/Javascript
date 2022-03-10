@@ -31,8 +31,9 @@ Pada folder ini kita akan mempelajari hal-hal basic atau dasar dari Pemrograman 
 
   ### Perbedaan antara node . dan npm start
 
-  - `node .` = Hanya bisa di jalankan dalam folder root / folder Javascript dan tidak bisa di jalankan di selain folder root
-  - `npm start` = Bisa di jalankan di semua directory tetapi harus di bawah folder root contoh C:/user/Javascript/learn/
+  - `node .` = Hanya bisa di jalankan di folder root atau folder Javascript, dan tidak bisa di jalankan selain di folder root, contoh
+    C:/bellshade/Javascript
+  - `npm start` = Bisa di jalankan di semua directory tetapi harus di bawah folder root contoh C:/bellsahde/Javascript/learn/
 
 ---
 
