@@ -2,7 +2,7 @@
   "name": "javascript",
   "version": "1.0.0",
   "description": "berisi informasi tentang implementasi dari javascript",
-  "main": "",
+  "main": "server/app.js",
   "scripts": {
     "start": "node server/app",
     "dev": "nodemon server/app --ignore server/public",
