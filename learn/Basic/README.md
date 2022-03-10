@@ -26,7 +26,7 @@ Pada folder ini kita akan mempelajari hal-hal basic atau dasar dari Pemrograman 
 
 - Ubah dahulu port untuk localhost di port.json di folder root
   <br> Default port 3000.
-- Setelah itu buka terminal dan jalankan program menggunakan perintah **node .** atau **npm start**
+- Setelah itu buka terminal dan jalankan program menggunakan perintah `node .` atau `npm start`
   <br> Pastikan directory terminal anda sudah berada di folder yang benar.
 
 ---
