@@ -24,16 +24,15 @@ Pada folder ini kita akan mempelajari hal-hal basic atau dasar dari Pemrograman 
 
   ### Cara menjalankan program
 
-  - Ubah dahulu port untuk localhost di port.json di folder root
+  - Ubah dahulu port untuk localhost di file port.json yang berada di folder root
     <br> Default port 3000.
   - Setelah itu buka terminal dan jalankan program menggunakan perintah `node .` atau `npm start`
     <br> Pastikan directory terminal anda sudah berada di folder yang benar.
 
   ### Perbedaan antara node . dan npm start
 
-  - `node .` = Hanya bisa di jalankan di folder root atau folder Javascript, dan tidak bisa di jalankan selain di folder root, contoh
-    C:/bellshade/Javascript
-  - `npm start` = Bisa di jalankan di semua directory tetapi harus di bawah folder root contoh C:/bellsahde/Javascript/learn/
+  - `node .` = Hanya bisa di jalankan di folder root atau folder Javascript, dan tidak bisa di jalankan selain di folder root, contoh C:/bellshade/Javascript/.
+  - `npm start` = Bisa di jalankan di semua directory, tetapi harus di bawah folder root contoh C:/bellshade/Javascript/learn/.
 
 ---
 
