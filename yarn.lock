@@ -35,15 +35,15 @@
   "version" "1.0.0"
 
 "@eslint/eslintrc@^1.1.0":
-  "integrity" "sha512-C1DfL7XX4nPqGd6jcP01W9pVM1HYCuUkFk1432D7F0v3JSlUIeOYn9oCoi3eoLZ+iwBSb29BMFxxny0YrrEZqg=="
-  "resolved" "https://registry.npmjs.org/@eslint/eslintrc/-/eslintrc-1.1.0.tgz"
-  "version" "1.1.0"
+  "integrity" "sha512-bxvbYnBPN1Gibwyp6NrpnFzA3YtRL3BBAyEAFVIpNTm2Rn4Vy87GA5M4aSn3InRrlsbX5N0GW7XIx+U4SAEKdQ=="
+  "resolved" "https://registry.npmjs.org/@eslint/eslintrc/-/eslintrc-1.2.1.tgz"
+  "version" "1.2.1"
   dependencies:
     "ajv" "^6.12.4"
     "debug" "^4.3.2"
     "espree" "^9.3.1"
     "globals" "^13.9.0"
-    "ignore" "^4.0.6"
+    "ignore" "^5.2.0"
     "import-fresh" "^3.2.1"
     "js-yaml" "^4.1.0"
     "minimatch" "^3.0.4"
@@ -872,11 +872,6 @@
     "statuses" ">= 1.5.0 < 2"
     "toidentifier" "1.0.1"
 
-"ignore@^4.0.6":
-  "integrity" "sha512-cyFDKrqc/YdcWFniJhzI42+AzS+gNwmUzOSFcRCQYwySuBBBy/KjuxWLZ/FHEH6Moq1NizMOBWyTcv8O4OZIMg=="
-  "resolved" "https://registry.npmjs.org/ignore/-/ignore-4.0.6.tgz"
-  "version" "4.0.6"
-
 "ignore@^5.1.4", "ignore@^5.2.0":
   "integrity" "sha512-CmxgYGiEPCLhfLnpPp1MoRmifwEIOgjcHXxOBjv7mY96c+eWScsOP9c112ZyLdWHi0FxHjI+4uVhKYp/gcdRmQ=="
   "resolved" "https://registry.npmjs.org/ignore/-/ignore-5.2.0.tgz"
@@ -1223,10 +1218,10 @@
   "resolved" "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz"
   "version" "1.2.1"
 
-"prettier@2.5.1":
-  "integrity" "sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg=="
-  "resolved" "https://registry.npmjs.org/prettier/-/prettier-2.5.1.tgz"
-  "version" "2.5.1"
+"prettier@2.6.0":
+  "integrity" "sha512-m2FgJibYrBGGgQXNzfd0PuDGShJgRavjUoRCw1mZERIWVSXF0iLzLm+aOqTAbLnC3n6JzUhAA8uZnFVghHJ86A=="
+  "resolved" "https://registry.npmjs.org/prettier/-/prettier-2.6.0.tgz"
+  "version" "2.6.0"
 
 "prismjs@^1.27.0":
   "integrity" "sha512-t13BGPUlFDR7wRB5kQDG4jjl7XeuH6jbJGt11JHPL96qwsEHNX2+68tFXqc1/k+/jALsbSWJKUOT/hcYAZ5LkA=="
