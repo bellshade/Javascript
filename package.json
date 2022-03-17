@@ -2,10 +2,9 @@
   "name": "javascript",
   "version": "1.0.0",
   "description": "berisi informasi tentang implementasi dari javascript",
-  "main": "",
+  "main": "viewer.js",
   "scripts": {
-    "start": "node server/app",
-    "dev": "nodemon server/app --ignore server/public",
+    "start": "node viewer.js",
     "lint": "eslint {learn,algorithm,other,server}/**/*.js --ignore-pattern node_modules",
     "prettier": "prettier --w {learn,algorithm,other,server}/**/*{.js,.html}",
     "prettier-watch": "onchange {learn,algorithm,other,server}/**/*{.js,.html}' -- prettier --w {{changed}}",
@@ -16,26 +15,10 @@
   "devDependencies": {
     "doctest": "0.19.0",
     "eslint": "8.9.0",
-    "nodemon": "2.0.15",
     "onchange": "7.1.0",
     "prettier": "2.5.1"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "6.0.0",
-    "bootstrap": "5.1.3",
-    "directory-tree": "3.2.1",
-    "ejs": "3.1.6",
-    "fastify": "3.27.2",
-    "fastify-autoload": "3.11.0",
-    "fastify-plugin": "3.0.1",
-    "fastify-socket.io": "3.0.0",
-    "fastify-static": "4.5.0",
-    "github-markdown-css": "5.1.0",
-    "marked": "4.0.12",
-    "node-emoji": "1.11.0",
-    "point-of-view": "5.1.0",
-    "prismjs": "1.27.0",
-    "socket.io": "^4.4.0",
-    "tree-to-list": "3.0.2"
+    "@bellshade/ningali": "1.1.0"
   }
 }
