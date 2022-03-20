@@ -7,6 +7,20 @@
 
 Pada folder ini kita akan mempelajari hal-hal basic atau dasar dari Pemrograman Javascript, mulai dari Variabel, Operator, Pengkodisian dan masih banyak lagi. Materi yang disajikan ramah untuk pemula sehingga tidak ada syarat bahasa pemrograman tertentu yang perlu dikuasai terlebih dahulu untuk mempelajari Javascript Dasar ini.
 
+### Tools yang digunakan
+
+- Komputer yang memiliki akses internet dengan sistem operasi Windows/Linux/Mac.
+- Spesifikasi minimal komputer
+  - Sistem Operasi
+    <br> Windows, Linux dan MacOS.
+  - Prosesor
+    <br> Intel Celeron atau yang setara. (Rekomendasi Intel Core I3 dan AMD A4 atau yang setara)
+  - RAM : 2 GB. (Rekomendasi 4 GB)
+- Software
+  - Teks Editor : VSCode, Sublime Text, Notepad++, Atom, Vim, dll.
+  - Command Line : Terminal atau cmd, Git Bash, dll.
+  - Install NodeJS. [Cara Install](https://www.youtube.com/watch?v=VfN1_pEdQAA)
+
 ---
 
 Apa saja yang ada di folder ini?
