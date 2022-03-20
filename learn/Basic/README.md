@@ -7,33 +7,6 @@
 
 Pada folder ini kita akan mempelajari hal-hal basic atau dasar dari Pemrograman Javascript, mulai dari Variabel, Operator, Pengkodisian dan masih banyak lagi. Materi yang disajikan ramah untuk pemula sehingga tidak ada syarat bahasa pemrograman tertentu yang perlu dikuasai terlebih dahulu untuk mempelajari Javascript Dasar ini.
 
-### Tools yang digunakan
-
-- Komputer yang memiliki akses internet dengan sistem operasi Windows/Linux/Mac.
-- Spesifikasi minimal komputer
-  - Sistem Operasi
-    <br> Windows, Linux dan MacOS.
-  - Prosesor
-    <br> Intel Celeron atau yang setara. (Rekomendasi Intel Core I3 dan AMD A4 atau yang setara)
-  - RAM : 2 GB. (Rekomendasi 4 GB)
-- Software
-
-  - Teks Editor : VSCode, Sublime Text, Notepad++, Atom, Vim, dll.
-  - Command Line : Terminal atau cmd, Git Bash, dll.
-  - Install NodeJS. [Cara Install](https://www.youtube.com/watch?v=VfN1_pEdQAA)
-
-  ### Cara menjalankan program
-
-  - Ubah dahulu port untuk localhost di file port.json yang berada di folder root
-    <br> Default port 3000.
-  - Setelah itu buka terminal dan jalankan program menggunakan perintah `node .` atau `npm start`
-    <br> Pastikan directory terminal anda sudah berada di folder yang benar.
-
-  ### Perbedaan antara node . dan npm start
-
-  - `node .` = Hanya bisa di jalankan di folder root atau folder Javascript, dan tidak bisa di jalankan selain di folder root, contoh C:/bellshade/Javascript/.
-  - `npm start` = Bisa di jalankan di semua directory, tetapi harus di bawah folder root, contoh C:/bellshade/Javascript/learn/.
-
 ---
 
 Apa saja yang ada di folder ini?

@@ -39,6 +39,34 @@ Beberapa contoh sederhana penggunaan JavaScript:
 >
 > Berikut kami sediakan tahapan atau panduan dalam belajar JavaScript agar kalian tidak bingung dalam menentukan jalur belajar.
 
+### Apa saja yang diperlukan sebelum menjalankan program
+
+- Komputer yang memiliki akses internet dengan sistem operasi Windows/Linux/Mac.
+- Spesifikasi minimal komputer
+  - Sistem Operasi
+    <br> Windows, Linux dan MacOS.
+  - Prosesor
+    <br> Intel Celeron atau yang setara. (Rekomendasi Intel Core I3 dan AMD A4 atau yang setara)
+  - RAM : 2 GB. (Rekomendasi 4 GB)
+- Software
+
+  - Teks Editor : VSCode, Sublime Text, Notepad++, Atom, Vim, dll.
+  - Command Line : Terminal atau cmd, Git Bash, dll.
+  - Install NodeJS. [Cara Install](https://www.youtube.com/watch?v=VfN1_pEdQAA)
+
+### Cara menjalankan program
+
+-
+- Setelah itu ubah dahulu port untuk localhost di .ENV yang berada di folder root
+  <br> Default port 3000.
+- Setelah itu buka terminal dan jalankan program menggunakan perintah `node .` atau `npm start`
+  <br> Pastikan directory terminal anda sudah berada di folder yang benar.
+
+### Perbedaan antara node . dan npm start
+
+- `node .` = Hanya bisa di jalankan di folder root atau folder Javascript, dan tidak bisa di jalankan selain di folder root, contoh C:/bellshade/Javascript/.
+- `npm start` = Bisa di jalankan di semua directory, tetapi harus di bawah folder root, contoh C:/bellshade/Javascript/learn/.
+
 ## :books: Tahapan Belajar Pemrograman JavaScript :books:
 
 ### :one: Jalur Belajar Basic
@@ -60,15 +88,15 @@ Jalur belajar ini diperuntukkan bagi kalian yang masih awam atau baru saja terju
 
 Jika sebelumnya kalian sudah mempelajari dan memahamai dasar-dasar JavaScript, selanjutnya kalian bisa belajar DOM. Di sini kalian akan belajar bagaimana berinteraksi langsung dengan website dengan cara memanipulasi objek / element HTML dengan menggunakan JavaScript.
 
-| Langkah |     Topik      |                                       Target Pembelajaran                                        |                     Materi                     |                     Video Rujukan                      |
-| :-----: | :------------: | :----------------------------------------------------------------------------------------------: | :--------------------------------------------: | :----------------------------------------------------: |
-|   01    |   Pengenalan   |                             Mengenali apa itu DOM dan cara kerjanya                              |   [Introduction](learn/DOM/001_Introduction)   |  [WPU - Pengenalan DOM](https://youtu.be/aT60R1cySLM)  |
-|   02    |     Nodes      |                                 Memahami konsep _Nodes_ pada DOM                                 |        [Nodes](learn/DOM/002_DOM_Nodes)        |     [WPU - DOM Tree](https://youtu.be/zY5RlT5q5EM)     |
-|   03    |  Collections   |                              Memahami konsep _Colections_ pada DOM                               |    [Collections](learn/DOM/003_Collections)    |     [WPU - DOM Tree](https://youtu.be/zY5RlT5q5EM)     |
-|   04    |     Method     |          Memahami bagaimana cara memanipulasi DOM dengan menggunakan _method_ yang ada           |        [Method](learn/DOM/004_Methods)         | [WPU - DOM Manipulation](https://youtu.be/ff5aKnXmnx0) |
-|   05    |     Events     |   Memahami apa itu _event_ pada DOM yang berguna untuk memberikan interaksi pada element HTML    |         [Events](learn/DOM/005_Events)         |    [WPU - DOM Events](https://youtu.be/ndYweb0Yn6o)    |
-|   06    | Event Listener | Memahami cara penulisan _addEventListener_ yang digunakan untuk memberikan _events_ pada element | [Event Listener](learn/DOM/006_Event_Listener) |    [WPU - DOM Events](https://youtu.be/ndYweb0Yn6o)    |
-|   07    |   Traversal    |           Memahami tentang bagaimana cara mengambil element berdasarkan objek yang ada           |      [Traversal](learn/DOM/007_Traversal)      |  [WPU - DOM Traversal](https://youtu.be/SVOCSoGYdpQ)   |
+| Langkah |     Topik      |                                       Target Pembelajaran                                        |                            Materi                            |                     Video Rujukan                      |
+| :-----: | :------------: | :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------: |
+|   01    |   Pengenalan   |                             Mengenali apa itu DOM dan cara kerjanya                              |          [Introduction](learn/DOM/001_Introduction)          |  [WPU - Pengenalan DOM](https://youtu.be/aT60R1cySLM)  |
+|   02    |     Nodes      |                                 Memahami konsep _Nodes_ pada DOM                                 |               [Nodes](learn/DOM/002_DOM_Nodes)               |     [WPU - DOM Tree](https://youtu.be/zY5RlT5q5EM)     |
+|   03    |  Collections   |                              Memahami konsep _Colections_ pada DOM                               |           [Collections](learn/DOM/003_Collections)           |     [WPU - DOM Tree](https://youtu.be/zY5RlT5q5EM)     |
+|   04    |     Method     |          Memahami bagaimana cara memanipulasi DOM dengan menggunakan _method_ yang ada           |               [Method](learn/DOM/004_Methods)                | [WPU - DOM Manipulation](https://youtu.be/ff5aKnXmnx0) |
+|   05    |     Events     |   Memahami apa itu _event_ pada DOM yang berguna untuk memberikan interaksi pada element HTML    |                [Events](learn/DOM/005_Events)                |    [WPU - DOM Events](https://youtu.be/ndYweb0Yn6o)    |
+|   06    | Event Listener | Memahami cara penulisan _addEventListener_ yang digunakan untuk memberikan _events_ pada element |        [Event Listener](learn/DOM/006_Event_Listener)        |    [WPU - DOM Events](https://youtu.be/ndYweb0Yn6o)    |
+|   07    |   Traversal    |           Memahami tentang bagaimana cara mengambil element berdasarkan objek yang ada           |             [Traversal](learn/DOM/007_Traversal)             |  [WPU - DOM Traversal](https://youtu.be/SVOCSoGYdpQ)   |
 |   08    | Event Bubbling |              Memahami lebih dalam mengenai _events_ dan _method-method_ di dalamnya              | [Event Bubbling](learn/DOM/008_Event_Bubbling_and_Capturing) |  [WPU - Event Bubbling](https://youtu.be/a_JFfPHTAf4)  |
 
 ### :three: Jalur Belajar ES6
