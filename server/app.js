@@ -1,10 +1,11 @@
+require('dotenv').config()
 const fastify = require("fastify");
 const path = require("path");
 
 const autoLoad = require("fastify-autoload");
 
 const app = fastify({ debug: false });
-const port = require("../port.json").port;
+const port = process.env.PORT || 3000;
 
 app.register(autoLoad, {
   dir: path.join(__dirname, "plugins")
