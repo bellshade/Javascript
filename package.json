@@ -2,7 +2,7 @@
   "name": "javascript",
   "version": "1.0.0",
   "description": "berisi informasi tentang implementasi dari javascript",
-  "main": "",
+  "main": "server/app.js",
   "scripts": {
     "start": "node server/app",
     "dev": "nodemon server/app --ignore server/public",
@@ -24,6 +24,7 @@
     "@fortawesome/fontawesome-free": "6.0.0",
     "bootstrap": "5.1.3",
     "directory-tree": "3.2.2",
+    "dotenv": "16.0.0",
     "ejs": "3.1.6",
     "fastify": "3.27.4",
     "fastify-autoload": "3.11.0",
