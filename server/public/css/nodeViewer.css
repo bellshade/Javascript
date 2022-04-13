@@ -45,8 +45,7 @@ section {
 }
 
 .tab-content,
-.tab-pane,
-.code-highlight pre {
+.tab-pane {
   height: calc(100vh - 45px);
 }
 
@@ -156,3 +155,11 @@ pre *::selection {
 .run:active {
   background-color: rgb(0, 235, 0);
 }
+
+.readme-scrollable {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(100vh - 45px);
+  z-index: -100;
+}
+
