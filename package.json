@@ -19,6 +19,6 @@
     "prettier": "2.6.2"
   },
   "dependencies": {
-    "@bellshade/ningali": "^1.2.1"
+    "@bellshade/ningali": "1.2.2"
   }
 }

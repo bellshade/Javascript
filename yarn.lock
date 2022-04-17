@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@bellshade/ningali@^1.2.1":
-  "integrity" "sha512-zT1ER3yas/5PQiC1qtMndasMnrvCibSKO8cNq7rx5nCpgTeWqU507Ay9OREEl5K1XxNvRbtDAglU/EXhhRvXlA=="
-  "resolved" "https://registry.npmjs.org/@bellshade/ningali/-/ningali-1.2.1.tgz"
-  "version" "1.2.1"
+"@bellshade/ningali@^1.2.2":
+  "integrity" "sha512-NB4dpksamTXvNzZpEpIQ4OeGeq+gQDWihsfBqLN7+J0ya6ub1bISIQn4Jl5s6n7qqRS9mAMGaoi/MiaGrjNZmw=="
+  "resolved" "https://registry.npmjs.org/@bellshade/ningali/-/ningali-1.2.2.tgz"
+  "version" "1.2.2"
   dependencies:
     "@fortawesome/fontawesome-free" "^6.0.0"
     "bootstrap" "^5.1.3"
