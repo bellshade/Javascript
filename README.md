@@ -60,15 +60,15 @@ Jalur belajar ini diperuntukkan bagi kalian yang masih awam atau baru saja terju
 
 Jika sebelumnya kalian sudah mempelajari dan memahamai dasar-dasar JavaScript, selanjutnya kalian bisa belajar DOM. Di sini kalian akan belajar bagaimana berinteraksi langsung dengan website dengan cara memanipulasi objek / element HTML dengan menggunakan JavaScript.
 
-| Langkah |     Topik      |                                       Target Pembelajaran                                        |                     Materi                     |                     Video Rujukan                      |
-| :-----: | :------------: | :----------------------------------------------------------------------------------------------: | :--------------------------------------------: | :----------------------------------------------------: |
-|   01    |   Pengenalan   |                             Mengenali apa itu DOM dan cara kerjanya                              |   [Introduction](learn/DOM/001_Introduction)   |  [WPU - Pengenalan DOM](https://youtu.be/aT60R1cySLM)  |
-|   02    |     Nodes      |                                 Memahami konsep _Nodes_ pada DOM                                 |        [Nodes](learn/DOM/002_DOM_Nodes)        |     [WPU - DOM Tree](https://youtu.be/zY5RlT5q5EM)     |
-|   03    |  Collections   |                              Memahami konsep _Colections_ pada DOM                               |    [Collections](learn/DOM/003_Collections)    |     [WPU - DOM Tree](https://youtu.be/zY5RlT5q5EM)     |
-|   04    |     Method     |          Memahami bagaimana cara memanipulasi DOM dengan menggunakan _method_ yang ada           |        [Method](learn/DOM/004_Methods)         | [WPU - DOM Manipulation](https://youtu.be/ff5aKnXmnx0) |
-|   05    |     Events     |   Memahami apa itu _event_ pada DOM yang berguna untuk memberikan interaksi pada element HTML    |         [Events](learn/DOM/005_Events)         |    [WPU - DOM Events](https://youtu.be/ndYweb0Yn6o)    |
-|   06    | Event Listener | Memahami cara penulisan _addEventListener_ yang digunakan untuk memberikan _events_ pada element | [Event Listener](learn/DOM/006_Event_Listener) |    [WPU - DOM Events](https://youtu.be/ndYweb0Yn6o)    |
-|   07    |   Traversal    |           Memahami tentang bagaimana cara mengambil element berdasarkan objek yang ada           |      [Traversal](learn/DOM/007_Traversal)      |  [WPU - DOM Traversal](https://youtu.be/SVOCSoGYdpQ)   |
+| Langkah |     Topik      |                                       Target Pembelajaran                                        |                            Materi                            |                     Video Rujukan                      |
+| :-----: | :------------: | :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------: |
+|   01    |   Pengenalan   |                             Mengenali apa itu DOM dan cara kerjanya                              |          [Introduction](learn/DOM/001_Introduction)          |  [WPU - Pengenalan DOM](https://youtu.be/aT60R1cySLM)  |
+|   02    |     Nodes      |                                 Memahami konsep _Nodes_ pada DOM                                 |               [Nodes](learn/DOM/002_DOM_Nodes)               |     [WPU - DOM Tree](https://youtu.be/zY5RlT5q5EM)     |
+|   03    |  Collections   |                              Memahami konsep _Colections_ pada DOM                               |           [Collections](learn/DOM/003_Collections)           |     [WPU - DOM Tree](https://youtu.be/zY5RlT5q5EM)     |
+|   04    |     Method     |          Memahami bagaimana cara memanipulasi DOM dengan menggunakan _method_ yang ada           |               [Method](learn/DOM/004_Methods)                | [WPU - DOM Manipulation](https://youtu.be/ff5aKnXmnx0) |
+|   05    |     Events     |   Memahami apa itu _event_ pada DOM yang berguna untuk memberikan interaksi pada element HTML    |                [Events](learn/DOM/005_Events)                |    [WPU - DOM Events](https://youtu.be/ndYweb0Yn6o)    |
+|   06    | Event Listener | Memahami cara penulisan _addEventListener_ yang digunakan untuk memberikan _events_ pada element |        [Event Listener](learn/DOM/006_Event_Listener)        |    [WPU - DOM Events](https://youtu.be/ndYweb0Yn6o)    |
+|   07    |   Traversal    |           Memahami tentang bagaimana cara mengambil element berdasarkan objek yang ada           |             [Traversal](learn/DOM/007_Traversal)             |  [WPU - DOM Traversal](https://youtu.be/SVOCSoGYdpQ)   |
 |   08    | Event Bubbling |              Memahami lebih dalam mengenai _events_ dan _method-method_ di dalamnya              | [Event Bubbling](learn/DOM/008_Event_Bubbling_and_Capturing) |  [WPU - Event Bubbling](https://youtu.be/a_JFfPHTAf4)  |
 
 ### :three: Jalur Belajar ES6
@@ -96,6 +96,58 @@ Semua _script_ yang ada pada repositori ini, dapat diakses dengan cepat lewat li
   - [ES6](learn/ES6/)
   - [Web Api](learn/WebApi)
 - [Algorithm](algorithm/)
+
+## 📗 Cara menggunakan UI Server
+
+Dengan UI Server kalian bisa belajar bahasa pemrograman Javascript dan langsung mempraktekan topik yang sudah kalian pelajari, Bagaimana caranya ?
+
+Pertama pastikan Laptop/PC kalian sudah terinstall
+
+- git
+- Nodejs
+- NPM
+
+jika belum kalian bisa klik dan ikuti video dibawah ini untuk menginstall semua program yang dibutuhkan
+
+#### install git
+
+https://youtu.be/e-6OkXRqWaE
+
+#### install Nodejs dan NPM
+
+https://youtu.be/VfN1_pEdQAA
+
+Jika sudah terinstall kalian bisa ikuti langkah langkah berikut ini
+
+- Buka terminal dan _clone_ repositori dengan perintah `git clone https://github.com/bellshade/Javascript.git`
+- Pindahkan ke direktori hasil _clone_ nya Lalu jalankan perintah
+
+```
+npm install
+```
+
+- Lalu jalankan perintah
+
+```
+npm start
+```
+
+- Jika sudah muncul tulisan `Listening on port 3000 | http://localhost:3000/` maka selamat kalian sudah berhasil menginstall UI Server
+- Buka `http://localhost:3000/` dan selamat belajar !!
+
+### Konfigurasi Port
+
+Jika port `3000` sudah terpakai maka kalian bisa mengganti konfigurasi port nya
+
+Pertama buka text editor kesukaan kalian lalu buka file `.env.sample` lalu tambahkan nomor port pada bagian `PORT`
+
+Contohnya
+
+```
+PORT=3001
+```
+
+lalu jalankan kembali UI Server nya
 
 ## 🤩 Yuk ikut berkontribusi ke Bellshade! 🤩
 
