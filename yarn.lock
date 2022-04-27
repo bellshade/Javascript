@@ -800,10 +800,10 @@ fastify-socket.io@3.0.0:
   dependencies:
     fastify-plugin "^3.0.0"
 
-fastify-static@4.5.0:
-  version "4.5.0"
-  resolved "https://registry.npmjs.org/fastify-static/-/fastify-static-4.5.0.tgz"
-  integrity sha512-Q7Tgl55AjsmBwiO4hKYib2BUCt+XTWLJ6Xp8YPPHU3EsrKNpevJ4cz8pjf1Ey1QhHw9O8Y2FDKdu+IC74oHvqw==
+"fastify-static-deprecated@npm:fastify-static@4.6.1":
+  version "4.6.1"
+  resolved "https://registry.npmjs.org/fastify-static/-/fastify-static-4.6.1.tgz"
+  integrity sha512-vy7N28U4AMhuOim12ZZWHulEE6OQKtzZbHgiB8Zj4llUuUQXPka0WHAQI3njm1jTCx4W6fixUHfpITxweMtAIA==
   dependencies:
     content-disposition "^0.5.3"
     encoding-negotiator "^2.0.1"
@@ -812,6 +812,14 @@ fastify-static@4.5.0:
     p-limit "^3.1.0"
     readable-stream "^3.4.0"
     send "^0.17.1"
+
+fastify-static@4.7.0:
+  version "4.7.0"
+  resolved "https://registry.npmjs.org/fastify-static/-/fastify-static-4.7.0.tgz"
+  integrity sha512-zZhCfJv/hkmud2qhWqpU3K9XVAuy3+IV8Tp9BC5J5U+GyA2XwoB6h8lh9GqpEIqdXOw01WyWQllV7dOWVyAlXg==
+  dependencies:
+    fastify-static-deprecated "npm:fastify-static@4.6.1"
+    process-warning "^1.0.0"
 
 fastify-warning@^0.2.0:
   version "0.2.0"
