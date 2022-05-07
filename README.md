@@ -99,28 +99,28 @@ Semua _script_ yang ada pada repositori ini, dapat diakses dengan cepat lewat li
 
 ## 📗 Cara menggunakan UI Server
 
-Dengan UI Server kalian bisa belajar bahasa pemrograman Javascript dan langsung mempraktekan topik yang sudah kalian pelajari, Bagaimana caranya ?
+Dengan UI Server, kalian bisa belajar bahasa pemrograman Javascript dan langsung mempraktikkan topik yang sudah kalian pelajari, Bagaimana caranya?
 
 Pertama pastikan Laptop/PC kalian sudah terinstall
 
-- git
-- Nodejs
+- Git
+- Node.js
 - NPM
 
 jika belum kalian bisa klik dan ikuti video dibawah ini untuk menginstall semua program yang dibutuhkan
 
-#### install git
+#### instalasi git
 
 https://youtu.be/e-6OkXRqWaE
 
-#### install Nodejs dan NPM
+#### instalasi Node.js dan NPM
 
 https://youtu.be/VfN1_pEdQAA
 
-Jika sudah terinstall kalian bisa ikuti langkah langkah berikut ini
+Jika sudah terinstall, kalian bisa ikuti langkah langkah berikut ini
 
 - Buka terminal dan _clone_ repositori dengan perintah `git clone https://github.com/bellshade/Javascript.git`
-- Pindahkan ke direktori hasil _clone_ nya Lalu jalankan perintah
+- Pindahkan ke direktori hasil _clone_ nya, lalu jalankan perintah
 
 ```
 npm install
@@ -147,7 +147,7 @@ Contohnya
 PORT=3001
 ```
 
-lalu jalankan kembali UI Server nya
+Lalu jalankan kembali UI Server nya.
 
 ## 🤩 Yuk ikut berkontribusi ke Bellshade! 🤩
 
