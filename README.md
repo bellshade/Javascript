@@ -109,11 +109,11 @@ Pertama pastikan Laptop/PC kalian sudah terinstall
 
 Jika belum kalian bisa klik dan ikuti video dibawah ini untuk menginstall semua program yang dibutuhkan
 
-#### instalasi git
+#### Instalasi git
 
 https://youtu.be/e-6OkXRqWaE
 
-#### instalasi Node.js dan NPM
+#### Instalasi Node.js dan NPM
 
 https://youtu.be/VfN1_pEdQAA
 
