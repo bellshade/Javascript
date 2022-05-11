@@ -5,16 +5,16 @@
   "main": "viewer.js",
   "scripts": {
     "start": "node viewer.js",
-    "lint": "eslint {learn,algorithm,other,server}/**/*.js --ignore-pattern node_modules",
-    "prettier": "prettier --w {learn,algorithm,other,server}/**/*{.js,.html}",
-    "prettier-watch": "onchange {learn,algorithm,other,server}/**/*{.js,.html}' -- prettier --w {{changed}}",
-    "doctest-watch": "onchange '{learn,algorithm,other,server}/**/*.js' -- doctest {{changed}}"
+    "lint": "eslint {learn,algorithm,other}/**/*.js --ignore-pattern node_modules",
+    "prettier": "prettier --w {learn,algorithm,other}/**/*{.js,.html}",
+    "prettier-watch": "onchange {learn,algorithm,other}/**/*{.js,.html}' -- prettier --w {{changed}}",
+    "doctest-watch": "onchange '{learn,algorithm,other}/**/*.js' -- doctest {{changed}}"
   },
   "author": "bellshade",
   "license": "MIT",
   "devDependencies": {
     "doctest": "0.19.0",
-    "eslint": "8.13.0",
+    "eslint": "8.14.0",
     "onchange": "7.1.0",
     "prettier": "2.6.2"
   },
