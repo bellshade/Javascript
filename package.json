@@ -20,5 +20,12 @@
   },
   "dependencies": {
     "@bellshade/ningali": "1.2.2"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@popperjs/core"
+      ]
+    }
   }
 }
