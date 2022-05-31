@@ -19,7 +19,7 @@
     "prettier": "2.6.2"
   },
   "dependencies": {
-    "@bellshade/ningali": "1.2.2"
+    "@bellshade/ningali": "1.3.0"
   },
   "pnpm": {
     "peerDependencyRules": {
