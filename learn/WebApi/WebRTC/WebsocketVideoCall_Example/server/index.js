@@ -9,6 +9,28 @@ const baseAsset = join(__dirname, "../", "client");
 let PORT = process.env.PORT || 8080;
 const _ID_LENGTH_ = 16;
 
+//UTIL FUNCTION
+function randomId(length) {
+  const state = [
+    () => {
+      return String.fromCharCode(randRange(97, 122));
+    },
+    () => {
+      return String.fromCharCode(randRange(65, 90));
+    }
+  ];
+
+  let id = "";
+  for (let index = 0; index < length; index++) {
+    id += state[Math.round(Math.random())]();
+  }
+  return id;
+}
+
+function randRange(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
 // CEK KALO ADA PARAMETER BUAT PORT ( BIAR ENAK AJA BISA SETING PORT LEWAT COMMAND LINE )
 for (let index = 1; index < process.argv.length; index++) {
   if (process.argv[index - 1] == "-wp") {
@@ -128,24 +150,4 @@ webSocketServer.on("connection", (socket) => {
   });
 });
 
-//UTIL FUNCTION
-function randomId(length) {
-  const state = [
-    () => {
-      return String.fromCharCode(randRange(97, 122));
-    },
-    () => {
-      return String.fromCharCode(randRange(65, 90));
-    }
-  ];
 
-  let id = "";
-  for (let index = 0; index < length; index++) {
-    id += state[Math.round(Math.random())]();
-  }
-  return id;
-}
-
-function randRange(min, max) {
-  return Math.random() * (max - min) + min;
-}
