@@ -106,7 +106,7 @@ const packetHandler = {
       socket.send(
         JSON.stringify({
           type: "answer",
-          id: id
+          id
         })
       );
       return;
