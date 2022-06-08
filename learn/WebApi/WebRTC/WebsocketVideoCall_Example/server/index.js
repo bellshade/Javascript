@@ -10,6 +10,10 @@ let PORT = process.env.PORT || 8080;
 const _ID_LENGTH_ = 16;
 
 //UTIL FUNCTION
+function randRange(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
 function randomId(length) {
   const state = [
     () => {
@@ -27,15 +31,13 @@ function randomId(length) {
   return id;
 }
 
-function randRange(min, max) {
-  return Math.random() * (max - min) + min;
-}
+//////////////
 
 // CEK KALO ADA PARAMETER BUAT PORT ( BIAR ENAK AJA BISA SETING PORT LEWAT COMMAND LINE )
 for (let index = 1; index < process.argv.length; index++) {
-  if (process.argv[index - 1] == "-wp") {
+  if (process.argv[index - 1] === "-wp") {
     PORT = process.argv[index];
-  } else if (process.argv[index - 1] == "-p") {
+  } else if (process.argv[index - 1] === "-p") {
     PORT = process.argv[index];
   }
 }
@@ -44,8 +46,8 @@ for (let index = 1; index < process.argv.length; index++) {
 
 const root = readFileSync("./client/index.html").toString();
 const server = http.createServer((req, res) => {
-  if (req.method == "GET") {
-    if (req.url == "/") {
+  if (req.method === "GET") {
+    if (req.url === "/") {
       res
         .writeHead(200, {
           "Content-Type": "text/html"
@@ -58,7 +60,9 @@ const server = http.createServer((req, res) => {
       const dir = join(baseAsset, resolve(req.url));
       res.write(readFileSync(dir));
       res.end();
-    } else res.writeHead(404).end();
+    } else {
+      res.writeHead(404).end();
+    }
   }
 });
 
@@ -105,7 +109,6 @@ const packetHandler = {
           id: id
         })
       );
-
       return;
     }
 
@@ -149,5 +152,3 @@ webSocketServer.on("connection", (socket) => {
     (packetHandler[message.type] || (() => {}))(message, socket);
   });
 });
-
-
