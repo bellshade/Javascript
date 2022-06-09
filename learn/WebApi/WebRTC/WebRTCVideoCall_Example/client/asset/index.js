@@ -172,7 +172,7 @@ const sockEv = {
   },
   // EVENT MENGHAPUS PEER ( PANGGILAN DIPUTUS )
   delPeer: ({ id }) => {
-    if (peer.id !=== id) return;
+    if (peer.id !== id) return;
     peer = {};
   }
 };
