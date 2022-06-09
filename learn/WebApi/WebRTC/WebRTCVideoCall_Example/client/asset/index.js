@@ -98,7 +98,7 @@ function answerCall(data = {}) {
 
 function initCall(data) {
   // PASTIKAN KITA INIT CALL KE ORANG YANG SAMA
-  if (peer.id !=== data.id) {
+  if (peer.id !== data.id) {
     return;
   }
 
