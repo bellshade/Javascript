@@ -115,7 +115,7 @@ const packetHandler = {
     socket.send(
       JSON.stringify({
         type: "delPeer",
-        id: id
+        id
       })
     );
   },
