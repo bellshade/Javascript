@@ -117,6 +117,13 @@ https://youtu.be/e-6OkXRqWaE
 
 https://youtu.be/VfN1_pEdQAA
 
+Atau jika mau langsung copy paste
+
+Silahkan Pilih Operasi Sistem Kalian
+
+- Windows
+
+
 Jika sudah terinstall, kalian bisa mengikuti langkah langkah berikut ini
 
 - Buka terminal dan _clone_ repositori dengan perintah `git clone https://github.com/bellshade/Javascript.git`
