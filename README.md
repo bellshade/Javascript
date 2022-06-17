@@ -125,10 +125,39 @@ Silahkan Pilih Operasi Sistem Kalian
   - Silahkan download NodeJS di https://nodejs.org/en/download/ (Pilih yang logo Windows)
   - Lalu Run/Eksekusi file yang didownload tadi (.msi)
   - Tinggal ikuti step penginstalan sampai akhir
-  - Kalau sudah diinstal, cek apakah NodeJS nya berhasil keinstal dengan buka Command Prompt dan ketik
-    `node -v` dan jika sudah muncul versi NodeJS-nya berarti berhasil, apabila tidak muncul versinya gagal
-    ( Silahkan ulangi stepnya atau mampir ke link youtube yang diatas jika tidak paham dan masih gagal )
+  
+- Linux
+  - Ubuntu (APT) / Bagi Distro yang menggunakan APT Package Manager
+    - Di Ubuntu kalian ketik `sudo apt install nodejs`
+  - Arch Linux (Pacman) / Bagi Distro yang menggunakan Pacman Package Manager
+    - Di Pacman kalian ketik `sudo pacman -S nodejs`
+  - Fedora (DNF) / Bagi distro yang menggunakan dnf/yum Package Manager/Distro turunan Red Hat
+    - Di Fedora kalian ketik `sudo dnf install nodejs` atau `sudo yum install nodejs`, Keduanya sama tapi direkomendasiin pake DNF
+  - Alpine (APK)
+    - Di Alpine kalian ketik `sudo apk add nodejs npm`
+  - Gentoo (Emerge)
+    - Di Gentoo kalian ketik `sudo emerge nodejs`
+  - OpenSUSE (Zypper)
+    - Leap 15.2
+      - Di SUSE Leap kalian ketik `sudo zypper install nodejs14`
+    - Tumbleweed
+      - Di SUSE Tumbleweed kalian ketik `sudo zypper install nodejs16`
+  - SmartOS (pkgin)
+    - Di SmartOS kalian bisa ketik `sudo pkgin -y install nodejs`
+  - Solus (EOPKG)
+    - Di Solus kalian bisa ketik `sudo eopkg install nodejs`
+  - Void Linux (XBPS)
+    - Di Void kalian bisa ketik `sudo xbps-install -Sy nodejs`
+  - MacintoshOS
+    - Di MacOS, Jika kalian sudah install brew/sudah terinstal brew kalian bisa ketik `sudo brew install nodejs`
+    - Jika Belum kalian copy ini kode `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` dan buka terminal lalu paste dan jalankan kode ini, ikuti stepnya sampai akhir
+  - Android (Termux)
+    - Di Termux kalian bisa ketik `pkg in nodejs` atau `apt install nodejs`
 
+- Cek Apakah NodeJS berhasil terinstal
+    Buka Command Prompt/Terminal dan ketik
+    `node -v` dan jika sudah muncul versi NodeJS-nya berarti berhasil, apabila tidak muncul versinya, berarti gagal
+    ( Silahkan ulangi stepnya atau mampir ke link youtube yang diatas jika tidak paham dan masih gagal )
 
 
 Jika sudah terinstall, kalian bisa mengikuti langkah langkah berikut ini
