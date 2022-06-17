@@ -128,36 +128,52 @@ Silahkan Pilih Operasi Sistem Kalian
   
 - Linux
   - Ubuntu (APT) / Bagi Distro yang menggunakan APT Package Manager
-    - Di Ubuntu kalian ketik `sudo apt install nodejs`
+    - Di Ubuntu kalian bisa ketik `sudo apt install nodejs`
   - Arch Linux (Pacman) / Bagi Distro yang menggunakan Pacman Package Manager
-    - Di Pacman kalian ketik `sudo pacman -S nodejs`
+    - Di Pacman kalian bisa ketik `sudo pacman -S nodejs`
   - Fedora (DNF) / Bagi distro yang menggunakan dnf/yum Package Manager/Distro turunan Red Hat
-    - Di Fedora kalian ketik `sudo dnf install nodejs` atau `sudo yum install nodejs`, Keduanya sama tapi direkomendasiin pake DNF
+    - Di Fedora kalian bisa ketik `sudo dnf install nodejs` atau `sudo yum install nodejs`, Keduanya sama tapi direkomendasiin pake DNF
   - Alpine (APK)
-    - Di Alpine kalian ketik `sudo apk add nodejs npm`
+    - Di Alpine kalian bisa ketik `sudo apk add nodejs npm`
   - Gentoo (Emerge)
-    - Di Gentoo kalian ketik `sudo emerge nodejs`
+    - Di Gentoo kalian bisa ketik `sudo emerge nodejs`
   - OpenSUSE (Zypper)
     - Leap 15.2
-      - Di SUSE Leap kalian ketik `sudo zypper install nodejs14`
+      - Di SUSE Leap kalian bisa ketik `sudo zypper install nodejs14`
     - Tumbleweed
-      - Di SUSE Tumbleweed kalian ketik `sudo zypper install nodejs16`
+      - Di SUSE Tumbleweed kalian bisa ketik `sudo zypper install nodejs16`
   - SmartOS (pkgin)
     - Di SmartOS kalian bisa ketik `sudo pkgin -y install nodejs`
   - Solus (EOPKG)
     - Di Solus kalian bisa ketik `sudo eopkg install nodejs`
   - Void Linux (XBPS)
     - Di Void kalian bisa ketik `sudo xbps-install -Sy nodejs`
-  - MacintoshOS
-    - Di MacOS, Jika kalian sudah install brew/sudah terinstal brew kalian bisa ketik `sudo brew install nodejs`
-    - Jika Belum kalian copy ini kode `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` dan buka terminal lalu paste dan jalankan kode ini, ikuti stepnya sampai akhir
   - Android (Termux)
     - Di Termux kalian bisa ketik `pkg in nodejs` atau `apt install nodejs`
+- MacintoshOS
+  - Di MacOS, Jika kalian sudah install brew/sudah terinstal brew kalian bisa ketik `sudo brew install nodejs`
+  - Jika Belum kalian copy ini kode `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` dan buka terminal lalu paste dan jalankan kode ini, ikuti stepnya sampai akhir
+
+- Build manual/install manual (khusus Linux/MacOS)
+  - Kalian install dependensi yang dibutuhkan menggunakan package manager bawaan kalian, bisa dilihat di list atas, Operasi Sistem kalian menggunakan Manager apa
+    - Dependensi
+      - Python 3.X
+      - Make
+      - GCC
+      - G++
+  - Lalu kalian download di https://github.com/nodejs/node.git atau lakukan `git clone https://github.com/nodejs/node.git`
+  - Lalu buka terminal dan arahkan ke folder NodeJS
+  - Lalu ketik `./configure` jika permission denied, ketik `chmod +x configure` lalu `./configure`
+  - Lalu ketik `make`
+  - Untuk ngetest (Kalian bisa lewati ini) ketik `make test`
+  - Lalu Install Ke System, ketik `sudo make install`
+  - Jika sudah silahkan kalian cek apakah NodeJS nya berhasil keinstal apa tidak
+ 
 
 - Cek Apakah NodeJS berhasil terinstal
     Buka Command Prompt/Terminal dan ketik
-    `node -v` dan jika sudah muncul versi NodeJS-nya berarti berhasil, apabila tidak muncul versinya, berarti gagal
-    ( Silahkan ulangi stepnya atau mampir ke link youtube yang diatas jika tidak paham dan masih gagal )
+    `node -v` atau `npm --version` atau `npx -v`, jika sudah muncul versi NodeJS-nya berarti berhasil, apabila tidak muncul versinya, berarti gagal
+    ( Silahkan ulangi stepnya atau mampir ke link youtube yang diatas jika tidak paham dan masih gagal atau jika OS kalian tidak ada di youtube tersebut kalian bisa mampir ke https://nodejs.org/en/download/package-manager/ )
 
 
 Jika sudah terinstall, kalian bisa mengikuti langkah langkah berikut ini
