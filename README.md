@@ -122,6 +122,13 @@ Atau jika mau langsung copy paste
 Silahkan Pilih Operasi Sistem Kalian
 
 - Windows
+  - Silahkan download NodeJS di https://nodejs.org/en/download/ (Pilih yang logo Windows)
+  - Lalu Run/Eksekusi file yang didownload tadi (.msi)
+  - Tinggal ikuti step penginstalan sampai akhir
+  - Kalau sudah diinstal, cek apakah NodeJS nya berhasil keinstal dengan buka Command Prompt dan ketik
+    `node -v` dan jika sudah muncul versi NodeJS-nya berarti berhasil, apabila tidak muncul versinya gagal
+    ( Silahkan ulangi stepnya atau mampir ke link youtube yang diatas jika tidak paham dan masih gagal )
+
 
 
 Jika sudah terinstall, kalian bisa mengikuti langkah langkah berikut ini
