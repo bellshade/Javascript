@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8" />
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<style>
+	* {
+		padding: 0px;
+		margin: 0px;
+		box-sizing: border-box;
+	}
+
+	body {
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#main {
+		padding: 10px;
+		border: 3px solid skyblue;
+		border-radius: 10px;
+	}
+
+	#navbar {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#chats {
+		border: 1px solid skyblue;
+		border-radius: 5px;
+		max-width: 30vw;
+		padding: 5px;
+		min-width: 300px;
+		height: 70vh;
+		margin: 10px 0;
+		display: flex;
+		flex-direction: column;
+		overflow-y: auto;
+	}
+
+	.textChat {
+		margin: 5px 0px;
+	}
+
+	#sendForm {
+		width: 100%;
+		display: flex;
+	}
+
+	#sendInput {
+		outline: none;
+		width: -webkit-fill-available;
+		padding: 3px;
+	}
+
+	#sendBtn {
+		padding: 3px 5px;
+		outline: none;
+		margin-left: 10px;
+	}
+</style>
+
+<body>
+	<div id="main">
+		<div id="navbar">
+			<span id="otherPerson">Disconnected</span><span id="yourself">YourId</span>
+		</div>
+		<div id="chats"></div>
+		<form id="sendForm">
+			<input id="sendInput" type="text" />
+			<button id="sendBtn" type="submit">Connect</button>
+		</form>
+	</div>
+</body>
+<script>
+	const socket = new WebSocket(location.origin.replace(/^http/, "ws"));
+	let peer = undefined;
+	let dataChannel = undefined;
+	let calling = undefined;
+
+	function sendExchange(type, to, data) {
+		socket.send(
+			JSON.stringify({
+				to,
+				type: "exchange",
+				msg: {
+					type,
+					...data,
+				},
+			})
+		);
+	}
+
+	function recieveDataChannel(channel) {
+		dataChannel = channel;
+		channel.addEventListener("message", (message) => {
+			document.getElementById(
+				"chats"
+			).innerHTML += `<span class="textChat">from ${calling}:\n${message.data.toString()}</span>`;
+			document.getElementById("chats").scrollTop =
+				document.getElementById("chats").scrollHeight;
+		});
+		channel.addEventListener("open", () => {
+			document.getElementById("otherPerson").textContent = calling;
+			document.getElementById("sendBtn").textContent = "Send";
+		});
+		channel.addEventListener("close", () => {
+			document.getElementById("otherPerson").textContent =
+				"Disconnected";
+			peer = undefined;
+			dataChannel = undefined;
+			calling = undefined;
+		});
+	}
+
+	const eventHandler = {
+		init: (socket, data) => {
+			document.getElementById("yourself").textContent = data.id;
+		},
+		callAnswered: (socket, data) => {
+			if (data.from !== calling) {
+				return;
+			}
+
+			peer.setRemoteDescription(data.sdp);
+		},
+		newIce: (socket, data) => {
+			if (data.from === calling) {
+				peer.addIceCandidate(data.candidate);
+			}
+		},
+		callConfirmed: (socket, data) => {
+			if (data.from == calling) {
+				if (data.accept) {
+					call(calling);
+					return;
+				}
+				peer = undefined;
+				dataChannel = undefined;
+				calling = undefined;
+			};
+		},
+		callConfirm: (socket, data) => {
+			const accept = !calling && confirm("Accept call from " + data.from);
+
+			if (accept) {
+				calling = data.from;
+			}
+
+			sendExchange("callConfirmed", data.from, {
+				accept
+			});
+		},
+		call: (socket, data) => {
+			if (data.from !== calling) {
+				return;
+			}
+			peer = new RTCPeerConnection();
+
+			peer.addEventListener("icecandidate", ({
+					candidate
+				}) =>
+				sendExchange("newIce", calling, {
+					candidate
+				})
+			);
+			peer.addEventListener("datachannel", ({
+					channel
+				}) =>
+				recieveDataChannel(channel)
+			);
+			peer.setRemoteDescription(data.sdp);
+			peer.createAnswer().then((answer) => {
+				peer.setLocalDescription(answer);
+				sendExchange("callAnswered", calling, {
+					sdp: answer
+				});
+			});
+		}
+	};
+
+	socket.addEventListener("message", ({
+		data
+	}) => {
+		data = JSON.parse(data);
+		(eventHandler[data.type] || (() => {}))(socket, data);
+	});
+
+	function call(id) {
+		peer = new RTCPeerConnection();
+		recieveDataChannel(peer.createDataChannel("message"));
+		peer.addEventListener("icecandidate", ({
+			candidate
+		}) => {
+			if (candidate) {
+				sendExchange("newIce", calling, {
+					candidate,
+				});
+			}
+		});
+		peer.createOffer().then((offer) => {
+			calling = id;
+			peer.setLocalDescription(offer);
+			sendExchange("call", id, {
+				sdp: offer,
+			});
+		});
+	}
+
+	document.getElementById("sendBtn").addEventListener("click", (e) => {
+		e.preventDefault();
+		const message = document.getElementById("sendInput").value;
+		if (dataChannel) {
+			dataChannel.send(message);
+			document.getElementById(
+				"chats"
+			).innerHTML += `<span class="textChat">you send:\n${message}</span>`;
+			document.getElementById("chats").scrollTop =
+				document.getElementById("chats").scrollHeight;
+			return;
+		}
+		calling = message;
+		sendExchange("callConfirm", calling, {});
+	});
+</script>
+
+</html>

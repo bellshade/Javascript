@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Call Example</title>
+</head>
+
+<style>
+    #videoContainer {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+
+    #videoContainer video {
+        background-color: black;
+    }
+
+    #callingForm {
+        width: 20vw;
+        margin: auto;
+        margin-top: 50px;
+    }
+</style>
+
+<body>
+    <div id="videoContainer">
+        <video autoplay width="640" height="480" id="local"></video>
+        <video autoplay width="640" height="480" id="remote"></video>
+    </div>
+    <form id="callingForm">
+        <label id="status">Status: Disconencted</label>
+        <input type="text" placeholder="Id" id="callIdInput">
+        <button id="call">Call</button>
+    </form>
+</body>
+
+<script>
+    const socket = new WebSocket(location.origin.replace(/^http/, "ws"));
+    let localMedia = undefined;
+    let remoteMedia = undefined;
+    let peer = undefined;
+    let calling = undefined;
+
+    function sendExchange(type, to, data) {
+        console.log(type, to, data);
+        socket.send(
+            JSON.stringify({
+                to,
+                type: "exchange",
+                msg: {
+                    type,
+                    ...data,
+                },
+            })
+        );
+    }
+
+    const eventHandler = {
+        init: (socket, data) => {
+            document.getElementById("status").textContent = "Your id: " + data.id;
+        },
+        callAnswered: (socket, data) => {
+            if (data.from !== calling) {
+                return;
+            }
+
+            peer.setRemoteDescription(data.sdp);
+        },
+        newIce: (socket, data) => {
+            if (data.from === calling) {
+                peer.addIceCandidate(data.candidate);
+            }
+        },
+        callConfirmed: (socket, data) => {
+            if (data.from == calling) {
+                if (data.accept) {
+                    call(calling);
+                    return;
+                }
+                peer = undefined;
+                calling = undefined;
+            };
+        },
+        callConfirm: (socket, data) => {
+            const accept = !calling && confirm("Accept call from " + data.from);
+
+            if (accept) {
+                calling = data.from;
+            }
+
+            sendExchange("callConfirmed", data.from, {
+                accept
+            });
+        },
+        call: (socket, data) => {
+            peer = new RTCPeerConnection();
+            calling = data.from;
+            peer.addEventListener("icecandidate", ({
+                    candidate
+                }) =>
+                sendExchange("newIce", calling, {
+                    candidate
+                })
+            );
+
+            localMedia.getTracks().forEach(track => {
+                peer.addTrack(track, localMedia);
+            });
+
+            peer.addEventListener("track", ({
+                streams
+            }) => {
+                remoteMedia = streams[0];
+                document.getElementById("remote").srcObject = remoteMedia;
+            })
+
+            peer.setRemoteDescription(data.sdp);
+            peer.createAnswer().then((answer) => {
+                peer.setLocalDescription(answer);
+                sendExchange("callAnswered", calling, {
+                    sdp: answer
+                });
+            });
+        }
+    };
+
+    socket.addEventListener("message", ({
+        data
+    }) => {
+        data = JSON.parse(data);
+        console.log("got data: ", data);
+        (eventHandler[data.type] || (() => {}))(socket, data);
+    });
+
+    function call(id) {
+        if (!localMedia) {
+            alert("Error media not found");
+            return;
+        }
+        calling = id;
+        peer = new RTCPeerConnection();
+
+        peer.addEventListener("icecandidate", ({
+            candidate
+        }) => {
+            if (candidate) {
+                sendExchange("newIce", calling, {
+                    candidate,
+                });
+            }
+        });
+
+        localMedia.getTracks().forEach(track => {
+            peer.addTrack(track, localMedia);
+        });
+
+        peer.addEventListener("track", ({
+            streams
+        }) => {
+            remoteMedia = streams[0];
+            document.getElementById("remote").srcObject = remoteMedia;
+        })
+
+        peer.createOffer().then((offer) => {
+            calling = id;
+            peer.setLocalDescription(offer);
+            sendExchange("call", id, {
+                sdp: offer,
+            });
+        });
+    }
+
+    navigator.mediaDevices
+        .getUserMedia({
+            video: true,
+            audio: true,
+            video: {
+                width: {
+                    ideal: 640
+                },
+                height: {
+                    ideal: 480
+                }
+            }
+        })
+        .then((media) => {
+            document.getElementById("local").srcObject = media;
+            localMedia = media;
+        });
+    document.getElementById("call").addEventListener("click", (event) => {
+        event.preventDefault();
+        calling = document.getElementById("callIdInput").value;
+        console.log(calling);
+        sendExchange("callConfirm", calling, {});
+    });
+</script>
+
+</html>
