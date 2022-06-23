@@ -117,7 +117,7 @@ https://youtu.be/e-6OkXRqWaE
 
 https://youtu.be/VfN1_pEdQAA
 
-Atau jika mau langsung copy paste
+#### Instalasi Ndde.js Langsung
 
 Silahkan Pilih Operasi Sistem Kalian
 
