@@ -25,7 +25,8 @@ function isDescending(arr) {
   }
   return true;
 }
-function isShortedAndHow(arr) {
+
+function isSortedAndHow(arr) {
   const ascending = isAscending(arr);
   const descending = isDescending(arr);
   if (!ascending && !descending) {
