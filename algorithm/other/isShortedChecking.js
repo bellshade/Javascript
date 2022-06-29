@@ -33,9 +33,12 @@ function isShortedAndHow(arr) {
   }
   return ascending ? "yes, ascending" : "yes, descending";
 }
-console.log(isShortedAndHow([4, 5, 9]));
+
+console.log(isSortedAndHow([4, 5, 9]));
 // yes, ascending
-console.log(isShortedAndHow([36, 22, 1, -1]));
+
+console.log(isSortedAndHow([36, 22, 1, -1]));
 // yes, descending
-console.log(isShortedAndHow([40, 22, 10, 11]));
+
+console.log(isSortedAndHow([40, 22, 10, 11]));
 // no
