@@ -8,6 +8,7 @@
  * 4. Jika ascending bernilai benar, akan mengembalikan "yes, ascending"
  * 5. Jika descending bernilai benar, akan mengembalikan "yes, descending"
  */
+ 
 function isAscending(arr) {
   for (let i = 0; i < arr.length - 1; i++) {
     if (arr[i] > arr[i + 1]) {
