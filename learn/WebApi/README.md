@@ -31,6 +31,9 @@ Folder ini berisi materi Web API (Application Programming Interface), dimana API
 
 Apa saja yang ada di folder ini?
 
+- [**Console Object Methods**](Console/)<br>
+  Pada bagian ini, kita akan membahas tentang console dan console object yang menyediakan akses ke browser debugging console
+
 - [**Geo Location**](GeoLocation/)<br>
   Di browser, Javascript bisa mengakses lokasi dari pengguna menggunakan Geo Location API.
 
