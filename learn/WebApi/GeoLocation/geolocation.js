@@ -27,7 +27,7 @@ function show(position) {
 }
 
 function error(err) {
-  navStatus.innerHTML = `ERROR: ${err.message} (${err.code})`;
+  navStatus.innerText = `ERROR: ${err.message} (${err.code})`;
   navStatus.style.color = "red";
 }
 
