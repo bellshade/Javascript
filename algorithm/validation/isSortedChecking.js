@@ -39,7 +39,7 @@ function isSortedAndHow(arr) {
   if (!ascending && !descending) {
     return "no";
   }
-  
+
   return ascending ? "yes, ascending" : "yes, descending";
 }
 

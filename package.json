@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node viewer.js",
     "lint": "eslint {learn,algorithm}/**/*.js --ignore-pattern node_modules",
-    "prettier": "prettier --w {learn,algorithm}/**/*{.js,.html}",
-    "prettier-watch": "onchange {learn,algorithm}/**/*{.js,.html}' -- prettier --w {{changed}}",
+    "prettier": "prettier --w learn/**/*{.js,.html} algorithm/**/*.js",
+    "prettier-watch": "onchange 'learn/**/*{.js,.html} algorithm/**/*.js' -- prettier --w {{changed}}",
     "doctest-watch": "onchange '{learn,algorithm}/**/*.js' -- doctest {{changed}}"
   },
   "author": "bellshade",
