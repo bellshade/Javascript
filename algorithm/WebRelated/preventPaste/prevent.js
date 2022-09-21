@@ -9,4 +9,4 @@ const input = document.querySelector("input");
 input.addEventListener("paste", function (e) {
     e.preventDefault(); // Mencegah agar tidak bisa dipaste
     alert("Dilarang mem-paste!"); // Alert ditampilkan, teks bisa disesuaikan
-})
+});
