@@ -4,9 +4,9 @@
  */
 
 // Mengambil elemen input yang akan dilarang mem-paste.
-const input = document.querySelector('input');
+const input = document.querySelector("input");
 // Membuat event listener jika user melakukan paste pada inputan form.
-input.addEventListener('paste', function (e) {
+input.addEventListener("paste", function (e) {
     e.preventDefault(); // Mencegah agar tidak bisa dipaste
-    alert('Dilarang mem-paste!'); // Alert ditampilkan, teks bisa disesuaikan
+    alert("Dilarang mem-paste!"); // Alert ditampilkan, teks bisa disesuaikan
 })
