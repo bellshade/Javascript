@@ -10,11 +10,11 @@ let width = window.innerWidth;
 let height = window.innerHeight;
 
 // Menampilkan ukuran window browser saat pertama kali website dirender
-document.getElementById("windowSize").innerHTML = `${width} * ${height}`;
+document.getElementById("windowSize").textContent = `${width} * ${height}`;
 
 // Membuat event listener jika user melakukan resizing pada window browser.
 window.addEventListener("resize", function(){
     let width = window.innerWidth; // Update ukuran width window browser secara berkelanjutan
     let height = window.innerHeight; // Update ukuran height window browser secara berkelanjutan
-    document.getElementById("windowSize").innerHTML = `${width} * ${height}`; // Menampilkan ukuran window browser secara berkelanjutan
-})
+    document.getElementById("windowSize").textContent = `${width} * ${height}`; // Menampilkan ukuran window browser secara berkelanjutan
+});
