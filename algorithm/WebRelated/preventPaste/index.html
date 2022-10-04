@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prevent Paste</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>Pastekan nama anda di inputan ini</h1>
     <label for="nama">Nama: </label>
-    <input type="text" name="nama" id="nama">
-</body>
+    <input type="text" name="nama" id="nama" />
+  </body>
 
-<script>
+  <script>
     const input = document.querySelector("input");
-    
-    input.addEventListener("paste", function (e) {
-        e.preventDefault();
-        alert("Dilarang mem-paste!");
-    });
-</script>
 
+    input.addEventListener("paste", function (e) {
+      e.preventDefault();
+      alert("Dilarang mem-paste!");
+    });
+  </script>
 </html>
