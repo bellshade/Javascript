@@ -30,7 +30,7 @@
       s += 6;
     }
     return array;
-};
+}
 
-console.log(factorTree(15)) // 3,5
-console.log(factorTree(18)) // 2,3,3
+console.log(factorTree(15)); // 3,5
+console.log(factorTree(18)); // 2,3,3
