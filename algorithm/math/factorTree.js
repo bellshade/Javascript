@@ -29,6 +29,7 @@ function factorTree(number) {
     }
     s += 6;
   }
+  
   return array;
 }
 
