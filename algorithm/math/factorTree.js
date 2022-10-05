@@ -23,6 +23,7 @@ function factorTree(number) {
       number /= p;
       array.push(p);
     }
+    
     while (number > 4 && number % q === 0) {
       number /= q;
       array.push(q);
