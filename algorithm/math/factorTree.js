@@ -27,6 +27,7 @@ function factorTree(number) {
       number /= q;
       array.push(q);
     }
+    
     s += 6;
   }
   
