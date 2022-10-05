@@ -8,17 +8,21 @@
 function factorTree(number) {
   let array = [];
   let s = 6;
+
   while (number > 1 && number % 2 === 0) {
     number /= 2;
     array.push(2);
   }
+  
   while (number > 2 && number % 3 === 0) {
     number /= 3;
     array.push(3);
   }
+
   while (number > 4) {
     let p = s - 1;
     let q = s + 1;
+    
     while (number > 4 && number % p === 0) {
       number /= p;
       array.push(p);
