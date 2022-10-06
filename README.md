@@ -32,7 +32,7 @@ Beberapa contoh sederhana penggunaan JavaScript:
 1. [Countdown](https://codepen.io/AllThingsSmitty/pen/JJavZN)
 2. [Slider](https://codepen.io/gurovoleg/pen/OqjPLy)
 3. [Accordion](https://codepen.io/whit1346/pen/MmeQLR)
-4. [Navbar](https://codepen.io/abdosteif/pen/bRoyMb?editors=1100)
+4. [Navbar](https://codepen.io/abdosteif/pen/bRoyMb)
 5. [Game Sederhana](https://codepen.io/msval/pen/qKhcD)
 
 > ### Tertarik untuk Belajar? Yuk [Belajar Sekarang](learn) 🌟
