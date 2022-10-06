@@ -18,5 +18,5 @@ const isStrongPassword = (password) => {
     return pattern.test(password) ? true : false;
 };
 
-console.log(`Password : ${password}\nStrong password : ${isStrongPassword(password)}\n`);
-console.log(`Password : ${password2}\nStrong password : ${isStrongPassword(password2)}\n`);
+console.log(`Strong password : ${isStrongPassword(password)}\n`);
+console.log(`Strong password : ${isStrongPassword(password2)}\n`);
