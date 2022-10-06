@@ -22,7 +22,7 @@ strings.addEventListener("keyup", function() {
      * 3. Melakukan filtering untuk mencegah karakter spasi dihitung sebagai suatu kata
      * 4. Membaca ukuran string yang telah difilter dengan keyword .length 
      */
-    totalOfWords.textContent = `Total of words : ${strings.value.split(" ").filter(string => string !== " ").length}`;
+    totalOfWords.textContent = `Total of words : ${strings.value.split(" ").filter((string) => string !== " ").length}`;
 
     /**
      * Algoritma menghitung jumlah karakter
