@@ -10,13 +10,13 @@
  * (?=.*[!_@#$&*].*[!_@#$&*]) Melakukan pengecekan apakah terdapat minimal 2 karakter simbol
  */
 
-const password = "H3ll0w0rld**";
-const password2 = "helloworld*";
+const kataSandi = "H3ll0w0rld**";
+const kataSandi2 = "helloworld*";
 
 const isStrongPassword = (password) => {
     const pattern = /(?=.*[A-Z])(?=.*[!_@#$&*].*[!_@#$&*])(?=.*[0-9])(?=.*[a-z]).{8}/;
     return pattern.test(password) ? true : false;
 };
 
-console.log(`Strong password : ${isStrongPassword(password)}\n`);
-console.log(`Strong password : ${isStrongPassword(password2)}\n`);
+console.log(`Kata Sandi : ${kataSandi}\nKata Sandi Kuat : ${isStrongPassword(kataSandi)}\n`);
+console.log(`Kata Sandi : ${kataSandi2}\nKata Sandi Kuat : ${isStrongPassword(kataSandi2)}\n`);
