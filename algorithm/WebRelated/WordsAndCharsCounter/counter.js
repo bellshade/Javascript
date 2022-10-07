@@ -15,19 +15,22 @@ const totalOfChars = document.getElementById("totalOfChars");
 // Membuat event listener jika user menekan tombol-tombol keyboard
 strings.addEventListener("keyup", function() {
     /**
-     * Algoritma menghitung jumlah kata
-     * 
-     * 1. Membaca data string dengan mengakses variabel strings diikuti keyword .value
-     * 2. Memecah string dengan separator karakter spasi (" ")
-     * 3. Melakukan filtering untuk mencegah karakter spasi dihitung sebagai suatu kata
-     * 4. Membaca ukuran string yang telah difilter dengan keyword .length 
-     */
-    totalOfWords.textContent = `Total of words : ${strings.value.split(" ").filter((string) => string !== " ").length}`;
-
-    /**
      * Algoritma menghitung jumlah karakter
-     * 
-     * 1. Membaca data string dengan mengakses variabel strings diikuti keyword .value dan .length
+     *
+     * 1. Membaca jumlah string dengan mengakses variabel strings diikuti keyword .value dan .length
      */
-    totalOfChars.textContent = `Total of characters : ${strings.value.length}`;
+    let charsCount = strings.value.length;
+    
+    /**
+     * Algoritma menghitung jumlah kata
+     *
+     * 1. Menghapus karakter whitespace di kedua sisi string (awal dan akhir)
+     * 2. Memecah string dengan separator karakter whitespace (/\s+/), dan menyimpannya dalam array.
+     * 3. Melakukan loop filtering diikuti dengan keyword .length untuk menghitung jumlah kata dalam array.
+     */
+    let word = strings.value.trim();
+    let wordsCount = word.split(/\s+/).filter((word) => word).length;
+    
+    totalOfWords.textContent = `Total of words : ${wordsCount}`;
+    totalOfChars.textContent = `Total of characters : ${charsCount}`;
 });
