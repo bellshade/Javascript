@@ -14,15 +14,6 @@
     <h2 id="totalOfChars"></h2>
 </body>
 
-<script>
-    const strings = document.getElementById("strings");
-    const totalOfWords = document.getElementById("totalOfWords");
-    const totalOfChars = document.getElementById("totalOfChars");
-
-    strings.addEventListener("keyup", function() {
-        totalOfWords.textContent = `Total of words : ${strings.value.split(" ").filter(string => string !== " ").length}`;
-        totalOfChars.textContent = `Total of characters : ${strings.value.length}`;
-    });
-</script>
+<script src="counter.js"></script>
 
 </html>
