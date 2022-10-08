@@ -23,7 +23,6 @@ function nameShortner(fullname, maxLen = 24, capitalize = 1) {
   // ------------------------ helper functions ------------------------
 
   var shorten = init(fullname);
-  var currentLen = fullname.length;
 
   for (var [i, name] of shorten.entries()) {
     // i sebagai index, dan name sebagai nama
