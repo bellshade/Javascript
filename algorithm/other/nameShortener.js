@@ -26,7 +26,7 @@ function nameShortner(fullname, maxLen = 24, capitalize = 1) {
 
   for (var [i, name] of shorten.entries()) {
     // i sebagai index, dan name sebagai nama
-    currentLen = nameLen(shorten); // memperbarui total panjang nama
+    var currentLen = nameLen(shorten); // memperbarui total panjang nama
     if (capitalize) shorten[i] = capitalized(name); // bila nama butuh huruf kapital di awal tiap nama
     if (currentLen <= maxLen && name.length > 2) continue; // lewati 1 loop bila total panjang sudah sesuai dan nama belum di singkat
     if (i != shorten.length - 1) {
