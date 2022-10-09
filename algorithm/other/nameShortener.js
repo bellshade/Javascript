@@ -13,10 +13,9 @@ function nameShortner(fullname, maxLen = 24, capitalize = 1) {
     return name[0].toUpperCase() + name.substring(1); // ambil karakter pertama ubah jadi kapital dan tambahkan sisa nya
   }
   function singleName(shorten) {
-    while (true) {
+    while (shorten.length >= 2) {
       shorten[0].trim();
       if (nameLen(shorten) <= maxLen) break; // hilangkan semua singkatan hingga karakter nya sesuai
-      if (shorten.length < 2) break; // bila nama memang tersisa satu maka keluar dan print
       shorten.shift();
     }
   }
