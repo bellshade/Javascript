@@ -31,8 +31,12 @@ function nameShortner(fullname, maxLen = 24, capitalize = 1) {
          // bila nama butuh huruf kapital di awal tiap nama
         shorten[i] = capitalized(name);
     }
-    if (currentLen <= maxLen && name.length > 2) continue; // lewati 1 loop bila total panjang sudah sesuai dan nama belum di singkat
-    if (i != shorten.length - 1) {
+    if (currentLen <= maxLen && name.length > 2) {
+         // lewati 1 loop bila total panjang sudah sesuai dan nama belum di singkat
+        continue;
+    }
+    
+    if (i !== shorten.length - 1) {
       // bila nama yang belum di singkat masih lebih dari 1
       shorten[i] = name.substring(0, 1).toUpperCase() + "."; // ambil karakter pertama, lalu di buat menjadi kapital, dan tambah kan .
     } else {
