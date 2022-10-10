@@ -43,6 +43,7 @@ function nameShortner(fullname, maxLen = 24, capitalize = 1) {
       singleName(shorten);
     }
   }
+  
   return shorten.reverse().join(" "); // reverse array nya ke posisi semula dan gabungkan
 }
 
