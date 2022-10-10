@@ -15,7 +15,10 @@ function nameShortner(fullname, maxLen = 24, capitalize = 1) {
   function singleName(shorten) {
     while (shorten.length >= 2) {
       shorten[0].trim();
-      if (nameLen(shorten) <= maxLen) break; // hilangkan semua singkatan hingga karakter nya sesuai
+      if (nameLen(shorten) <= maxLen) {
+          // hilangkan semua singkatan hingga karakter nya sesuai 
+          break;
+      } 
       shorten.shift();
     }
   }
