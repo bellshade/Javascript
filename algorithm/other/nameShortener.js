@@ -21,7 +21,7 @@ function nameShortner(fullname, maxLen = 24, capitalize = 1) {
   }
   // ------------------------ helper functions ------------------------
 
-  var shorten = init(fullname);
+  const shorten = init(fullname);
 
   for (const [i, name] of shorten.entries()) {
     // i sebagai index, dan name sebagai nama
