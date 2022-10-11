@@ -38,6 +38,7 @@ function nameShortner(fullname, maxLen = 24, capitalize = 1) {
          // lewati 1 loop bila total panjang sudah sesuai dan nama belum di singkat
         continue;
     }
+    
     if (i !== shorten.length - 1) {
       // bila nama yang belum di singkat masih lebih dari 1
       shorten[i] = name.substring(0, 1).toUpperCase() + "."; // ambil karakter pertama, lalu di buat menjadi kapital, dan tambah kan .
@@ -45,7 +46,6 @@ function nameShortner(fullname, maxLen = 24, capitalize = 1) {
     else {
       singleName(shorten);
     }
-    
   }
   
   return shorten.reverse().join(" "); // reverse array nya ke posisi semula dan gabungkan
