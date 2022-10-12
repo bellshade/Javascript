@@ -171,6 +171,17 @@ console.log(totalNumber);	// 115
 // nilai totalNumber menjadi 115
 ```
 
+### 7. Every
+Method `.every()` akan menjalankan fungsi pada setiap element dimana pada setiap iterasinya akan mengecek element apakah memenuhi kondisi pada fungsi yang di buat. `.every()` akan mengembalikan nilai berupa true atau false
+
+```js
+const exampleArray = [60, 70, 80, 90];
+
+const isArrayPassed = exampleArray.every((value) => value > 50);
+
+console.log(isArrayPassed); // true
+```
+
 [<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Array" />](../009_array)
 
 [<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Object" />](../011_object)
