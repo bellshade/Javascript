@@ -182,6 +182,16 @@ const isArrayPassed = exampleArray.every((value) => value > 50);
 console.log(isArrayPassed); // true
 ```
 
+### 8. findIndex
+Method `.findIndex()` akan mengembalikan indeks elemen pertama yang memenuhi kondisi yang di buat
+
+```js
+const animals = ["cat", "dog", "wolf"];
+
+console.log(animals.findIndex((animal) => animal === "cat")); // 0 --> mencari indeks cat dalam array animals
+console.log(animals.findIndex((animal) => animal === "dog")); // 1 --> mencari indeks dog dalam array animals
+```
+
 [<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Array" />](../009_array)
 
 [<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Object" />](../011_object)
