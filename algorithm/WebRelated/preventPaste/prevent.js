@@ -8,6 +8,6 @@ const input = document.querySelector("input");
 
 // Membuat event listener jika user melakukan paste pada inputan form.
 input.addEventListener("paste", function (e) {
-    e.preventDefault(); // Mencegah agar tidak bisa dipaste
-    alert("Dilarang mem-paste!"); // Alert ditampilkan, teks bisa disesuaikan
+  e.preventDefault(); // Mencegah agar tidak bisa dipaste
+  alert("Dilarang mem-paste!"); // Alert ditampilkan, teks bisa disesuaikan
 });
