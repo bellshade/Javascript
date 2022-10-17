@@ -172,7 +172,7 @@ console.log(totalNumber);	// 115
 ```
 
 ### 7. Every
-Method `.every()` akan menjalankan fungsi pada setiap element dimana pada setiap iterasinya akan mengecek element apakah memenuhi kondisi pada fungsi yang di buat. `.every()` akan mengembalikan nilai berupa true atau false
+Method `.every()` akan menjalankan fungsi pada setiap elemen, dimana pada setiap iterasinya akan mengecek elemen apakah memenuhi kondisi pada fungsi yang dibuat atau tidak. `.every()` akan mengembalikan nilai berupa `true` atau `false`.
 
 ```js
 const exampleArray = [60, 70, 80, 90];
@@ -183,7 +183,7 @@ console.log(isArrayPassed); // true
 ```
 
 ### 8. findIndex
-Method `.findIndex()` akan mengembalikan indeks elemen pertama yang memenuhi kondisi yang di buat
+Method `.findIndex()` akan mengembalikan indeks elemen pertama yang memenuhi kondisi pengujian.
 
 ```js
 const animals = ["cat", "dog", "wolf"];
