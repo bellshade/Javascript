@@ -6,7 +6,7 @@
 ![codequality](https://img.shields.io/lgtm/grade/javascript/github/bellshade/Javascript?label=code%20quality%3A%20js&style=for-the-badge)
 ![codefactor](https://img.shields.io/codefactor/grade/github/bellshade/Javascript/main?label=code%20factor%20quality&style=for-the-badge)
 ![buildTesting](https://img.shields.io/github/workflow/status/bellshade/Javascript/Node%20CI?style=for-the-badge)
-![Visitor Badge](https://visitor-badges.glitch.me?username=bellshade&repo=Javascript&label=VISITOR&style=for-the-badge&color=%2344CC11&token=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&contentType=svg)
+![Visitor Badge](https://visitor-badge.feriirawann.repl.co?username=bellshade&repo=Javascript&label=VISITOR&style=for-the-badge&color=%2344CC11&token=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&contentType=svg)
 [![discord](https://img.shields.io/discord/722002048643497994?logo=discord&logoColor=white&style=for-the-badge)](http://discord.gg/S4rrXQU)
 
 Repositori ini berisi kumpulan code JavaScript yang dapat digunakan sebagai pembelajaran bagi siapa saja. Mulai dari materi Basic, DOM, ES6, hingga Web Api yang dapat kalian gunakan sebagai sumber belajar. Tidak hanya itu, repositori ini juga memiliki berbagai macam code mengenai struktur data dan algoritma yang diimplementasikan dengan menggunakan JavaScript.
