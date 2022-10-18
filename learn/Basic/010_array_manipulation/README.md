@@ -171,6 +171,27 @@ console.log(totalNumber);	// 115
 // nilai totalNumber menjadi 115
 ```
 
+### 7. Every
+Method `.every()` akan menjalankan fungsi pada setiap elemen, dimana pada setiap iterasinya akan mengecek elemen apakah memenuhi kondisi pada fungsi yang dibuat atau tidak. `.every()` akan mengembalikan nilai berupa `true` atau `false`.
+
+```js
+const exampleArray = [60, 70, 80, 90];
+
+const isArrayPassed = exampleArray.every((value) => value > 50);
+
+console.log(isArrayPassed); // true
+```
+
+### 8. findIndex
+Method `.findIndex()` akan mengembalikan indeks elemen pertama yang memenuhi kondisi pengujian.
+
+```js
+const animals = ["cat", "dog", "wolf"];
+
+console.log(animals.findIndex((animal) => animal === "cat")); // 0 --> mencari indeks cat dalam array animals
+console.log(animals.findIndex((animal) => animal === "dog")); // 1 --> mencari indeks dog dalam array animals
+```
+
 [<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Array" />](../009_array)
 
 [<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Object" />](../011_object)
