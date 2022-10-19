@@ -19,7 +19,7 @@ Ada 3 cara untuk mendefinisikan suatu himpunan, yaitu:
 
 ### 1. Gabungan
 
-_Definisi: Gabungan himpunan $A$ dan $B$ (ditulis: $A \cup B$) adalah semua anggota $A$ atau semua anggota $B$ atau anggota kedua-duanya (dibaca $A$ gabung $B$)._
+Definisi: Gabungan himpunan $A$ dan $B$ (ditulis: $A \cup B$) adalah semua anggota $A$ atau semua anggota $B$ atau anggota kedua-duanya (dibaca $A$ gabung $B$).
 
 A gabungan B dapat juga didefinisikan sebagai:
 
@@ -44,7 +44,7 @@ Operator *spread* `(...)` menyisipkan elemen dari sesuatu yang dapat diubah (sep
 
 ### 2. Irisan
 
-_Definisi: Irisan dari himpunan $A$ dan $B$ (ditulis: $A \cap B$) adalah himpunan dari anggota persekutuan $A$ dan himpunan $B$ (dengan kata lain, himpunan yang anggota-anggotanya adalah anggota  $A$ dan anggota $B$), dibaca $A$ irisan $B$._
+Definisi: Irisan dari himpunan $A$ dan $B$ (ditulis: $A \cap B$) adalah himpunan dari anggota persekutuan $A$ dan himpunan $B$ (dengan kata lain, himpunan yang anggota-anggotanya adalah anggota  $A$ dan anggota $B$), dibaca $A$ irisan $B$.
 
 
 $A\cap B=\{x\,\mid\, x \in A \text{ dan } x \in B\}.$
@@ -69,7 +69,7 @@ Langkah-langkah: Konversi `a` ke *array*, filter elemen, ubah hasilnya menjadi *
 
 ### 3. Komplemen
 
-_Definisi: Komplemen suatu himpunan $A$ (ditulis $A^{1}$ atau $A^{c}$) adalah himpunan anggota-anggota di dalam semesta pembicaraan yang bukan anggota $A$._
+Definisi: Komplemen suatu himpunan $A$ (ditulis $A^{1}$ atau $A^{c}$) adalah himpunan anggota-anggota di dalam semesta pembicaraan yang bukan anggota $A$.
 
 Contoh:
 
