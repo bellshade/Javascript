@@ -26,6 +26,7 @@ A gabungan B dapat juga didefinisikan sebagai:
 $A\cup B=\{x\,\mid\, x \in A \text{ atau } x \in B\}.$
 
 Contoh:
+
 - Jika $P = \{1,2,3\}$ dan $Q = \{a,b,c,d\}$, maka $P \cup Q = \{1,2,3,a,b,c,d\}$
 - Ditentukan $C = \{0\}$ dan $D = \text{ himpunan bilangan bulat positif }$. Maka $C \cup D = \text{ himpunan bilangan cacah }$.
 
