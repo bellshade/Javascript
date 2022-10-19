@@ -1,5 +1,4 @@
 ## Notasi Himpunan
----
 
 Himpunan biasanya dinyatakan dengan huruf $A, B, C, K, X, ...$ dan sebagainya. Sedang anggota suatu himpunan dinyatakan dengan huruf kecil $a, b,c, k, x,...$ dan sebagainya.
 
@@ -7,6 +6,7 @@ Ada 3 cara untuk mendefinisikan suatu himpunan, yaitu:
 - Dengan mendaftar anggota-anggota di antara kurung kurawal buka dan tutup
 
     Contoh: $P = \{a,i,u,e,o\}$
+
 - Dengan menyatakan sifat-sifat yang dipenuhi oleh anggota-anggotanya
 
     Contoh: $Q =$ himpunan vokal dalam abjad latin
@@ -15,17 +15,15 @@ Ada 3 cara untuk mendefinisikan suatu himpunan, yaitu:
 
     Contoh: $R= \{x\,\mid\, x \text{ adalah vokal dalam abjad latin}\} $
 
-
-
 ## Operator Himpunan
----
+
 ### 1. Gabungan
 
 _Definisi: Gabungan himpunan $A$ dan $B$ (ditulis: $A \cup B$) adalah semua anggota $A$ atau semua anggota $B$ atau anggota kedua-duanya (dibaca $A$ gabung $B$)._
 
 A gabungan B dapat juga didefinisikan sebagai:
 
-$ A\cup B=\{x\,\mid\, x \in A \text{ atau } x \in B\}. $
+$A\cup B=\{x\,\mid\, x \in A \text{ atau } x \in B\}.$
 
 Contoh:
 - Jika $P = \{1,2,3\}$ dan $Q = \{a,b,c,d\}$, maka $P \cup Q = \{1,2,3,a,b,c,d\}$
@@ -41,14 +39,14 @@ let union = new Set([...p, ...q]);
 console.log(union) // {1,2,3,4,'a','b','c','d'}
 ```
 
-Operator *`spread`* `(...)` menyisipkan elemen dari sesuatu yang dapat diubah (seperti *`set`*) ke dalam array. Oleh karena itu, `[...a, ...b]` berarti bahwa `a` dan `b` dikonversi ke *`array`* dan digabungkan. Ini setara dengan `[...a].concat([...b])`.
+Operator *spread* `(...)` menyisipkan elemen dari sesuatu yang dapat diubah (seperti *set*) ke dalam array. Oleh karena itu, `[...a, ...b]` berarti bahwa `a` dan `b` dikonversi ke *array* dan digabungkan. Ini setara dengan `[...a].concat([...b])`.
 
 ### 2. Irisan
 
 _Definisi: Irisan dari himpunan $A$ dan $B$ (ditulis: $A \cap B$) adalah himpunan dari anggota persekutuan $A$ dan himpunan $B$ (dengan kata lain, himpunan yang anggota-anggotanya adalah anggota  $A$ dan anggota $B$), dibaca $A$ irisan $B$._
 
 
-$ A\cap B=\{x\,\mid\, x \in A \text{ dan } x \in B\}. $
+$A\cap B=\{x\,\mid\, x \in A \text{ dan } x \in B\}.$
 
 Contoh:
 
@@ -66,7 +64,7 @@ let intersection = new Set(
 console.log(intersection) // {'p','t','e'}
 ```
 
-Langkah-langkah: Konversi `a` ke *`array`*, filter elemen, ubah hasilnya menjadi *`set`*.
+Langkah-langkah: Konversi `a` ke *array*, filter elemen, ubah hasilnya menjadi *set*.
 
 ### 3. Komplemen
 
