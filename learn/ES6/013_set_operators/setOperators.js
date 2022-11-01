@@ -16,7 +16,7 @@ const intersection = new Set(
 console.log(intersection) // {'p','t','e'}
 
 // Komplemen
-const s = new Set(['i','n','d','o','n','e','s','i','a']); //Himpunan Semesta
+const s = new Set(['i','n','d','o','n','e','s','i','a']); // Himpunan Semesta
 const e = new Set(['a','i','u','e','o']);
 const difference = new Set(
     [...s].filter(x => !e.has(x)));
