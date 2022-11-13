@@ -191,6 +191,28 @@ const animals = ["cat", "dog", "wolf"];
 console.log(animals.findIndex((animal) => animal === "cat")); // 0 --> mencari indeks cat dalam array animals
 console.log(animals.findIndex((animal) => animal === "dog")); // 1 --> mencari indeks dog dalam array animals
 ```
+### 9. splice
+Method `.splice()` akan mengganti isi elemen array dengan menghapus atau mengubah isi dari elemen.
+
+```js
+array.splice(indexStart, deleteCount, newItem, ...itemN);
+```
+
+- `indexStart`: index dari elemen yang dihapus/ubah
+- `deleteCount`: banyaknya elemen yang akan dihapus/ubah dimulai dari indexStart
+- `newItem`: item yang akan mengisi elemen yang dihapus/ubah
+
+Contoh:
+
+```js
+let food = ['Pizza', 'Nugget', 'Burger'];
+
+food.splice(1, 1, 'Spaghetti');
+
+console.log(food); // expected output: ['Pizza', 'Spaghetti', 'Burger']
+```
+
+Lihat contoh lainnya di [splice.js](splice.js)
 
 [<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Array" />](../009_array)
 
