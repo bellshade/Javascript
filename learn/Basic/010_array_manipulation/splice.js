@@ -1,6 +1,6 @@
 const fruits = ["Apple", "Orange", "Grape", "Watermelon"];
 fruits.splice(2, 1, "Dragonfruit");
-console.log(fruits); // expected output: ['Apple', 'Orage', 'Dragonfruit', 'Watermelon']
+console.log(fruits); // expected output: ['Apple', 'Orange', 'Dragonfruit', 'Watermelon']
 
 const animals = ["Dinosaur", "Cat", "Dog"];
 animals.splice(0, 1);
