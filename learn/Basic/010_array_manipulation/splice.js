@@ -1,4 +1,4 @@
-const fruits = ["Apple", "Orage", "Grape", "Watermelon"];
+const fruits = ["Apple", "Orange", "Grape", "Watermelon"];
 fruits.splice(2, 1, "Dragonfruit");
 console.log(fruits); // expected output: ['Apple', 'Orage', 'Dragonfruit', 'Watermelon']
 
