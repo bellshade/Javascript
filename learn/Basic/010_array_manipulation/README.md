@@ -191,7 +191,7 @@ const animals = ["cat", "dog", "wolf"];
 console.log(animals.findIndex((animal) => animal === "cat")); // 0 --> mencari indeks cat dalam array animals
 console.log(animals.findIndex((animal) => animal === "dog")); // 1 --> mencari indeks dog dalam array animals
 ```
-### 9. splice
+### 9. Splice
 Method `.splice()` akan mengganti isi elemen array dengan menghapus atau mengubah isi dari elemen.
 
 ```js
