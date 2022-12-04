@@ -25,7 +25,7 @@ digunakan untuk mencari setiap karakter/huruf/kata/kalimat yang ada pada string 
 
 #### contoh
 
-```
+```javascript
 let kalimat = "aku cinta indonesia";
 
 console.log( kalimat.match(/aku cinta (kamu)/) ); // null, karna tidak memenuhi persyaratan dengan regex yang mengharuskan kata 'kamu' ada setelah kalimat 'cinta '
@@ -45,10 +45,10 @@ console.log( kalimat.match(/aku cinta (indonesia)/) );  // mengahasilkan array s
 
 ## materi
 
-### mencari sebuah karakter atau lebih ```[any...]```
+### mencari **sebuah karakter atau lebih** ```[any...]```
 
 #### format penulisan
-```
+```javascript
 /[<karakter 1><karakter 2>dst...]/
 ```
 
@@ -70,6 +70,30 @@ string.match(MANY_CHARACTER)        // akan mengembalikan array yang berisi [ 'a
 
 > kenapa hasilnya sama ?, karna ```[any...]``` hanya mencari karakter pertama yang memenuhi syarat dalam "[" dan "]"
 
+### mencari semua karakter **kecuali** ```[^any...]```
+
+#### format penulisan
+```javascript
+/[^<karakter 1><karakter 2>dst...]/
+```
+
+```javascript
+let CONTOH_REGEX_1 = /[^a]/;   // mencari semua karakter kecuali a saja
+let CONTOH_REGEX_2 = /[^abc]/; // mencari semua karakter kecuali a, b dan c
+```
+
+#### contoh
+
+```javascript
+let SINGLE_CHARACTER = /[^a]/;      // hanya satu karakter yang tidak dicari
+let MANY_CHARACTER = /[^abc]/;      // tidak mencari karakter a, b dan c 
+let string = "aku suka javascript"; // contoh string
+
+string.match(SINGLE_CHARACTER)      // akan mengembalikan array yang berisi [ 'k', index: 0, input: 'aku suka javascript', groups: undefined ]
+string.match(MANY_CHARACTER)        // akan mengembalikan array yang berisi [ 'k', index: 0, input: 'aku suka javascript', groups: undefined ]
+```
+
+> kenapa hasilnya sama ?, karna ```[^any...]``` hanya mencari karakter pertama yang tidak ada dalam tanda "[" dan "]"
 
 
 ##  navigasi
