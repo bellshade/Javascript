@@ -51,5 +51,5 @@ Apa saja yang ada di folder ini?
     Memanipulasi **Object** dengan beberapa metode seperti `Object.keys()`, `Object.values()`, `Object.enties()`, dan `Object.assign()`.
 13. [**Strict Mode**](013_strict_mode)<br>
     Mengenal **Strict Mode** dan penggunaannya pada **Javascript**.
-14. [**Basic Program**](014_basic_program)<br>
-    Berisi contoh program sederhana dengan menggunakan fungsi, rekayasa string, logika.
+14. [**reguler expression**](014_reguler_expression)<br>
+    berisi materi dasar-dasar penulisan dan kegunaan regular expression atau biasa disebut regex
