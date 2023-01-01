@@ -1,4 +1,6 @@
-/*eslint no-undef: "error"*/
+// global buah, nama, namaBuah
+// eslint no-undef: "error"
+
 // == Contoh == //
 
 // Membuat objek dan menampilkan data didalamnya
