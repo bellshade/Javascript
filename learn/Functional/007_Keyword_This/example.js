@@ -7,7 +7,9 @@ const buah = {
   nama: "Jeruk",
   warna: "Oranye",
   rasa: "Manis",
+  // eslint-disable-next-line no-use-before-define
   namaBuah() {
+    // eslint-disable-next-line no-use-before-define
     return nama;
   },
   warnaBuah() {
