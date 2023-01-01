@@ -6,7 +6,6 @@ const buah = {
   warna: "Oranye",
   rasa: "Manis",
   namaBuah() {
-    // eslint-disable-next-line no-use-before-define
     return nama;
   },
   warnaBuah() {
@@ -16,6 +15,7 @@ const buah = {
     return `Buah ${this.nama} berwarna ${this.warna} rasanya ${this.rasa}`;
   }
 };
+// eslint-disable-next-line no-use-before-define
 console.log(buah.namaBuah()); // Error: 'nama' tidak terdefinisikan
 console.log(buah.warnaBuah()); // Oranye
 console.log(buah.fakta()); // Buah Jeruk berwarna Oranye rasanya Manis
