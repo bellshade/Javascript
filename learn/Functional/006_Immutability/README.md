@@ -22,7 +22,7 @@ console.log(mobilBaru); // { model: "Honda", tahun: 2020 }
 
 Pada contoh diatas, kita mengubah nilai `model` dari objek `mobil` dengan cara mengubah pada objek `mobil` menggunakan dot notation. Cara seperti ini bisa menyebabkan bug pada kode kita, karena bisa saja kita mengubah nilai objek `mobil` dari baris kode lain sehingga nilai dari objek tersebut menjadi berubah.
 
-Contoh immutable:
+**Contoh immutable:**
 
 ```js
 const mobil = {
@@ -38,3 +38,5 @@ console.log(mobilBaru); // { model: "Honda", tahun: 2020 }
 Pada contoh diatas, kita mengubah nilai `model` dari objek `mobil` dengan membuat objek baru menggunakan spread operator. Dengan cara ini, kita tidak mengubah objek `mobil` secara langsung, melainkan kita membuat objek baru.
 
 [<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Composition" />](../005_Composition)
+
+[<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Keyword_This" />](../007_Keyword_This)
