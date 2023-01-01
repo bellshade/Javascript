@@ -1,9 +1,8 @@
-// global buah, nama, namaBuah
-// eslint no-undef: "error"
-
 // == Contoh == //
 
 // Membuat objek dan menampilkan data didalamnya
+// global buah, nama, namaBuah
+// eslint no-undef: "error"
 const buah = {
   nama: "Jeruk",
   warna: "Oranye",
