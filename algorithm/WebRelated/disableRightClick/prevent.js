@@ -5,6 +5,6 @@
 
 // Membuat event listener jika user melakukan klik kanan di manapun di website kita.
 document.addEventListener("contextmenu", function (e) {
-    e.preventDefault(); // Mencegah agar tidak bisa diklik kanan.
-    alert("Maaf, fungsi klik kanan dinonaktifkan di website ini."); // Alert ditampilkan, teks bisa disesuaikan
+  e.preventDefault(); // Mencegah agar tidak bisa diklik kanan.
+  alert("Maaf, fungsi klik kanan dinonaktifkan di website ini."); // Alert ditampilkan, teks bisa disesuaikan
 });
