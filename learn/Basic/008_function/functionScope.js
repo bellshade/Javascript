@@ -1,15 +1,16 @@
 // == Contoh == //
 
-// 1. Mendefisikan variabel didalam fungsi
+// 1. Mendefinisikan variabel didalam fungsi
 function memancing() {
   let ikan = "Lele";
   console.log(ikan);
 }
 // Menampilkan variabel ikan yang didefinisikan didalam fungsi memancing()
+// eslint-disable-next-line no-use-before-define
 console.log(ikan); // Error: ikan tidak terdefinisikan
 memancing(); // Lele
 
-// 2. Mendefisikan variabel diluar fungsi
+// 2. Mendefinisikan variabel diluar fungsi
 let ikan = "Gurame";
 function kolamIkan() {
   console.log(ikan);
@@ -18,7 +19,7 @@ function kolamIkan() {
 console.log(ikan); // Gurame
 kolamIkan(); // Gurame
 
-// 3. Deklarasi variabel didalam dan diluar fungsi
+// 3. Mendefinisikan variabel didalam dan diluar fungsi
 let noktunal = "Kelelawar";
 let diurnal = "Gajah";
 function hewan() {
