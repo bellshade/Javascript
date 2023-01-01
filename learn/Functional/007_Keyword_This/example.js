@@ -1,3 +1,5 @@
+// global namaBuah, nama
+// eslint no-undef: "error"
 // == Contoh == //
 
 // Membuat objek dan menampilkan data didalamnya
