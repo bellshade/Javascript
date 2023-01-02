@@ -3,13 +3,13 @@
 // Membuat objek dan menampilkan data didalamnya
 // eslint-disable-next-line no-use-before-define
 const buah = {
-  // eslint-disable-next-line no-use-before-define
+  // eslint-disable-next-line no-undef
   nama: "Jeruk",
   warna: "Oranye",
   rasa: "Manis",
-  // eslint-disable-next-line no-use-before-define
+  // eslint-disable-next-line no-undef
   namaBuah() {
-    // eslint-disable-next-line no-use-before-define
+    // eslint-disable-next-line no-undef
     return nama;
   },
   warnaBuah() {
@@ -19,7 +19,7 @@ const buah = {
     return `Buah ${this.nama} berwarna ${this.warna} rasanya ${this.rasa}`;
   }
 };
-// eslint-disable-next-line no-use-before-define
+// eslint-disable-next-line no-undef
 console.log(buah.namaBuah()); // Error: 'nama' tidak terdefinisikan
 console.log(buah.warnaBuah()); // Oranye
 console.log(buah.fakta()); // Buah Jeruk berwarna Oranye rasanya Manis
