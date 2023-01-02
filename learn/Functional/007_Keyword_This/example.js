@@ -1,15 +1,11 @@
 // == Contoh == //
 
 // Membuat objek dan menampilkan data didalamnya
-// eslint-disable-next-line no-use-before-define
 const buah = {
-  // eslint-disable-next-line no-undef
   nama: "Jeruk",
   warna: "Oranye",
   rasa: "Manis",
-  // eslint-disable-next-line no-undef
   namaBuah() {
-    // eslint-disable-next-line no-undef
     return nama;
   },
   warnaBuah() {
