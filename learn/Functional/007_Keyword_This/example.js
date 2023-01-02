@@ -1,8 +1,7 @@
 // == Contoh == //
 
 // Membuat objek dan menampilkan data didalamnya
-// global buah, nama, namaBuah
-// eslint no-undef: "error"
+// eslint-disable-next-line no-use-before-define
 const buah = {
   nama: "Jeruk",
   warna: "Oranye",
@@ -17,6 +16,7 @@ const buah = {
     return `Buah ${this.nama} berwarna ${this.warna} rasanya ${this.rasa}`;
   }
 };
+// eslint-disable-next-line no-use-before-define
 console.log(buah.namaBuah()); // Error: 'nama' tidak terdefinisikan
 console.log(buah.warnaBuah()); // Oranye
 console.log(buah.fakta()); // Buah Jeruk berwarna Oranye rasanya Manis
