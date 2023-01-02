@@ -5,6 +5,7 @@ const buah = {
   nama: "Jeruk",
   warna: "Oranye",
   rasa: "Manis",
+  // eslint-disable-next-line no-undef
   namaBuah() {
     return nama;
   },
