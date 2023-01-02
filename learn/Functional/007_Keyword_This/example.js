@@ -3,10 +3,13 @@
 // Membuat objek dan menampilkan data didalamnya
 // eslint-disable-next-line no-use-before-define
 const buah = {
+  // eslint-disable-next-line no-use-before-define
   nama: "Jeruk",
   warna: "Oranye",
   rasa: "Manis",
+  // eslint-disable-next-line no-use-before-define
   namaBuah() {
+    // eslint-disable-next-line no-use-before-define
     return nama;
   },
   warnaBuah() {
