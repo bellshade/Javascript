@@ -7,6 +7,7 @@ const buah = {
   rasa: "Manis",
   // eslint-disable-next-line no-undef
   namaBuah() {
+  // eslint-disable-next-line no-undef
     return nama;
   },
   warnaBuah() {
