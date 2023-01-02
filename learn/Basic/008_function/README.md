@@ -90,9 +90,12 @@ function contohReturningFunction() {
 console.log(contohReturningFunction);
 ```
 
-### Lingkup Function
+
+# Lingkup Function
 
 Function juga memiliki lingkup untuk menangani variabel yang ingin digunakan, apabila variabel didefinisikan didalam function maka variabel tersebut tidak dapat digunakan jika function tidak dijalankan yang disebut sebagai `Function Scope`.
+
+---
 
 Contoh 1. Mendefisikan variabel didalam fungsi :
 ```js
@@ -102,11 +105,16 @@ function memancing() {
 }
 
 console.log(ikan) // Error: ikan tidak terdefinisikan
+
 memancing() // Lele
 ```
+
 Variabel ikan hanya dapat digunakan saat fungsi memancing() dijalankan karena variabel ikan didefinisikan didalam fungsi sehingga tidak dapat digunakan apabila fungsi memancing() tidak dijalankan, ini lah yang disebut lingkup fungsi (Function Scope).
+ 
+---
 
 Contoh 2. Mendefisikan variabel diluar fungsi :
+
 ```js
 let ikan = 'Gurame'
 function kolamIkan() {
@@ -114,14 +122,20 @@ function kolamIkan() {
 }
 
 console.log(ikan) // Gurame
+
 kolamIkan() // Gurame
 ```
+
 Variabel ikan dapat digunakan saat fungsi kolamIkan() dijalankan maupun langsung menggunakannya karena variabel ikan didefinisikan diluar fungsi sehingga variabel tersebut merupakan variabel dengan lingkup global (Global Scope).
 
+---
+
 Contoh 3. Deklarasi variabel didalam dan diluar fungsi :
+
 ```js
 let noktunal = 'Kelelawar'
 let diurnal = 'Gajah'
+
 function hewan() {
     let nokturnal = 'Burung Hantu'
     console.log(nokturnal)
@@ -130,10 +144,13 @@ function hewan() {
 
 console.log(noktunal) // Kelelawar
 console.log(diurnal) // Gajah
+
 hewan() // Burung Hantu & // Gajah
 ```
+
 Variabel nokturnal diluar fungsi hewan() memiliki nilai yang berbeda dengan variabel nokturnal didalam fungsi hewan(), karena variabel didalam fungsi memiliki lingkupnya sendiri maka saat fungsi hewan() dijalankan nilai yang didapat dari variabel `nokturnal` adalah "Burung Hantu" bukan "Kelelawar", sedangkan variabel yang didefinisikan diluar fungsi dapat digunakan didalam fungsi maka saat fungsi hewan() dijalankan nilai yang didapat dari variabel `diurnal` adalah "Gajah".
 
+---
 
 
 Lihat contoh lengkap untuk [Basic Function](functionBasic.js), [Argumen dan Parameter](parameterAndArgument.js), [Returning function](functionReturn.js), dan [Function Scope](functionScope.js).
