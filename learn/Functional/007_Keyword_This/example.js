@@ -1,5 +1,5 @@
 // == Contoh == //
-/* eslint-disable-next-line no-undef */
+/* eslint-disable no-undef */
 
 // Membuat objek dan menampilkan data didalamnya
 const buah = {
