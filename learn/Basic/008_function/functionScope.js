@@ -1,4 +1,4 @@
-// eslint-disable no-undef
+/* eslint-disable no-undef */
 // == Contoh == 
 
 // 1. Mendefisikan variabel didalam fungsi

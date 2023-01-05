@@ -1,4 +1,4 @@
-// eslint-disable no-undef
+/* eslint-disable no-undef */
 // == Contoh == //
 
 // Membuat objek dan menampilkan data didalamnya
