@@ -1,5 +1,5 @@
+// eslint-disable no-undef
 // == Contoh == //
-/* eslint-disable no-undef */
 
 // Membuat objek dan menampilkan data didalamnya
 const buah = {

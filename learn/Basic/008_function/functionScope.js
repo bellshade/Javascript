@@ -1,3 +1,4 @@
+// eslint-disable no-undef
 // == Contoh == //
 
 // 1. Mendefinisikan variabel didalam fungsi
@@ -7,7 +8,6 @@ function memancing() {
 }
 // Menampilkan variabel ikan yang didefinisikan didalam fungsi memancing()
 
-// eslint-disable-next-line no-use-before-define
 console.log(ikan); // Error: ikan tidak terdefinisikan
 memancing(); // Lele
 

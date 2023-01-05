@@ -2,8 +2,6 @@
 
 Kata kunci `this` digunakan untuk mengakses properti lain di dalam objek parentnya / objek yang sama, untuk pemahaman mengenai kata kunci `this` silahkan dibaca, dipahami, dan dicoba contoh kode dibawah ini.
 
----
-
 ## Contoh & Penjelasan :
 
 ```js
@@ -40,8 +38,6 @@ Dan dapat diimplemantasikan pada fungsi didalam objek tersebut.
 console.log(buah.fakta()) // Buah Jeruk berwarna Oranye rasanya Manis
 ```
 
----
-
 Membuat objek lain untuk mencoba akses properti pada objek `buah`.
 
 ```js
@@ -61,8 +57,6 @@ console.log(hewan.makan()) // Monyet Melompat untuk mengambil Jeruk yang berwarn
 
 Alhasil seluruh properti dalam objek buah juga dapat diakses oleh objek lain.
 
----
-
 Kemudian untuk mengetahui isi dari `this` bisa dicoba jalankan fungsi cekThis() yang ada didalam objek `hewan`. 
 
 ```js
@@ -70,8 +64,6 @@ console.log(hewan.cekThis()) // Nilai dari 'this' adalah {hewan Object}
 ```
 
 Alhasil yang ditampilkan adalah objek `hewan`, oleh karena itu properti didalam objek `hewan` dapat diakses oleh fungsi cekThis() yang ada didalamnya.
-
----
 
 Dan terakhir coba membuat variabel yang mereferensikan fungsi didalam objek hewan.
 
@@ -88,7 +80,5 @@ Nahh `this` dari variabel `isiThis` adalah objek `window` bukan objek `hewan` ka
 Oleh karena itu perlu diperhatikan penggunaan kata kunci `this` agar output yang didapatkan sesuai dengan ekspektasi yang diinginkan.
 
 [Contoh Kode 📂](example.js)
-
----
 
 [<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Immutability" />](../006_Immutability)
