@@ -7,7 +7,7 @@ function memancing() {
 }
 
 // Menampilkan variabel ikan yang didefinisikan didalam fungsi memancing()
-// eslint-disable-next-line no-undef
+// eslint-disable-next-line no-undef, no-use-before-define
 console.log(ikan); // Error: ikan tidak terdefinisikan
 memancing(); // Lele
 
