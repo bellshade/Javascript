@@ -15,4 +15,7 @@ const formatter = new Intl.RelativeTimeFormat("en", {
   localeMatcher: "best fit"
 });
 
-console.log(formatter.format(Math.round(diff / 86400000), "day")); // tomorrow
+const ONE_DAY_IN_MILLISECONDS = 86400000;
+console.log(
+  formatter.format(Math.round(diff / ONE_DAY_IN_MILLISECONDS), "day")
+); // tomorrow

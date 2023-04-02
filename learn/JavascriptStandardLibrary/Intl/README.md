@@ -43,7 +43,11 @@ const diff = olderDate - currentDate;
 
 // memformat dengan internationalization Intl
 const formatter = new Intl.RelativeTimeFormat("en", { numeric: "auto" });
-console.log(formatter.format(Math.round(diff / 86400000), "day")); // yesterday
+
+const ONE_DAY_IN_MILLISECONDS = 86400000;
+console.log(
+  formatter.format(Math.round(diff / ONE_DAY_IN_MILLISECONDS), "day")
+); // yesterday
 ```
 
 Seperti yang anda lihat, kami membuat dua Date objek , satu untuk variable `olderDate` yang berisi object dengan tanggal pada masa lampau dan satu lagi untuk variable `currentDate` yang merepresentasikan tanggal saat ini. Variabel `diff` akan mengembalikan perbedaan antara dua tanggal dalam milidetik.
@@ -63,7 +67,11 @@ const diff = olderDate - currentDate;
 
 // memformat dengan internationalization Intl
 const formatter = new Intl.RelativeTimeFormat("en", { numeric: "always" });
-console.log(formatter.format(Math.round(diff / 86400000), "day")); //1 day ago
+
+const ONE_DAY_IN_MILLISECONDS = 86400000;
+console.log(
+  formatter.format(Math.round(diff / ONE_DAY_IN_MILLISECONDS), "day")
+); // 1 day ago
 ```
 
 ### Contoh 3
@@ -89,7 +97,10 @@ const formatter = new Intl.RelativeTimeFormat("en", {
   localeMatcher: "best fit"
 });
 
-console.log(formatter.format(Math.round(diff / 86400000), "day")); // tomorrow
+const ONE_DAY_IN_MILLISECONDS = 86400000;
+console.log(
+  formatter.format(Math.round(diff / ONE_DAY_IN_MILLISECONDS), "day")
+); // tomorrow
 ```
 
 ### Unit satuan yang didukung pada method format
