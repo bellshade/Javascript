@@ -45,7 +45,9 @@ function multiply(matrix1, matrix2) {
    * @type {number[][]}
    */
   const matrixHasil = [];
-  for (let i = 0; i < dimensi1.rows; i++) matrixHasil[i] = [];
+  for (let i = 0; i < dimensi1.rows; i++) {
+    matrixHasil[i] = [];
+  }
 
   /**
    * Perkalian
@@ -54,8 +56,9 @@ function multiply(matrix1, matrix2) {
   for (let i = 0; i < dimensi1.rows; i++) {
     for (let j = 0; j < dimensi2.cols; j++) {
       matrixHasil[i][j] = 0;
-      for (let x = 0; x < dimensi1.cols; x++)
+      for (let x = 0; x < dimensi1.cols; x++) {
         matrixHasil[i][j] += matrix1[i][x] * matrix2[x][j];
+      }
     }
   }
 
