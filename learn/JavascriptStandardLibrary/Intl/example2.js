@@ -7,7 +7,7 @@ const diff = olderDate - currentDate;
 // memformat dengan internationalization Intl
 const formatter = new Intl.RelativeTimeFormat("en", { numeric: "always" });
 
-const ONE_DAY_IN_MILLISECONDS = 86400000;
+const ONE_DAY_IN_MILLISECONDS = 864e5;
 console.log(
   formatter.format(Math.round(diff / ONE_DAY_IN_MILLISECONDS), "day")
 ); // 1 day ago

@@ -44,7 +44,8 @@ const diff = olderDate - currentDate;
 // memformat dengan internationalization Intl
 const formatter = new Intl.RelativeTimeFormat("en", { numeric: "auto" });
 
-const ONE_DAY_IN_MILLISECONDS = 86400000;
+const ONE_DAY_IN_MILLISECONDS = 864e5;
+
 console.log(
   formatter.format(Math.round(diff / ONE_DAY_IN_MILLISECONDS), "day")
 ); // yesterday
@@ -52,7 +53,7 @@ console.log(
 
 Seperti yang anda lihat, kami membuat dua Date objek , satu untuk variable `olderDate` yang berisi object dengan tanggal pada masa lampau dan satu lagi untuk variable `currentDate` yang merepresentasikan tanggal saat ini. Variabel `diff` akan mengembalikan perbedaan antara dua tanggal dalam milidetik.
 
-Selanjutnya, kita membuat instance dari objek Intl.RelativeTimeFormat dan meneruskan opsi `en` locale dan `{ numeric: 'auto' }`. Kemudian, kita memanggil method `format()` dari objek `Intl.RelativeTimeFormat` dan mempassing data (harus berupa nilai numerik yang valid) sebagai argument pertama dan "satuan" sebagai hari sebagai parameter kedua. Hasilnya, kami mendapatkan perbedaan tanggal yang dapat dibaca user dalam JavaScript. Sebagai catatan tambahan kode diatas, angka 86400000 merupakan 1 hari dalam milisecond. Hasil akhirnya adalah yesterday.
+Selanjutnya, kita membuat instance dari objek Intl.RelativeTimeFormat dan meneruskan opsi `en` locale dan `{ numeric: 'auto' }`. Kemudian, kita memanggil method `format()` dari objek `Intl.RelativeTimeFormat` dan mempassing data (harus berupa nilai numerik yang valid) sebagai argument pertama dan "satuan" sebagai hari sebagai parameter kedua. Hasilnya, kami mendapatkan perbedaan tanggal yang dapat dibaca user dalam JavaScript. Sebagai catatan tambahan kode diatas, angka 864e5 merupakan 1 hari dalam milisecond. Hasil akhirnya adalah yesterday.
 
 ### Contoh 2
 
@@ -68,7 +69,8 @@ const diff = olderDate - currentDate;
 // memformat dengan internationalization Intl
 const formatter = new Intl.RelativeTimeFormat("en", { numeric: "always" });
 
-const ONE_DAY_IN_MILLISECONDS = 86400000;
+const ONE_DAY_IN_MILLISECONDS = 864e5;
+
 console.log(
   formatter.format(Math.round(diff / ONE_DAY_IN_MILLISECONDS), "day")
 ); // 1 day ago
@@ -97,7 +99,8 @@ const formatter = new Intl.RelativeTimeFormat("en", {
   localeMatcher: "best fit"
 });
 
-const ONE_DAY_IN_MILLISECONDS = 86400000;
+const ONE_DAY_IN_MILLISECONDS = 864e5;
+
 console.log(
   formatter.format(Math.round(diff / ONE_DAY_IN_MILLISECONDS), "day")
 ); // tomorrow
