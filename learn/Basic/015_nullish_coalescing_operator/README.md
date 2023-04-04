@@ -23,5 +23,4 @@ const valD = nullValue ?? undefined;
 console.log(valA); // "default for A"
 console.log(valB); // "" (meskipun bernilai falsy tapi string kosong bukan null atau undefined)
 console.log(valC); // 42
-console.log(valD); // undefined
 ```
