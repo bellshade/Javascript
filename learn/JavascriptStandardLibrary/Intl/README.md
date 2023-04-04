@@ -44,7 +44,7 @@ const diff = olderDate - currentDate;
 // memformat dengan internationalization Intl
 const formatter = new Intl.RelativeTimeFormat("en", { numeric: "auto" });
 
-const ONE_DAY_IN_MILLISECONDS = 864e5;
+const ONE_DAY_IN_MILLISECONDS = 86400 * 1000;
 
 console.log(
   formatter.format(Math.round(diff / ONE_DAY_IN_MILLISECONDS), "day")
@@ -53,7 +53,7 @@ console.log(
 
 Seperti yang anda lihat, kami membuat dua Date objek , satu untuk variable `olderDate` yang berisi object dengan tanggal pada masa lampau dan satu lagi untuk variable `currentDate` yang merepresentasikan tanggal saat ini. Variabel `diff` akan mengembalikan perbedaan antara dua tanggal dalam milidetik.
 
-Selanjutnya, kita membuat instance dari objek Intl.RelativeTimeFormat dan meneruskan opsi `en` locale dan `{ numeric: 'auto' }`. Kemudian, kita memanggil method `format()` dari objek `Intl.RelativeTimeFormat` dan mempassing data (harus berupa nilai numerik yang valid) sebagai argument pertama dan "satuan" sebagai hari sebagai parameter kedua. Hasilnya, kami mendapatkan perbedaan tanggal yang dapat dibaca user dalam JavaScript. Sebagai catatan tambahan kode diatas, angka 864e5 merupakan 1 hari dalam milisecond. Hasil akhirnya adalah yesterday.
+Selanjutnya, kita membuat instance dari objek Intl.RelativeTimeFormat dan meneruskan opsi `en` locale dan `{ numeric: 'auto' }`. Kemudian, kita memanggil method `format()` dari objek `Intl.RelativeTimeFormat` dan mempassing data (harus berupa nilai numerik yang valid) sebagai argument pertama dan "satuan" sebagai hari sebagai parameter kedua. Hasilnya, kami mendapatkan perbedaan tanggal yang dapat dibaca user dalam JavaScript.
 
 ### Contoh 2
 
@@ -69,7 +69,7 @@ const diff = olderDate - currentDate;
 // memformat dengan internationalization Intl
 const formatter = new Intl.RelativeTimeFormat("en", { numeric: "always" });
 
-const ONE_DAY_IN_MILLISECONDS = 864e5;
+const ONE_DAY_IN_MILLISECONDS = 86400 * 1000;
 
 console.log(
   formatter.format(Math.round(diff / ONE_DAY_IN_MILLISECONDS), "day")
@@ -99,7 +99,7 @@ const formatter = new Intl.RelativeTimeFormat("en", {
   localeMatcher: "best fit"
 });
 
-const ONE_DAY_IN_MILLISECONDS = 864e5;
+const ONE_DAY_IN_MILLISECONDS = 86400 * 1000;
 
 console.log(
   formatter.format(Math.round(diff / ONE_DAY_IN_MILLISECONDS), "day")
@@ -109,8 +109,10 @@ console.log(
 ### Unit satuan yang didukung pada method format
 
 metode `format()` pada argument kedua mendukung unit berikut :
-second | minute | hour | day | week | month | quarter | year
-Masukkan nilai di atas pada pada argument kedua pada method format. Gunakanlah sesuai kebutuhan.
+
+`second | minute | hour | day | week | month | quarter | year`
+
+Masukkan salah satu nilai di atas pada pada argument kedua pada method format. Gunakanlah sesuai kebutuhan.
 
 ## Penutup
 
