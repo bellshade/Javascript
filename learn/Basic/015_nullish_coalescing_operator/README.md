@@ -12,15 +12,14 @@ Jika operan sisi kanan maupun kiri bernilai bukan `null` atau `undefined` maka, 
 
 ```js
 const nullValue = null;
-const emptyText = ""; // falsy
+const emptyText = "";
 const someNumber = 42;
 
 const valA = nullValue ?? "default for A";
 const valB = emptyText ?? "default for B";
 const valC = someNumber ?? null;
-const valD = nullValue ?? undefined;
 
 console.log(valA); // "default for A"
-console.log(valB); // "" (meskipun bernilai falsy tapi string kosong bukan null atau undefined)
+console.log(valB); // ""
 console.log(valC); // 42
 ```
