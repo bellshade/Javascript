@@ -1,6 +1,6 @@
 # Pendahuluan
 
-Intl sebuah objek di dalam JavaScript yang menyediakan fasilitas untuk melakukan operasi internasionalisasi atau pengolahan bahasa-bahasa lain selain bahasa Inggris. Objek Intl ini memungkinkan kita untuk melakukan formatting tanggal dan waktu, pengaturan zona waktu, formatting angka dan mata uang, dan juga pemformatan teks sesuai dengan kebutuhan bahasa atau budaya yang berbeda.
+Intl adalah sebuah objek di dalam JavaScript yang menyediakan fasilitas untuk melakukan operasi internasionalisasi atau pengolahan bahasa-bahasa lain selain bahasa Inggris. Objek Intl ini memungkinkan kita untuk memformat tanggal dan waktu, pengaturan zona waktu, mengubah angka dan mata uang, dan juga mengubah teks sesuai dengan kebutuhan bahasa atau budaya yang berbeda.
 
 ## Intl
 
@@ -44,20 +44,25 @@ const diff = olderDate - currentDate;
 // memformat dengan internationalization Intl
 const formatter = new Intl.RelativeTimeFormat("en", { numeric: "auto" });
 
+/* 
+  variabel ONE_DAY_IN_MILLISECONDS dipakai sebagai acuan waktu yaitu, hari.
+  karena variabel diff diatas merupakan nilai dalam milidetik,
+  maka pembandingnya juga harus sama yaitu milidetik
+*/
 const ONE_DAY_IN_MILLISECONDS = 86400 * 1000;
 
 console.log(
   formatter.format(Math.round(diff / ONE_DAY_IN_MILLISECONDS), "day")
-); // yesterday
+);
 ```
 
-Seperti yang anda lihat, kami membuat dua Date objek , satu untuk variable `olderDate` yang berisi object dengan tanggal pada masa lampau dan satu lagi untuk variable `currentDate` yang merepresentasikan tanggal saat ini. Variabel `diff` akan mengembalikan perbedaan antara dua tanggal dalam milidetik.
+Seperti yang anda lihat, kami membuat dua objek tanggal, satu untuk variable `olderDate` yang berisi object dengan tanggal pada masa lampau dan satu lagi untuk variable `currentDate` yang merepresentasikan tanggal saat ini. Variabel `diff` akan mengembalikan perbedaan antara dua tanggal dalam milidetik.
 
-Selanjutnya, kita membuat instance dari objek Intl.RelativeTimeFormat dan meneruskan opsi `en` locale dan `{ numeric: 'auto' }`. Kemudian, kita memanggil method `format()` dari objek `Intl.RelativeTimeFormat` dan mempassing data (harus berupa nilai numerik yang valid) sebagai argument pertama dan "satuan" sebagai hari sebagai parameter kedua. Hasilnya, kami mendapatkan perbedaan tanggal yang dapat dibaca user dalam JavaScript.
+Selanjutnya, kita membuat instance dari objek Intl.RelativeTimeFormat dan meneruskan opsi `en` locale dan `{ numeric: 'auto' }`. Opsi `en` tentu saja bisa diganti sesuai kebutuhan. Sebagai informasi tambahan opsi `en` merupakan salah satu penulisan BCP 47 Language Tags untuk lebih lanjut silahkan kunjungi https://www.techonthenet.com/js/language_tags.php.Kemudian, kita memanggil method `format()` dari objek `Intl.RelativeTimeFormat` dan mempassing data (harus berupa nilai numerik yang valid) sebagai argument pertama dan "satuan" sebagai hari sebagai parameter kedua. Hasilnya, kami mendapatkan perbedaan tanggal yang dapat dibaca user dalam JavaScript.
 
 ### Contoh 2
 
-Melanjutkan hal di contoh di atas, jika kita menggunakan `{numeric: "always"}` di argument kedua pada method `RelativeTimeFormat`, maka hasilnya bukan `yesterday` melainkan `1 day ago`
+Melanjutkan contoh di atas, jika kita menggunakan `{numeric: "always"}` di argument kedua pada method `RelativeTimeFormat`, maka hasilnya bukan `yesterday` melainkan `1 day ago`.
 
 ```js
 const olderDate = new Date("2022-10-31");
@@ -69,11 +74,16 @@ const diff = olderDate - currentDate;
 // memformat dengan internationalization Intl
 const formatter = new Intl.RelativeTimeFormat("en", { numeric: "always" });
 
+/* 
+  variabel ONE_DAY_IN_MILLISECONDS dipakai sebagai acuan waktu yaitu, hari.
+  karena variabel diff diatas merupakan nilai dalam milidetik,
+  maka pembandingnya juga harus sama yaitu milidetik
+*/
 const ONE_DAY_IN_MILLISECONDS = 86400 * 1000;
 
 console.log(
   formatter.format(Math.round(diff / ONE_DAY_IN_MILLISECONDS), "day")
-); // 1 day ago
+);
 ```
 
 ### Contoh 3
@@ -99,11 +109,16 @@ const formatter = new Intl.RelativeTimeFormat("en", {
   localeMatcher: "best fit"
 });
 
+/* 
+  variabel ONE_DAY_IN_MILLISECONDS dipakai sebagai acuan waktu yaitu, hari.
+  karena variabel diff diatas merupakan nilai dalam milidetik,
+  maka pembandingnya juga harus sama yaitu milidetik
+*/
 const ONE_DAY_IN_MILLISECONDS = 86400 * 1000;
 
 console.log(
   formatter.format(Math.round(diff / ONE_DAY_IN_MILLISECONDS), "day")
-); // tomorrow
+);
 ```
 
 ### Unit satuan yang didukung pada method format
