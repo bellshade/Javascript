@@ -58,7 +58,9 @@ console.log(
 
 Seperti yang anda lihat, kami membuat dua objek tanggal, satu untuk variable `olderDate` yang berisi object dengan tanggal pada masa lampau dan satu lagi untuk variable `currentDate` yang merepresentasikan tanggal saat ini. Variabel `diff` akan mengembalikan perbedaan antara dua tanggal dalam milidetik.
 
-Selanjutnya, kita membuat instance dari objek Intl.RelativeTimeFormat dan meneruskan opsi `en` locale dan `{ numeric: 'auto' }`. Opsi `en` tentu saja bisa diganti sesuai kebutuhan. Sebagai informasi tambahan opsi `en` merupakan salah satu penulisan BCP 47 Language Tags untuk lebih lanjut silahkan kunjungi https://www.techonthenet.com/js/language_tags.php.Kemudian, kita memanggil method `format()` dari objek `Intl.RelativeTimeFormat` dan mempassing data (harus berupa nilai numerik yang valid) sebagai argument pertama dan "satuan" sebagai hari sebagai parameter kedua. Hasilnya, kami mendapatkan perbedaan tanggal yang dapat dibaca user dalam JavaScript.
+Selanjutnya, kita membuat instance dari objek Intl.RelativeTimeFormat dan meneruskan opsi `en` locale dan `{ numeric: 'auto' }`. Opsi `en` tentu saja bisa diganti sesuai kebutuhan. Sebagai informasi tambahan opsi `en` merupakan salah satu penulisan BCP 47 Language Tags untuk lebih lanjut silahkan kunjungi https://www.techonthenet.com/js/language_tags.php.
+
+Kemudian, kita memanggil method `format()` dari objek `Intl.RelativeTimeFormat` dan mempassing data (harus berupa nilai numerik yang valid) sebagai argument pertama dan "satuan" sebagai hari sebagai parameter kedua. Hasilnya, kami mendapatkan perbedaan tanggal yang dapat dibaca user dalam JavaScript.
 
 ### Contoh 2
 
