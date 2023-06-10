@@ -5,8 +5,8 @@
 const buah = {
   nama: "Jeruk",
   warna: "Oranye",
-  rasa: "Manis",  
-  namaBuah() {  
+  rasa: "Manis",
+  namaBuah() {
     return nama;
   },
   warnaBuah() {
