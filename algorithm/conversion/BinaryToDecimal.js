@@ -22,6 +22,6 @@ const BinaryToDecimal = (binaryString) => {
   const biner2 = "101010101";
   const desimal1 = BinaryToDecimal(biner1);
   const desimal2 = BinaryToDecimal(biner2);
-  console.log(desimal1 == 1001);
-  console.log(desimal2 == 341);
+  console.log(desimal1 === 1001);
+  console.log(desimal2 === 341);
 })();
