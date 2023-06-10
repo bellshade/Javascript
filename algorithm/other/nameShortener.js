@@ -16,9 +16,9 @@ function nameShortner(fullname, maxLen = 24, capitalize = 1) {
     while (shorten.length >= 2) {
       shorten[0].trim();
       if (nameLen(shorten) <= maxLen) {
-          // hilangkan semua singkatan hingga karakter nya sesuai 
-          break;
-      } 
+        // hilangkan semua singkatan hingga karakter nya sesuai
+        break;
+      }
       shorten.shift();
     }
   }
@@ -29,25 +29,24 @@ function nameShortner(fullname, maxLen = 24, capitalize = 1) {
   for (const [i, name] of shorten.entries()) {
     // i sebagai index, dan name sebagai nama
     const currentLen = nameLen(shorten); // memperbarui total panjang nama
-    
+
     if (capitalize) {
-         // bila nama butuh huruf kapital di awal tiap nama
-        shorten[i] = capitalized(name);
+      // bila nama butuh huruf kapital di awal tiap nama
+      shorten[i] = capitalized(name);
     }
     if (currentLen <= maxLen && name.length > 2) {
-         // lewati 1 loop bila total panjang sudah sesuai dan nama belum di singkat
-        continue;
+      // lewati 1 loop bila total panjang sudah sesuai dan nama belum di singkat
+      continue;
     }
-    
+
     if (i !== shorten.length - 1) {
       // bila nama yang belum di singkat masih lebih dari 1
       shorten[i] = name.substring(0, 1).toUpperCase() + "."; // ambil karakter pertama, lalu di buat menjadi kapital, dan tambah kan .
-    }
-    else {
+    } else {
       singleName(shorten);
     }
   }
-  
+
   return shorten.reverse().join(" "); // reverse array nya ke posisi semula dan gabungkan
 }
 

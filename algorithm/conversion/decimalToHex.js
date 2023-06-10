@@ -1,20 +1,14 @@
 // konversi dari desimal ke hexedesimal
 function intToHex(num) {
-  switch (num) {
-    case 10:
-      return "A";
-    case 11:
-      return "B";
-    case 12:
-      return "C";
-    case 13:
-      return "D";
-    case 14:
-      return "E";
-    case 15:
-      return "F";
-  }
-  return num;
+  const angkaHex = {
+    10: "A",
+    11: "B",
+    12: "C",
+    13: "D",
+    14: "E",
+    15: "F"
+  };
+  return angkaHex[num] || num;
 }
 
 function decimalToHex(num) {

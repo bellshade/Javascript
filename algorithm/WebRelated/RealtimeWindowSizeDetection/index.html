@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Realtime Window Size Detection</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1 id="windowSize"></h1>
-</body>
+  </body>
 
-<script>
+  <script>
     let width = window.innerWidth;
     let height = window.innerHeight;
 
     document.getElementById("windowSize").textContent = `${width} * ${height}`;
 
-    window.addEventListener("resize", function(){
-        width = window.innerWidth;
-        height = window.innerHeight;
-        document.getElementById("windowSize").textContent = `${width} * ${height}`;
+    window.addEventListener("resize", function () {
+      width = window.innerWidth;
+      height = window.innerHeight;
+      document.getElementById(
+        "windowSize"
+      ).textContent = `${width} * ${height}`;
     });
-</script>
-
+  </script>
 </html>
