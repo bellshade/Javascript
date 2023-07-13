@@ -17,7 +17,7 @@ function decToHex(num) {
     //yakni 0-15
     const maxNum = 15;
     //dan huruf A-F mewakili angka 10-15
-    const result = ["F","E","D","C","B","A"];
+    const result = ["F", "E", "D", "C", "B", "A"];
     if (num > 9) {
         // jika angka lebih dari 9 maka akan di konversi menjadi huruf
         return result[maxNum - num];
@@ -29,15 +29,14 @@ function decToHex(num) {
     }
     // jika angka dibawah 10 maka tidak akan di konversikan
     return String(num);
-};
+}
 // objek inisial
 const rgb = {
-    red: '00',
-    green: '00',
-    blue: '00',
+    red: "00",
+    green: "00",
+    blue: "00",
 };
 // tambah event listener pada semua input range
-ranges.forEach(el => el.addEventListener("input", rangeListener));
 // event listener untuk semua input range
 function rangeListener(e) {
     /*
@@ -71,11 +70,11 @@ function rangeListener(e) {
     // tampilkan hasil hexadecimal tersebut dalam bentuk text
     document.querySelector(".text-result").innerText = hex;
 }
+ranges.forEach((el) => el.addEventListener("input", rangeListener));
 
 // kita tambah sedikit fitur untuk mengcopy value hex tadi saat mengclick box
 result.addEventListener("click", () => {
     navigator.clipboard.writeText(`#${rgb.red}${rgb.green}${rgb.blue}`);
-    alert('Copied to clipboard')
-})
-
+    alert("Copied to clipboard");
+});
 result.style.backgroundColor = `#${rgb.red}${rgb.green}${rgb.blue}`;
