@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hex generator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="flex flex-col justify-center items-center gap-3">
+        <input class="slider red" value="0" type="range" min="0" max="255" />
+        <input class="slider green" value="0" type="range" min="0" max="255" />
+        <input class="slider blue" value="0" type="range" min="0" max="255" />
+    </div>
+    <div class="flex flex-col justify-center items-center gap-3 margin-3">
+        <div class="box" id="result"></div>
+        <p class="text-result">#000000</p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
