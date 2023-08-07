@@ -1,3 +1,10 @@
+function getColumn(key) {
+  const charACode = 65;
+  let temp = key.charCodeAt() - charACode;
+
+  return temp % 2 !== 0 ? --temp : temp;
+}
+
 function getCurrentColumnRow(key) {
   const nToZ = "NOPQRSTUVWXYZ";
   const column = getColumn(key);
