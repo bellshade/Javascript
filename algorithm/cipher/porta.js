@@ -5,6 +5,8 @@
  * @description Porta Cipher adalah jenis cipher substitusi polialfabet yang ditemukan oleh Giovanni Battista della Porta. Porta chiper menggunakan 13 huruf alphabet (A-M) dan (N-Z) yang bersifat timbal balik.
  * @link http://practicalcryptography.com/ciphers/porta-cipher/
  * @returns string yang telah terenkripsi atau terdekripsi
+ * @example portaCipher("hello world")
+ * //=> "OYTUBCHJUQ"
  */
 
 function portaCipher(string, keys = "PORTA") {
@@ -74,7 +76,7 @@ function portaCipher(string, keys = "PORTA") {
   const filteredKeys = filterToAlphabetOnly(keys);
 
   const groupOfString = filteredString.match(
-    new RegExp(`.{1,${filteredKeys.length}}`, `g`)
+    new RegExp(".{1," + filteredKeys.length + "}", "g")
   );
 
   let result = "";
@@ -83,7 +85,7 @@ function portaCipher(string, keys = "PORTA") {
     const currentString = groupOfString[i];
 
     for (let j = 0; j < currentString.length; j++) {
-      result += swapCharFromPeriodicTable(KEYS[j], currentString[j]);
+      result += swapCharFromPeriodicTable(filteredKeys[j], currentString[j]);
     }
   }
 
