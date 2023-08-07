@@ -9,8 +9,8 @@
 
 function portaCipher(string, keys = "PORTA") {
   /**
-   * @summary get column even index number.
-   * @description e.g. [[A,B], [C,D], [E,F], ...]
+   * @summary mengambil kolom berdasarkan index genap
+   * @description contoh arrray [[A,B], [C,D], [E,F], ...]
    *  - [A,B] index 0
    *  - [C,D] index 2
    *  - [E,F] index 4
@@ -25,7 +25,7 @@ function portaCipher(string, keys = "PORTA") {
   }
 
   /**
-   * @summary get current column row.
+   * @summary mengambil baris dari nomor kolom berdasarkan key
    * @param {string} key
    * @returns
    */
@@ -42,7 +42,7 @@ function portaCipher(string, keys = "PORTA") {
   }
 
   /**
-   * @summary swap the char based on the key in the table.
+   * @summary menukar huruf berdasarkan key di tabel
    * @param {string} key
    * @param {string} charToSwap
    * @returns
@@ -57,7 +57,7 @@ function portaCipher(string, keys = "PORTA") {
   }
 
   /**
-   * @summary filter string to Alphabet
+   * @summary mengubah string menjadi alfabet saja
    * @description {ABCDEFGHIJKLMNOPQRSTUVWXYZ}
    * @param {string} key
    * @param {string} charToSwap
