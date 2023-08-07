@@ -27,6 +27,13 @@ function portaCipher(string, keys = "PORTA") {
       : aToMColumn[keyColumn.indexOf(charToSwap)];
   }
 
+  /**
+   * @summary filter string to Alphabet
+   * @description {ABCDEFGHIJKLMNOPQRSTUVWXYZ}
+   * @param {string} key
+   * @param {string} charToSwap
+   * @returns
+   */
   function filterToAlphabetOnly(string) {
     return string
       .toUpperCase()
