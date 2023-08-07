@@ -33,4 +33,7 @@ function portaCipher(string, keys = "PORTA") {
       .split(/[\W\d]/)
       .join("");
   }
+
+  const filteredString = filterToAlphabetOnly(string);
+  const filteredKeys = filterToAlphabetOnly(keys);
 }
