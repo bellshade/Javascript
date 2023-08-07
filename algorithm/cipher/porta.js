@@ -40,4 +40,16 @@ function portaCipher(string, keys = "PORTA") {
   const groupOfString = filteredString.match(
     new RegExp(`.{1,${filteredKeys.length}}`, `g`)
   );
+
+  let result = "";
+
+  for (let i = 0; i < groupOfString.length; i++) {
+    const currentString = groupOfString[i];
+
+    for (let j = 0; j < currentString.length; j++) {
+      result += swapCharFromPeriodicTable(KEYS[j], currentString[j]);
+    }
+  }
+
+  return result;
 }
