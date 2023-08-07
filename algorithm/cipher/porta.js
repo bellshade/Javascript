@@ -32,6 +32,12 @@ function portaCipher(string, keys = "PORTA") {
     );
   }
 
+  /**
+   * @summary swap the char based on the key in the table.
+   * @param {string} key
+   * @param {string} charToSwap
+   * @returns
+   */
   function swapCharFromPeriodicTable(key, charToSwap) {
     const aToMColumn = "ABCDEFGHIJKLM";
     const keyColumn = getCurrentColumnRow(key);
