@@ -1,4 +1,13 @@
 function portaCipher(string, keys = "PORTA") {
+  /**
+   * @summary get column even index number.
+   * @description e.g. [[A,B], [C,D], [E,F], ...]
+   *  - [A,B] index 0
+   *  - [C,D] index 2
+   *  - [E,F] index 4
+   * @param {string} key
+   * @returns
+   */
   function getColumn(key) {
     const charACode = 65;
     let temp = key.charCodeAt() - charACode;
@@ -6,6 +15,11 @@ function portaCipher(string, keys = "PORTA") {
     return temp % 2 !== 0 ? --temp : temp;
   }
 
+  /**
+   * @summary get current column row.
+   * @param {string} key
+   * @returns
+   */
   function getCurrentColumnRow(key) {
     const nToZ = "NOPQRSTUVWXYZ";
     const column = getColumn(key);
