@@ -75,9 +75,11 @@ function portaCipher(string, keys = "PORTA") {
   const filteredString = filterToAlphabetOnly(string);
   const filteredKeys = filterToAlphabetOnly(keys);
 
-  const groupOfString = filteredString.match(
-    new RegExp(".{1," + filteredKeys.length + "}", "g")
-  );
+  const groupOfString = [];
+
+  for (let i = 0; i < filteredString.length; i += filteredKeys.length) {
+    groupOfString.push(filteredString.substring(i, i + filteredKeys.length));
+  }
 
   let result = "";
 
