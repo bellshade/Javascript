@@ -53,3 +53,15 @@ function portaCipher(string, keys = "PORTA") {
 
   return result;
 }
+
+console.log(portaCipher("Andika Eka Kurnia"));
+// UGYRXUYSWXAKFRN
+
+console.log(portaCipher("UGYRXUYSWXAKFRN"));
+// ANDIKAEKAKURNIA
+
+console.log(portaCipher("Andika Eka Kurnia", "DikDns"));
+// OJVWQWSOSYBIMZS
+
+console.log(portaCipher("OJVWQWSOSYBIMZS", "DikDns"));
+// ANDIKAEKAKURNIA
