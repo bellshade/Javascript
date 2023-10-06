@@ -17,14 +17,33 @@ getDataButton.addEventListener("click", () => {
       return response.json();
     })
     .then((data) => {
-      // Menampilkan data yang diterima dalam elemen HTML
-      dataContainer.innerHTML = `<p>User ID: ${data.userId}</p>
-                                        <p>ID: ${data.id}</p>
-                                        <p>Title: ${data.title}</p>
-                                        <p>Body: ${data.body}</p>`;
+      const userId = document.createElement("p");
+      userId.textContent = `User ID: ${data.userId}`;
+
+      const id = document.createElement("p");
+      id.textContent = `ID: ${data.id}`;
+
+      const title = document.createElement("p");
+      title.textContent = `Title: ${data.title}`;
+
+      const body = document.createElement("p");
+      body.textContent = `Body: ${data.body}`;
+
+      dataContainer.innerHTML = "";
+
+      dataContainer.appendChild(userId);
+      dataContainer.appendChild(id);
+      dataContainer.appendChild(title);
+      dataContainer.appendChild(body);
     })
     .catch((error) => {
-      // Menangani kesalahan jika ada
-      dataContainer.innerHTML = `<p>Terjadi kesalahan: ${error.message}</p>`;
+      const errorParagraph = document.createElement("p");
+      errorParagraph.textContent = `Terjadi kesalahan: ${error.message}`;
+
+      while (dataContainer.firstChild) {
+        dataContainer.removeChild(dataContainer.firstChild);
+      }
+
+      dataContainer.appendChild(errorParagraph);
     });
 });
