@@ -1,6 +1,6 @@
 # Fetch API
 
-Fetch API adalah antarmuka JavaScript yang memungkinkan untuk mengirim dan menerima permintaan HTTP secara asinkron. Fetch API memungkinkan untuk berkomunikasi dengan server dalam mengambil, mengirim, dan memproses data pada aplikasi web dengan metode HTTP seperti GET dan POST, serta menangani kesalahan dengan baik.
+Fetch API adalah antarmuka JavaScript yang memungkinkan web klien untuk mengirim dan menerima permintaan HTTP secara asinkron. Fetch API memungkinkan untuk berkomunikasi dengan server dalam mengambil, mengirim, dan memproses data pada aplikasi web dengan metode HTTP seperti GET, POST, PUT, dan DELETE serta menangani kesalahan dengan baik.
 
 ## Contoh Penggunaan Fetch
 
