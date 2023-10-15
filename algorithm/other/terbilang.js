@@ -7,14 +7,12 @@
   - 11 => Sebelas
   - 15 => Lima Belas
   - 20 => Dua Puluh
-  - 25 => Dua Puluh Lima
   - 100 => Seratus
   - 110 => Seratus Sepuluh
   - 111 => Seratus Sebelas
   - 1000 => Seribu
   - 1000000 => Satu Juta
   - 111111111111111 => Seratus Sebelas Triliun Seratus Sebelas Miliar Seratus Sebelas Juta Seratus Sebelas Ribu Seratus Sebelas
-  - 999999999999999 => Sembilan Ratus Sembilan Puluh Sembilan Triliun Sembilan Ratus Sembilan Puluh Sembilan Miliar Sembilan Ratus Sembilan Puluh Sembilan Juta Sembilan Ratus Sembilan Puluh Sembilan Ribu Sembilan Ratus Sembilan Puluh Sembilan
 */
 
 const TRILIUN = 1000000000000;
@@ -34,12 +32,26 @@ const nominal = {
 };
 
 /**
- * Function buat mengubah tiga angka yang udah dipisah menjadi terbilang
+ * Function buat mengubah tiga angka yang udah dipisah
+ *
+ * 1. program memisahkan ratusan, puluhan, dan satuan dari angka menggunakan operasi pembagian dan modulo.
+ *
+ * 2. Jika ratusan lebih dari 0, program mengecek apakah ratusan adalah 1 (seratus) atau bukan.
+ *    Jika iya, program menambahkan "Seratus" ke dalam hasil.
+ *    Jika tidak, program menambahkan terbilang ratusan (dalam bentuk angka) diikuti oleh "Ratus".
+ *
+ * 3. Jika puluhan lebih dari 0, program mengecek apakah puluhan adalah 1 (sepuluh) atau bukan.
+ *    Jika iya, program mengecek angka satuan dan menambahkan terbilang "Sepuluh", "Sebelas", atau "Belas" sesuai dengan angka satuan.
+ *    Jika puluhan bukan 1, program menambahkan terbilang puluhan (dalam bentuk angka) diikuti oleh "Puluh".
+ *
+ * 4. Jika angka satuan lebih dari 0, program menambahkan terbilang angka satuan.
+ *
+ * 5. Akhirnya, program menggabungkan semua hasil terbilang dengan spasi dan mengembalikan string terbilang.
+ *
  * @param {number} angka
- * @returns {string} angka dalam bentuk terbilang
+ * @returns {string}
  */
-function tigaDigit(angka) {
-  // array untuk menyimpan hasil
+function konvert(angka) {
   const result = [];
 
   const ratusan = Math.floor(angka / 100);
@@ -79,7 +91,7 @@ function tigaDigit(angka) {
   return result.join(" ");
 }
 /**
- * Function buat memisahkan angka dan menjalankan function `tigaDigit`   diatas
+ * Function buat memisahkan angka dan menjalankan function `konvert` diatas
  * @param {number} angka yang mau dicari terbilangnya
  * @returns terbilang
  */
@@ -89,31 +101,29 @@ function terbilang(angka) {
   const triliun = Math.floor(angka / TRILIUN);
   let sisaAngka = angka % TRILIUN;
   if (triliun > 0) {
-    result.push(tigaDigit(triliun), "Triliun");
+    result.push(konvert(triliun), "Triliun");
   }
 
   const miliar = Math.floor(sisaAngka / MILIAR);
   sisaAngka %= MILIAR;
   if (miliar > 0) {
-    result.push(tigaDigit(miliar), "Miliar");
+    result.push(konvert(miliar), "Miliar");
   }
 
   const juta = Math.floor(sisaAngka / JUTA);
   sisaAngka %= JUTA;
   if (juta > 0) {
-    result.push(tigaDigit(juta), "Juta");
+    result.push(konvert(juta), "Juta");
   }
 
   const ribu = Math.floor(sisaAngka / RIBU);
   sisaAngka %= RIBU;
   if (ribu > 0) {
-    result.push(tigaDigit(ribu), "Ribu");
+    result.push(konvert(ribu), "Ribu");
   }
 
-  const satu = Math.floor(sisaAngka / 1);
-  sisaAngka %= 1;
-  if (satu > 0) {
-    result.push(tigaDigit(satu));
+  if (sisaAngka > 0) {
+    result.push(konvert(sisaAngka));
   }
 
   return result.join(" ");
@@ -123,7 +133,6 @@ console.log(terbilang(123123123));
 
 /*
   * Penjelasan
-
   loh bang kok dipisahin? karena ada pola pada terbilang.
   dimana tiap 3 digit itu dapat dibedakan
 
@@ -132,4 +141,16 @@ console.log(terbilang(123123123));
   - 123123 => Seratus Dua Puluh Tiga Ribu Seratus Dua Puluh Tiga
   - 123123123 => Seratus Dua Puluh Tiga Juta Seratus Dua Puluh Tiga Ribu Seratus Dua Puluh Tiga
   - dst
+
+  * Algoritma
+  1. pisahkan angka menggunakan operasi pembagian dan modulo.
+  ini bertujuan untuk mendapatkan nilai triliun, miliar, juta, ribu, dan satu
+  
+
+  2. Untuk setiap bagian (triliun, miliar, juta, ribu, dan satu)
+  program memanggil fungsi `konvert` untuk mengonversi tiga digit tersebut menjadi
+  terbilang dan menambahkannya ke dalam array result dengan unit Triliun, Miliar, Juta, Ribu, atau tanpa unit.
+  
+  3. Akhirnya, program menggabungkan semua hasil terbilang dengan spasi dan
+  mengembalikan string terbilang lengkap.
 */
