@@ -86,7 +86,13 @@ Double Bang adalah operator yang mengkonversi suatu value menjadi tipe data bool
 
 Operator ini bisa digunakan sebagai conditional statement if atau else if.
 
-Untuk contoh kode, cek contoh untuk [operator perbandingan](comparisonOperators.js), [operator logika](logicalOperator.js), [nullish coalescing operator](nullishCoalescingOperators.js), [ternary operator](ternaryOperator.js), [in operator](inOperator.js), [optional chaining operator](optionalChainingOperator.js), [double bang operator](doubleBangOperator.js).
+Untuk contoh kode, berikut ini contoh kode nya: 
+- [operator perbandingan](comparisonOperators.js)
+- [operator logika](logicalOperator.js)
+- [nullish coalescing operator](nullishCoalescingOperators.js)
+- [ternary operator](ternaryOperator.js), [in operator](inOperator.js)
+- [optional chaining operator](optionalChainingOperator.js)
+- [double bang operator](doubleBangOperator.js).
 
 [<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Variable and Datatype" />](../002_variable_datatype)
 
