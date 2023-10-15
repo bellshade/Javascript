@@ -50,7 +50,7 @@ while (angka < 5) {
 }
 ```
 
-> Jangan beri parameter **true** pada while loop, atau itu akan berjalan selamanya!
+> Peringatan: Jangan beri parameter **true** pada while loop, atau itu akan berjalan selamanya!
 
 3. `do..while` loop
 
