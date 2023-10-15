@@ -7,7 +7,7 @@ Contoh penggunaan: [Membuat Array](arrayBasic.js#L1-L5)
 
 ## Mengakses dan Mengambil Nilai pada Array
 Untuk mengambil / mengakses nilai yang ada pada array adalah dengan menggunakan angka sebagai index yang dibungkus dengan kurung siku. 
->Index pada array selalu dimulai dari angka 0
+>Informasi Penting: Index pada array selalu dimulai dari angka 0.
 Contoh penggunaan: [Mengakses Array](arrayBasic.js#L7-L11)
 
 ## Mengecek Panjang / Banyak Data pada Array
