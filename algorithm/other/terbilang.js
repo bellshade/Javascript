@@ -119,7 +119,11 @@ function terbilang(angka) {
   const ribu = Math.floor(sisaAngka / RIBU);
   sisaAngka %= RIBU;
   if (ribu > 0) {
-    result.push(konvert(ribu), "Ribu");
+    if (ribu === 1) {
+      result.push("Seribu");
+    } else {
+      result.push(konvert(ribu), "Ribu");
+    }
   }
 
   if (sisaAngka > 0) {
@@ -129,7 +133,17 @@ function terbilang(angka) {
   return result.join(" ");
 }
 
-console.log(terbilang(123123123));
+console.log(terbilang(1));
+console.log(terbilang(10));
+console.log(terbilang(11));
+console.log(terbilang(15));
+console.log(terbilang(20));
+console.log(terbilang(100));
+console.log(terbilang(110));
+console.log(terbilang(111));
+console.log(terbilang(1000));
+console.log(terbilang(1000000));
+console.log(terbilang(101110101110));
 
 /*
   * Penjelasan
