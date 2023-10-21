@@ -15,9 +15,9 @@
   - 111111111111111 => Seratus Sebelas Triliun Seratus Sebelas Miliar Seratus Sebelas Juta Seratus Sebelas Ribu Seratus Sebelas
 */
 
-const TRILIUN = 1000000000000;
-const MILIAR = 1000000000;
-const JUTA = 1000000;
+const TRILIUN = 1e12; // 1000000000000
+const MILIAR = 1e9;
+const JUTA = 1e6;
 const RIBU = 1000;
 const nominal = {
   1: "Satu",
@@ -143,11 +143,10 @@ console.log(terbilang(110));
 console.log(terbilang(111));
 console.log(terbilang(1000));
 console.log(terbilang(1000000));
-console.log(terbilang(101110101110));
-
+console.log(terbilang(11e12 + 11e9 + 11e6 + 11111));
 /*
   * Penjelasan
-  loh bang kok dipisahin? karena ada pola pada terbilang.
+  kok dipisahin? karena ada pola pada terbilang.
   dimana tiap 3 digit itu dapat dibedakan
 
   misal :
@@ -160,7 +159,6 @@ console.log(terbilang(101110101110));
   1. pisahkan angka menggunakan operasi pembagian dan modulo.
   ini bertujuan untuk mendapatkan nilai triliun, miliar, juta, ribu, dan satu
   
-
   2. Untuk setiap bagian (triliun, miliar, juta, ribu, dan satu)
   program memanggil fungsi `konvert` untuk mengonversi tiga digit tersebut menjadi
   terbilang dan menambahkannya ke dalam array result dengan unit Triliun, Miliar, Juta, Ribu, atau tanpa unit.
