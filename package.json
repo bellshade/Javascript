@@ -16,7 +16,7 @@
     "doctest": "0.21.0",
     "eslint": "8.56.0",
     "onchange": "7.1.0",
-    "prettier": "3.2.1"
+    "prettier": "3.2.5"
   },
   "dependencies": {
     "@bellshade/ningali": "1.3.0"
