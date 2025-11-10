@@ -38,7 +38,7 @@ packages:
       '@fortawesome/fontawesome-free': 6.1.1
       bootstrap: 5.1.3
       directory-tree: 3.3.0
-      ejs: 3.1.8
+      ejs: 3.1.10
       fastify: 3.29.5
       fastify-plugin: 3.0.1
       fastify-socket.io: 3.0.0(socket.io@4.5.1)
@@ -548,8 +548,8 @@ packages:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
     dev: false
 
-  /ejs@3.1.8:
-    resolution: {integrity: sha512-/sXZeMlhS0ArkfX2Aw780gJzXSMPnKjtspYZv+f3NiKLlubezAHDU5+9xz6gd3/NhG3txQCo6xlglmTS+oTGEQ==}
+  /ejs@3.1.10:
+    resolution: {integrity: sha512-UeJmFfOrAQS8OJWPZ4qtgHyWExa088/MtK5UEyoJGFH67cDEXkZSviOiKRCZ4Xij0zxI3JECgYs3oKx+AizQBA==}
     engines: {node: '>=0.10.0'}
     hasBin: true
     dependencies:
