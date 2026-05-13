@@ -214,6 +214,58 @@ console.log(food); // expected output: ['Pizza', 'Spaghetti', 'Burger']
 
 Lihat contoh lainnya di [splice.js](splice.js)
 
+### 10. Find
+
+Method `.find()` akan **mengembalikan elemen pertama** yang memenuhi kondisi yang diberikan. Jika tidak ada elemen yang memenuhi kondisi, akan mengembalikan `undefined`.
+
+```js
+const numbers = [10, 20, 30, 40, 50];
+
+const found = numbers.find((number) => number > 25);
+
+console.log(found); // 30
+```
+
+- `callback`: fungsi yang dijalankan pada setiap elemen
+- Mengembalikan **elemen** (bukan index), atau `undefined` jika tidak ditemukan
+
+Berbeda dengan `.findIndex()` yang mengembalikan **index**, `.find()` mengembalikan **nilai elemen** itu sendiri.
+
+Lihat contoh lainnya di [find.js](find.js)
+
+### 11. Some
+
+Method `.some()` akan mengecek apakah **minimal satu elemen** memenuhi kondisi. Mengembalikan `true` atau `false`.
+
+```js
+const numbers = [1, 2, 3, 4, 5];
+
+const hasNegative = numbers.some((number) => number < 0);
+
+console.log(hasNegative); // false
+```
+
+- `.some()` → `true` jika **minimal satu** elemen memenuhi kondisi
+- `.every()` → `true` jika **semua** elemen memenuhi kondisi
+
+Lihat contoh lainnya di [some.js](some.js)
+
+### 12. Includes
+
+Method `.includes()` digunakan untuk mengecek apakah array mengandung **elemen tertentu**. Mengembalikan `true` jika ditemukan, `false` jika tidak.
+
+```js
+const fruits = ["apel", "mangga", "jeruk"];
+
+console.log(fruits.includes("mangga")); // true
+console.log(fruits.includes("durian")); // false
+```
+
+- `.includes()` menggunakan **strict equality** (`===`), jadi type coercion tidak dilakukan
+- Bisa menerima parameter kedua `fromIndex` untuk menentukan posisi awal pencarian
+
+Lihat contoh lainnya di [includes.js](includes.js)
+
 [<img align="left" src="https://api.bellshade.org/badge/navigation?badgeType=previous&text=Array" />](../009_array)
 
 [<img align="right" src="https://api.bellshade.org/badge/navigation?badgeType=next&text=Object" />](../011_object)
