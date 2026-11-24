@@ -82,7 +82,4 @@ const rgbToCmyk = (r, g, b) => {
 // > rgbToCmyk("255", 0, 0)
 // ! TypeError: Nilai Red harus berupa angka
 
-// Ekspor dijaga karena repo memakai CommonJS, sedangkan doctest mengevaluasi
-// file sebagai ESM. Tanpa guard, `require` gagal; dengan `export default`,
-// doctest gagal.
-if (typeof module !== "undefined") module.exports = rgbToCmyk;
+module.exports = rgbToCmyk;
