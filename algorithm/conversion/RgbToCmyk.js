@@ -16,15 +16,24 @@
  * @returns {object} Object berisi nilai c, m, y, k dalam persen
  */
 
-const RgbToCmyk = (r, g, b) => {
-  // Validasi input: setiap nilai harus bilangan bulat 0-255
-  // Number.isInteger menolak NaN, Infinity, desimal, dan string sekaligus
-  const isValid = (value) =>
-    Number.isInteger(value) && value >= 0 && value <= 255;
+// Cek tipe nilai: harus angka dan bukan NaN
+const isNumber = (value) => typeof value === "number" && !Number.isNaN(value);
 
-  if (!isValid(r) || !isValid(g) || !isValid(b)) {
-    throw new Error("Nilai RGB harus bilangan bulat antara 0 sampai 255");
+const validateChannel = (value, name) => {
+  if (!isNumber(value)) {
+    throw new TypeError(`Nilai ${name} harus berupa angka`);
   }
+  if (!Number.isInteger(value) || value < 0 || value > 255) {
+    throw new RangeError(
+      `Nilai ${name} harus bilangan bulat antara 0 sampai 255`
+    );
+  }
+};
+
+const rgbToCmyk = (r, g, b) => {
+  validateChannel(r, "Red");
+  validateChannel(g, "Green");
+  validateChannel(b, "Blue");
 
   // Normalisasi RGB ke rentang 0-1
   const red = r / 255;
@@ -33,12 +42,15 @@ const RgbToCmyk = (r, g, b) => {
 
   const k = 1 - Math.max(red, green, blue);
 
-  // Jika warna hitam pekat, hindari pembagian dengan nol
+  // Perbandingan eksak aman di sini: nilai RGB sudah dijamin bilangan bulat,
+  // sehingga red/green/blue habis dibagi 255 dan k bernilai tepat 1 hanya
+  // ketika ketiga kanal bernilai 0 (hitam pekat).
   if (k === 1) {
     return { c: 0, m: 0, y: 0, k: 100 };
   }
 
-  // Pembulatan nilai agar rapi
+  // Tiap kanal dibulatkan sendiri-sendiri, jadi warna nyaris hitam bisa
+  // menghasilkan k: 99 dengan c, m, y: 0 (lihat contoh di bawah).
   return {
     c: Math.round(((1 - red - k) / (1 - k)) * 100),
     m: Math.round(((1 - green - k) / (1 - k)) * 100),
@@ -47,18 +59,30 @@ const RgbToCmyk = (r, g, b) => {
   };
 };
 
-// > RgbToCmyk(255, 0, 0)
+// > rgbToCmyk(255, 0, 0)
 // { c: 0, m: 100, y: 100, k: 0 }
-// > RgbToCmyk(0, 255, 0)
+// > rgbToCmyk(0, 255, 0)
 // { c: 100, m: 0, y: 100, k: 0 }
-// > RgbToCmyk(0, 0, 0)
+// > rgbToCmyk(0, 0, 0)
 // { c: 0, m: 0, y: 0, k: 100 }
-// > RgbToCmyk(255, 255, 255)
+// > rgbToCmyk(255, 255, 255)
 // { c: 0, m: 0, y: 0, k: 0 }
-// > RgbToCmyk(NaN, 0, 0)
-// ! Error: Nilai RGB harus bilangan bulat antara 0 sampai 255
-// > RgbToCmyk(300, 0, 0)
-// ! Error: Nilai RGB harus bilangan bulat antara 0 sampai 255
+// > rgbToCmyk(1, 1, 1)
+// { c: 0, m: 0, y: 0, k: 100 }
+// > rgbToCmyk(2, 2, 2)
+// { c: 0, m: 0, y: 0, k: 99 }
+// > rgbToCmyk(12.5, 0, 0)
+// ! RangeError: Nilai Red harus bilangan bulat antara 0 sampai 255
+// > rgbToCmyk(-1, 0, 0)
+// ! RangeError: Nilai Red harus bilangan bulat antara 0 sampai 255
+// > rgbToCmyk(300, 0, 0)
+// ! RangeError: Nilai Red harus bilangan bulat antara 0 sampai 255
+// > rgbToCmyk(NaN, 0, 0)
+// ! TypeError: Nilai Red harus berupa angka
+// > rgbToCmyk("255", 0, 0)
+// ! TypeError: Nilai Red harus berupa angka
 
-// Ekspor untuk pemakaian ulang; dijaga agar file tetap jalan saat di-doctest sebagai ESM
-if (typeof module !== "undefined") module.exports = RgbToCmyk;
+// Ekspor dijaga karena repo memakai CommonJS, sedangkan doctest mengevaluasi
+// file sebagai ESM. Tanpa guard, `require` gagal; dengan `export default`,
+// doctest gagal.
+if (typeof module !== "undefined") module.exports = rgbToCmyk;
