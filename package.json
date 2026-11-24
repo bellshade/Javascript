@@ -8,7 +8,7 @@
     "lint": "eslint {learn,algorithm}/**/*.js --ignore-pattern node_modules",
     "prettier": "prettier --w {learn,algorithm}/**/*{.js,.html}",
     "prettier-watch": "onchange {learn,algorithm}/**/*{.js,.html}' -- prettier --w {{changed}}",
-    "doctest-watch": "onchange '{learn,algorithm}/**/*.js' -- doctest {{changed}}"
+    "doctest-watch": "onchange '{learn,algorithm}/**/*.js' -- doctest --module commonjs {{changed}}"
   },
   "author": "bellshade",
   "license": "MIT",

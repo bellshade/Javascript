@@ -18,6 +18,6 @@ jobs:
       - name: npm install, build, and test
         run: |
           npm install doctest
-          npx doctest **/*.js || true
+          npx doctest --module commonjs **/*.js || true
         env:
           CI: true
